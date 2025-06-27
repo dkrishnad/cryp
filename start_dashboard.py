@@ -6,17 +6,15 @@ Launch script for the crypto bot dashboard
 import sys
 import os
 
-# Add dashboardtest directory to Python path
-# (Fix: use 'dashboardtest' instead of 'dashboard')
-dash_dir = os.path.join(os.path.dirname(__file__), 'dashboardtest')
-if dash_dir not in sys.path:
-    sys.path.insert(0, dash_dir)
+# Add dashboard directory to Python path
+dashboard_dir = os.path.join(os.path.dirname(__file__), 'dashboard')
+sys.path.insert(0, dashboard_dir)
 
 try:
     print("🚀 Starting Crypto Bot Dashboard...")
     
-    # Import the fully configured app (Fix: use dashboardtest)
-    from dashboardtest.app import app
+    # Import the fully configured app
+    from dashboard.app import app
     
     print("✅ Dashboard app loaded successfully!")
     print("✅ Layout and callbacks registered!")
@@ -31,15 +29,16 @@ except Exception as e:
     print("📝 Check the dashboard files for issues")
     print("🔧 Trying alternative startup method...")
     
-    # Fallback method (Fix: use dashboardtest)
+    # Fallback method
     try:
-        from dashboardtest.dash_app import app
-        from dashboardtest.layout import layout
-        from dashboardtest import callbacks
+        from dashboard.dash_app import app
+        from dashboard.layout import layout
+        from dashboard import callbacks
         
         app.layout = layout
         print("✅ Fallback method loaded successfully!")
         app.run(host="0.0.0.0", port=8050, debug=False)
+        
     except Exception as e2:
         print(f"❌ Fallback method also failed: {e2}")
-        print("Please check your dashboardtest module and its imports.")
+        sys.exit(1)

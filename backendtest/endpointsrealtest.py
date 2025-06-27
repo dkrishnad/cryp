@@ -1442,6 +1442,8 @@ async def get_balance():
     except Exception as e:
         return {"status": "error", "message": str(e)}
 
+# from data_collection import load_virtual_balance
+
 @app.get("/balance/virtual")
 async def get_virtual_balance():
     """Get current virtual balance for dashboard sidebar and main tab"""
@@ -2574,7 +2576,32 @@ def sidebar_bollinger(symbol: str = "BTCUSDT"):
         return {"upper": upper, "middle": middle, "lower": lower, "signal": signal}
     except Exception as e:
         return {"error": str(e)}
+@app.get("/calculate_pnl")
+def calculate_pnl():
+    """
+    Calculate and return the current auto trading P&L and win rate.
+    """
+    try:
+        # Use the global load_virtual_balance function
+        current_balance = load_virtual_balance()  # Should return a float
+        initial_balance = 10000.0  # Set your real initial balance
 
+        total_pnl = current_balance - initial_balance
+        pnl_percentage = (total_pnl / initial_balance) * 100 if initial_balance else 0
+
+        trades = get_trades()  # Should return a list of trade dicts
+        win_trades = [t for t in trades if t.get("pnl", 0) > 0]
+        total_trades = len(trades)
+        winrate = (len(win_trades) / total_trades * 100) if total_trades else 0
+
+        return {
+            "total_pnl": round(total_pnl, 2),
+            "pnl_percentage": round(pnl_percentage, 2),
+            "winrate": round(winrate, 2),
+            "total_trades": total_trades
+        }
+    except Exception as e:
+        return {"error": str(e)}
 # =============================================================================
 # CHART CONTROLS ENDPOINTS
 # =============================================================================
