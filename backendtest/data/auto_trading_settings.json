@@ -1,0 +1,1 @@
+{"enabled": false, "symbol": "KAIAUSDT", "entry_threshold": 0.6, "exit_threshold": 0.3, "max_positions": 3, "risk_per_trade": 2.0, "amount_config": {"type": "fixed", "amount": 100.0, "percentage": 10.0}}

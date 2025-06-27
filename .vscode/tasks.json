@@ -1,0 +1,16 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Start Crypto Trading Bot",
+			"type": "shell",
+			"command": "C:/Python312/python.exe",
+			"args": [
+				"main.py"
+			],
+			"group": "build",
+			"isBackground": true,
+			"problemMatcher": []
+		}
+	]
+}

@@ -1,0 +1,242 @@
+/* Professional dark theme - Force override Bootstrap */
+
+/* Global dark background with light text - highest priority */
+html, body, #react-entry-point, ._dash-undo-redo {
+    background-color: #2a2a2a !important;
+    color: #e0e0e0 !important;
+}
+
+/* Force all Bootstrap containers to dark */
+.container, .container-fluid, .row, .col, [class*="col-"], .tab-content, .card, .card-body {
+    background-color: #2a2a2a !important;
+    color: #e0e0e0 !important;
+}
+
+/* Main dashboard areas */
+.main-content, .sidebar, .content-section {
+    background-color: #2a2a2a !important;
+    color: #e0e0e0 !important;
+    border: 1px solid #404040 !important;
+}
+
+/* Technical indicators section */
+.tech-indicators {
+    background-color: #333333 !important;
+    color: #e0e0e0 !important;
+    border: 1px solid #404040 !important;
+    border-radius: 8px !important;
+    padding: 1rem !important;
+}
+
+/* Cards and panels - force dark */
+.card, .panel, .well, .card-header, .card-footer {
+    background-color: #333333 !important;
+    color: #e0e0e0 !important;
+    border: 1px solid #404040 !important;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.3) !important;
+}
+
+/* Tab styling - force override Bootstrap nav-tabs */
+.nav-tabs {
+    background-color: #2a2a2a !important;
+    border-bottom: 1px solid #555555 !important;
+}
+
+.nav-tabs .nav-link, .nav-tabs .nav-item .nav-link {
+    color: #e0e0e0 !important;
+    background-color: #404040 !important;
+    border: 1px solid #555555 !important;
+    font-weight: 600 !important;
+    margin-bottom: -1px !important;
+}
+
+.nav-tabs .nav-link:hover, .nav-tabs .nav-item .nav-link:hover {
+    color: #ffffff !important;
+    background-color: #4a4a4a !important;
+    border-color: #555555 !important;
+}
+
+.nav-tabs .nav-link.active, .nav-tabs .nav-item .nav-link.active {
+    color: #ffffff !important;
+    background-color: #2a2a2a !important;
+    border-color: #555555 #555555 #2a2a2a !important;
+    font-weight: 700 !important;
+}
+
+.tab-content, .tab-pane {
+    background-color: #2a2a2a !important;
+    color: #e0e0e0 !important;
+    padding: 1rem !important;
+    border: 1px solid #555555 !important;
+    border-top: none !important;
+}
+
+/* Tables - force dark */
+table, .table, thead, tbody, tr, th, td {
+    background-color: #333333 !important;
+    color: #e0e0e0 !important;
+    border-color: #555555 !important;
+}
+
+.table th, .table thead th {
+    background-color: #404040 !important;
+    color: #ffffff !important;
+    border-color: #555555 !important;
+}
+
+.table td, .table tbody td {
+    background-color: #333333 !important;
+    color: #e0e0e0 !important;
+    border-color: #555555 !important;
+}
+
+/* Input fields - force dark */
+input, select, textarea, .form-control, .form-select {
+    background-color: #404040 !important;
+    color: #e0e0e0 !important;
+    border: 1px solid #555555 !important;
+}
+
+input:focus, select:focus, textarea:focus, .form-control:focus {
+    background-color: #4a4a4a !important;
+    color: #ffffff !important;
+    border-color: #6a6a6a !important;
+    box-shadow: 0 0 0 0.2rem rgba(64, 64, 64, 0.25) !important;
+}
+
+/* Dropdowns - force dark */
+.dropdown-menu, .Select-menu-outer, .Select-control, .VirtualizedSelectOption {
+    background-color: #404040 !important;
+    color: #e0e0e0 !important;
+    border: 1px solid #555555 !important;
+}
+
+/* All text elements - force light color */
+h1, h2, h3, h4, h5, h6, p, span, div, label, .text-muted, .small {
+    color: #e0e0e0 !important;
+}
+
+/* Navigation - force dark */
+.navbar, .nav, .navbar-nav {
+    background-color: #2a2a2a !important;
+    border-bottom: 1px solid #404040 !important;
+}
+
+/* Bootstrap buttons - keep existing colors but ensure visibility */
+.btn {
+    margin-bottom: 0.5rem !important;
+}
+
+/* Status indicators - keep colorful for visibility */
+.status-good {
+    color: #4CAF50 !important;
+    font-weight: bold !important;
+}
+
+.status-warning {
+    color: #FF9800 !important;
+    font-weight: bold !important;
+}
+
+.status-error {
+    color: #F44336 !important;
+    font-weight: bold !important;
+}
+
+/* Force dark background on all Dash components */
+._dash-undo-redo, .dash-table-container, .dash-graph {
+    background-color: #2a2a2a !important;
+}
+
+/* Force override any white/light backgrounds */
+[style*="background-color: white"], [style*="background-color: #fff"], [style*="background-color: #ffffff"] {
+    background-color: #2a2a2a !important;
+}
+
+/* Bootstrap specific overrides */
+.bg-white, .bg-light {
+    background-color: #2a2a2a !important;
+}
+
+.text-dark {
+    color: #e0e0e0 !important;
+}
+
+/* Custom CSS for Crypto Bot Dashboard Layout Fixes */
+
+/* Fix slider overlapping issues */
+.dash-slider, .rc-slider {
+    margin: 15px 0 !important;
+    padding: 10px 0 !important;
+}
+
+/* Ensure proper spacing for tab content */
+.tab-content {
+    padding: 20px !important;
+    margin-top: 10px !important;
+}
+
+/* Fix Bootstrap component spacing */
+.mb-3 {
+    margin-bottom: 1rem !important;
+}
+
+.form-control {
+    margin-bottom: 10px !important;
+}
+
+/* Ensure proper container constraints */
+.main-content {
+    overflow-x: hidden !important;
+    max-width: calc(100vw - 350px) !important;
+}
+
+/* Fix sidebar positioning */
+.sidebar {
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 350px !important;
+    height: 100vh !important;
+    z-index: 1000 !important;
+    overflow-y: auto !important;
+}
+
+/* Ensure tabs display properly */
+.tab-container {
+    clear: both !important;
+    width: 100% !important;
+}
+
+/* Fix slider tooltip positioning */
+.rc-slider-tooltip {
+    z-index: 1050 !important;
+}
+
+/* Ensure proper spacing for collapse components */
+.collapse {
+    margin-bottom: 15px !important;
+}
+
+/* Fix dropdown positioning */
+.Select-menu-outer {
+    z-index: 1060 !important;
+}
+
+/* Fix dash component overlapping */
+.dash-table-container, .dash-graph, .dash-dropdown {
+    margin: 10px 0 !important;
+    clear: both !important;
+}
+
+/* Responsive fixes for smaller screens */
+@media (max-width: 768px) {
+    .sidebar {
+        width: 250px !important;
+    }
+    
+    .main-content {
+        margin-left: 250px !important;
+        max-width: calc(100vw - 250px) !important;
+    }
+}

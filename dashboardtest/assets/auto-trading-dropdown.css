@@ -1,0 +1,200 @@
+/* Auto Trading Enhanced Dropdown Styles */
+
+/* Main dropdown container styling */
+.auto-trading-dropdown .Select-control {
+    background: linear-gradient(135deg, #2d3748 0%, #1a202c 100%) !important;
+    border: 2px solid #4a5568 !important;
+    border-radius: 12px !important;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3) !important;
+    transition: all 0.3s ease !important;
+    min-height: 48px !important;
+}
+
+.auto-trading-dropdown .Select-control:hover {
+    border-color: #00ff88 !important;
+    box-shadow: 0 4px 16px rgba(0, 255, 136, 0.2) !important;
+}
+
+.auto-trading-dropdown .Select-control.is-focused {
+    border-color: #00ff88 !important;
+    box-shadow: 0 0 0 3px rgba(0, 255, 136, 0.1) !important;
+}
+
+/* Dropdown arrow styling */
+.auto-trading-dropdown .Select-arrow-zone {
+    padding-right: 15px !important;
+}
+
+.auto-trading-dropdown .Select-arrow {
+    border-color: #a0aec0 transparent transparent !important;
+    transition: all 0.3s ease !important;
+}
+
+.auto-trading-dropdown .Select-control.is-open .Select-arrow {
+    border-color: transparent transparent #00ff88 !important;
+}
+
+/* Selected value styling */
+.auto-trading-dropdown .Select-value {
+    color: #ffffff !important;
+    font-weight: 500 !important;
+    font-size: 14px !important;
+    line-height: 1.5 !important;
+    padding: 8px 12px !important;
+}
+
+/* Placeholder styling */
+.auto-trading-dropdown .Select-placeholder {
+    color: #a0aec0 !important;
+    font-style: italic !important;
+    padding: 8px 12px !important;
+}
+
+/* Dropdown menu container */
+.auto-trading-dropdown .Select-menu-outer {
+    background: linear-gradient(135deg, #2d3748 0%, #1a202c 100%) !important;
+    border: 2px solid #4a5568 !important;
+    border-radius: 12px !important;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4) !important;
+    margin-top: 4px !important;
+    overflow: hidden !important;
+    z-index: 9999 !important;
+}
+
+/* Individual dropdown options */
+.auto-trading-dropdown .Select-option {
+    background: transparent !important;
+    color: #ffffff !important;
+    padding: 12px 16px !important;
+    font-size: 14px !important;
+    font-weight: 500 !important;
+    border-bottom: 1px solid rgba(74, 85, 104, 0.3) !important;
+    transition: all 0.2s ease !important;
+    cursor: pointer !important;
+}
+
+.auto-trading-dropdown .Select-option:last-child {
+    border-bottom: none !important;
+}
+
+/* Low-cap gem options (with star) */
+.auto-trading-dropdown .Select-option[data-value*="KAIA"],
+.auto-trading-dropdown .Select-option[data-value*="JASMY"],
+.auto-trading-dropdown .Select-option[data-value*="GALA"],
+.auto-trading-dropdown .Select-option[data-value*="ROSE"],
+.auto-trading-dropdown .Select-option[data-value*="CHR"],
+.auto-trading-dropdown .Select-option[data-value*="CELR"],
+.auto-trading-dropdown .Select-option[data-value*="CKB"],
+.auto-trading-dropdown .Select-option[data-value*="OGN"],
+.auto-trading-dropdown .Select-option[data-value*="FET"],
+.auto-trading-dropdown .Select-option[data-value*="BAND"] {
+    background: linear-gradient(90deg, rgba(255, 215, 0, 0.1) 0%, rgba(255, 215, 0, 0.05) 100%) !important;
+    border-left: 3px solid #ffd700 !important;
+}
+
+/* Hover effects for options */
+.auto-trading-dropdown .Select-option.is-focused,
+.auto-trading-dropdown .Select-option:hover {
+    background: linear-gradient(90deg, rgba(0, 255, 136, 0.15) 0%, rgba(0, 255, 136, 0.05) 100%) !important;
+    color: #00ff88 !important;
+    transform: translateX(4px) !important;
+}
+
+/* Special hover for low-cap gems */
+.auto-trading-dropdown .Select-option[data-value*="KAIA"]:hover,
+.auto-trading-dropdown .Select-option[data-value*="JASMY"]:hover,
+.auto-trading-dropdown .Select-option[data-value*="GALA"]:hover,
+.auto-trading-dropdown .Select-option[data-value*="ROSE"]:hover,
+.auto-trading-dropdown .Select-option[data-value*="CHR"]:hover,
+.auto-trading-dropdown .Select-option[data-value*="CELR"]:hover,
+.auto-trading-dropdown .Select-option[data-value*="CKB"]:hover,
+.auto-trading-dropdown .Select-option[data-value*="OGN"]:hover,
+.auto-trading-dropdown .Select-option[data-value*="FET"]:hover,
+.auto-trading-dropdown .Select-option[data-value*="BAND"]:hover {
+    background: linear-gradient(90deg, rgba(255, 215, 0, 0.2) 0%, rgba(0, 255, 136, 0.1) 100%) !important;
+    border-left: 3px solid #00ff88 !important;
+    color: #ffd700 !important;
+}
+
+/* Selected option styling */
+.auto-trading-dropdown .Select-option.is-selected {
+    background: linear-gradient(90deg, rgba(0, 255, 136, 0.2) 0%, rgba(0, 255, 136, 0.1) 100%) !important;
+    color: #00ff88 !important;
+    border-left: 3px solid #00ff88 !important;
+}
+
+/* Input field for searchable dropdown */
+.auto-trading-dropdown .Select-input {
+    color: #ffffff !important;
+}
+
+.auto-trading-dropdown .Select-input input {
+    color: #ffffff !important;
+    background: transparent !important;
+}
+
+/* Loading and no results styling */
+.auto-trading-dropdown .Select-loading,
+.auto-trading-dropdown .Select-noresults {
+    color: #a0aec0 !important;
+    padding: 12px 16px !important;
+    font-style: italic !important;
+}
+
+/* Timeframe dropdown specific styling */
+.timeframe-dropdown .Select-option {
+    padding: 10px 16px !important;
+}
+
+/* Scrollbar styling for long dropdown lists */
+.auto-trading-dropdown .Select-menu {
+    max-height: 300px !important;
+    scrollbar-width: thin !important;
+    scrollbar-color: #4a5568 #2d3748 !important;
+}
+
+.auto-trading-dropdown .Select-menu::-webkit-scrollbar {
+    width: 6px !important;
+}
+
+.auto-trading-dropdown .Select-menu::-webkit-scrollbar-track {
+    background: #2d3748 !important;
+    border-radius: 3px !important;
+}
+
+.auto-trading-dropdown .Select-menu::-webkit-scrollbar-thumb {
+    background: #4a5568 !important;
+    border-radius: 3px !important;
+}
+
+.auto-trading-dropdown .Select-menu::-webkit-scrollbar-thumb:hover {
+    background: #00ff88 !important;
+}
+
+/* Animation for dropdown opening */
+@keyframes dropdownSlideIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.auto-trading-dropdown .Select-menu-outer {
+    animation: dropdownSlideIn 0.2s ease-out !important;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .auto-trading-dropdown .Select-control {
+        min-height: 44px !important;
+    }
+    
+    .auto-trading-dropdown .Select-option {
+        padding: 10px 12px !important;
+        font-size: 13px !important;
+    }
+}

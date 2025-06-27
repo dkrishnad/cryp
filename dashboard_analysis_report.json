@@ -1,0 +1,741 @@
+{
+  "components": {
+    "Inputs/Controls": [
+      "auto-symbol-dropdown",
+      "fixed-amount-input",
+      "percentage-amount-input"
+    ],
+    "Outputs/Display": [
+      "backtest-result",
+      "futures-reset-balance-output",
+      "futures-sync-balance-output",
+      "hybrid-prediction-output",
+      "performance-monitor",
+      "portfolio-status",
+      "test-output"
+    ],
+    "Buttons": [
+      "get-prediction-btn",
+      "reset-balance-btn",
+      "reset-balance-btn-output"
+    ],
+    "Tables": [],
+    "Graphs": [],
+    "Stores": [
+      "live-price-cache",
+      "selected-symbol-store",
+      "upload-tracking-store"
+    ],
+    "Intervals": [
+      "auto-trading-interval",
+      "interval-indicators",
+      "interval-prediction",
+      "live-price-interval"
+    ],
+    "Uploads": [],
+    "Tabs": [
+      "main-tabs"
+    ],
+    "Other": [
+      "dummy-div",
+      "live-price",
+      "notification-toast",
+      "sidebar-fixed",
+      "sidebar-symbol",
+      "virtual-balance"
+    ]
+  },
+  "callbacks": [
+    {
+      "function": "test_db_write_callback",
+      "outputs": [
+        "test-db-btn-output"
+      ],
+      "inputs": [
+        "test-db-btn"
+      ]
+    },
+    {
+      "function": "test_ml_callback",
+      "outputs": [
+        "test-ml-btn-output"
+      ],
+      "inputs": [
+        "test-ml-btn"
+      ]
+    },
+    {
+      "function": "show_feature_importance_callback",
+      "outputs": [
+        "show-fi-btn-output"
+      ],
+      "inputs": [
+        "show-fi-btn"
+      ]
+    },
+    {
+      "function": "prune_trades_callback",
+      "outputs": [
+        "prune-trades-btn-output"
+      ],
+      "inputs": [
+        "prune-trades-btn"
+      ]
+    },
+    {
+      "function": "tune_models_callback",
+      "outputs": [
+        "tune-models-btn-output"
+      ],
+      "inputs": [
+        "tune-models-btn"
+      ]
+    },
+    {
+      "function": "check_drift_callback",
+      "outputs": [
+        "check-drift-btn-output"
+      ],
+      "inputs": [
+        "check-drift-btn"
+      ]
+    },
+    {
+      "function": "online_learn_callback",
+      "outputs": [
+        "online-learn-btn-output"
+      ],
+      "inputs": [
+        "online-learn-btn"
+      ]
+    },
+    {
+      "function": "refresh_model_versions_callback",
+      "outputs": [
+        "refresh-model-versions-btn-output"
+      ],
+      "inputs": [
+        "refresh-model-versions-btn"
+      ]
+    },
+    {
+      "function": "render_hybrid_learning_tab",
+      "outputs": [
+        "hybrid-learning-tab-content"
+      ],
+      "inputs": [
+        "hybrid-learning-tab-content"
+      ]
+    },
+    {
+      "function": "render_email_config_tab",
+      "outputs": [
+        "email-config-tab-content"
+      ],
+      "inputs": [
+        "email-config-tab-content"
+      ]
+    },
+    {
+      "function": "render_auto_trading_tab",
+      "outputs": [
+        "auto-trading-tab-content"
+      ],
+      "inputs": [
+        "auto-trading-tab-content"
+      ]
+    },
+    {
+      "function": "render_futures_trading_tab",
+      "outputs": [
+        "futures-trading-tab-content"
+      ],
+      "inputs": [
+        "futures-trading-tab-content"
+      ]
+    },
+    {
+      "function": "render_binance_exact_tab",
+      "outputs": [
+        "binance-exact-tab-content"
+      ],
+      "inputs": [
+        "binance-exact-tab-content"
+      ]
+    },
+    {
+      "function": "update_hybrid_status",
+      "outputs": [
+        "hybrid-status-display"
+      ],
+      "inputs": [
+        "hybrid-status-refresh"
+      ]
+    },
+    {
+      "function": "update_transfer_status",
+      "outputs": [
+        "transfer-learning-status"
+      ],
+      "inputs": [
+        "check-transfer-status"
+      ]
+    },
+    {
+      "function": "run_comprehensive_backtest",
+      "outputs": [
+        "comprehensive-backtest-output",
+        "backtest-progress",
+        "backtest-progress"
+      ],
+      "inputs": [
+        "run-comprehensive-backtest"
+      ]
+    },
+    {
+      "function": "update_model_analytics",
+      "outputs": [
+        "model-analytics-display"
+      ],
+      "inputs": [
+        "refresh-model-analytics"
+      ]
+    },
+    {
+      "function": "update_feature_importance",
+      "outputs": [
+        "feature-importance-display"
+      ],
+      "inputs": [
+        "refresh-feature-importance"
+      ]
+    },
+    {
+      "function": "manage_transfer_learning",
+      "outputs": [
+        "transfer-learning-setup",
+        "transfer-learning-training"
+      ],
+      "inputs": [
+        "check-transfer-setup",
+        "init-transfer-learning",
+        "train-target-model"
+      ]
+    },
+    {
+      "function": "update_transfer_performance",
+      "outputs": [
+        "transfer-learning-performance"
+      ],
+      "inputs": [
+        "refresh-transfer-performance"
+      ]
+    },
+    {
+      "function": "manage_risk_settings",
+      "outputs": [
+        "risk-settings-display",
+        "risk-settings-status"
+      ],
+      "inputs": [
+        "save-risk-settings",
+        "load-risk-settings"
+      ]
+    },
+    {
+      "function": "manage_futures_trading",
+      "outputs": [
+        "futures-trading-controls",
+        "futures-trading-status"
+      ],
+      "inputs": [
+        "open-futures-position",
+        "close-futures-position",
+        "update-futures-positions"
+      ]
+    },
+    {
+      "function": "update_futures_analytics",
+      "outputs": [
+        "futures-analytics-display"
+      ],
+      "inputs": [
+        "refresh-futures-analytics"
+      ]
+    },
+    {
+      "function": "update_pnl_analytics",
+      "outputs": [
+        "pnl-analytics-display"
+      ],
+      "inputs": [
+        "refresh-pnl-analytics"
+      ]
+    },
+    {
+      "function": "manage_model_versions",
+      "outputs": [
+        "model-versions-display",
+        "model-version-status"
+      ],
+      "inputs": [
+        "refresh-model-versions",
+        "activate-model-version"
+      ]
+    },
+    {
+      "function": "update_model_metrics",
+      "outputs": [
+        "model-metrics-display"
+      ],
+      "inputs": [
+        "refresh-model-metrics"
+      ]
+    },
+    {
+      "function": "update_ml_performance_history",
+      "outputs": [
+        "ml-performance-history"
+      ],
+      "inputs": [
+        "refresh-ml-history"
+      ]
+    },
+    {
+      "function": "load_backtest_results",
+      "outputs": [
+        "backtest-results-enhanced"
+      ],
+      "inputs": [
+        "load-backtest-results"
+      ]
+    },
+    {
+      "function": "manage_model_retraining",
+      "outputs": [
+        "model-retrain-status",
+        "retrain-progress",
+        "retrain-progress"
+      ],
+      "inputs": [
+        "start-model-retrain",
+        "retrain-status-refresh"
+      ]
+    },
+    {
+      "function": "update_current_signal",
+      "outputs": [
+        "current-signal-display"
+      ],
+      "inputs": [
+        "refresh-current-signal"
+      ]
+    },
+    {
+      "function": "update_live_price",
+      "outputs": [
+        "live-price",
+        "live-price-cache"
+      ],
+      "inputs": [
+        "live-price-interval",
+        "sidebar-symbol"
+      ]
+    },
+    {
+      "function": "update_portfolio_status",
+      "outputs": [
+        "portfolio-status"
+      ],
+      "inputs": [
+        "live-price-interval",
+        "sidebar-symbol"
+      ]
+    },
+    {
+      "function": "update_performance_monitor",
+      "outputs": [
+        "performance-monitor"
+      ],
+      "inputs": [
+        "live-price-interval"
+      ]
+    },
+    {
+      "function": "update_virtual_balance",
+      "outputs": [
+        "virtual-balance"
+      ],
+      "inputs": [
+        "live-price-interval"
+      ]
+    },
+    {
+      "function": "update_futures_virtual_balance",
+      "outputs": [
+        "futures-virtual-balance",
+        "futures-pnl-display",
+        "futures-total-balance",
+        "futures-available-balance"
+      ],
+      "inputs": [
+        "live-price-interval",
+        "futures-sync-balance-btn"
+      ]
+    },
+    {
+      "function": "reset_futures_virtual_balance",
+      "outputs": [
+        "futures-reset-balance-btn"
+      ],
+      "inputs": [
+        "futures-reset-balance-btn"
+      ]
+    },
+    {
+      "function": "update_auto_trading_balance",
+      "outputs": [
+        "auto-balance-display",
+        "auto-pnl-display"
+      ],
+      "inputs": [
+        "live-price-interval"
+      ]
+    },
+    {
+      "function": "update_price_chart",
+      "outputs": [
+        "price-chart"
+      ],
+      "inputs": [
+        "live-price-interval",
+        "sidebar-symbol"
+      ]
+    },
+    {
+      "function": "update_indicators_chart",
+      "outputs": [
+        "indicators-chart"
+      ],
+      "inputs": [
+        "interval-indicators",
+        "sidebar-symbol"
+      ]
+    },
+    {
+      "function": "update_auto_trading_toggle_output",
+      "outputs": [
+        "auto-trading-toggle-output"
+      ],
+      "inputs": [
+        "auto-trading-toggle"
+      ]
+    },
+    {
+      "function": "sync_auto_symbol_dropdown",
+      "outputs": [
+        "auto-symbol-dropdown"
+      ],
+      "inputs": [
+        "auto-symbol-dropdown"
+      ]
+    },
+    {
+      "function": "toggle_amount_sections",
+      "outputs": [
+        "fixed-amount-section",
+        "percentage-amount-section"
+      ],
+      "inputs": [
+        "amount-type-radio"
+      ]
+    },
+    {
+      "function": "update_fixed_amount",
+      "outputs": [
+        "fixed-amount-input"
+      ],
+      "inputs": [
+        "amount-1",
+        "amount-10",
+        "amount-50",
+        "amount-100",
+        "amount-500"
+      ]
+    },
+    {
+      "function": "sync_percentage_amount",
+      "outputs": [
+        "percentage-amount-slider",
+        "calculated-amount-display"
+      ],
+      "inputs": [
+        "percentage-amount-input",
+        "virtual-balance"
+      ]
+    },
+    {
+      "function": "update_current_signal",
+      "outputs": [
+        "current-signal-display"
+      ],
+      "inputs": [
+        "auto-trading-interval"
+      ]
+    },
+    {
+      "function": "update_auto_trading_stats",
+      "outputs": [
+        "auto-balance-display",
+        "auto-pnl-display",
+        "auto-winrate-display",
+        "auto-trades-display",
+        "auto-wl-display"
+      ],
+      "inputs": [
+        "auto-trading-interval"
+      ]
+    },
+    {
+      "function": "execute_signal_callback",
+      "outputs": [
+        "execute-signal-btn"
+      ],
+      "inputs": [
+        "execute-signal-btn"
+      ]
+    },
+    {
+      "function": "reset_auto_trading_callback",
+      "outputs": [
+        "reset-auto-trading-btn"
+      ],
+      "inputs": [
+        "reset-auto-trading-btn"
+      ]
+    },
+    {
+      "function": "optimize_low_cap_coins",
+      "outputs": [
+        "optimize-kaia-btn",
+        "optimize-jasmy-btn",
+        "optimize-gala-btn"
+      ],
+      "inputs": [
+        "optimize-kaia-btn",
+        "optimize-jasmy-btn",
+        "optimize-gala-btn"
+      ]
+    },
+    {
+      "function": "update_open_positions_table",
+      "outputs": [
+        "open-positions-table"
+      ],
+      "inputs": [
+        "auto-trading-interval"
+      ]
+    },
+    {
+      "function": "update_auto_trade_log",
+      "outputs": [
+        "auto-trade-log"
+      ],
+      "inputs": [
+        "auto-trading-interval"
+      ]
+    },
+    {
+      "function": "update_futures_balances",
+      "outputs": [
+        "futures-total-balance",
+        "futures-available-balance",
+        "futures-margin-used",
+        "futures-margin-ratio",
+        "futures-unrealized-pnl",
+        "futures-open-positions",
+        "futures-virtual-balance",
+        "futures-pnl-display"
+      ],
+      "inputs": [
+        "futures-refresh-interval"
+      ]
+    },
+    {
+      "function": "execute_futures_trade",
+      "outputs": [
+        "futures-trade-result"
+      ],
+      "inputs": [
+        "futures-long-btn",
+        "futures-short-btn"
+      ]
+    },
+    {
+      "function": "save_futures_settings",
+      "outputs": [
+        "futures-settings-result"
+      ],
+      "inputs": [
+        "futures-save-settings-btn"
+      ]
+    },
+    {
+      "function": "refresh_futures_positions",
+      "outputs": [
+        "futures-positions-table"
+      ],
+      "inputs": [
+        "futures-refresh-positions-btn"
+      ]
+    },
+    {
+      "function": "update_futures_history",
+      "outputs": [
+        "futures-history-table"
+      ],
+      "inputs": [
+        "futures-refresh-interval"
+      ]
+    },
+    {
+      "function": "handle_futures_balance_buttons",
+      "outputs": [
+        "futures-reset-balance-output",
+        "futures-sync-balance-output"
+      ],
+      "inputs": [
+        "futures-reset-balance-btn",
+        "futures-sync-balance-btn"
+      ]
+    },
+    {
+      "function": "get_prediction_callback",
+      "outputs": [
+        "get-prediction-btn"
+      ],
+      "inputs": [
+        "get-prediction-btn"
+      ]
+    }
+  ],
+  "missing": {
+    "Buttons without callbacks": [
+      "reset-balance-btn",
+      "reset-balance-btn-output"
+    ],
+    "Output divs without callbacks": [
+      "backtest-result",
+      "hybrid-prediction-output",
+      "test-output"
+    ],
+    "Tables without callbacks": [],
+    "Graphs without callbacks": []
+  },
+  "endpoints": {
+    "/ml/hybrid/status": [
+      "GET"
+    ],
+    "/ml/transfer/source_status": [
+      "GET"
+    ],
+    "/backtest": [
+      "POST"
+    ],
+    "/model/analytics": [
+      "GET"
+    ],
+    "/model/feature_importance": [
+      "GET"
+    ],
+    "/model/crypto_transfer/initial_setup_required": [
+      "GET"
+    ],
+    "/model/crypto_transfer/initial_train": [
+      "POST"
+    ],
+    "/model/crypto_transfer/train_target": [
+      "POST"
+    ],
+    "/model/crypto_transfer/performance": [
+      "GET"
+    ],
+    "/risk_settings": [
+      "POST",
+      "GET"
+    ],
+    "/futures/open_position": [
+      "POST"
+    ],
+    "/futures/close_position": [
+      "POST"
+    ],
+    "/futures/update_positions": [
+      "POST"
+    ],
+    "/futures/analytics": [
+      "GET"
+    ],
+    "/trading/pnl_analytics": [
+      "GET"
+    ],
+    "/model/active_version": [
+      "POST",
+      "GET"
+    ],
+    "/model/versions": [
+      "GET"
+    ],
+    "/model/metrics": [
+      "GET"
+    ],
+    "/ml/performance/history": [
+      "GET"
+    ],
+    "/backtest/results": [
+      "GET"
+    ],
+    "/retrain": [
+      "POST"
+    ],
+    "/auto_trading/current_signal": [
+      "GET"
+    ],
+    "/price/{symbol}": [
+      "GET"
+    ],
+    "/virtual_balance": [
+      "GET",
+      "POST"
+    ],
+    "/trades/recent": [
+      "GET"
+    ],
+    "/features/indicators?symbol={symbol.lower()}": [
+      "GET"
+    ]
+  },
+  "tabs": [
+    {
+      "output": "Output('hybrid-learning-tab-content', 'children'),",
+      "function": "render_hybrid_learning_tab"
+    },
+    {
+      "output": "Output('email-config-tab-content', 'children'),",
+      "function": "render_email_config_tab"
+    },
+    {
+      "output": "Output('auto-trading-tab-content', 'children'),",
+      "function": "render_auto_trading_tab"
+    },
+    {
+      "output": "Output('futures-trading-tab-content', 'children'),",
+      "function": "render_futures_trading_tab"
+    },
+    {
+      "output": "Output('binance-exact-tab-content', 'children'),",
+      "function": "render_binance_exact_tab"
+    }
+  ],
+  "health_score": 81.48148148148148
+}

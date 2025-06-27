@@ -1,0 +1,9 @@
+{
+  "total_wallet_balance": 10000.0,
+  "available_balance": 0.0,
+  "total_margin_used": 10000.0,
+  "total_unrealized_pnl": 0,
+  "maintenance_margin": 0,
+  "margin_ratio": 0.0,
+  "can_trade": true
+}

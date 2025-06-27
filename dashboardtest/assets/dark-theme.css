@@ -1,0 +1,194 @@
+/* Force Dark Theme - Maximum Specificity */
+
+/* Override everything with maximum specificity */
+html body div#react-entry-point div._dash-undo-redo,
+html body,
+html,
+body {
+    background-color: #2a2a2a !important;
+    color: #e0e0e0 !important;
+}
+
+/* Force all Bootstrap and Dash containers */
+html body .container,
+html body .container-fluid,
+html body .row,
+html body .col,
+html body [class*="col-"],
+html body .tab-content,
+html body .card,
+html body .card-body,
+html body div {
+    background-color: #2a2a2a !important;
+    color: #e0e0e0 !important;
+}
+
+/* Force tabs with maximum specificity */
+html body .nav-tabs,
+html body ul.nav-tabs {
+    background-color: #2a2a2a !important;
+    border-bottom: 1px solid #555555 !important;
+}
+
+html body .nav-tabs .nav-link,
+html body .nav-tabs .nav-item .nav-link,
+html body ul.nav-tabs li.nav-item a.nav-link {
+    color: #e0e0e0 !important;
+    background-color: #404040 !important;
+    border: 1px solid #555555 !important;
+    font-weight: 600 !important;
+    margin-bottom: -1px !important;
+}
+
+html body .nav-tabs .nav-link:hover,
+html body .nav-tabs .nav-item .nav-link:hover,
+html body ul.nav-tabs li.nav-item a.nav-link:hover {
+    color: #ffffff !important;
+    background-color: #4a4a4a !important;
+    border-color: #555555 !important;
+}
+
+html body .nav-tabs .nav-link.active,
+html body .nav-tabs .nav-item .nav-link.active,
+html body ul.nav-tabs li.nav-item a.nav-link.active {
+    color: #ffffff !important;
+    background-color: #2a2a2a !important;
+    border-color: #555555 #555555 #2a2a2a !important;
+    font-weight: 700 !important;
+}
+
+/* Force tab content */
+html body .tab-content,
+html body .tab-pane {
+    background-color: #2a2a2a !important;
+    color: #e0e0e0 !important;
+    padding: 1rem !important;
+    border: 1px solid #555555 !important;
+    border-top: none !important;
+}
+
+/* Force sidebar and main content */
+html body .sidebar {
+    background-color: #2a2a2a !important;
+    color: #e0e0e0 !important;
+    border-right: 1px solid #404040 !important;
+}
+
+html body .main-content {
+    background-color: #2a2a2a !important;
+    color: #e0e0e0 !important;
+}
+
+/* Force all text elements */
+html body h1,
+html body h2, 
+html body h3,
+html body h4,
+html body h5,
+html body h6,
+html body p,
+html body span,
+html body div,
+html body label,
+html body .text-muted,
+html body .small {
+    color: #e0e0e0 !important;
+}
+
+/* Force forms */
+html body input,
+html body select,
+html body textarea,
+html body .form-control,
+html body .form-select {
+    background-color: #404040 !important;
+    color: #e0e0e0 !important;
+    border: 1px solid #555555 !important;
+}
+
+/* Force tables */
+html body table,
+html body .table,
+html body thead,
+html body tbody,
+html body tr,
+html body th,
+html body td {
+    background-color: #333333 !important;
+    color: #e0e0e0 !important;
+    border-color: #555555 !important;
+}
+
+html body .table th,
+html body .table thead th {
+    background-color: #404040 !important;
+    color: #ffffff !important;
+}
+
+/* Force cards */
+html body .card,
+html body .card-header,
+html body .card-body,
+html body .card-footer {
+    background-color: #333333 !important;
+    color: #e0e0e0 !important;
+    border: 1px solid #404040 !important;
+}
+
+/* Override any inline styles */
+html body [style*="background-color"],
+html body [style*="backgroundColor"] {
+    background-color: #2a2a2a !important;
+}
+
+html body [style*="color"] {
+    color: #e0e0e0 !important;
+}
+
+/* Force slider styling for Ultra-High Confidence Filter */
+html body .rc-slider,
+html body .rc-slider-rail,
+html body .rc-slider-track {
+    background-color: #404040 !important;
+}
+
+html body .rc-slider-rail {
+    background-color: #555555 !important;
+    height: 6px !important;
+}
+
+html body .rc-slider-track {
+    background-color: #4CAF50 !important;
+    height: 6px !important;
+}
+
+html body .rc-slider-handle {
+    background-color: #ffffff !important;
+    border: 2px solid #4CAF50 !important;
+    box-shadow: 0 0 0 2px rgba(76, 175, 80, 0.3) !important;
+}
+
+html body .rc-slider-handle:hover,
+html body .rc-slider-handle:focus,
+html body .rc-slider-handle:active {
+    background-color: #ffffff !important;
+    border-color: #4CAF50 !important;
+    box-shadow: 0 0 0 4px rgba(76, 175, 80, 0.3) !important;
+}
+
+html body .rc-slider-dot {
+    background-color: #555555 !important;
+    border-color: #555555 !important;
+}
+
+html body .rc-slider-dot-active {
+    background-color: #4CAF50 !important;
+    border-color: #4CAF50 !important;
+}
+
+/* Force all Dash core component sliders */
+html body ._dash-undo-redo .rc-slider,
+html body ._dash-undo-redo .rc-slider-rail,
+html body ._dash-undo-redo .rc-slider-track {
+    background-color: #404040 !important;
+}

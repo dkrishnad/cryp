@@ -1,0 +1,34 @@
+Starting diagnostic... 
+Current directory: c:\Users\Hari\Desktop\Crypto bot 
+Script location: c:\Users\Hari\Desktop\Crypto bot\ 
+Date/Time: 25-06-2025  9:09:25.97 
+ 
+Changed to: c:\Users\Hari\Desktop\Crypto bot 
+launch_bot.py found 
+Python 3.12.6
+Python is available 
+ 
+Attempting to start launcher... 
+Traceback (most recent call last):
+  File "c:\Users\Hari\Desktop\Crypto bot\launch_bot.py", line 742, in <module>
+    main()
+  File "c:\Users\Hari\Desktop\Crypto bot\launch_bot.py", line 620, in main
+    print_banner()
+  File "c:\Users\Hari\Desktop\Crypto bot\launch_bot.py", line 36, in print_banner
+    print(banner)
+  File "C:\Python312\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode characters in position 2-69: character maps to <undefined>
+Exception ignored in atexit callback: <function cleanup_processes at 0x00000188D248E200>
+Traceback (most recent call last):
+  File "c:\Users\Hari\Desktop\Crypto bot\launch_bot.py", line 47, in cleanup_processes
+    print_status("\U0001f9f9 Cleaning up processes...", "WARNING")
+  File "c:\Users\Hari\Desktop\Crypto bot\launch_bot.py", line 167, in print_status
+    print(f"{color}{timestamp} [{icon} {status}] {message}{reset_color}")
+  File "C:\Python312\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode characters in position 15-16: character maps to <undefined>
+ 
+Launcher exit code: 1 

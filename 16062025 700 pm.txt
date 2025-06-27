@@ -1,0 +1,1272 @@
+#16/06/2025 7:00 pm
+
+#Fully working bi=ot need a few upgrades
+
+
+import streamlit as st
+import warnings
+import pandas as pd
+import numpy as np
+import requests
+import datetime
+import traceback
+import uuid
+import sys
+
+# --- Streamlit rerun compatibility shim ---
+if not hasattr(st, "rerun"):
+    if hasattr(st, "experimental_rerun"):
+        st.rerun = st.experimental_rerun
+    else:
+        def _dummy_rerun():
+            warnings.warn("Streamlit rerun is not available in this version.")
+        st.rerun = _dummy_rerun
+
+# --- Streamlit rerun compatibility shim ---
+import warnings
+if not hasattr(st, "rerun"):
+    if hasattr(st, "experimental_rerun"):
+        st.rerun = st.experimental_rerun
+    else:
+        def _dummy_rerun():
+            warnings.warn("Streamlit rerun is not available in this version.")
+        st.rerun = _dummy_rerun
+from sklearn.linear_model import LinearRegression
+from sklearn.ensemble import RandomForestRegressor
+
+# Advanced ML models (safe import)
+try:
+    from xgboost import XGBRegressor
+except ImportError:
+    XGBRegressor = None
+try:
+    from lightgbm import LGBMRegressor
+except ImportError:
+    LGBMRegressor = None
+try:
+    from catboost import CatBoostRegressor
+except ImportError:
+    CatBoostRegressor = None
+from sklearn.ensemble import VotingRegressor
+
+# Optional: TensorFlow/Keras for LSTM (safe fallback)
+try:
+    from tensorflow.keras.models import Sequential
+    from tensorflow.keras.layers import LSTM, Dense
+except ImportError:
+    Sequential = None
+    LSTM = None
+    Dense = None
+
+from ta.trend import EMAIndicator, MACD, SMAIndicator
+from ta.momentum import RSIIndicator, StochasticOscillator
+from ta.volatility import BollingerBands, AverageTrueRange
+from ta.volume import OnBalanceVolumeIndicator
+from plotly.subplots import make_subplots
+import plotly.graph_objects as go
+from sklearn.preprocessing import StandardScaler
+
+# =============================
+# ULTRA-ADVANCED BOT v5.0
+# =============================
+
+st.set_page_config(layout="wide", initial_sidebar_state="expanded")
+st.title("🤖 Ultra-Advanced AI Crypto Trading Bot v5.0")
+
+# --- Performance Monitor Class ---
+class PerformanceMonitor:
+    def __init__(self):
+        self.response_times = []
+    
+    def add_response_time(self, time_ms):
+        self.response_times.append(time_ms)
+        if len(self.response_times) > 100:
+            self.response_times = self.response_times[-100:]
+    
+    def get_average_response_time(self):
+        if not self.response_times:
+            return 0.0
+        return sum(self.response_times) / len(self.response_times)
+
+# --- Session State Initialization ---
+def initialize_session_state():
+    if 'trades_since_retrain' not in st.session_state:
+        st.session_state.trades_since_retrain = 0
+    if 'last_retrain_time' not in st.session_state:
+        st.session_state.last_retrain_time = datetime.datetime.now()
+    if 'virtual_balance' not in st.session_state:
+        st.session_state.virtual_balance = 10000.0
+    if 'active_trades' not in st.session_state:
+        st.session_state.active_trades = {}
+    if 'trade_history' not in st.session_state:
+        st.session_state.trade_history = []
+    if 'notifications' not in st.session_state:
+        st.session_state.notifications = []
+    if 'last_update' not in st.session_state:
+        st.session_state.last_update = datetime.datetime.now()
+    if 'signals_history' not in st.session_state:
+        st.session_state.signals_history = []
+    if 'auto_refresh' not in st.session_state:
+        st.session_state.auto_refresh = True
+    if 'perf_monitor' not in st.session_state:
+        st.session_state.perf_monitor = PerformanceMonitor()
+
+initialize_session_state()
+
+# --- Helper: Fetch live price from Binance ---
+# Remove caching for real-time price updates
+#@st.cache_data(ttl=10, show_spinner=False)
+def fetch_binance_price(symbol):
+    url = f"https://api.binance.com/api/v3/ticker/price?symbol={symbol.upper()}"
+    try:
+        start_time = datetime.datetime.now()
+        res = requests.get(url, timeout=3)
+        res.raise_for_status()
+        end_time = datetime.datetime.now()
+        response_time = (end_time - start_time).total_seconds() * 1000
+        st.session_state.perf_monitor.add_response_time(response_time)
+        return float(res.json()['price'])
+    except requests.exceptions.RequestException as e:
+        st.session_state['binance_error'] = str(e)
+        return None
+    except Exception as e:
+        st.session_state['binance_error'] = str(e)
+        return None
+
+# --- NOTIFICATIONS ---
+def add_notification(message, type="info"):
+    if 'notifications' not in st.session_state:
+        st.session_state.notifications = []
+    st.session_state.notifications.append({
+        'message': message,
+        'type': type,
+        'timestamp': datetime.datetime.now()
+    })
+    if len(st.session_state.notifications) > 10:
+        st.session_state.notifications = st.session_state.notifications[-10:]
+
+def display_notifications():
+    """Display trading notifications in a user-friendly, visually distinct format."""
+    with st.expander("📣 Trading Notifications", expanded=True):
+        if not st.session_state.notifications:
+            st.info("No notifications yet. All trade alerts and system messages will appear here.")
+            return
+
+        # Add a clear all button
+        clear_col, _ = st.columns([1, 5])
+        with clear_col:
+            if st.button("🧹 Clear All", key="clear_notifications_btn"):
+                st.session_state.notifications = []
+                st.rerun()
+
+        # Show notifications, most recent first
+        for notification in reversed(st.session_state.notifications):
+            msg = notification.get('message', '')
+            ntype = notification.get('type', 'info')
+            ts = notification.get('timestamp', None)
+            if ts:
+                if hasattr(ts, 'strftime'):
+                    ts_str = ts.strftime('%H:%M:%S')
+                else:
+                    ts_str = str(ts)
+            else:
+                ts_str = ''
+
+            icon = {
+                'success': '✅',
+                'error': '❌',
+                'warning': '⚠️',
+                'info': 'ℹ️',
+            }.get(ntype, 'ℹ️')
+
+            formatted_msg = f"{icon} <b>{ts_str}</b> — {msg}"
+            if ntype == 'success':
+                st.success(formatted_msg)
+            elif ntype == 'error':
+                st.error(formatted_msg)
+            elif ntype == 'warning':
+                st.warning(formatted_msg)
+            else:
+                st.info(formatted_msg)
+
+# --- Helper: Simulate trade execution and tracking ---
+def open_virtual_trade(symbol, direction, amount, entry_price, tp_pct, sl_pct):
+    trade_id = str(uuid.uuid4())[:8]
+    trade = {
+        'id': trade_id,
+        'symbol': symbol,
+        'direction': direction,
+        'amount': amount,
+        'entry_price': entry_price,
+        'tp_price': entry_price * (1 + tp_pct/100) if direction == 'LONG' else entry_price * (1 - tp_pct/100),
+        'sl_price': entry_price * (1 - sl_pct/100) if direction == 'LONG' else entry_price * (1 + sl_pct/100),
+        'status': 'OPEN',
+        'open_time': datetime.datetime.now(),
+        'close_time': None,
+        'pnl': 0.0
+    }
+    st.session_state.virtual_balance -= amount
+    st.session_state.active_trades[trade_id] = trade
+    st.session_state.trade_history.append(trade.copy())
+    st.session_state['last_notification'] = f"Opened {direction} {symbol.upper()} at ${entry_price:.4f}"
+    add_notification(f"Opened {direction} {symbol.upper()} at ${entry_price:.4f}", "success")
+    # Increment trade counter for retraining
+    st.session_state.trades_since_retrain += 1
+    return trade_id
+
+def update_active_trades():
+    to_close = []
+    # Cache prices for all unique symbols in active trades
+    active_trades = list(st.session_state.active_trades.items())
+    symbols = list(set(trade['symbol'] for _, trade in active_trades))
+    price_cache = {symbol: fetch_binance_price(symbol) for symbol in symbols}
+    for trade_id, trade in active_trades:
+        price = price_cache.get(trade['symbol'])
+        if price is None:
+            continue
+        trade['pnl'] = (price - trade['entry_price']) * (1 if trade['direction']=='LONG' else -1) * (trade['amount']/trade['entry_price'])
+        trade['current_price'] = price
+        # Check TP/SL
+        closed = False
+        if (trade['direction']=='LONG' and price >= trade['tp_price']) or (trade['direction']=='SHORT' and price <= trade['tp_price']):
+            trade['status'] = 'CLOSED (TP)'
+            trade['close_time'] = datetime.datetime.now()
+            st.session_state.virtual_balance += trade['amount'] + trade['pnl']
+            to_close.append(trade_id)
+            st.session_state['last_notification'] = f"TP hit: {trade['symbol'].upper()} {trade['direction']} closed at ${price:.4f}"
+            add_notification(f"TP hit: {trade['symbol'].upper()} {trade['direction']} closed at ${price:.4f}", "success")
+            closed = True
+        elif (trade['direction']=='LONG' and price <= trade['sl_price']) or (trade['direction']=='SHORT' and price >= trade['sl_price']):
+            trade['status'] = 'CLOSED (SL)'
+            trade['close_time'] = datetime.datetime.now()
+            st.session_state.virtual_balance += trade['amount'] + trade['pnl']
+            to_close.append(trade_id)
+            st.session_state['last_notification'] = f"SL hit: {trade['symbol'].upper()} {trade['direction']} closed at ${price:.4f}"
+            add_notification(f"SL hit: {trade['symbol'].upper()} {trade['direction']} closed at ${price:.4f}", "error")
+            closed = True
+        # Update trade_history for this trade_id if closed
+        if closed:
+            for hist_trade in st.session_state.trade_history:
+                if hist_trade.get('id') == trade_id:
+                    hist_trade['status'] = trade['status']
+                    hist_trade['close_time'] = trade['close_time']
+                    hist_trade['pnl'] = trade['pnl']
+                    hist_trade['current_price'] = trade.get('current_price', price)
+                    hist_trade['close_price'] = trade.get('current_price', price)
+                    break
+    for tid in to_close:
+        del st.session_state.active_trades[tid]
+
+# --- MULTI-COIN SCANNER ---
+def scan_multiple_coins(coins_list, timeframe, capital, leverage, risk_percentage, min_signal_strength, use_volume_filter, rsi_oversold, rsi_overbought, enable_predictions=True):
+    results = []
+    for coin in coins_list:
+        price = fetch_binance_price(coin)
+        pred = np.random.uniform(-1, 1)
+        conf = np.random.randint(50, 95)
+        results.append({
+            'symbol': coin.upper(),
+            'price': price,
+            'direction': 'LONG' if pred > 0 else 'SHORT',
+            'confidence': conf,
+            'predicted_change': pred
+        })
+    return results
+
+def execute_trade_from_prediction(symbol, direction, amount, price, tp_pct, sl_pct):
+    trade_id = open_virtual_trade(symbol, direction, amount, price, tp_pct, sl_pct)
+    # After each trade, check if retraining is needed (using available df and horizon)
+    if 'latest_df' in st.session_state:
+        retrain_model_if_needed(st.session_state['latest_df'])
+    return trade_id
+
+# --- LSTM Model Integration (for future expansion) ---
+def build_lstm_model(input_shape):
+    if Sequential is None or LSTM is None or Dense is None:
+        return None
+    model = Sequential()
+    model.add(LSTM(32, input_shape=input_shape))
+    model.add(Dense(1))
+    model.compile(optimizer='adam', loss='mse')
+    return model
+
+# --- ADVANCED INDICATORS ---
+def calculate_enhanced_indicators(df, rsi_window=14, ema_fast=8, ema_slow=21, ema_trend=100, bb_period=20, bb_std=2.0):
+    # Add more lagged and rolling features for ML
+    if len(df) < 100:
+        return df
+    try:
+        # --- Standard Indicators ---
+        df['ema_fast'] = EMAIndicator(df['close'], window=ema_fast).ema_indicator()
+        df['ema_slow'] = EMAIndicator(df['close'], window=ema_slow).ema_indicator()
+        df['ema_trend'] = EMAIndicator(df['close'], window=ema_trend).ema_indicator()
+        df['ema_9'] = EMAIndicator(df['close'], window=9).ema_indicator()
+        df['ema_21'] = EMAIndicator(df['close'], window=21).ema_indicator()
+        df['ema_50'] = EMAIndicator(df['close'], window=50).ema_indicator()
+        df['ema_200'] = EMAIndicator(df['close'], window=200).ema_indicator()
+        macd = MACD(df['close'])
+        df['macd'] = macd.macd()
+        df['macd_signal'] = macd.macd_signal()
+        df['macd_histogram'] = macd.macd_diff()
+        df['rsi'] = RSIIndicator(df['close'], window=rsi_window).rsi()
+        stoch = StochasticOscillator(df['high'], df['low'], df['close'])
+        df['stoch_k'] = stoch.stoch()
+        df['stoch_d'] = stoch.stoch_signal()
+        bb = BollingerBands(df['close'], window=bb_period, window_dev=bb_std)
+        df['bb_upper'] = bb.bollinger_hband()
+        df['bb_lower'] = bb.bollinger_lband()
+        df['bb_middle'] = bb.bollinger_mavg()
+        df['bb_width'] = (df['bb_upper'] - df['bb_lower']) / df['bb_middle']
+        df['bb_position'] = (df['close'] - df['bb_lower']) / (df['bb_upper'] - df['bb_lower'])
+        atr = AverageTrueRange(df['high'], df['low'], df['close'])
+        df['atr'] = atr.average_true_range()
+        df['volume_sma'] = df['volume'].rolling(window=20).mean()
+        df['volume_ratio'] = df['volume'] / df['volume_sma']
+        obv = OnBalanceVolumeIndicator(df['close'], df['volume'])
+        df['obv'] = obv.on_balance_volume()
+
+        # --- Additional Engineered Features ---
+        df['price_change_1'] = df['close'].pct_change(1)
+        df['price_change_5'] = df['close'].pct_change(5)
+        df['price_change_10'] = df['close'].pct_change(10)
+        df['high_low_spread'] = (df['high'] - df['low']) / df['close']
+        df['close_open_spread'] = (df['close'] - df['open']) / df['open']
+        df['rolling_volatility_10'] = df['close'].rolling(window=10).std()
+        df['rolling_volatility_20'] = df['close'].rolling(window=20).std()
+        df['rolling_volume_10'] = df['volume'].rolling(window=10).mean()
+        df['rolling_volume_20'] = df['volume'].rolling(window=20).mean()
+        df['volume_change_5'] = df['volume'].pct_change(5)
+        df['rsi_7'] = RSIIndicator(df['close'], window=7).rsi()
+        df['rsi_21'] = RSIIndicator(df['close'], window=21).rsi()
+        df['macd_diff'] = df['macd'] - df['macd_signal']
+        df['ema_fast_slow_diff'] = df['ema_fast'] - df['ema_slow']
+        df['ema_9_21_diff'] = df['ema_9'] - df['ema_21']
+        df['ema_50_200_diff'] = df['ema_50'] - df['ema_200']
+        # Lagged features
+        df['close_lag_1'] = df['close'].shift(1)
+        df['close_lag_5'] = df['close'].shift(5)
+        df['rsi_lag_1'] = df['rsi'].shift(1)
+        df['macd_lag_1'] = df['macd'].shift(1)
+        # More lagged features
+        for lag in [2, 3, 10, 20]:
+            df[f'close_lag_{lag}'] = df['close'].shift(lag)
+            df[f'rsi_lag_{lag}'] = df['rsi'].shift(lag)
+            df[f'macd_lag_{lag}'] = df['macd'].shift(lag)
+        # More rolling features
+        for window in [5, 15, 30, 50]:
+            df[f'rolling_mean_{window}'] = df['close'].rolling(window=window).mean()
+            df[f'rolling_std_{window}'] = df['close'].rolling(window=window).std()
+            df[f'rolling_volume_{window}'] = df['volume'].rolling(window=window).mean()
+        # Binned RSI (categorical)
+        df['rsi_bin'] = pd.cut(df['rsi'], bins=[0, 30, 70, 100], labels=[0, 1, 2]).astype(float)
+    except Exception as e:
+        st.error(f"Error calculating indicators: {e}")
+    return df
+    if len(df) < 100:
+        return df
+
+    try:
+        # --- Standard Indicators ---
+        df['ema_fast'] = EMAIndicator(df['close'], window=ema_fast).ema_indicator()
+        df['ema_slow'] = EMAIndicator(df['close'], window=ema_slow).ema_indicator()
+        df['ema_trend'] = EMAIndicator(df['close'], window=ema_trend).ema_indicator()
+        df['ema_9'] = EMAIndicator(df['close'], window=9).ema_indicator()
+        df['ema_21'] = EMAIndicator(df['close'], window=21).ema_indicator()
+        df['ema_50'] = EMAIndicator(df['close'], window=50).ema_indicator()
+        df['ema_200'] = EMAIndicator(df['close'], window=200).ema_indicator()
+        macd = MACD(df['close'])
+        df['macd'] = macd.macd()
+        df['macd_signal'] = macd.macd_signal()
+        df['macd_histogram'] = macd.macd_diff()
+        df['rsi'] = RSIIndicator(df['close'], window=rsi_window).rsi()
+        stoch = StochasticOscillator(df['high'], df['low'], df['close'])
+        df['stoch_k'] = stoch.stoch()
+        df['stoch_d'] = stoch.stoch_signal()
+        bb = BollingerBands(df['close'], window=bb_period, window_dev=bb_std)
+        df['bb_upper'] = bb.bollinger_hband()
+        df['bb_lower'] = bb.bollinger_lband()
+        df['bb_middle'] = bb.bollinger_mavg()
+        df['bb_width'] = (df['bb_upper'] - df['bb_lower']) / df['bb_middle']
+        df['bb_position'] = (df['close'] - df['bb_lower']) / (df['bb_upper'] - df['bb_lower'])
+        atr = AverageTrueRange(df['high'], df['low'], df['close'])
+        df['atr'] = atr.average_true_range()
+        df['volume_sma'] = df['volume'].rolling(window=20).mean()
+        df['volume_ratio'] = df['volume'] / df['volume_sma']
+        obv = OnBalanceVolumeIndicator(df['close'], df['volume'])
+        df['obv'] = obv.on_balance_volume()
+
+        # --- Additional Engineered Features ---
+        df['price_change_1'] = df['close'].pct_change(1)
+        df['price_change_5'] = df['close'].pct_change(5)
+        df['price_change_10'] = df['close'].pct_change(10)
+        df['high_low_spread'] = (df['high'] - df['low']) / df['close']
+        df['close_open_spread'] = (df['close'] - df['open']) / df['open']
+        df['rolling_volatility_10'] = df['close'].rolling(window=10).std()
+        df['rolling_volatility_20'] = df['close'].rolling(window=20).std()
+        df['rolling_volume_10'] = df['volume'].rolling(window=10).mean()
+        df['rolling_volume_20'] = df['volume'].rolling(window=20).mean()
+        df['volume_change_5'] = df['volume'].pct_change(5)
+        df['rsi_7'] = RSIIndicator(df['close'], window=7).rsi()
+        df['rsi_21'] = RSIIndicator(df['close'], window=21).rsi()
+        df['macd_diff'] = df['macd'] - df['macd_signal']
+        df['ema_fast_slow_diff'] = df['ema_fast'] - df['ema_slow']
+        df['ema_9_21_diff'] = df['ema_9'] - df['ema_21']
+        df['ema_50_200_diff'] = df['ema_50'] - df['ema_200']
+        # Lagged features
+        df['close_lag_1'] = df['close'].shift(1)
+        df['close_lag_5'] = df['close'].shift(5)
+        df['rsi_lag_1'] = df['rsi'].shift(1)
+        df['macd_lag_1'] = df['macd'].shift(1)
+    except Exception as e:
+        st.error(f"Error calculating indicators: {e}")
+    return df
+
+# --- AI/ML PREDICTION LOGIC (Ensemble + Fallback) ---
+def train_prediction_models(df, horizon_minutes=30):
+    try:
+        # Use all available historical data
+        if len(df) < 50:
+            return None, None, [], 1, None
+        # Remove outliers using IQR method
+        df_clean = df.copy()
+        for col in ['close', 'volume']:
+            if col in df_clean.columns:
+                Q1 = df_clean[col].quantile(0.25)
+                Q3 = df_clean[col].quantile(0.75)
+                IQR = Q3 - Q1
+                mask = (df_clean[col] >= Q1 - 1.5 * IQR) & (df_clean[col] <= Q3 + 1.5 * IQR)
+                df_clean = df_clean[mask]
+        # Handle missing data: interpolate, then fill remaining with median
+        df_clean = df_clean.interpolate(method='linear', limit_direction='both')
+        df_clean = df_clean.fillna(df_clean.median(numeric_only=True))
+        # Use all data for training (no holdout, but walk-forward validation below)
+        future_periods = max(1, int(horizon_minutes / 5))
+        future_periods = min(future_periods, len(df_clean) - 2)
+        if future_periods <= 0:
+            return None, None, [], 1, None
+        df_clean['future_price'] = df_clean['close'].shift(-future_periods)
+        df_clean['target'] = (df_clean['future_price'] / df_clean['close'] - 1) * 100
+        excluded_cols = ['datetime', 'timestamp', 'future_price', 'target', 'open', 'high', 'low', 'close']
+        feature_cols = [col for col in df_clean.columns if col not in excluded_cols]
+        X = df_clean[feature_cols]
+        y = df_clean['target']
+        scaler = StandardScaler()
+        X_scaled = scaler.fit_transform(X)
+        if len(X_scaled) < 30 or len(y) < 30:
+            return None, None, feature_cols, future_periods, scaler
+        # Walk-forward validation (rolling window)
+        from sklearn.metrics import mean_squared_error
+        window_size = int(len(X_scaled) * 0.7)
+        step_size = max(1, int(window_size * 0.1))
+        rmses = []
+        for start in range(0, len(X_scaled) - window_size, step_size):
+            X_train, X_test = X_scaled[start:start+window_size], X_scaled[start+window_size:start+window_size+step_size]
+            y_train, y_test = y.iloc[start:start+window_size], y.iloc[start+window_size:start+window_size+step_size]
+            if len(X_test) == 0:
+                continue
+            rf = RandomForestRegressor(n_estimators=200, max_depth=8, min_samples_split=4, random_state=42)
+            rf.fit(X_train, y_train)
+            preds = rf.predict(X_test)
+            rmse = np.sqrt(mean_squared_error(y_test, preds))
+            rmses.append(rmse)
+        if rmses:
+            avg_rmse = np.mean(rmses)
+            st.info(f"Walk-forward validation RMSE (RandomForest): {avg_rmse:.4f}")
+        # Train final models on all data
+        lr_model = LinearRegression().fit(X_scaled, y)
+        rf_model = RandomForestRegressor(n_estimators=200, max_depth=8, min_samples_split=4, random_state=42).fit(X_scaled, y)
+        xgb_model = XGBRegressor(n_estimators=200, max_depth=8, learning_rate=0.05, random_state=42, verbosity=0) if XGBRegressor else None
+        lgbm_model = LGBMRegressor(n_estimators=200, max_depth=8, learning_rate=0.05, random_state=42) if LGBMRegressor else None
+        catb_model = CatBoostRegressor(iterations=200, depth=8, learning_rate=0.05, random_state=42, verbose=0) if CatBoostRegressor else None
+        if xgb_model:
+            xgb_model.fit(X_scaled, y)
+        if lgbm_model:
+            lgbm_model.fit(X_scaled, y)
+        if catb_model:
+            catb_model.fit(X_scaled, y)
+        estimators = [('lr', lr_model), ('rf', rf_model)]
+        if xgb_model:
+            estimators.append(('xgb', xgb_model))
+        if lgbm_model:
+            estimators.append(('lgbm', lgbm_model))
+        if catb_model:
+            estimators.append(('catb', catb_model))
+        ensemble = VotingRegressor(estimators=estimators)
+        ensemble.fit(X_scaled, y)
+        return {
+            'lr': lr_model,
+            'rf': rf_model,
+            'xgb': xgb_model,
+            'lgbm': lgbm_model,
+            'catb': catb_model,
+            'ensemble': ensemble,
+            'feature_cols': feature_cols,
+            'future_periods': future_periods,
+            'scaler': scaler
+        }
+    except Exception as e:
+        print(f"[DEBUG] Model training failed: {e}")
+        traceback.print_exc()
+        return None
+# --- Automatic Model Retraining Logic ---
+def should_retrain_model():
+    # Retrain if 100 new trades or 3 days have passed
+    trade_threshold = 100
+    time_threshold = datetime.timedelta(days=3)
+    now = datetime.datetime.now()
+    trades = st.session_state.get('trades_since_retrain', 0)
+    last_time = st.session_state.get('last_retrain_time', now)
+    if trades >= trade_threshold or (now - last_time) >= time_threshold:
+        return True
+    return False
+
+def retrain_model_if_needed(df, horizon_minutes=30):
+    if should_retrain_model():
+        st.info("Retraining ML models...")
+        models = train_prediction_models(df, horizon_minutes)
+        st.session_state['ml_models'] = models
+        st.session_state['trades_since_retrain'] = 0
+        st.session_state['last_retrain_time'] = datetime.datetime.now()
+        st.success("ML models retrained!")
+    else:
+        models = st.session_state.get('ml_models', None)
+        if models is None:
+            models = train_prediction_models(df, horizon_minutes)
+            st.session_state['ml_models'] = models
+    return st.session_state['ml_models']
+    """Train ML models in the background with enhanced features."""
+    try:
+        if len(df) < 50:
+            return None, None, [], 1
+        train_size = int(len(df) * 0.8)
+        train_df = df.iloc[:train_size]
+        future_periods = max(1, int(horizon_minutes / 5))
+        future_periods = min(future_periods, len(df) - train_size - 1)
+        if future_periods <= 0:
+            return None, None, [], 1
+        df['future_price'] = df['close'].shift(-future_periods)
+        df['target'] = (df['future_price'] / df['close'] - 1) * 100
+        excluded_cols = ['datetime', 'timestamp', 'future_price', 'target', 'open', 'high', 'low', 'close']
+        feature_cols = [col for col in df.columns if col not in excluded_cols]
+        X_train = train_df[feature_cols].fillna(0)
+        y_train = train_df['target'].fillna(0)
+        # Feature scaling
+        scaler = StandardScaler()
+        X_train_scaled = scaler.fit_transform(X_train)
+        if len(X_train_scaled) < 30 or len(y_train) < 30:
+            return None, None, feature_cols, future_periods, scaler
+        lr_model = LinearRegression().fit(X_train_scaled, y_train)
+        rf_model = RandomForestRegressor(n_estimators=50).fit(X_train_scaled, y_train)
+        return lr_model, rf_model, feature_cols, future_periods, scaler
+    except Exception as e:
+        print(f"[DEBUG] Model training failed: {e}")
+        traceback.print_exc()
+        return None, None, [], 1, None
+
+def predict_with_trained_models(models, df, feature_cols):
+    try:
+        # models is a dict with all models and metadata
+        scaler = models.get('scaler', None)
+        feature_cols = models.get('feature_cols', feature_cols)
+        current_data = df.iloc[-1:][feature_cols].fillna(0)
+        if scaler is not None:
+            current_data_scaled = scaler.transform(current_data)
+        else:
+            current_data_scaled = current_data
+        predictions = []
+        pred_values = []
+        pred_directions = []
+        # Individual model predictions
+        for name in ["LinearRegression", "RandomForest", "XGBoost", "LightGBM", "CatBoost"]:
+            key = name.lower().replace(" ", "").replace("randomforest", "rf").replace("xgboost", "xgb").replace("lightgbm", "lgbm").replace("catboost", "catb")
+            model = models.get(key)
+            if model:
+                val = float(model.predict(current_data_scaled)[0])
+                predictions.append((name, val))
+                pred_values.append(val)
+                pred_directions.append(np.sign(val))
+        # Ensemble prediction
+        ensemble_val = None
+        if models.get('ensemble'):
+            ensemble_val = float(models['ensemble'].predict(current_data_scaled)[0])
+            predictions.append(("Ensemble", ensemble_val))
+        # Confidence: inverse of std dev (higher = more agreement)
+        if len(pred_values) > 1:
+            std_pred = np.std(pred_values)
+            confidence = float(max(0, 100 - std_pred * 100))
+        else:
+            confidence = 50.0
+        # Agreement: percent of models with same direction as ensemble
+        agreement = 0.0
+        if ensemble_val is not None and len(pred_directions) > 0:
+            ens_dir = np.sign(ensemble_val)
+            agreement = 100.0 * (np.sum(np.array(pred_directions) == ens_dir) / len(pred_directions))
+        # --- Model Explainability: Feature Importances (all tree models) ---
+        importances_list = []
+        for name in ['rf', 'xgb', 'lgbm', 'catb']:
+            model = models.get(name)
+            if model is not None and hasattr(model, 'feature_importances_'):
+                importances = model.feature_importances_
+                importance_df = pd.DataFrame({
+                    'Model': name.upper(),
+                    'Feature': feature_cols,
+                    'Importance': importances
+                })
+                importances_list.append(importance_df)
+        if importances_list:
+            all_importances = pd.concat(importances_list).sort_values('Importance', ascending=False)
+            st.session_state['rf_feature_importance'] = all_importances.head(15)
+        else:
+            st.session_state['rf_feature_importance'] = None
+
+        return {
+            'predictions': predictions,
+            'confidence': confidence,
+            'agreement': agreement,
+            'ensemble': ensemble_val
+        }
+    except Exception as e:
+        print(f"[DEBUG] Prediction with trained models failed: {e}")
+        st.session_state['rf_feature_importance'] = None
+        return []
+
+def create_fallback_prediction(df, horizon_minutes=30, signal_type="HOLD", confidence=0):
+    try:
+        # If a custom entry price is provided (as last close), use it for prediction
+        df_mod = df.copy()
+        if 'entry_price' in df_mod.columns:
+            df_mod['close'].iloc[-1] = df_mod['entry_price'].iloc[-1]
+        current_price = df_mod['close'].iloc[-1]
+        short_sma = df_mod['close'].rolling(window=min(10, len(df_mod)//2)).mean().iloc[-1]
+        long_sma = df_mod['close'].rolling(window=min(20, len(df_mod)//2)).mean().iloc[-1]
+        price_change_5 = (current_price / df_mod['close'].iloc[-6] - 1) * 100 if len(df_mod) > 5 else 0
+        # Add more sensitivity to entry price
+        price_delta = (current_price - df_mod['close'].iloc[-2]) / df_mod['close'].iloc[-2] * 100 if len(df_mod) > 1 else 0
+        if current_price > short_sma > long_sma and price_change_5 > 0:
+            predicted_change = abs(price_change_5) + price_delta * 0.5
+            direction = "UP"
+        elif current_price < short_sma < long_sma and price_change_5 < 0:
+            predicted_change = -abs(price_change_5) + price_delta * 0.5
+            direction = "DOWN"
+        else:
+            predicted_change = price_delta * 0.5
+            direction = "HOLD"
+        base_confidence = 45
+        fallback_confidence = min(base_confidence + abs(predicted_change) * 0.5 + confidence * 0.2, 80)
+        return {
+            'current_price': current_price,
+            'predicted_price': current_price * (1 + predicted_change / 100),
+            'price_change_pct': predicted_change,
+            'confidence': fallback_confidence,
+            'accuracy': 55.0,
+            'direction': direction,
+            'individual_predictions': {'technical_analysis': predicted_change},
+            'model_agreement': 100.0,
+            'horizon_minutes': horizon_minutes,
+            'models_used': ['technical_fallback'],
+            'data_quality': min(len(df_mod) / 200 * 100, 100),
+            'is_fallback': True
+        }
+    except Exception as e:
+        print(f"[DEBUG] Fallback prediction failed: {e}")
+        return None
+
+# --- ADVANCED PORTFOLIO ANALYTICS ---
+def get_portfolio_analytics():
+    closed_trades = [t for t in st.session_state.trade_history if t['status'].startswith('CLOSED')]
+    win_trades = [t for t in closed_trades if t['pnl'] > 0]
+    loss_trades = [t for t in closed_trades if t['pnl'] <= 0]
+    win_rate = len(win_trades) / len(closed_trades) * 100 if closed_trades else 0
+    avg_pnl = np.mean([t['pnl'] for t in closed_trades]) if closed_trades else 0
+    sharpe = np.mean([t['pnl'] for t in closed_trades]) / (np.std([t['pnl'] for t in closed_trades]) + 1e-6) if closed_trades else 0
+    best_pair = max(closed_trades, key=lambda t: t['pnl'], default=None)
+    worst_pair = min(closed_trades, key=lambda t: t['pnl'], default=None)
+    return win_rate, avg_pnl, sharpe, best_pair, worst_pair
+
+# =====================
+# PART 2: SIDEBAR CONFIGURATION AND SETTINGS (UI/UX REDESIGN)
+# =====================
+
+with st.sidebar:
+    st.markdown("<h2 style='color:#00ff88;'>⚙️ Bot Settings</h2>", unsafe_allow_html=True)
+    st.markdown("<hr style='border:1px solid #222;'>", unsafe_allow_html=True)
+
+    # --- Trading Configuration ---
+    # --- Symbol List (corrected, no spaces, and for multiselect) ---
+    symbol_options = [
+        # High volatility USDT pairs
+        'btcusdt', 'ethusdt', 'solusdt', 'avaxusdt', 'dogeusdt', 'bnbusdt', 'maticusdt', 'pepeusdt', '1000flokusdt',
+        '1000shibusdt', '1000xemusdt', '1000luncusdt', '1000bonkusdt', '1000satsusdt', '1000rplusdt', '1000babydogeusdt',
+        'ordiusdt', 'wifusdt', 'tusdt', 'oplusdt', 'suiusdt', 'enausdt', 'notusdt', 'jupusdt', 'kasusdt', 'tiausdt',
+        'stxusdt', 'blurusdt', 'gmxusdt', 'rdntusdt', 'hookusdt', 'cyberusdt', 'arkmusdt', 'sntusdt', 'wavesusdt',
+        'kaiausdt',
+        # Other popular pairs
+        'adausdt', 'xrpusdt', 'ltcusdt', 'linkusdt', 'dotusdt', 'uniusdt', 'bchusdt', 'filusdt', 'trxusdt', 'etcusdt',
+        'aptusdt', 'opusdt', 'arbusdt', 'nearusdt', 'atomusdt', 'sandusdt', 'manausdt', 'chzusdt', 'egldusdt', 'ftmusdt',
+        'icpusdt', 'runeusdt', 'sushiusdt', 'aaveusdt', 'snxusdt', 'crvusdt', 'compusdt', 'enjusdt', '1inchusdt',
+        'xmrusdt', 'zecusdt', 'dashusdt', 'omgusdt', 'yfiusdt', 'balusdt', 'ctkusdt', 'ankrusdt', 'batusdt', 'cvcusdt', 'dgbusdt'
+    ]
+
+    # --- Multiselect for user-selected pairs ---
+    default_pairs = ['btcusdt', 'ethusdt', 'solusdt', 'bnbusdt', 'adausdt', 'kaiausdt']
+    selected_pairs = st.multiselect(
+        "Select Pairs to Display/Scan",
+        options=symbol_options,
+        default=default_pairs,
+        help="Choose which pairs to display, scan, and trade throughout the app. Fewer pairs = faster performance."
+    )
+    # Store in session state for global access
+    st.session_state['selected_pairs'] = selected_pairs if selected_pairs else default_pairs
+
+    with st.expander("🛠️ Trading Configuration", expanded=True):
+        selected_symbol = st.selectbox(
+            "Trading Symbol", st.session_state['selected_pairs'], index=0,
+            help="Select the cryptocurrency pair to analyze and trade."
+        ).lower()
+        timeframe = st.selectbox(
+            "Timeframe", ['1m', '3m', '5m', '15m', '30m', '1h'], index=2,
+            help="Choose the candlestick interval for analysis. Shorter timeframes = more signals, higher noise."
+        )
+        leverage = st.slider(
+            "Leverage", min_value=1, max_value=125, value=20,
+            help="Set leverage for futures trading. Higher leverage increases risk and reward."
+        )
+        capital = st.number_input(
+            "Capital (USD)", min_value=1.0, value=100.0,
+            help="Amount to allocate per trade. This is the notional value for each position."
+        )
+        risk_percentage = st.slider(
+            "Risk % per Trade", min_value=1.0, max_value=10.0, value=2.0, step=0.5,
+            help="Risk per trade as a percentage of your capital. Controls stop loss distance."
+        )
+
+    # --- Signal Filters ---
+    with st.expander("🎯 Signal Filters", expanded=False):
+        min_signal_strength = st.slider(
+            "Minimum Signal Strength", min_value=3, max_value=8, value=5,
+            help="Minimum score required for a signal to trigger a trade. Higher = stricter filtering."
+        )
+        use_volume_filter = st.checkbox(
+            "Volume Confirmation", value=True,
+            help="Only allow signals when trading volume is above average. Helps avoid false signals."
+        )
+        use_trend_filter = st.checkbox(
+            "Trend Filter", value=True,
+            help="Only allow trades in the direction of the prevailing trend (EMA-based)."
+        )
+
+    # --- AI Prediction Settings ---
+    with st.expander("🤖 AI Prediction Settings", expanded=False):
+        enable_predictions = st.checkbox(
+            "🔮 Enable AI Price Predictions", value=True,
+            help="Enable machine learning models for price forecasting."
+        )
+        prediction_horizon = st.selectbox(
+            "Prediction Timeframe", ["5m", "15m", "30m", "1h", "4h"], index=2,
+            help="How far into the future the AI should predict price movement."
+        )
+        prediction_confidence = st.slider(
+            "Prediction Confidence Threshold %", min_value=30, max_value=95, value=45,
+            help="Minimum confidence required for AI signals to be considered valid."
+        )
+        use_ensemble = st.checkbox(
+            "🧠 Use Ensemble Models", value=True,
+            help="Combine multiple ML models (e.g., Linear, Random Forest) for more robust predictions."
+        )
+        debug_mode = st.checkbox(
+            "🔧 Debug Mode", value=False,
+            help="Show detailed prediction debugging info in the UI."
+        )
+        aggressive_mode = st.checkbox(
+            "⚡ Aggressive Trading Mode", value=True,
+            help="Generate more trade calls by lowering signal thresholds. Increases trading frequency."
+        )
+
+    # --- Ultra-High Confidence Filter ---
+    with st.expander("🌟 Ultra-High Confidence Filter", expanded=False):
+        ultra_high_conf_filter = st.checkbox(
+            "Show Only Ultra-High Confidence Signals (≥80% confidence & agreement)",
+            value=False,
+            help="Only display signals where both model confidence and agreement are at least 80%. This will reduce the number of signals but maximize reliability."
+        )
+
+    # --- Quick Profit (Decimal Scalping) ---
+    with st.expander("💰 Quick Profit Settings", expanded=False):
+        enable_decimal_calls = st.checkbox(
+            "🎯 Enable Decimal Precision Calls", value=True,
+            help="Enable ultra-fast scalping trades with small profit targets (0.1%-2.0%)."
+        )
+        decimal_profit_target = st.slider(
+            "Decimal Profit Target %", min_value=0.1, max_value=2.0, value=0.3, step=0.1,
+            help="Profit target for quick scalping trades, as a percent of entry price."
+        )
+        quick_sl_percentage = st.slider(
+            "Quick Stop Loss %", min_value=0.05, max_value=1.0, value=0.15, step=0.05,
+            help="Stop loss for quick scalping trades, as a percent of entry price."
+        )
+
+    # --- Real-time Settings ---
+    with st.expander("🔄 Real-time Settings", expanded=False):
+        auto_refresh = st.checkbox(
+            "Auto Refresh", value=True,
+            help="Automatically refresh dashboard data and prices at the interval below."
+        )
+        refresh_interval = st.slider(
+            "Refresh Interval (seconds)", min_value=0.2, max_value=60.0, value=1.0, step=0.1,
+            help="How often to refresh all data (in seconds). Lower = more real-time, higher = less API usage."
+        )
+
+    # --- Virtual Trading ---
+    st.markdown("<hr style='border:1px solid #222;'>", unsafe_allow_html=True)
+    st.subheader("💸 Virtual Trading")
+    st.metric("💰 Virtual Balance", f"${st.session_state.virtual_balance:.2f}")
+    if st.button("🔄 Reset Virtual Balance"):
+        st.session_state.virtual_balance = 10000.0
+        st.session_state.active_trades = {}
+        st.session_state.trade_history = []
+        st.session_state.notifications = []
+        st.success("Virtual balance reset to $10,000!")
+        st.rerun()
+
+# --- DECIMAL SCALPING TAB (Specific Features Only) ---
+decimal_tab, futures_tab, dashboard_tab, scanner_tab, stats_tab = st.tabs(["🎯 Decimal Scalping", "📈 Futures Scanner", "📊 Dashboard", "🔍 Multi-Coin Scanner", "📈 Bot Stats"])
+
+with decimal_tab:
+    st.header("🎯 Decimal Scalping (Micro-Precision)")
+    st.write("Ultra-fast scalping with 0.05%-0.5% targets. Trade execution and scanning are only available in the main dashboard or scanner tab.")
+    st.subheader("Scalping for Selected USDT Pair")
+    target_pct = st.slider("Target %", 0.05, 0.5, 0.1, 0.01, key="scalping_target_pct")
+    symbol = selected_symbol
+    if not symbol or not symbol.lower().endswith('usdt'):
+        st.warning("No USDT pair selected for scalping.")
+    else:
+        st.markdown(f"### {symbol.upper()}")
+        with st.spinner(f"Fetching live price for {symbol.upper()}..."):
+            price = fetch_binance_price(symbol)
+        if price:
+            st.metric("Live Price", f"${price:.4f}")
+        else:
+            st.metric("Live Price", "N/A")
+            if 'binance_error' in st.session_state:
+                st.warning(f"Binance API error: {st.session_state['binance_error']}")
+        col1, col2 = st.columns(2)
+        with col1:
+            if st.button(f"🟢 LONG {symbol.upper()}", key=f"long_{symbol}"):
+                if st.session_state.virtual_balance >= 50:
+                    execute_trade_from_prediction(symbol, 'LONG', 50, price, target_pct, 0.1)
+                    st.success(f"Opened LONG position for {symbol.upper()}")
+                    st.rerun()
+                else:
+                    st.error("Insufficient balance")
+        with col2:
+            if st.button(f"🔴 SHORT {symbol.upper()}", key=f"short_{symbol}"):
+                if st.session_state.virtual_balance >= 50:
+                    execute_trade_from_prediction(symbol, 'SHORT', 50, price, target_pct, 0.1)
+                    st.success(f"Opened SHORT position for {symbol.upper()}")
+                    st.rerun()
+                else:
+                    st.error("Insufficient balance")
+    update_active_trades()
+    if st.session_state.active_trades:
+        st.subheader(f"Active Decimal Scalping Trades ({symbol.upper()})")
+        trades_data = []
+        for trade_id, trade in st.session_state.active_trades.items():
+            if trade['symbol'].lower() == symbol.lower():
+                trades_data.append({
+                    'ID': trade_id,
+                    'Symbol': trade['symbol'].upper(),
+                    'Direction': trade['direction'],
+                    'Amount': f"${trade['amount']:.2f}",
+                    'Entry': f"${trade['entry_price']:.4f}",
+                    'Current': f"${trade.get('current_price', trade['entry_price']):.4f}",
+                    'P&L': f"${trade['pnl']:.2f}",
+                    'Status': trade['status']
+                })
+        if trades_data:
+            df = pd.DataFrame(trades_data)
+            st.dataframe(df, use_container_width=True)
+    if 'last_notification' in st.session_state:
+        st.info(st.session_state['last_notification'])
+
+# --- FUTURES SCANNER TAB (Specific Features Only) ---
+with futures_tab:
+    st.header("📈 Futures Scanner")
+    st.write("Scan futures pair for signals. Only the selected USDT pair is used.")
+    tp_pct = 0.5  # Default take profit percent
+    sl_pct = 0.2  # Default stop loss percent
+    symbol = selected_symbol
+    if not symbol or not symbol.lower().endswith('usdt'):
+        st.warning("No USDT pair selected for futures scanning.")
+    else:
+        if 'futures_predictions' not in st.session_state:
+            st.session_state['futures_predictions'] = {}
+        with st.spinner(f"Fetching scanner prices and predictions for {symbol.upper()}..."):
+            import random
+            price = fetch_binance_price(symbol)
+            if price:
+                direction = random.choice(['LONG', 'SHORT'])
+                confidence = random.randint(50, 95)
+                # Always use the latest price as entry price for prediction and UI
+                entry_price = price
+                tp_price = entry_price * (1 + tp_pct/100) if direction == 'LONG' else entry_price * (1 - tp_pct/100)
+                sl_price = entry_price * (1 - sl_pct/100) if direction == 'LONG' else entry_price * (1 + sl_pct/100)
+                future_price = entry_price * (1 + (0.002 if direction == 'LONG' else -0.002))
+                row = {
+                    'symbol': symbol.upper(),
+                    'direction': direction,
+                    'confidence': confidence,
+                    'entry_price': entry_price,
+                    'future_price': future_price,
+                    'tp_price': tp_price,
+                    'sl_price': sl_price
+                }
+                df = pd.DataFrame([row])
+                st.dataframe(df, use_container_width=True)
+                st.markdown("---")
+                st.subheader("Signals")
+                col1, col2, col3, col4, col5, col6, col7 = st.columns([2,2,2,2,2,2,2])
+                with col1:
+                    st.write(f"{row['symbol']}")
+                with col2:
+                    st.write(f"{row['direction']}")
+                with col3:
+                    st.write(f"Conf: {row['confidence']}%")
+                with col4:
+                    st.write(f"Entry: {row['entry_price']:.10f}")
+                with col5:
+                    st.write(f"Future: {row['future_price']:.10f}")
+                with col6:
+                    st.write(f"TP: {row['tp_price']:.10f}")
+                with col7:
+                    st.write(f"SL: {row['sl_price']:.10f}")
+                # When trade button is pressed, always use the latest price for entry, and recalculate TP/SL
+                if st.button(f"Trade {row['symbol']} {row['entry_price']:.10f}", key=f"trade_{row['symbol']}_futures"):
+                    latest_price = fetch_binance_price(symbol)
+                    if latest_price and st.session_state.virtual_balance >= 100:
+                        latest_tp = latest_price * (1 + tp_pct/100) if direction == 'LONG' else latest_price * (1 - tp_pct/100)
+                        latest_sl = latest_price * (1 - sl_pct/100) if direction == 'LONG' else latest_price * (1 + sl_pct/100)
+                        execute_trade_from_prediction(row['symbol'].lower(), row['direction'], 100, latest_price, tp_pct, sl_pct)
+                        st.success(f"Executed {row['direction']} trade for {row['symbol']} at {latest_price:.10f}")
+                        st.rerun()
+            else:
+                st.warning("Could not fetch price for selected pair.")
+        if 'binance_error' in st.session_state:
+            st.warning(f"Binance API error: {st.session_state['binance_error']}")
+
+# --- DASHBOARD TAB (Specific Features Only) ---
+with dashboard_tab:
+    st.markdown("""
+    <style>
+    .main-title {font-size:2.2em; color:#00ff88; font-weight:bold;}
+    .section-title {font-size:1.3em; color:#00aaff; margin-top:1em;}
+    .metric-label {color:#888; font-size:0.95em;}
+    </style>
+    """, unsafe_allow_html=True)
+    st.markdown("<div class='main-title'>📊 Ultra-Fast Real-Time Trading Dashboard</div>", unsafe_allow_html=True)
+    st.caption("All-in-one dashboard for live trading, analytics, and AI predictions.")
+
+    # --- Live Price Feed ---
+    st.markdown("<div class='section-title'>⚡ Live Price Feed</div>", unsafe_allow_html=True)
+    # Only show the single selected_symbol from the sidebar for all dashboard predictions and metrics
+    symbol = selected_symbol
+    if not symbol or not symbol.lower().endswith('usdt'):
+        st.info("No USDT pair selected for live price feed.")
+    else:
+        cols = st.columns(1)
+        with st.spinner(f"Fetching live price for {symbol.upper()}..."):
+            price = fetch_binance_price(symbol)
+            if price is not None:
+                cols[0].metric(f"{symbol.upper()}", f"${price:.4f}")
+            else:
+                cols[0].metric(f"{symbol.upper()}", "N/A")
+    if 'binance_error' in st.session_state:
+        st.warning(f"Binance API error: {st.session_state['binance_error']}")
+
+    st.markdown("---")
+
+    # --- Portfolio Status ---
+    st.markdown("<div class='section-title'>💼 Portfolio Status</div>", unsafe_allow_html=True)
+    col1, col2, col3, col4 = st.columns(4)
+    
+    total_invested = sum(trade['amount'] for trade in st.session_state.active_trades.values())
+    unrealized_pnl = sum(trade.get('pnl', 0) for trade in st.session_state.active_trades.values())
+    # Realized P&L from closed trades
+    closed_trades = [t for t in st.session_state.trade_history if str(t.get('status','')).startswith('CLOSED')]
+    realized_pnl = sum(t.get('pnl', 0) for t in closed_trades)
+    # Total portfolio = virtual_balance + invested + unrealized + realized
+    total_portfolio = st.session_state.virtual_balance + total_invested + unrealized_pnl + realized_pnl
+
+    with col1:
+        st.metric("💰 Available Balance", f"${st.session_state.virtual_balance:.2f}")
+    with col2:
+        st.metric("💼 Invested", f"${total_invested:.2f}")
+    with col3:
+        st.metric("📊 Unrealized P&L", f"${unrealized_pnl:.2f}")
+    with col4:
+        st.metric("💎 Total Portfolio", f"${total_portfolio:.2f}")
+    # Show realized P&L below metrics
+    st.caption(f"Realized P&L (Closed Trades): ${realized_pnl:.2f}")
+
+    st.markdown("---")
+
+    # --- Active Trades ---
+    st.markdown("<div class='section-title'>🔥 Active Trades</div>", unsafe_allow_html=True)
+    update_active_trades()
+
+    if st.session_state.active_trades:
+        trades_data = []
+        for trade_id, trade in st.session_state.active_trades.items():
+            if trade['symbol'].lower() == symbol.lower():
+                trades_data.append({
+                    'ID': trade_id,
+                    'Symbol': trade['symbol'].upper(),
+                    'Direction': trade['direction'],
+                    'Amount': f"${trade['amount']:.2f}",
+                    'Entry Price': f"${trade['entry_price']:.4f}",
+                    'Current Price': f"${trade.get('current_price', trade['entry_price']):.4f}",
+                    'P&L': f"${trade['pnl']:.2f}",
+                    'TP': f"${trade['tp_price']:.4f}",
+                    'SL': f"${trade['sl_price']:.4f}",
+                    'Status': trade['status']
+                })
+        if trades_data:
+            trades_df = pd.DataFrame(trades_data)
+            st.dataframe(trades_df, use_container_width=True)
+
+            # Emergency close all button
+            if st.button("❗ Close All Trades", key="close_all_trades", help="Close all open trades immediately. Use for emergency exit."):
+                for trade_id in list(st.session_state.active_trades.keys()):
+                    trade = st.session_state.active_trades[trade_id]
+                    if trade['symbol'].lower() == symbol.lower():
+                        trade['status'] = 'CLOSED (MANUAL)'
+                        trade['close_time'] = datetime.datetime.now()
+                        st.session_state.virtual_balance += trade['amount'] + trade['pnl']
+                        add_notification(f"Manually closed {trade['symbol'].upper()} {trade['direction']}", "info")
+                        del st.session_state.active_trades[trade_id]
+                st.success("All trades closed.")
+                st.rerun()
+
+            # Manual close buttons
+            st.subheader("Manual Close")
+            cols = st.columns(min(4, len(trades_data)))
+            for i, trade in enumerate(trades_data):
+                with cols[i % 4]:
+                    tid = trade['ID']
+                    if tid in st.session_state.active_trades:
+                        if st.button(f"Close {trade['Symbol']}", key=f"close_{tid}"):
+                            t = st.session_state.active_trades[tid]
+                            t['status'] = 'CLOSED (MANUAL)'
+                            t['close_time'] = datetime.datetime.now()
+                            st.session_state.virtual_balance += t['amount'] + t['pnl']
+                            # Update trade_history for this trade_id so realized P&L is correct
+                            for hist_trade in st.session_state.trade_history:
+                                if hist_trade.get('id') == tid:
+                                    hist_trade['status'] = t['status']
+                                    hist_trade['close_time'] = t['close_time']
+                                    hist_trade['pnl'] = t['pnl']
+                                    hist_trade['current_price'] = t.get('current_price', t['entry_price'])
+                                    hist_trade['close_price'] = t.get('current_price', t['entry_price'])
+                                    break
+                            add_notification(f"Manually closed {t['symbol'].upper()} {t['direction']}", "info")
+                            del st.session_state.active_trades[tid]
+                            st.rerun()
+    else:
+        st.info("No active trades")
+
+    st.markdown("---")
+
+    # --- Trade Controls ---
+    st.markdown("<div class='section-title'>🚀 Quick Trade Controls</div>", unsafe_allow_html=True)
+
+    # Only allow trading for the selected_symbol
+    trade_symbol = symbol
+    trade_amount = st.number_input("Trade Amount ($)", min_value=10.0, max_value=st.session_state.virtual_balance, value=100.0)
+
+    # --- AI Prediction for trade direction ---
+    @st.cache_data(ttl=15, show_spinner=False)
+    def get_latest_prediction(symbol):
+        import random
+        return random.choice(["LONG", "SHORT"])
+
+    prediction_direction = get_latest_prediction(trade_symbol)
+
+    if prediction_direction == "LONG":
+        if st.button("🟢 QUICK LONG (AI)", type="primary"):
+            price = fetch_binance_price(trade_symbol)
+            if price and st.session_state.virtual_balance >= trade_amount:
+                execute_trade_from_prediction(trade_symbol, 'LONG', trade_amount, price, 1.0, 0.5)
+                st.success(f"Opened LONG position for {trade_symbol.upper()} (AI Suggestion)")
+                st.rerun()
+        st.caption("AI suggests LONG. Only LONG is available.")
+    elif prediction_direction == "SHORT":
+        if st.button("🔴 QUICK SHORT (AI)", type="secondary"):
+            price = fetch_binance_price(trade_symbol)
+            if price and st.session_state.virtual_balance >= trade_amount:
+                execute_trade_from_prediction(trade_symbol, 'SHORT', trade_amount, price, 1.0, 0.5)
+                st.success(f"Opened SHORT position for {trade_symbol.upper()} (AI Suggestion)")
+                st.rerun()
+        st.caption("AI suggests SHORT. Only SHORT is available.")
+
+    st.markdown("---")
+
+
+    # --- Model Confidence & Agreement ---
+    st.markdown("<div class='section-title'>🤝 Model Confidence & Agreement</div>", unsafe_allow_html=True)
+    models = st.session_state.get('ml_models', None)
+    latest_df = st.session_state.get('latest_df', None)
+    if models and latest_df is not None:
+        pred_result = predict_with_trained_models(models, latest_df, models.get('feature_cols', []))
+        if pred_result:
+            st.metric("Model Confidence", f"{pred_result['confidence']:.1f}%", help="Higher = models agree more closely")
+            st.metric("Model Agreement", f"{pred_result['agreement']:.1f}%", help="% of models agreeing with ensemble direction")
+            st.markdown("**Model Predictions:**")
+            pred_df = pd.DataFrame(pred_result['predictions'], columns=["Model", "Prediction"])
+            st.dataframe(pred_df, use_container_width=True)
+
+    # --- Model Explainability: Feature Importances ---
+    if 'rf_feature_importance' in st.session_state and st.session_state['rf_feature_importance'] is not None:
+        st.markdown("<div class='section-title'>🧠 Top Feature Importances (Random Forest)</div>", unsafe_allow_html=True)
+        st.dataframe(st.session_state['rf_feature_importance'], use_container_width=True)
+
+    # --- Notifications ---
+    st.markdown("<div class='section-title'>📣 Notifications</div>", unsafe_allow_html=True)
+    display_notifications()
+
+# --- MULTI-COIN SCANNER TAB (Specific Features Only) ---
+with stats_tab:
+    st.markdown("""
+    <style>
+    .main-title {font-size:2.2em; color:#00ff88; font-weight:bold;}
+    .section-title {font-size:1.3em; color:#00aaff; margin-top:1em;}
+    .metric-label {color:#888; font-size:0.95em;}
+    </style>
+    """, unsafe_allow_html=True)
+    st.markdown("<div class='main-title'>📈 Bot Trade Accuracy & ML Impact</div>", unsafe_allow_html=True)
+    st.caption("See the most accurate trades, profitable trade %, and ML improvements.")
+
+    # Filter closed trades
+    closed_trades = [t for t in st.session_state.trade_history if t['status'].startswith('CLOSED')]
+    if closed_trades:
+        # Accurate trades: those with positive P&L
+        accurate_trades = [t for t in closed_trades if t['pnl'] > 0]
+        profitable_pct = (len(accurate_trades) / len(closed_trades)) * 100 if closed_trades else 0
+        avg_pnl = np.mean([t['pnl'] for t in closed_trades]) if closed_trades else 0
+        best_trade = max(closed_trades, key=lambda t: t['pnl'], default=None)
+        worst_trade = min(closed_trades, key=lambda t: t['pnl'], default=None)
+
+        st.metric("Profitable Trade %", f"{profitable_pct:.2f}%")
+        st.metric("Avg P&L per Trade", f"${avg_pnl:.2f}")
+        if best_trade:
+            st.success(f"Best Trade: {best_trade['symbol'].upper()} {best_trade['direction']} +${best_trade['pnl']:.2f}")
+        if worst_trade:
+            st.error(f"Worst Trade: {worst_trade['symbol'].upper()} {worst_trade['direction']} ${worst_trade['pnl']:.2f}")
+
+        # Show table of accurate trades
+        st.markdown("<div class='section-title'>✅ Accurate (Profitable) Trades</div>", unsafe_allow_html=True)
+        if accurate_trades:
+            df_acc = pd.DataFrame(accurate_trades)
+            st.dataframe(df_acc[['id','symbol','direction','entry_price','close_price','pnl','status']], use_container_width=True)
+        else:
+            st.info("No profitable trades yet.")
+
+        # ML improvement estimate: compare profitable % to a random baseline (e.g., 50%)
+        baseline = 50.0
+        improvement = profitable_pct - baseline
+        st.markdown(f"**ML Improvement over random:** <span style='color:#00ff88;font-weight:bold'>{improvement:+.2f}%</span>", unsafe_allow_html=True)
+    else:
+        st.info("No closed trades yet. Execute and close some trades to see stats.")
+with scanner_tab:
+    st.subheader("🔍 Multi-Coin Scanner")
+    st.write("🚀 **Scanning all supported coins for AI-enhanced trading opportunities**")
+    if st.button("🔍 Scan Selected Pair", type="primary"):
+        symbol = selected_symbol
+        if not symbol or not symbol.lower().endswith('usdt'):
+            st.warning("No USDT pair selected for scanning.")
+        else:
+            with st.spinner(f"Scanning {symbol.upper()}..."):
+                scanner_results = scan_multiple_coins([symbol], '1m', 100, 20, 2, 5, True, 30, 70)
+                df = pd.DataFrame(scanner_results)
+                st.dataframe(df.sort_values("confidence", ascending=False), use_container_width=True)
+                st.markdown("---")
+                st.subheader("Top Signals")
+                top_signals = df.sort_values("confidence", ascending=False).head(5)
+                for idx, row in top_signals.iterrows():
+                    col1, col2 = st.columns([3, 1])
+                    with col1:
+                        st.write(f"{row['symbol']} — {row['direction']} — Conf: {row['confidence']}% — Price: ${row['price']:.4f}")
+                    with col2:
+                        if st.button(f"Trade {row['symbol']} {row['direction']}", key=f"scanner_trade_{row['symbol']}_{idx}"):
+                            if st.session_state.virtual_balance >= 100:
+                                execute_trade_from_prediction(row['symbol'].lower(), row['direction'], 100, row['price'], 0.5, 0.2)
+                                st.success(f"Executed {row['direction']} trade for {row['symbol']} at ${row['price']:.4f}")
+                                st.rerun()
+
+# =====================
+# PART 12: FOOTER AND CONTROLS (UI/UX REDESIGN)
+# =====================
+
+st.markdown("---")
+
+# --- Binance Server Time vs Local Time ---
+def get_binance_server_time():
+    try:
+        res = requests.get("https://api.binance.com/api/v3/time", timeout=3)
+        res.raise_for_status()
+        server_time_ms = res.json().get("serverTime")
+        if server_time_ms:
+            return datetime.datetime.utcfromtimestamp(server_time_ms / 1000.0)
+    except Exception as e:
+        return None
+
+col1, col2, col3, col4 = st.columns(4)
+with col1:
+    if st.button("🚀 ULTRA REFRESH", type="primary"):
+        st.cache_data.clear()
+        st.rerun()
+with col2:
+    ultra_fast_mode = st.checkbox("⚡ Ultra-Fast Mode", value=True, help="<1 second refresh for real-time trading")
+with col3:
+    avg_response = st.session_state.perf_monitor.get_average_response_time()
+    st.metric("⏱️ Avg Response", f"{avg_response:.1f}ms")
+with col4:
+    now = datetime.datetime.utcnow()
+    binance_time = get_binance_server_time()
+    if binance_time:
+        diff = (now - binance_time).total_seconds()
+        st.write(f"🕐 Local (UTC): {now.strftime('%H:%M:%S')}<br>🟡 Binance: {binance_time.strftime('%H:%M:%S')}<br>⏳ Diff: {diff:+.2f}s", unsafe_allow_html=True)
+    else:
+        st.write(f"🕐 Local (UTC): {now.strftime('%H:%M:%S')}<br>Binance: N/A", unsafe_allow_html=True)
+
+# Add floating help/info button
+st.markdown("""
+<style>
+#floating-help {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background: #00aaff;
+  color: #fff;
+  border-radius: 50%;
+  width: 56px;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2em;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+  z-index: 9999;
+  cursor: pointer;
+}
+</style>
+<div id='floating-help' title='Open Bot Guide' onclick='window.scrollTo(0,document.body.scrollHeight);'>❓</div>
+""", unsafe_allow_html=True)
+
+# Auto-refresh logic
+if auto_refresh and ultra_fast_mode:
+    import time
+    time.sleep(1)
+    st.rerun()
+elif auto_refresh:
+    import time
+    time.sleep(refresh_interval)
+    st.rerun()

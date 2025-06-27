@@ -1,0 +1,126 @@
+{
+  "last_update": "2025-06-26T02:22:27.258154",
+  "performance_history": [
+    {
+      "timestamp": "2025-06-24T00:51:39.735825",
+      "accuracy": 0.97,
+      "sample_count": 100
+    },
+    {
+      "timestamp": "2025-06-24T03:50:33.820403",
+      "accuracy": 0.84,
+      "sample_count": 100
+    },
+    {
+      "timestamp": "2025-06-24T04:20:34.575120",
+      "accuracy": 1.0,
+      "sample_count": 100
+    },
+    {
+      "timestamp": "2025-06-24T04:50:34.891680",
+      "accuracy": 1.0,
+      "sample_count": 100
+    },
+    {
+      "timestamp": "2025-06-24T05:20:35.633442",
+      "accuracy": 1.0,
+      "sample_count": 100
+    },
+    {
+      "timestamp": "2025-06-24T06:48:21.620413",
+      "accuracy": 0.88,
+      "sample_count": 100
+    },
+    {
+      "timestamp": "2025-06-24T07:18:22.354511",
+      "accuracy": 1.0,
+      "sample_count": 100
+    },
+    {
+      "timestamp": "2025-06-24T08:06:43.937470",
+      "accuracy": 1.0,
+      "sample_count": 100
+    },
+    {
+      "timestamp": "2025-06-24T09:28:45.644901",
+      "accuracy": 0.98,
+      "sample_count": 100
+    },
+    {
+      "timestamp": "2025-06-24T09:58:46.556136",
+      "accuracy": 1.0,
+      "sample_count": 100
+    },
+    {
+      "timestamp": "2025-06-24T10:28:46.778294",
+      "accuracy": 1.0,
+      "sample_count": 100
+    },
+    {
+      "timestamp": "2025-06-24T11:06:05.174480",
+      "accuracy": 1.0,
+      "sample_count": 100
+    },
+    {
+      "timestamp": "2025-06-24T17:28:13.536175",
+      "accuracy": 0.89,
+      "sample_count": 100
+    },
+    {
+      "timestamp": "2025-06-24T20:09:40.004233",
+      "accuracy": 0.24,
+      "sample_count": 100
+    },
+    {
+      "timestamp": "2025-06-24T20:39:40.838601",
+      "accuracy": 0.98,
+      "sample_count": 100
+    },
+    {
+      "timestamp": "2025-06-25T18:18:07.272560",
+      "accuracy": 0.9,
+      "sample_count": 100
+    },
+    {
+      "timestamp": "2025-06-25T18:48:08.707203",
+      "accuracy": 1.0,
+      "sample_count": 100
+    },
+    {
+      "timestamp": "2025-06-25T19:49:27.745718",
+      "accuracy": 1.0,
+      "sample_count": 100
+    },
+    {
+      "timestamp": "2025-06-25T23:50:23.818939",
+      "accuracy": 0.98,
+      "sample_count": 100
+    },
+    {
+      "timestamp": "2025-06-26T00:21:24.585602",
+      "accuracy": 1.0,
+      "sample_count": 100
+    },
+    {
+      "timestamp": "2025-06-26T00:52:24.703624",
+      "accuracy": 1.0,
+      "sample_count": 100
+    },
+    {
+      "timestamp": "2025-06-26T01:22:26.085426",
+      "accuracy": 1.0,
+      "sample_count": 100
+    },
+    {
+      "timestamp": "2025-06-26T01:52:26.391621",
+      "accuracy": 1.0,
+      "sample_count": 100
+    },
+    {
+      "timestamp": "2025-06-26T02:22:27.258154",
+      "accuracy": 1.0,
+      "sample_count": 100
+    }
+  ],
+  "buffer_size": 1000
+}
