@@ -21,7 +21,7 @@ try:
         get_24hr_tickers, get_exchange_info, execute_auto_signal
     )
 except ImportError:
-    from dashboard.binance_exact_layout import (
+    from binance_exact_layout import (
         check_api_status, get_account_info, get_balance_info, get_positions,
         place_order, get_open_orders, set_leverage, set_margin_type,
         get_24hr_tickers, get_exchange_info, execute_auto_signal
@@ -67,7 +67,7 @@ def register_binance_exact_callbacks(app):
         
         if button_id == 'load-account-btn':
             success, data = get_account_info()
-            if success:
+            if success and isinstance(data, dict):
                 return dbc.Card([
                     dbc.CardHeader("Account Information"),
                     dbc.CardBody([
@@ -86,10 +86,10 @@ def register_binance_exact_callbacks(app):
                 
         elif button_id == 'load-balance-btn':
             success, data = get_balance_info()
-            if success:
+            if success and isinstance(data, list):
                 balance_cards = []
                 for asset in data:
-                    if float(asset.get('balance', 0)) > 0:
+                    if isinstance(asset, dict) and float(asset.get('balance', 0)) > 0:
                         balance_cards.append(
                             dbc.Card([
                                 dbc.CardBody([
@@ -123,13 +123,13 @@ def register_binance_exact_callbacks(app):
         
         success, data = get_positions(symbol if symbol else None)
         
-        if success:
+        if success and isinstance(data, list):
             if not data:
                 return dbc.Alert("No positions found", color="info")
             
             position_cards = []
             for pos in data:
-                if float(pos.get('positionAmt', 0)) != 0:
+                if isinstance(pos, dict) and float(pos.get('positionAmt', 0)) != 0:
                     pnl = float(pos.get('unrealizedProfit', 0))
                     pnl_color = "success" if pnl >= 0 else "danger"
                     
@@ -183,7 +183,7 @@ def register_binance_exact_callbacks(app):
             
             success, data = place_order(symbol, side, order_type, quantity, price)
             
-            if success:
+            if success and isinstance(data, dict):
                 return dbc.Card([
                     dbc.CardHeader("Order Placed Successfully"),
                     dbc.CardBody([
@@ -204,25 +204,26 @@ def register_binance_exact_callbacks(app):
         elif button_id == 'get-orders-btn':
             success, data = get_open_orders()
             
-            if success:
+            if success and isinstance(data, list):
                 if not data:
                     return dbc.Alert("No open orders found", color="info")
                 
                 order_cards = []
                 for order in data:
-                    order_cards.append(
-                        dbc.Card([
-                            dbc.CardHeader(f"Order {order.get('orderId', 'Unknown')}"),
-                            dbc.CardBody([
-                                html.P(f"Symbol: {order.get('symbol', 'N/A')}"),
-                                html.P(f"Side: {order.get('side', 'N/A')}"),
-                                html.P(f"Type: {order.get('type', 'N/A')}"),
-                                html.P(f"Quantity: {order.get('origQty', 'N/A')}"),
-                                html.P(f"Price: {order.get('price', 'N/A')}"),
-                                html.P(f"Status: {order.get('status', 'N/A')}")
-                            ])
-                        ], className="mb-2")
-                    )
+                    if isinstance(order, dict):
+                        order_cards.append(
+                            dbc.Card([
+                                dbc.CardHeader(f"Order {order.get('orderId', 'Unknown')}"),
+                                dbc.CardBody([
+                                    html.P(f"Symbol: {order.get('symbol', 'N/A')}"),
+                                    html.P(f"Side: {order.get('side', 'N/A')}"),
+                                    html.P(f"Type: {order.get('type', 'N/A')}"),
+                                    html.P(f"Quantity: {order.get('origQty', 'N/A')}"),
+                                    html.P(f"Price: {order.get('price', 'N/A')}"),
+                                    html.P(f"Status: {order.get('status', 'N/A')}")
+                                ])
+                            ], className="mb-2")
+                        )
                 
                 return html.Div(order_cards)
             else:
@@ -254,7 +255,7 @@ def register_binance_exact_callbacks(app):
             
             success, data = set_leverage(symbol, leverage)
             
-            if success:
+            if success and isinstance(data, dict):
                 return dbc.Card([
                     dbc.CardHeader("Leverage Updated"),
                     dbc.CardBody([
@@ -304,28 +305,29 @@ def register_binance_exact_callbacks(app):
         if button_id == 'get-tickers-btn':
             success, data = get_24hr_tickers()
             
-            if success:
+            if success and isinstance(data, list):
                 ticker_cards = []
                 for ticker in data[:5]:  # Show first 5 tickers
-                    price_change = float(ticker.get('priceChangePercent', 0))
-                    color = "success" if price_change >= 0 else "danger"
-                    
-                    ticker_cards.append(
-                        dbc.Card([
-                            dbc.CardHeader(ticker.get('symbol', 'Unknown')),
-                            dbc.CardBody([
-                                html.P(f"Last Price: {ticker.get('lastPrice', 'N/A')}"),
-                                html.P([
-                                    "24h Change: ",
-                                    html.Span(f"{ticker.get('priceChangePercent', 'N/A')}%", 
-                                             className=f"text-{color} fw-bold")
-                                ]),
-                                html.P(f"Volume: {ticker.get('volume', 'N/A')}"),
-                                html.P(f"High: {ticker.get('highPrice', 'N/A')}"),
-                                html.P(f"Low: {ticker.get('lowPrice', 'N/A')}")
-                            ])
-                        ], className="mb-2")
-                    )
+                    if isinstance(ticker, dict):
+                        price_change = float(ticker.get('priceChangePercent', 0))
+                        color = "success" if price_change >= 0 else "danger"
+                        
+                        ticker_cards.append(
+                            dbc.Card([
+                                dbc.CardHeader(ticker.get('symbol', 'Unknown')),
+                                dbc.CardBody([
+                                    html.P(f"Last Price: {ticker.get('lastPrice', 'N/A')}"),
+                                    html.P([
+                                        "24h Change: ",
+                                        html.Span(f"{ticker.get('priceChangePercent', 'N/A')}%", 
+                                                 className=f"text-{color} fw-bold")
+                                    ]),
+                                    html.P(f"Volume: {ticker.get('volume', 'N/A')}"),
+                                    html.P(f"High: {ticker.get('highPrice', 'N/A')}"),
+                                    html.P(f"Low: {ticker.get('lowPrice', 'N/A')}")
+                                ])
+                            ], className="mb-2")
+                        )
                 
                 return html.Div(ticker_cards)
             else:
@@ -334,19 +336,19 @@ def register_binance_exact_callbacks(app):
         elif button_id == 'get-exchange-btn':
             success, data = get_exchange_info()
             
-            if success:
+            if success and isinstance(data, dict):
                 return dbc.Card([
                     dbc.CardHeader("Exchange Information"),
                     dbc.CardBody([
                         html.P(f"Timezone: {data.get('timezone', 'N/A')}"),
-                        html.P(f"Server Time: {datetime.fromtimestamp(data.get('serverTime', 0)/1000).strftime('%Y-%m-%d %H:%M:%S')}"),
+                        html.P(f"Server Time: {datetime.fromtimestamp(data.get('serverTime', 0)/1000).strftime('%Y-%m-%d %H:%M:%S') if data.get('serverTime') else 'N/A'}"),
                         html.P(f"Futures Type: {data.get('futuresType', 'N/A')}"),
                         html.P(f"Available Symbols: {len(data.get('symbols', []))}"),
                         html.Hr(),
                         html.H6("Rate Limits:"),
                         html.Ul([
                             html.Li(f"{limit.get('rateLimitType', 'Unknown')}: {limit.get('limit', 'N/A')} per {limit.get('interval', 'N/A')}")
-                            for limit in data.get('rateLimits', [])
+                            for limit in data.get('rateLimits', []) if isinstance(limit, dict)
                         ])
                     ])
                 ], color="info")
@@ -374,7 +376,7 @@ def register_binance_exact_callbacks(app):
         
         success, data = execute_auto_signal(symbol, direction, confidence, price)
         
-        if success:
+        if success and isinstance(data, dict):
             if data.get('status') == 'success':
                 return dbc.Card([
                     dbc.CardHeader("Auto Signal Executed Successfully"),

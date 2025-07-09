@@ -14,7 +14,7 @@ from datetime import datetime, timedelta
 import pandas as pd
 
 # Backend API URL
-API_URL = "http://localhost:8000"
+API_URL = "http://localhost:5000"
 
 def create_binance_exact_layout():
     """Create the Binance-exact API management layout"""
@@ -439,10 +439,10 @@ def register_binance_exact_callbacks(app):
     def refresh_api_status(n_clicks):
         if n_clicks:
             return [
-                dbc.Alert("✅ API status refreshed!", color="success", id="api-status-alert")
+                dbc.Alert("✅ API status refreshed!", color="success")
             ]
         return [
-            dbc.Alert("🔄 Checking API status...", color="info", id="api-status-alert")
+            dbc.Alert("🔄 Checking API status...", color="info")
         ]
     
     @app.callback(

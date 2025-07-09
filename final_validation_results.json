@@ -1,0 +1,548 @@
+{
+  "timestamp": "2025-07-07T20:08:12.738676",
+  "backend_tests": {
+    "advanced_auto_trading.py": {
+      "syntax": {
+        "status": "success",
+        "message": "Syntax OK"
+      },
+      "compilation": {
+        "status": "success",
+        "message": "Compilation successful"
+      },
+      "import": {
+        "status": "success",
+        "message": "Import successful"
+      }
+    },
+    "binance_futures_exact.py": {
+      "syntax": {
+        "status": "success",
+        "message": "Syntax OK"
+      },
+      "compilation": {
+        "status": "success",
+        "message": "Compilation successful"
+      },
+      "import": {
+        "status": "success",
+        "message": "Import successful"
+      }
+    },
+    "crypto_transfer_endpoints.py": {
+      "syntax": {
+        "status": "success",
+        "message": "Syntax OK"
+      },
+      "compilation": {
+        "status": "success",
+        "message": "Compilation successful"
+      },
+      "import": {
+        "status": "error",
+        "message": "No module named 'simple_transfer_lifecycle'"
+      }
+    },
+    "crypto_transfer_learning.py": {
+      "syntax": {
+        "status": "success",
+        "message": "Syntax OK"
+      },
+      "compilation": {
+        "status": "success",
+        "message": "Compilation successful"
+      },
+      "import": {
+        "status": "success",
+        "message": "Import successful"
+      }
+    },
+    "crypto_transfer_learning_lifecycle.py": {
+      "syntax": {
+        "status": "success",
+        "message": "Syntax OK"
+      },
+      "compilation": {
+        "status": "success",
+        "message": "Compilation successful"
+      },
+      "import": {
+        "status": "success",
+        "message": "Import successful"
+      }
+    },
+    "data_collection.py": {
+      "syntax": {
+        "status": "success",
+        "message": "Syntax OK"
+      },
+      "compilation": {
+        "status": "success",
+        "message": "Compilation successful"
+      },
+      "import": {
+        "status": "success",
+        "message": "Import successful"
+      }
+    },
+    "db.py": {
+      "syntax": {
+        "status": "success",
+        "message": "Syntax OK"
+      },
+      "compilation": {
+        "status": "success",
+        "message": "Compilation successful"
+      },
+      "import": {
+        "status": "success",
+        "message": "Import successful"
+      }
+    },
+    "email_utils.py": {
+      "syntax": {
+        "status": "success",
+        "message": "Syntax OK"
+      },
+      "compilation": {
+        "status": "success",
+        "message": "Compilation successful"
+      },
+      "import": {
+        "status": "success",
+        "message": "Import successful"
+      }
+    },
+    "fix_unicode.py": {
+      "syntax": {
+        "status": "success",
+        "message": "Syntax OK"
+      },
+      "compilation": {
+        "status": "success",
+        "message": "Compilation successful"
+      },
+      "import": {
+        "status": "success",
+        "message": "Import successful"
+      }
+    },
+    "futures_trading.py": {
+      "syntax": {
+        "status": "success",
+        "message": "Syntax OK"
+      },
+      "compilation": {
+        "status": "success",
+        "message": "Compilation successful"
+      },
+      "import": {
+        "status": "success",
+        "message": "Import successful"
+      }
+    },
+    "hybrid_learning.py": {
+      "syntax": {
+        "status": "success",
+        "message": "Syntax OK"
+      },
+      "compilation": {
+        "status": "success",
+        "message": "Compilation successful"
+      },
+      "import": {
+        "status": "success",
+        "message": "Import successful"
+      }
+    },
+    "main.py": {
+      "syntax": {
+        "status": "success",
+        "message": "Syntax OK"
+      },
+      "compilation": {
+        "status": "success",
+        "message": "Compilation successful"
+      },
+      "import": {
+        "status": "success",
+        "message": "Import successful"
+      },
+      "endpoints": [
+        "GET /health",
+        "GET /risk_settings",
+        "POST /risk_settings",
+        "GET /model/versions",
+        "GET /model/active_version",
+        "POST /model/active_version",
+        "GET /price",
+        "GET /price/{symbol}",
+        "GET /model/analytics",
+        "GET /advanced_auto_trading/status",
+        "POST /advanced_auto_trading/start",
+        "POST /advanced_auto_trading/stop",
+        "GET /advanced_auto_trading/positions",
+        "GET /advanced_auto_trading/market_data",
+        "GET /advanced_auto_trading/indicators/{symbol}",
+        "GET /advanced_auto_trading/ai_signals",
+        "POST /advanced_auto_trading/config",
+        "GET /ml/predict",
+        "GET /ml/predict/enhanced",
+        "GET /ml/current_signal",
+        "GET /settings/email_notifications",
+        "POST /settings/email_notifications",
+        "GET /settings/email_address",
+        "POST /settings/email_address",
+        "GET /notifications",
+        "POST /notifications",
+        "POST /notifications/mark_read",
+        "DELETE /notifications/{notification_id}",
+        "POST /notifications/clear",
+        "POST /notify",
+        "GET /ml/hybrid/status",
+        "POST /ml/hybrid/config",
+        "GET /ml/hybrid/predict",
+        "GET /ml/compatibility/check",
+        "POST /ml/compatibility/fix",
+        "GET /ml/compatibility/recommendations",
+        "POST /ml/tune_models",
+        "POST /ml/online/add_training_data",
+        "POST /ml/online/update",
+        "GET /ml/online/stats",
+        "GET /ml/data_collection/stats",
+        "POST /ml/data_collection/start",
+        "POST /ml/data_collection/stop",
+        "GET /ml/performance/history",
+        "GET /email/config",
+        "POST /email/config",
+        "POST /email/test",
+        "POST /email/send_test",
+        "GET /features/indicators",
+        "GET /model/upload_status",
+        "POST /trade",
+        "POST /trades/{trade_id}/close",
+        "POST /trades/{trade_id}/cancel",
+        "POST /trades/{trade_id}/activate",
+        "POST /retrain",
+        "GET /auto_trading/status",
+        "POST /auto_trading/toggle",
+        "POST /auto_trading/settings",
+        "GET /auto_trading/signals",
+        "POST /virtual_balance/reset",
+        "GET /trades",
+        "GET /trades/recent",
+        "GET /balance",
+        "DELETE /trades/cleanup",
+        "GET /portfolio",
+        "GET /fapi/v2/account",
+        "GET /fapi/v2/balance",
+        "GET /fapi/v2/positionRisk",
+        "POST /fapi/v1/order",
+        "GET /fapi/v1/openOrders",
+        "DELETE /fapi/v1/order",
+        "POST /fapi/v1/leverage",
+        "POST /fapi/v1/marginType",
+        "GET /fapi/v1/ticker/24hr",
+        "GET /fapi/v1/exchangeInfo",
+        "POST /binance/auto_execute",
+        "GET /api/email/config",
+        "POST /api/email/config",
+        "POST /api/email/test",
+        "POST /api/email/send",
+        "GET /api/alerts/history",
+        "DELETE /api/alerts/history",
+        "POST /api/alerts/check",
+        "GET /hft/status",
+        "POST /hft/start",
+        "POST /hft/stop",
+        "POST /hft/config",
+        "GET /hft/analytics",
+        "GET /hft/opportunities",
+        "POST /ml/data_collection/config",
+        "GET /ml/data_collection/status",
+        "POST /ml/online/config",
+        "GET /ml/online/performance",
+        "GET /ml/online/buffer_status",
+        "GET /performance/dashboard",
+        "GET /performance/metrics",
+        "GET /risk/portfolio_metrics",
+        "POST /risk/calculate_position_size",
+        "POST /risk/check_trade_risk",
+        "GET /risk/stop_loss_strategies",
+        "POST /risk/update_advanced_settings",
+        "POST /sidebar/amount/50",
+        "POST /sidebar/amount/100",
+        "POST /sidebar/amount/250",
+        "POST /sidebar/amount/500",
+        "POST /sidebar/amount/1000",
+        "POST /sidebar/amount/max",
+        "POST /charts/show_price",
+        "POST /charts/show_indicators",
+        "GET /chart/candles",
+        "POST /charts/refresh",
+        "GET /charts/volume",
+        "GET /charts/momentum",
+        "GET /charts/bollinger",
+        "POST /ml/online_learning/enable",
+        "POST /ml/online_learning/disable",
+        "GET /ml/online_learning/status",
+        "POST /risk/calculate_position_size",
+        "POST /alerts/test_email",
+        "POST /alerts/send_manual",
+        "POST /indicators/refresh",
+        "GET /indicators/config",
+        "GET /model/metrics",
+        "POST /indicators/config",
+        "POST /futures/open",
+        "GET /futures/account",
+        "GET /futures/positions",
+        "GET /futures/history",
+        "POST /futures/open_position",
+        "POST /futures/close_position",
+        "POST /futures/update_positions",
+        "GET /futures/settings",
+        "POST /futures/settings",
+        "POST /futures/execute_signal",
+        "GET /futures/analytics",
+        "POST /auto_trading/execute_futures_signal",
+        "GET /model/feature_importance"
+      ]
+    },
+    "minimal_transfer_endpoints.py": {
+      "syntax": {
+        "status": "success",
+        "message": "Syntax OK"
+      },
+      "compilation": {
+        "status": "success",
+        "message": "Compilation successful"
+      },
+      "import": {
+        "status": "success",
+        "message": "Import successful"
+      }
+    },
+    "missing_endpoints.py": {
+      "syntax": {
+        "status": "success",
+        "message": "Syntax OK"
+      },
+      "compilation": {
+        "status": "success",
+        "message": "Compilation successful"
+      },
+      "import": {
+        "status": "success",
+        "message": "Import successful"
+      }
+    },
+    "ml.py": {
+      "syntax": {
+        "status": "success",
+        "message": "Syntax OK"
+      },
+      "compilation": {
+        "status": "success",
+        "message": "Compilation successful"
+      },
+      "import": {
+        "status": "success",
+        "message": "Import successful"
+      }
+    },
+    "ml_compatibility_manager.py": {
+      "syntax": {
+        "status": "success",
+        "message": "Syntax OK"
+      },
+      "compilation": {
+        "status": "success",
+        "message": "Compilation successful"
+      },
+      "import": {
+        "status": "success",
+        "message": "Import successful"
+      }
+    },
+    "ml_engine.py": {
+      "syntax": {
+        "status": "success",
+        "message": "Syntax OK"
+      },
+      "compilation": {
+        "status": "success",
+        "message": "Compilation successful"
+      },
+      "import": {
+        "status": "success",
+        "message": "Import successful"
+      }
+    },
+    "online_learning.py": {
+      "syntax": {
+        "status": "success",
+        "message": "Syntax OK"
+      },
+      "compilation": {
+        "status": "success",
+        "message": "Compilation successful"
+      },
+      "import": {
+        "status": "success",
+        "message": "Import successful"
+      }
+    },
+    "price_feed.py": {
+      "syntax": {
+        "status": "success",
+        "message": "Syntax OK"
+      },
+      "compilation": {
+        "status": "success",
+        "message": "Compilation successful"
+      },
+      "import": {
+        "status": "success",
+        "message": "Import successful"
+      }
+    },
+    "storage_manager.py": {
+      "syntax": {
+        "status": "success",
+        "message": "Syntax OK"
+      },
+      "compilation": {
+        "status": "success",
+        "message": "Compilation successful"
+      },
+      "import": {
+        "status": "success",
+        "message": "Import successful"
+      }
+    },
+    "tasks.py": {
+      "syntax": {
+        "status": "success",
+        "message": "Syntax OK"
+      },
+      "compilation": {
+        "status": "success",
+        "message": "Compilation successful"
+      },
+      "import": {
+        "status": "success",
+        "message": "Import successful"
+      }
+    },
+    "trading.py": {
+      "syntax": {
+        "status": "success",
+        "message": "Syntax OK"
+      },
+      "compilation": {
+        "status": "success",
+        "message": "Compilation successful"
+      },
+      "import": {
+        "status": "success",
+        "message": "Import successful"
+      }
+    },
+    "train_model.py": {
+      "syntax": {
+        "status": "success",
+        "message": "Syntax OK"
+      },
+      "compilation": {
+        "status": "success",
+        "message": "Compilation successful"
+      },
+      "import": {
+        "status": "success",
+        "message": "Import successful"
+      }
+    },
+    "ws.py": {
+      "syntax": {
+        "status": "success",
+        "message": "Syntax OK"
+      },
+      "compilation": {
+        "status": "success",
+        "message": "Compilation successful"
+      },
+      "import": {
+        "status": "success",
+        "message": "Import successful"
+      }
+    }
+  },
+  "dashboard_tests": {
+    "app.py": {
+      "syntax": {
+        "status": "success",
+        "message": "Syntax OK"
+      },
+      "compilation": {
+        "status": "success",
+        "message": "Compilation successful"
+      }
+    },
+    "callbacks.py": {
+      "syntax": {
+        "status": "success",
+        "message": "Syntax OK"
+      },
+      "compilation": {
+        "status": "success",
+        "message": "Compilation successful"
+      }
+    },
+    "layout.py": {
+      "syntax": {
+        "status": "success",
+        "message": "Syntax OK"
+      },
+      "compilation": {
+        "status": "success",
+        "message": "Compilation successful"
+      }
+    },
+    "utils.py": {
+      "syntax": {
+        "status": "success",
+        "message": "Syntax OK"
+      },
+      "compilation": {
+        "status": "success",
+        "message": "Compilation successful"
+      }
+    }
+  },
+  "integration_tests": {
+    "server_startup": {
+      "status": "error",
+      "message": "INFO:online_learning:Loaded online model: sgd\nINFO:online_learning:Loaded online model: passive_aggressive\nINFO:online_learning:Loaded online model: mlp_online\nINFO:data_collection:TA-Lib library not available, using built-in indicators\nINFO:online_learning:Loaded online model: sgd\nINFO:online_learning:Loaded online model: passive_aggressive\nINFO:online_learning:Loaded online model: mlp_online\nINFO:data_collection:Database initialized successfully\nINFO:hybrid_learning:Loaded batch-trained model successfully\nINFO:data_collection:Database initialized successfully\nTraceback (most recent call last):\n  File \"<string>\", line 1, in <module>\n  File \"C:\\Python312\\Lib\\encodings\\cp1252.py\", line 19, in encode\n    return codecs.charmap_encode(input,self.errors,encoding_table)[0]\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nUnicodeEncodeError: 'charmap' codec can't encode character '\\u2705' in position 0: character maps to <undefined>\n"
+    }
+  },
+  "summary": {
+    "backend_success_rate": "24/24",
+    "dashboard_success_rate": "4/4",
+    "missing_dependencies": 0,
+    "overall_status": "success"
+  },
+  "dependencies": {
+    "missing": [],
+    "available": [
+      "fastapi",
+      "uvicorn",
+      "pydantic",
+      "requests",
+      "numpy",
+      "dash",
+      "plotly",
+      "pandas",
+      "sqlite3"
+    ]
+  }
+}

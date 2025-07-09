@@ -1,0 +1,113 @@
+{
+  "individual_models": {
+    "basic_ml": {
+      "status": "\u274c Failed",
+      "error": "{\"detail\":[{\"type\":\"dict_type\",\"loc\":[\"body\"],\"msg\":\"Input should be a valid dictionary\",\"input\":[{\"open\":45000,\"high\":46000,\"low\":44000,\"close\":45500,\"volume\":1000000,\"rsi\":65,\"stoch_k\":75,\"stoch_d\":70,\"williams_r\":-25,\"roc\":2.5,\"ao\":150,\"macd\":1.2,\"macd_signal\":1.1,\"macd_diff\":0.1,\"adx\":28,\"cci\":110,\"sma_20\":45200,\"ema_20\":45300,\"bb_high\":46000,\"bb_low\":44500,\"atr\":800,\"obv\":5000000,\"cmf\":0.15}]}]}"
+    }
+  },
+  "ensemble_models": {
+    "standard": {
+      "status": "\u2705 Working",
+      "prediction": 0.682,
+      "confidence": 0.85,
+      "models": {
+        "rf": 0.65,
+        "xgb": 0.68,
+        "lgb": 0.63,
+        "catboost": 0.67,
+        "transfer": 0.78
+      }
+    },
+    "hybrid": {
+      "status": "\u2705 Working",
+      "prediction": {
+        "batch_prediction": null,
+        "online_predictions": {
+          "ensemble_prediction": 0,
+          "ensemble_confidence": 1.0,
+          "individual_predictions": {
+            "sgd": 1,
+            "passive_aggressive": 0,
+            "mlp_online": 0
+          },
+          "probabilities": {
+            "sgd": {
+              "confidence": 1.0,
+              "proba_0": 0.0,
+              "proba_1": 1.0
+            },
+            "passive_aggressive": {
+              "confidence": 1.0,
+              "decision_value": -4058050.76412982
+            },
+            "mlp_online": {
+              "confidence": 1.0,
+              "proba_0": 1.0,
+              "proba_1": 0.0
+            }
+          },
+          "model_count": 3
+        },
+        "ensemble_prediction": 0,
+        "ensemble_confidence": 1.0
+      },
+      "symbol": "btcusdt"
+    }
+  },
+  "transfer_learning": {
+    "status": {
+      "status": "\u274c Failed"
+    }
+  },
+  "auto_trading_integration": {
+    "status": {
+      "status": "\u2705 Working",
+      "enabled": false,
+      "symbol": "BTCUSDT",
+      "settings": {
+        "enabled": false,
+        "symbol": "BTCUSDT",
+        "timeframe": "1h",
+        "risk_per_trade": 3.0,
+        "take_profit": 2.5,
+        "stop_loss": 1.5,
+        "min_confidence": 75.0,
+        "balance": 10000.0,
+        "open_trades": {},
+        "trade_log": [
+          {
+            "timestamp": "2025-06-23T01:27:37.351242",
+            "type": "system",
+            "message": "Auto trading session started"
+          },
+          {
+            "timestamp": "2025-06-23T01:28:06.012736",
+            "type": "system",
+            "message": "Auto trading session stopped"
+          },
+          {
+            "timestamp": "2025-06-23T01:30:01.607512",
+            "type": "system",
+            "message": "Auto trading session started"
+          },
+          {
+            "timestamp": "2025-06-23T01:30:30.287445",
+            "type": "system",
+            "message": "Auto trading session stopped"
+          }
+        ],
+        "last_signal_time": 0,
+        "performance_stats": {
+          "total_trades": 0,
+          "winning_trades": 0,
+          "losing_trades": 0,
+          "total_pnl": 0.0,
+          "win_rate": 0.0,
+          "max_drawdown": 0.0,
+          "sharpe_ratio": 0.0
+        }
+      }
+    }
+  },
+  "sync_status": "\u26a0\ufe0f Good Sync"
+}

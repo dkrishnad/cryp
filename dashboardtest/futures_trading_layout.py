@@ -96,7 +96,7 @@ def create_futures_trading_layout():
                         ]),
                         html.P([
                             html.Small("Available: "),
-                            html.Span(id="futures-available-balance", children="$10,000.00", className="text-primary")
+                            html.Span(id="futures-available-balance-virtual", children="$10,000.00", className="text-primary")
                         ]),
                         dbc.ButtonGroup([
                             dbc.Button("Reset", id="futures-reset-balance-btn", color="secondary", size="sm"),

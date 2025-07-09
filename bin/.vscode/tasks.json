@@ -1,0 +1,38 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Start Crypto Trading Bot",
+			"type": "shell",
+			"command": "C:/Python312/python.exe",
+			"args": [
+				"backendtest/main.py"
+			],
+			"group": "build",
+			"isBackground": true,
+			"problemMatcher": []
+		},
+		{
+			"label": "Start Backend Server",
+			"type": "shell",
+			"command": "C:/Python312/python.exe",
+			"args": [
+				"backendtest/main.py"
+			],
+			"group": "build",
+			"isBackground": true,
+			"problemMatcher": []
+		},
+		{
+			"label": "Start Frontend Dashboard",
+			"type": "shell",
+			"command": "C:/Python312/python.exe",
+			"args": [
+				"dashboardtest/start_app.py"
+			],
+			"group": "build",
+			"isBackground": true,
+			"problemMatcher": []
+		}
+	]
+}

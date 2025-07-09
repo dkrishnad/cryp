@@ -13,7 +13,7 @@ from datetime import datetime
 import pandas as pd
 
 # Backend URL
-API_URL = "http://localhost:8000"
+API_URL = "http://localhost:5000"
 
 def create_hybrid_learning_layout():
     """Create layout for hybrid learning monitoring"""

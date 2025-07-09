@@ -1,0 +1,95 @@
+{
+  "test_time": "2025-07-07T01:05:34.133998",
+  "summary": {
+    "total_tests": 14,
+    "successful_tests": 0,
+    "real_data_tests": 0,
+    "real_data_percentage": 0.0
+  },
+  "results": [
+    {
+      "endpoint": "/health",
+      "method": "GET",
+      "error": "HTTPConnectionPool(host='localhost', port=8000): Max retries exceeded with url: /health (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000249EB5D8C80>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))",
+      "has_real_data": false
+    },
+    {
+      "endpoint": "/ml/predict",
+      "method": "GET",
+      "error": "HTTPConnectionPool(host='localhost', port=8000): Max retries exceeded with url: /ml/predict?symbol=btcusdt (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000249EB639CD0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))",
+      "has_real_data": false
+    },
+    {
+      "endpoint": "/ml/current_signal",
+      "method": "GET",
+      "error": "HTTPConnectionPool(host='localhost', port=8000): Max retries exceeded with url: /ml/current_signal (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000249EB63A480>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))",
+      "has_real_data": false
+    },
+    {
+      "endpoint": "/features/indicators",
+      "method": "GET",
+      "error": "HTTPConnectionPool(host='localhost', port=8000): Max retries exceeded with url: /features/indicators?symbol=btcusdt (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000249EB63ABD0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))",
+      "has_real_data": false
+    },
+    {
+      "endpoint": "/portfolio",
+      "method": "GET",
+      "error": "HTTPConnectionPool(host='localhost', port=8000): Max retries exceeded with url: /portfolio (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000249EB63B320>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))",
+      "has_real_data": false
+    },
+    {
+      "endpoint": "/price",
+      "method": "GET",
+      "error": "HTTPConnectionPool(host='localhost', port=8000): Max retries exceeded with url: /price?symbol=BTCUSDT (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000249EB5DBBC0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))",
+      "has_real_data": false
+    },
+    {
+      "endpoint": "/fapi/v1/ticker/24hr",
+      "method": "GET",
+      "error": "HTTPConnectionPool(host='localhost', port=8000): Max retries exceeded with url: /fapi/v1/ticker/24hr?symbol=BTCUSDT (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000249EB63AE70>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))",
+      "has_real_data": false
+    },
+    {
+      "endpoint": "/balance",
+      "method": "GET",
+      "error": "HTTPConnectionPool(host='localhost', port=8000): Max retries exceeded with url: /balance (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000249EB63A5D0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))",
+      "has_real_data": false
+    },
+    {
+      "endpoint": "/auto_trading/status",
+      "method": "GET",
+      "error": "HTTPConnectionPool(host='localhost', port=8000): Max retries exceeded with url: /auto_trading/status (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000249EB6397F0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))",
+      "has_real_data": false
+    },
+    {
+      "endpoint": "/charts/volume",
+      "method": "GET",
+      "error": "HTTPConnectionPool(host='localhost', port=8000): Max retries exceeded with url: /charts/volume?symbol=BTCUSDT (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000249EB63BBC0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))",
+      "has_real_data": false
+    },
+    {
+      "endpoint": "/charts/momentum",
+      "method": "GET",
+      "error": "HTTPConnectionPool(host='localhost', port=8000): Max retries exceeded with url: /charts/momentum?symbol=BTCUSDT (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000249EB65C530>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))",
+      "has_real_data": false
+    },
+    {
+      "endpoint": "/charts/bollinger",
+      "method": "GET",
+      "error": "HTTPConnectionPool(host='localhost', port=8000): Max retries exceeded with url: /charts/bollinger?symbol=BTCUSDT (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000249E9091DC0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))",
+      "has_real_data": false
+    },
+    {
+      "endpoint": "/chart/candles",
+      "method": "GET",
+      "error": "HTTPConnectionPool(host='localhost', port=8000): Max retries exceeded with url: /chart/candles?symbol=BTCUSDT&interval=1m&limit=10 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000249EB639760>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))",
+      "has_real_data": false
+    },
+    {
+      "endpoint": "/hft/analytics",
+      "method": "GET",
+      "error": "HTTPConnectionPool(host='localhost', port=8000): Max retries exceeded with url: /hft/analytics (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000249EB63A0F0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))",
+      "has_real_data": false
+    }
+  ]
+}

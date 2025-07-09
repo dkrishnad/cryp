@@ -1,0 +1,3563 @@
+{
+  "timestamp": "2025-07-08T05:07:46.347755",
+  "root_path": "C:\\Users\\Hari\\Dropbox\\PC\\Desktop\\Testin dub",
+  "files_analyzed": [
+    {
+      "path": "dashboardtest\\app.py",
+      "full_path": "C:\\Users\\Hari\\Dropbox\\PC\\Desktop\\Testin dub\\dashboardtest\\app.py",
+      "type": ".py",
+      "size": 3003,
+      "modified": "2025-07-07T01:27:15.656142",
+      "category": "application"
+    },
+    {
+      "path": "backendtest\\app.py",
+      "full_path": "C:\\Users\\Hari\\Dropbox\\PC\\Desktop\\Testin dub\\backendtest\\app.py",
+      "type": ".py",
+      "size": 2229,
+      "modified": "2025-07-08T03:35:28.053783",
+      "category": "application"
+    },
+    {
+      "path": "backendtest\\data_collection.py",
+      "full_path": "C:\\Users\\Hari\\Dropbox\\PC\\Desktop\\Testin dub\\backendtest\\data_collection.py",
+      "type": ".py",
+      "size": 40193,
+      "modified": "2025-07-08T02:20:15.153153",
+      "category": "application"
+    },
+    {
+      "path": "backendtest\\main.py",
+      "full_path": "C:\\Users\\Hari\\Dropbox\\PC\\Desktop\\Testin dub\\backendtest\\main.py",
+      "type": ".py",
+      "size": 172891,
+      "modified": "2025-07-07T22:13:05.920255",
+      "category": "application"
+    },
+    {
+      "path": "main.py",
+      "full_path": "C:\\Users\\Hari\\Dropbox\\PC\\Desktop\\Testin dub\\main.py",
+      "type": ".py",
+      "size": 3285,
+      "modified": "2025-07-08T03:35:28.053165",
+      "category": "application"
+    },
+    {
+      "path": "trades.db",
+      "full_path": "C:\\Users\\Hari\\Dropbox\\PC\\Desktop\\Testin dub\\trades.db",
+      "type": ".db",
+      "size": 4653056,
+      "modified": "2025-06-26T02:46:16.458440",
+      "category": "database"
+    }
+  ],
+  "missing_files": [],
+  "existing_files": [
+    {
+      "path": "main.py",
+      "full_path": "C:\\Users\\Hari\\Dropbox\\PC\\Desktop\\Testin dub\\main.py",
+      "size": 3285,
+      "modified": "2025-07-08T03:35:28.053165"
+    }
+  ],
+  "import_errors": [],
+  "syntax_errors": [],
+  "buttons_and_callbacks": {
+    "dashboardtest\\layout.py": {
+      "buttons": [
+        "notifications-mark-read-btn",
+        "toggle-data-collection",
+        "refresh-data-collection-btn",
+        "hft-opportunities-btn",
+        "futures-open-btn",
+        "load-auto-settings-btn-output",
+        "sidebar-amount-100",
+        "email-address-update-btn-output",
+        "amount-1000-btn-output",
+        "risk-stop-loss-btn-output",
+        "send-test-alert-btn",
+        "test-ml-btn",
+        "risk-position-size-btn",
+        "export-performance-btn",
+        "show-indicators-chart-btn-output",
+        "enable-trade-integration-btn-output",
+        "hft-config-btn",
+        "sidebar-amount-250-btn-output",
+        "chart-show-price-btn-output",
+        "disable-trade-integration-btn-output",
+        "start-hft-analysis-btn-output",
+        "virtual-balance-reset-btn-output",
+        "test-db-btn",
+        "trade-execute-btn-output",
+        "send-manual-alert-btn-output",
+        "binance-auto-execute-btn",
+        "refresh-risk-btn",
+        "update-risk-settings-btn-output",
+        "calculate-position-size-btn-output",
+        "sidebar-amount-250",
+        "stop-hft-analysis-btn-output",
+        "start-hft-analysis-btn",
+        "sidebar-amount-100-btn-output",
+        "ml-recommendations-btn-output",
+        "sidebar-feature-importance-btn-output",
+        "chart-refresh-btn",
+        "stop-hft-analysis-btn",
+        "check-auto-alerts-btn",
+        "notifications-mark-read-btn-output",
+        "binance-auto-execute-btn-output",
+        "toggle-ml-tools",
+        "start-data-collection-btn-duplicate-output",
+        "save-learning-config-btn",
+        "trades-list-btn-output",
+        "test-email-system-btn",
+        "check-advanced-auto-trading-btn-output",
+        "futures-open-btn-output",
+        "ml-compatibility-fix-btn-output",
+        "amount-100-btn",
+        "auto-trading-toggle-btn-output",
+        "risk-trade-check-btn",
+        "toggle-online-learning",
+        "chart-momentum-btn-output",
+        "sidebar-ml-predict-btn-output",
+        "email-notifications-toggle-btn",
+        "start-data-collection-btn-duplicate",
+        "sell-btn-output",
+        "stop-data-collection-btn-duplicate-output",
+        "sidebar-amount-max",
+        "trade-execute-btn",
+        "auto-trading-signals-btn-output",
+        "notifications-clear-btn",
+        "show-indicators-chart-btn",
+        "hft-analytics-btn-output",
+        "chart-show-price-btn",
+        "quick-prediction-btn-output",
+        "sidebar-amount-1000",
+        "sidebar-ml-status-btn-output",
+        "hft-start-btn",
+        "auto-trading-signals-btn",
+        "risk-portfolio-metrics-btn",
+        "auto-trading-settings-btn",
+        "amount-500-btn-output",
+        "auto-trading-status-refresh-btn-output",
+        "hft-config-btn-output",
+        "sidebar-ml-status-btn",
+        "hft-start-btn-output",
+        "stop-data-collection-btn-duplicate",
+        "optimize-learning-rates-btn-output",
+        "refresh-charts-btn",
+        "prune-trades-btn-output",
+        "test-notification-btn",
+        "test-db-btn-output",
+        "chart-refresh-btn-output",
+        "ml-compatibility-check-btn-output",
+        "save-collection-config-btn",
+        "sidebar-amount-max-btn-output",
+        "reset-balance-btn-output",
+        "test-email-alert-btn",
+        "show-volume-btn-output",
+        "buy-btn",
+        "amount-max-btn",
+        "send-manual-alert-btn",
+        "toggle-analytics",
+        "refresh-notifications-btn-output",
+        "stop-advanced-auto-trading-btn-output",
+        "refresh-notifications-btn",
+        "manual-alert-btn-output",
+        "performance-metrics-btn-output",
+        "get-prediction-btn",
+        "save-auto-settings-btn-output",
+        "sidebar-amount-500",
+        "hft-status-btn",
+        "toggle-dev-tools",
+        "reset-balance-btn",
+        "chart-bollinger-btn-output",
+        "sidebar-amount-50-btn",
+        "email-config-btn",
+        "check-trade-risk-btn",
+        "refresh-hft-btn",
+        "hft-opportunities-btn-output",
+        "ml-online-config-btn-output",
+        "show-price-chart-btn-output",
+        "clear-notifications-btn-output",
+        "futures-history-btn-output",
+        "sell-btn",
+        "save-auto-settings-btn",
+        "test-email-system-btn-output",
+        "amount-250-btn",
+        "chart-momentum-btn",
+        "test-email-btn",
+        "save-email-config-btn",
+        "trades-list-btn",
+        "sidebar-bollinger-btn-output",
+        "execute-signal-btn",
+        "mark-all-read-btn-output",
+        "amount-100-btn-output",
+        "auto-trading-settings-btn-output",
+        "email-address-update-btn",
+        "sidebar-predict-btn",
+        "refresh-model-versions-btn-output",
+        "toggle-notifications",
+        "ml-compatibility-fix-btn",
+        "show-bollinger-btn",
+        "sidebar-bollinger-btn",
+        "show-momentum-btn",
+        "optimize-jasmy-btn",
+        "amount-max-btn-output",
+        "start-advanced-auto-trading-btn-output",
+        "show-price-chart-btn",
+        "risk-position-size-btn-output",
+        "sidebar-amount-50",
+        "show-performance-dashboard-btn",
+        "amount-500-btn",
+        "clear-notifications-btn",
+        "test-ml-btn-output",
+        "disable-online-learning-btn-output",
+        "ml-compatibility-check-btn",
+        "save-hft-config-btn",
+        "chart-volume-btn-output",
+        "email-test-btn-output",
+        "sidebar-amount-max-btn",
+        "virtual-balance-reset-btn",
+        "sidebar-momentum-chart-btn-output",
+        "hft-status-btn-output",
+        "performance-metrics-btn",
+        "performance-dashboard-btn-output",
+        "check-trade-risk-btn-output",
+        "hft-stop-btn-output",
+        "online-learn-btn-output",
+        "force-model-update-btn-output",
+        "portfolio-btn-output",
+        "chart-show-indicators-btn",
+        "futures-reset-balance-btn",
+        "refresh-performance-btn",
+        "ml-online-config-btn",
+        "ml-recommendations-btn",
+        "clear-alert-history-btn",
+        "update-risk-settings-btn",
+        "hft-analytics-btn",
+        "hft-analytics-refresh-btn-output",
+        "chart-volume-btn",
+        "amount-50-btn",
+        "get-prediction-btn-output",
+        "notifications-clear-btn-output",
+        "email-notifications-toggle-btn-output",
+        "auto-trading-toggle-btn",
+        "hft-analytics-refresh-btn",
+        "sidebar-ml-predict-btn",
+        "send-test-alert-btn-output",
+        "calculate-position-size-btn",
+        "reset-learning-rates-btn-output",
+        "sidebar-amount-50-btn-output",
+        "sidebar-feature-importance-btn",
+        "optimize-gala-btn",
+        "auto-trading-status-refresh-btn",
+        "sidebar-amount-250-btn",
+        "send-manual-notification-btn",
+        "refresh-charts-btn-output",
+        "show-momentum-btn-output",
+        "clear-all-notifications-btn-output",
+        "portfolio-btn",
+        "enable-online-learning-btn-output",
+        "risk-stop-loss-btn",
+        "email-test-btn",
+        "manual-alert-btn",
+        "risk-portfolio-metrics-btn-output",
+        "sidebar-amount-100-btn",
+        "show-fi-btn-output",
+        "hft-stop-btn",
+        "ml-online-performance-btn-output",
+        "enable-online-learning-btn",
+        "futures-execute-signal-btn",
+        "clear-all-notifications-btn",
+        "sidebar-amount-1000-btn-output",
+        "buy-btn-output",
+        "amount-50-btn-output",
+        "update-online-models-btn",
+        "sidebar-momentum-chart-btn",
+        "toggle-hft-tools",
+        "toggle-email-alerts",
+        "show-volume-btn",
+        "risk-trade-check-btn-output",
+        "sidebar-amount-500-btn-output",
+        "email-config-btn-output",
+        "optimize-kaia-btn",
+        "sidebar-analytics-btn",
+        "futures-execute-signal-btn-output",
+        "futures-history-btn",
+        "mark-all-read-btn",
+        "test-email-alert-btn-output",
+        "toggle-charts",
+        "disable-online-learning-btn",
+        "amount-1000-btn",
+        "sidebar-amount-500-btn",
+        "sidebar-volume-chart-btn",
+        "chart-bollinger-btn",
+        "amount-250-btn-output",
+        "load-auto-settings-btn",
+        "show-bollinger-btn-output",
+        "sidebar-volume-chart-btn-output",
+        "check-drift-btn-output",
+        "chart-show-indicators-btn-output",
+        "performance-dashboard-btn",
+        "ml-online-performance-btn",
+        "sidebar-amount-1000-btn",
+        "tune-models-btn-output",
+        "reset-auto-trading-btn",
+        "quick-prediction-btn",
+        "test-email-btn-output",
+        "toggle-risk-management"
+      ],
+      "callback_components": []
+    },
+    "dashboardtest\\callbacks.py": {
+      "buttons": [
+        "check-advanced-auto-trading-btn",
+        "disable-trade-integration-btn",
+        "stop-online-learning-btn",
+        "reset-online-learning-btn",
+        "enable-trade-integration-btn",
+        "stop-data-collection-btn",
+        "check-data-collection-btn",
+        "reset-learning-rates-btn",
+        "start-online-learning-btn",
+        "check-online-learning-btn",
+        "optimize-learning-rates-btn",
+        "stop-advanced-auto-trading-btn",
+        "force-model-update-btn",
+        "start-advanced-auto-trading-btn",
+        "start-data-collection-btn"
+      ],
+      "callback_components": [
+        "futures-open-btn",
+        "toggle-charts-output",
+        "futures-symbol-input",
+        "show-indicators-chart-btn-output",
+        "sidebar-amount-250-btn-output",
+        "amount-50",
+        "hft-config-btn",
+        "futures-side-select",
+        "futures-available-balance",
+        "virtual-balance-reset-btn-output",
+        "test-db-btn",
+        "futures-quantity-input",
+        "sidebar-winrate",
+        "enable-online-learning-output",
+        "calculate-position-size-btn-output",
+        "data-collection-stats",
+        "sidebar-amount-250",
+        "start-hft-analysis-btn",
+        "sidebar-feature-importance-btn-output",
+        "alert-refresh-interval",
+        "notification-count",
+        "futures-open-positions",
+        "amount-100-btn",
+        "risk-trade-check-btn",
+        "sidebar-amount-50-output",
+        "risk-management-display",
+        "auto-trading-toggle-output",
+        "auto-trading-status-refresh-btn-output",
+        "sidebar-bb-middle",
+        "stop-data-collection-btn-duplicate",
+        "market-data-refresh-interval",
+        "test-db-btn-output",
+        "hft-analytics-display",
+        "test-email-alert-btn",
+        "refresh-ml-history",
+        "buy-btn",
+        "online-learning-status",
+        "toggle-analytics",
+        "max-drawdown-input",
+        "perceptron-status",
+        "sidebar-amount-100-output",
+        "sidebar-amount-500",
+        "toggle-dev-tools",
+        "check-trade-risk-btn",
+        "hybrid-status-display",
+        "ml-online-config-btn-output",
+        "hft-opportunities-btn-output",
+        "auto-wl-display",
+        "show-price-chart-btn-output",
+        "online-learning-trade-integration",
+        "refresh-transfer-performance",
+        "risk-management-collapse",
+        "toggle-email-alerts-output",
+        "save-auto-settings-btn",
+        "chart-momentum-btn",
+        "trades-list-btn",
+        "dev-tools-collapse",
+        "futures-reset-balance-output",
+        "retrain-progress",
+        "email-address-update-btn",
+        "sidebar-macd-value",
+        "optimize-jasmy-btn",
+        "start-advanced-auto-trading-btn-output",
+        "open-futures-position",
+        "show-bollinger-btn",
+        "stop-loss-pct-input",
+        "sidebar-predict-btn-output",
+        "futures-analytics-display",
+        "risk-position-size-btn-output",
+        "online-learning-collapse",
+        "hybrid-prediction-output",
+        "email-test-btn-output",
+        "toggle-analytics-output",
+        "stop-advanced-auto-trading-btn",
+        "start-advanced-auto-trading-btn",
+        "online-learning-stats",
+        "performance-dashboard-btn-output",
+        "check-trade-risk-btn-output",
+        "hft-stop-btn-output",
+        "advanced-auto-trading-status",
+        "ml-online-config-btn",
+        "auto-trading-tab-content",
+        "sidebar-amount-max-output",
+        "sidebar-bb-lower",
+        "amount-50-btn",
+        "enable-trade-integration-btn",
+        "risk-settings-status",
+        "reset-learning-rates-btn-output",
+        "sidebar-amount-50-btn-output",
+        "optimize-gala-btn",
+        "futures-volume-indicator",
+        "risk-settings-display",
+        "feature-importance-display",
+        "buy-btn-output",
+        "fixed-amount-section",
+        "amount-50-btn-output",
+        "futures-macd-indicator",
+        "sidebar-momentum-chart-btn",
+        "calculated-amount-display",
+        "market-data-display",
+        "show-unread-only",
+        "show-volume-btn",
+        "advanced-auto-trading-controls",
+        "email-password-input",
+        "futures-technical-chart",
+        "data-collection-collapse",
+        "risk-amount-input",
+        "futures-history-btn",
+        "toggle-risk-management-output",
+        "toggle-charts",
+        "amount-1000-btn",
+        "auto-trading-settings-display",
+        "show-bollinger-btn-output",
+        "sidebar-volume-chart-btn",
+        "chart-bollinger-btn",
+        "futures-margin-used",
+        "futures-sync-balance-btn",
+        "check-drift-btn-output",
+        "sidebar-model-confidence",
+        "chart-show-indicators-btn-output",
+        "performance-dashboard-btn",
+        "test-email-btn-output",
+        "update-futures-positions",
+        "futures-trade-result",
+        "notifications-mark-read-btn",
+        "hft-opportunities-btn",
+        "load-auto-settings-btn-output",
+        "sidebar-amount-100",
+        "auto-symbol-setting",
+        "alert-test-result",
+        "notifications-display",
+        "amount-500",
+        "take-profit-pct-input",
+        "test-ml-btn",
+        "sidebar-bb-upper",
+        "enable-trade-integration-btn-output",
+        "virtual-balance",
+        "send-manual-alert-btn-output",
+        "load-risk-settings",
+        "update-risk-settings-btn-output",
+        "hft-timeframe-dropdown",
+        "stop-hft-analysis-btn-output",
+        "data-collection-refresh-interval",
+        "hft-symbol-input",
+        "toggle-hft-tools-output",
+        "price-chart",
+        "stop-data-collection-btn-duplicate-output",
+        "chart-momentum-btn-output",
+        "toggle-online-learning",
+        "trade-execute-btn",
+        "auto-trading-signals-btn-output",
+        "notifications-clear-btn",
+        "show-indicators-chart-btn",
+        "quick-prediction-btn-output",
+        "amount-500-btn-output",
+        "auto-trading-settings-btn",
+        "model-health-display",
+        "hft-config-btn-output",
+        "sidebar-model-status",
+        "auto-pnl-display",
+        "refresh-model-analytics",
+        "email-config-refresh-interval",
+        "optimize-learning-rates-btn-output",
+        "manual-notification-type",
+        "ml-compatibility-check-btn-output",
+        "sidebar-amount-max-btn-output",
+        "online-learning-refresh-interval",
+        "learning-rate-optimization",
+        "amount-max-btn",
+        "futures-virtual-balance",
+        "auto-trade-log",
+        "futures-settings-result",
+        "manual-alert-btn-output",
+        "save-auto-settings-btn-output",
+        "hft-status-btn",
+        "chart-bollinger-btn-output",
+        "sidebar-amount-50-btn",
+        "email-config-btn",
+        "ml-performance-history",
+        "backtest-end-date",
+        "test-email-system-btn-output",
+        "model-metrics-display",
+        "amount-250-btn",
+        "test-email-btn",
+        "futures-virtual-total-balance",
+        "sidebar-bollinger-btn-output",
+        "auto-trading-settings-btn-output",
+        "start-data-collection-btn",
+        "refresh-model-versions-btn-output",
+        "sidebar-predict-btn",
+        "futures-history-table",
+        "auto-trading-interval",
+        "model-version-status",
+        "auto-winrate-display",
+        "test-ml-btn-output",
+        "clear-notifications-btn",
+        "check-transfer-setup",
+        "transfer-learning-status",
+        "sidebar-amount-max-btn",
+        "alert-stats",
+        "sidebar-momentum-chart-btn-output",
+        "model-versions-display",
+        "online-learn-btn-output",
+        "virtual-balance-display",
+        "chart-show-indicators-btn",
+        "ml-recommendations-btn",
+        "hft-analytics-btn",
+        "sidebar-analytics-output",
+        "chart-volume-btn",
+        "notifications-clear-btn-output",
+        "sidebar-macd-signal",
+        "calculate-position-size-btn",
+        "hft-analysis-display",
+        "amount-1",
+        "sidebar-predict-output",
+        "clear-all-notifications-btn-output",
+        "email-test-btn",
+        "manual-alert-btn",
+        "show-fi-btn-output",
+        "backtest-progress",
+        "enable-online-learning-btn",
+        "futures-execute-signal-btn",
+        "toggle-hft-tools",
+        "futures-trading-tab-content",
+        "futures-execute-signal-btn-output",
+        "data-collection-status",
+        "run-comprehensive-backtest",
+        "sidebar-amount-500-btn",
+        "incremental-learning-buffer",
+        "amount-250-btn-output",
+        "load-auto-settings-btn",
+        "ml-online-performance-btn",
+        "sidebar-risk-slider",
+        "quick-prediction-btn",
+        "force-model-update-btn",
+        "amount-type-radio",
+        "toggle-data-collection",
+        "binance-exact-tab-content",
+        "sidebar-total-trades",
+        "amount-1000-btn-output",
+        "open-positions-table",
+        "sidebar-analytics-btn-output",
+        "disable-trade-integration-btn-output",
+        "start-hft-analysis-btn-output",
+        "toggle-notifications-output",
+        "trade-execute-btn-output",
+        "binance-auto-execute-btn",
+        "position-size-input",
+        "toggle-data-collection-output",
+        "ml-recommendations-btn-output",
+        "percentage-amount-input",
+        "init-transfer-learning",
+        "chart-refresh-btn",
+        "stop-hft-analysis-btn",
+        "sidebar-amount-type",
+        "test-email-system-btn",
+        "check-advanced-auto-trading-btn-output",
+        "ml-compatibility-fix-btn-output",
+        "futures-open-btn-output",
+        "check-auto-alerts-result",
+        "email-config-status",
+        "sidebar-ml-predict-btn-output",
+        "sell-btn-output",
+        "start-data-collection-btn-duplicate",
+        "current-signal-display",
+        "retrain-status-refresh",
+        "risk-percentage-input",
+        "notification-send-status",
+        "email-alerts-collapse",
+        "sidebar-ml-status-btn-output",
+        "sidebar-amount-1000",
+        "indicators-chart",
+        "refresh-futures-analytics",
+        "charts-collapse",
+        "futures-margin-ratio",
+        "hft-start-btn",
+        "auto-trading-signals-btn",
+        "futures-rsi-indicator",
+        "email-address-input",
+        "hybrid-status-refresh",
+        "futures-positions-table",
+        "sidebar-fixed-amount-section",
+        "amount-100",
+        "reset-balance-btn-output",
+        "show-volume-btn-output",
+        "send-manual-alert-btn",
+        "futures-sync-balance-output",
+        "refresh-notifications-btn-output",
+        "ai-signals-refresh-interval",
+        "refresh-notifications-btn",
+        "performance-metrics-btn-output",
+        "futures-stochastic-indicator",
+        "get-prediction-btn",
+        "futures-unrealized-pnl",
+        "hybrid-learning-tab-content",
+        "clear-notifications-btn-output",
+        "sidebar-symbol",
+        "futures-history-btn-output",
+        "sell-btn",
+        "fixed-amount-input",
+        "sidebar-model-accuracy",
+        "comprehensive-backtest-output",
+        "save-risk-settings",
+        "auto-trading-toggle",
+        "mark-all-read-btn-output",
+        "futures-pnl-display",
+        "ml-compatibility-fix-btn",
+        "show-momentum-btn",
+        "sidebar-bollinger-btn",
+        "sidebar-amount-input",
+        "amount-max-btn-output",
+        "sidebar-amount-50",
+        "sidebar-rsi-value",
+        "check-advanced-auto-trading-btn",
+        "amount-500-btn",
+        "disable-online-learning-btn-output",
+        "toggle-dev-tools-output",
+        "start-model-retrain",
+        "ml-compatibility-check-btn",
+        "chart-volume-btn-output",
+        "data-collection-controls",
+        "performance-metrics-btn",
+        "hft-tools-collapse",
+        "train-target-model",
+        "online-learning-controls",
+        "email-config-tab-content",
+        "force-model-update-btn-output",
+        "sidebar-amount-1000-output",
+        "portfolio-btn-output",
+        "update-risk-settings-btn",
+        "email-notifications-toggle-btn-output",
+        "sidebar-ml-predict-btn",
+        "sgd-classifier-status",
+        "sidebar-bb-signal",
+        "sidebar-feature-importance-btn",
+        "show-momentum-btn-output",
+        "futures-leverage-input",
+        "portfolio-btn",
+        "percentage-amount-slider",
+        "risk-stop-loss-btn",
+        "notification-refresh-interval",
+        "ml-online-performance-btn-output",
+        "hft-stop-btn",
+        "clear-all-notifications-btn",
+        "sidebar-amount-1000-btn-output",
+        "percentage-amount-section",
+        "email-config-btn-output",
+        "notifications-collapse",
+        "sidebar-analytics-btn",
+        "live-price-interval",
+        "disable-online-learning-btn",
+        "sidebar-volume-chart-btn-output",
+        "disable-trade-integration-btn",
+        "manual-notification-message",
+        "sidebar-amount-250-output",
+        "notification-stats",
+        "futures-symbol-dropdown",
+        "auto-symbol-dropdown",
+        "email-enabled-switch",
+        "amount-10",
+        "email-address-update-btn-output",
+        "risk-stop-loss-btn-output",
+        "send-test-alert-btn",
+        "risk-position-size-btn",
+        "backtest-start-date",
+        "sidebar-daily-pnl",
+        "smtp-port-input",
+        "sidebar-risk-display",
+        "chart-show-price-btn-output",
+        "performance-monitor",
+        "toggle-online-learning-output",
+        "model-health-refresh",
+        "futures-trading-controls",
+        "load-backtest-results",
+        "backtest-strategy",
+        "futures-atr-indicator",
+        "hft-stats-cards",
+        "ml-tools-collapse",
+        "transfer-learning-setup",
+        "clear-notifications-status",
+        "dummy-div",
+        "notifications-mark-read-btn-output",
+        "binance-auto-execute-btn-output",
+        "toggle-ml-tools",
+        "model-analytics-display",
+        "analytics-collapse",
+        "start-data-collection-btn-duplicate-output",
+        "trades-list-btn-output",
+        "source-pairs-input",
+        "risk-recommendations",
+        "auto-trading-toggle-btn-output",
+        "email-notifications-toggle-btn",
+        "sidebar-amount-max",
+        "hft-analytics-btn-output",
+        "chart-show-price-btn",
+        "performance-interval",
+        "risk-portfolio-metrics-btn",
+        "toggle-ml-tools-output",
+        "sidebar-ml-status-btn",
+        "auto-trades-display",
+        "hft-start-btn-output",
+        "prune-trades-btn-output",
+        "refresh-charts-btn",
+        "chart-refresh-btn-output",
+        "refresh-feature-importance",
+        "auto-amount-setting",
+        "refresh-model-versions",
+        "model-adaptation-chart",
+        "optimize-learning-rates-btn",
+        "stop-advanced-auto-trading-btn-output",
+        "test-ml-output",
+        "transfer-learning-training",
+        "reset-balance-btn",
+        "execute-signal-btn",
+        "amount-100-btn-output",
+        "activate-model-version",
+        "futures-total-balance",
+        "futures-bollinger-indicator",
+        "toggle-notifications",
+        "training-candles-input",
+        "check-transfer-status",
+        "show-price-chart-btn",
+        "backtest-results-enhanced",
+        "futures-trading-status",
+        "virtual-balance-reset-btn",
+        "refresh-pnl-analytics",
+        "hft-status-btn-output",
+        "futures-reset-balance-btn",
+        "reset-balance-output",
+        "backtest-symbol",
+        "hft-analytics-refresh-btn-output",
+        "close-futures-position",
+        "refresh-model-metrics",
+        "auto-trading-toggle-btn",
+        "hft-analytics-refresh-btn",
+        "pnl-analytics-display",
+        "send-test-alert-btn-output",
+        "smtp-server-input",
+        "futures-refresh-interval",
+        "refresh-charts-btn-output",
+        "sidebar-amount-250-btn",
+        "auto-trading-status-refresh-btn",
+        "reset-learning-rates-btn",
+        "enable-online-learning-btn-output",
+        "risk-portfolio-metrics-btn-output",
+        "ai-signals-display",
+        "transfer-learning-performance",
+        "alert-history-display",
+        "toggle-email-alerts",
+        "risk-trade-check-btn-output",
+        "auto-balance-display",
+        "sidebar-amount-500-btn-output",
+        "optimize-kaia-btn",
+        "passive-aggressive-status",
+        "model-retrain-status",
+        "sidebar-rsi-signal",
+        "sidebar-amount-500-output",
+        "mark-all-read-btn",
+        "test-email-alert-btn-output",
+        "hft-refresh-interval",
+        "tune-models-btn-output",
+        "reset-auto-trading-btn",
+        "sidebar-amount-1000-btn",
+        "model-version-select",
+        "target-pair-input",
+        "toggle-risk-management"
+      ]
+    },
+    "dashboardtest\\app.py": {
+      "buttons": [],
+      "callback_components": []
+    }
+  },
+  "api_endpoints": {
+    "backendtest\\app.py": [
+      {
+        "method": "GET",
+        "path": "/"
+      },
+      {
+        "method": "GET",
+        "path": "/health"
+      },
+      {
+        "method": "GET",
+        "path": "/api/status"
+      }
+    ],
+    "backendtest\\main.py": [
+      {
+        "method": "GET",
+        "path": "/"
+      },
+      {
+        "method": "GET",
+        "path": "/health"
+      },
+      {
+        "method": "GET",
+        "path": "/risk_settings"
+      },
+      {
+        "method": "POST",
+        "path": "/risk_settings"
+      },
+      {
+        "method": "GET",
+        "path": "/model/versions"
+      },
+      {
+        "method": "GET",
+        "path": "/model/active_version"
+      },
+      {
+        "method": "POST",
+        "path": "/model/active_version"
+      },
+      {
+        "method": "GET",
+        "path": "/price"
+      },
+      {
+        "method": "GET",
+        "path": "/price/{symbol}"
+      },
+      {
+        "method": "GET",
+        "path": "/model/analytics"
+      },
+      {
+        "method": "GET",
+        "path": "/advanced_auto_trading/status"
+      },
+      {
+        "method": "POST",
+        "path": "/advanced_auto_trading/start"
+      },
+      {
+        "method": "POST",
+        "path": "/advanced_auto_trading/stop"
+      },
+      {
+        "method": "GET",
+        "path": "/advanced_auto_trading/positions"
+      },
+      {
+        "method": "GET",
+        "path": "/advanced_auto_trading/market_data"
+      },
+      {
+        "method": "GET",
+        "path": "/advanced_auto_trading/indicators/{symbol}"
+      },
+      {
+        "method": "GET",
+        "path": "/advanced_auto_trading/ai_signals"
+      },
+      {
+        "method": "POST",
+        "path": "/advanced_auto_trading/config"
+      },
+      {
+        "method": "GET",
+        "path": "/ml/predict"
+      },
+      {
+        "method": "GET",
+        "path": "/ml/predict/enhanced"
+      },
+      {
+        "method": "GET",
+        "path": "/ml/current_signal"
+      },
+      {
+        "method": "GET",
+        "path": "/settings/email_notifications"
+      },
+      {
+        "method": "POST",
+        "path": "/settings/email_notifications"
+      },
+      {
+        "method": "GET",
+        "path": "/settings/email_address"
+      },
+      {
+        "method": "POST",
+        "path": "/settings/email_address"
+      },
+      {
+        "method": "GET",
+        "path": "/notifications"
+      },
+      {
+        "method": "POST",
+        "path": "/notifications"
+      },
+      {
+        "method": "POST",
+        "path": "/notifications/mark_read"
+      },
+      {
+        "method": "DELETE",
+        "path": "/notifications/{notification_id}"
+      },
+      {
+        "method": "POST",
+        "path": "/notifications/clear"
+      },
+      {
+        "method": "POST",
+        "path": "/notify"
+      },
+      {
+        "method": "GET",
+        "path": "/ml/hybrid/status"
+      },
+      {
+        "method": "POST",
+        "path": "/ml/hybrid/config"
+      },
+      {
+        "method": "GET",
+        "path": "/ml/hybrid/predict"
+      },
+      {
+        "method": "GET",
+        "path": "/ml/compatibility/check"
+      },
+      {
+        "method": "POST",
+        "path": "/ml/compatibility/fix"
+      },
+      {
+        "method": "GET",
+        "path": "/ml/compatibility/recommendations"
+      },
+      {
+        "method": "POST",
+        "path": "/ml/tune_models"
+      },
+      {
+        "method": "POST",
+        "path": "/ml/online/add_training_data"
+      },
+      {
+        "method": "POST",
+        "path": "/ml/online/update"
+      },
+      {
+        "method": "GET",
+        "path": "/ml/online/stats"
+      },
+      {
+        "method": "GET",
+        "path": "/ml/data_collection/stats"
+      },
+      {
+        "method": "POST",
+        "path": "/ml/data_collection/start"
+      },
+      {
+        "method": "POST",
+        "path": "/ml/data_collection/stop"
+      },
+      {
+        "method": "GET",
+        "path": "/ml/performance/history"
+      },
+      {
+        "method": "GET",
+        "path": "/email/config"
+      },
+      {
+        "method": "POST",
+        "path": "/email/config"
+      },
+      {
+        "method": "POST",
+        "path": "/email/test"
+      },
+      {
+        "method": "POST",
+        "path": "/email/send_test"
+      },
+      {
+        "method": "GET",
+        "path": "/features/indicators"
+      },
+      {
+        "method": "GET",
+        "path": "/model/upload_status"
+      },
+      {
+        "method": "POST",
+        "path": "/trade"
+      },
+      {
+        "method": "POST",
+        "path": "/trades/{trade_id}/close"
+      },
+      {
+        "method": "POST",
+        "path": "/trades/{trade_id}/cancel"
+      },
+      {
+        "method": "POST",
+        "path": "/trades/{trade_id}/activate"
+      },
+      {
+        "method": "POST",
+        "path": "/retrain"
+      },
+      {
+        "method": "GET",
+        "path": "/auto_trading/status"
+      },
+      {
+        "method": "POST",
+        "path": "/auto_trading/toggle"
+      },
+      {
+        "method": "POST",
+        "path": "/auto_trading/settings"
+      },
+      {
+        "method": "GET",
+        "path": "/auto_trading/signals"
+      },
+      {
+        "method": "POST",
+        "path": "/virtual_balance/reset"
+      },
+      {
+        "method": "GET",
+        "path": "/trades"
+      },
+      {
+        "method": "GET",
+        "path": "/trades/recent"
+      },
+      {
+        "method": "GET",
+        "path": "/balance"
+      },
+      {
+        "method": "DELETE",
+        "path": "/trades/cleanup"
+      },
+      {
+        "method": "GET",
+        "path": "/portfolio"
+      },
+      {
+        "method": "GET",
+        "path": "/fapi/v2/account"
+      },
+      {
+        "method": "GET",
+        "path": "/fapi/v2/balance"
+      },
+      {
+        "method": "GET",
+        "path": "/fapi/v2/positionRisk"
+      },
+      {
+        "method": "POST",
+        "path": "/fapi/v1/order"
+      },
+      {
+        "method": "GET",
+        "path": "/fapi/v1/openOrders"
+      },
+      {
+        "method": "DELETE",
+        "path": "/fapi/v1/order"
+      },
+      {
+        "method": "POST",
+        "path": "/fapi/v1/leverage"
+      },
+      {
+        "method": "POST",
+        "path": "/fapi/v1/marginType"
+      },
+      {
+        "method": "GET",
+        "path": "/fapi/v1/ticker/24hr"
+      },
+      {
+        "method": "GET",
+        "path": "/fapi/v1/exchangeInfo"
+      },
+      {
+        "method": "POST",
+        "path": "/binance/auto_execute"
+      },
+      {
+        "method": "GET",
+        "path": "/api/email/config"
+      },
+      {
+        "method": "POST",
+        "path": "/api/email/config"
+      },
+      {
+        "method": "POST",
+        "path": "/api/email/test"
+      },
+      {
+        "method": "POST",
+        "path": "/api/email/send"
+      },
+      {
+        "method": "GET",
+        "path": "/api/alerts/history"
+      },
+      {
+        "method": "DELETE",
+        "path": "/api/alerts/history"
+      },
+      {
+        "method": "POST",
+        "path": "/api/alerts/check"
+      },
+      {
+        "method": "GET",
+        "path": "/hft/status"
+      },
+      {
+        "method": "POST",
+        "path": "/hft/start"
+      },
+      {
+        "method": "POST",
+        "path": "/hft/stop"
+      },
+      {
+        "method": "POST",
+        "path": "/hft/config"
+      },
+      {
+        "method": "GET",
+        "path": "/hft/analytics"
+      },
+      {
+        "method": "GET",
+        "path": "/hft/opportunities"
+      },
+      {
+        "method": "POST",
+        "path": "/ml/data_collection/config"
+      },
+      {
+        "method": "GET",
+        "path": "/ml/data_collection/status"
+      },
+      {
+        "method": "POST",
+        "path": "/ml/online/config"
+      },
+      {
+        "method": "GET",
+        "path": "/ml/online/performance"
+      },
+      {
+        "method": "GET",
+        "path": "/ml/online/buffer_status"
+      },
+      {
+        "method": "GET",
+        "path": "/performance/dashboard"
+      },
+      {
+        "method": "GET",
+        "path": "/performance/metrics"
+      },
+      {
+        "method": "GET",
+        "path": "/risk/portfolio_metrics"
+      },
+      {
+        "method": "POST",
+        "path": "/risk/calculate_position_size"
+      },
+      {
+        "method": "POST",
+        "path": "/risk/check_trade_risk"
+      },
+      {
+        "method": "GET",
+        "path": "/risk/stop_loss_strategies"
+      },
+      {
+        "method": "POST",
+        "path": "/risk/update_advanced_settings"
+      },
+      {
+        "method": "POST",
+        "path": "/sidebar/amount/50"
+      },
+      {
+        "method": "POST",
+        "path": "/sidebar/amount/100"
+      },
+      {
+        "method": "POST",
+        "path": "/sidebar/amount/250"
+      },
+      {
+        "method": "POST",
+        "path": "/sidebar/amount/500"
+      },
+      {
+        "method": "POST",
+        "path": "/sidebar/amount/1000"
+      },
+      {
+        "method": "POST",
+        "path": "/sidebar/amount/max"
+      },
+      {
+        "method": "POST",
+        "path": "/charts/show_price"
+      },
+      {
+        "method": "POST",
+        "path": "/charts/show_indicators"
+      },
+      {
+        "method": "GET",
+        "path": "/chart/candles"
+      },
+      {
+        "method": "POST",
+        "path": "/charts/refresh"
+      },
+      {
+        "method": "GET",
+        "path": "/charts/volume"
+      },
+      {
+        "method": "GET",
+        "path": "/charts/momentum"
+      },
+      {
+        "method": "GET",
+        "path": "/charts/bollinger"
+      },
+      {
+        "method": "POST",
+        "path": "/ml/online_learning/enable"
+      },
+      {
+        "method": "POST",
+        "path": "/ml/online_learning/disable"
+      },
+      {
+        "method": "GET",
+        "path": "/ml/online_learning/status"
+      },
+      {
+        "method": "POST",
+        "path": "/risk/calculate_position_size"
+      },
+      {
+        "method": "POST",
+        "path": "/alerts/test_email"
+      },
+      {
+        "method": "POST",
+        "path": "/alerts/send_manual"
+      },
+      {
+        "method": "POST",
+        "path": "/indicators/refresh"
+      },
+      {
+        "method": "GET",
+        "path": "/indicators/config"
+      },
+      {
+        "method": "GET",
+        "path": "/model/metrics"
+      },
+      {
+        "method": "POST",
+        "path": "/indicators/config"
+      },
+      {
+        "method": "POST",
+        "path": "/futures/open"
+      },
+      {
+        "method": "GET",
+        "path": "/futures/account"
+      },
+      {
+        "method": "GET",
+        "path": "/futures/positions"
+      },
+      {
+        "method": "GET",
+        "path": "/futures/history"
+      },
+      {
+        "method": "POST",
+        "path": "/futures/open_position"
+      },
+      {
+        "method": "POST",
+        "path": "/futures/close_position"
+      },
+      {
+        "method": "POST",
+        "path": "/futures/update_positions"
+      },
+      {
+        "method": "GET",
+        "path": "/futures/settings"
+      },
+      {
+        "method": "POST",
+        "path": "/futures/settings"
+      },
+      {
+        "method": "POST",
+        "path": "/futures/execute_signal"
+      },
+      {
+        "method": "GET",
+        "path": "/futures/analytics"
+      },
+      {
+        "method": "POST",
+        "path": "/auto_trading/execute_futures_signal"
+      },
+      {
+        "method": "GET",
+        "path": "/model/feature_importance"
+      }
+    ]
+  },
+  "database_analysis": {
+    "C:\\Users\\Hari\\Dropbox\\PC\\Desktop\\Testin dub\\trades.db": {
+      "file": "trades.db",
+      "size": 4653056,
+      "tables": {
+        "trades": {
+          "columns": 13,
+          "row_count": 475
+        },
+        "backtest_results": {
+          "columns": 5,
+          "row_count": 0
+        },
+        "notifications": {
+          "columns": 5,
+          "row_count": 78
+        },
+        "settings": {
+          "columns": 2,
+          "row_count": 2
+        },
+        "market_data": {
+          "columns": 29,
+          "row_count": 19122
+        },
+        "sqlite_sequence": {
+          "columns": 2,
+          "row_count": 1
+        }
+      }
+    },
+    "C:\\Users\\Hari\\Dropbox\\PC\\Desktop\\Testin dub\\backendtest\\trades.db": {
+      "file": "backendtest\\trades.db",
+      "size": 3801088,
+      "tables": {
+        "trades": {
+          "columns": 13,
+          "row_count": 24
+        },
+        "backtest_results": {
+          "columns": 5,
+          "row_count": 0
+        },
+        "notifications": {
+          "columns": 5,
+          "row_count": 0
+        },
+        "settings": {
+          "columns": 2,
+          "row_count": 2
+        },
+        "market_data": {
+          "columns": 29,
+          "row_count": 15853
+        },
+        "sqlite_sequence": {
+          "columns": 2,
+          "row_count": 1
+        },
+        "transfer_models": {
+          "columns": 9,
+          "row_count": 0
+        },
+        "training_schedule": {
+          "columns": 8,
+          "row_count": 5
+        },
+        "transfer_performance": {
+          "columns": 8,
+          "row_count": 0
+        }
+      }
+    }
+  },
+  "functionality_map": {
+    "dashboardtest\\app.py": {
+      "functions": [
+        {
+          "name": "safe_print",
+          "line": 28,
+          "args": [
+            "message"
+          ],
+          "decorators": []
+        }
+      ],
+      "classes": [],
+      "imports": [
+        "ctypes",
+        "callbacks",
+        "os",
+        "io",
+        "layout",
+        "app",
+        "dash_app",
+        "sys"
+      ],
+      "api_endpoints": [],
+      "callbacks": [],
+      "syntax_valid": true,
+      "import_errors": [
+        "Cannot find module: callbacks",
+        "Cannot find module: layout",
+        "Cannot find module: app",
+        "Cannot find module: dash_app"
+      ]
+    },
+    "backendtest\\app.py": {
+      "functions": [],
+      "classes": [],
+      "imports": [
+        "FastAPI",
+        "os",
+        "Path",
+        "uvicorn",
+        "datetime",
+        "logging",
+        "fastapi.middleware.cors",
+        "pathlib",
+        "fastapi",
+        "CORSMiddleware",
+        "sys",
+        "main.py"
+      ],
+      "api_endpoints": [
+        {
+          "method": "GET",
+          "path": "/"
+        },
+        {
+          "method": "GET",
+          "path": "/health"
+        },
+        {
+          "method": "GET",
+          "path": "/api/status"
+        }
+      ],
+      "callbacks": [],
+      "syntax_valid": true,
+      "import_errors": [
+        "Cannot find module: FastAPI",
+        "Cannot find module: Path",
+        "Cannot find module: CORSMiddleware",
+        "Import error: main.py"
+      ]
+    },
+    "backendtest\\data_collection.py": {
+      "functions": [
+        {
+          "name": "get_atr",
+          "line": 610,
+          "args": [
+            "symbol"
+          ],
+          "decorators": []
+        },
+        {
+          "name": "get_technical_indicators",
+          "line": 624,
+          "args": [
+            "symbol"
+          ],
+          "decorators": []
+        },
+        {
+          "name": "get_fallback_indicators",
+          "line": 693,
+          "args": [],
+          "decorators": []
+        },
+        {
+          "name": "get_data_collector",
+          "line": 741,
+          "args": [],
+          "decorators": []
+        },
+        {
+          "name": "get_ohlcv_data",
+          "line": 749,
+          "args": [
+            "symbol",
+            "interval",
+            "limit"
+          ],
+          "decorators": []
+        },
+        {
+          "name": "get_volume_data",
+          "line": 835,
+          "args": [
+            "symbol"
+          ],
+          "decorators": []
+        },
+        {
+          "name": "get_momentum_data",
+          "line": 848,
+          "args": [
+            "symbol"
+          ],
+          "decorators": []
+        },
+        {
+          "name": "get_bollinger_data",
+          "line": 894,
+          "args": [
+            "symbol"
+          ],
+          "decorators": []
+        },
+        {
+          "name": "calculate_indicators",
+          "line": 50,
+          "args": [
+            "df"
+          ],
+          "decorators": [
+            "staticmethod"
+          ]
+        },
+        {
+          "name": "__init__",
+          "line": 157,
+          "args": [
+            "self",
+            "db_path"
+          ],
+          "decorators": []
+        },
+        {
+          "name": "_init_database",
+          "line": 177,
+          "args": [
+            "self"
+          ],
+          "decorators": []
+        },
+        {
+          "name": "calculate_target",
+          "line": 290,
+          "args": [
+            "self",
+            "df"
+          ],
+          "decorators": []
+        },
+        {
+          "name": "_store_market_data",
+          "line": 339,
+          "args": [
+            "self",
+            "df",
+            "symbol"
+          ],
+          "decorators": []
+        },
+        {
+          "name": "_collection_loop",
+          "line": 421,
+          "args": [
+            "self"
+          ],
+          "decorators": []
+        },
+        {
+          "name": "start_collection",
+          "line": 439,
+          "args": [
+            "self"
+          ],
+          "decorators": []
+        },
+        {
+          "name": "stop_collection",
+          "line": 450,
+          "args": [
+            "self"
+          ],
+          "decorators": []
+        },
+        {
+          "name": "get_recent_data",
+          "line": 457,
+          "args": [
+            "self",
+            "symbol",
+            "hours"
+          ],
+          "decorators": []
+        },
+        {
+          "name": "get_historical_data",
+          "line": 477,
+          "args": [
+            "self",
+            "symbol",
+            "interval",
+            "limit"
+          ],
+          "decorators": []
+        },
+        {
+          "name": "get_collection_stats",
+          "line": 523,
+          "args": [
+            "self"
+          ],
+          "decorators": []
+        },
+        {
+          "name": "get_indicators",
+          "line": 559,
+          "args": [
+            "self",
+            "symbol"
+          ],
+          "decorators": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "MarketData",
+          "line": 34,
+          "methods": []
+        },
+        {
+          "name": "TechnicalIndicators",
+          "line": 46,
+          "methods": [
+            {
+              "name": "calculate_indicators",
+              "line": 50
+            }
+          ]
+        },
+        {
+          "name": "DataCollector",
+          "line": 154,
+          "methods": [
+            {
+              "name": "__init__",
+              "line": 157
+            },
+            {
+              "name": "_init_database",
+              "line": 177
+            },
+            {
+              "name": "calculate_target",
+              "line": 290
+            },
+            {
+              "name": "_store_market_data",
+              "line": 339
+            },
+            {
+              "name": "_collection_loop",
+              "line": 421
+            },
+            {
+              "name": "start_collection",
+              "line": 439
+            },
+            {
+              "name": "stop_collection",
+              "line": 450
+            },
+            {
+              "name": "get_recent_data",
+              "line": 457
+            },
+            {
+              "name": "get_historical_data",
+              "line": 477
+            },
+            {
+              "name": "get_collection_stats",
+              "line": 523
+            },
+            {
+              "name": "get_indicators",
+              "line": 559
+            }
+          ]
+        }
+      ],
+      "imports": [
+        "Dict",
+        "threading",
+        "requests",
+        "typing",
+        "talib",
+        "numpy",
+        "logging",
+        "datetime",
+        "pandas",
+        "aiohttp",
+        "sqlite3",
+        "json",
+        "time",
+        "asyncio",
+        "dataclass",
+        "dataclasses",
+        "random"
+      ],
+      "api_endpoints": [],
+      "callbacks": [],
+      "syntax_valid": true,
+      "import_errors": [
+        "Cannot find module: Dict",
+        "Cannot find module: talib",
+        "Cannot find module: dataclass"
+      ]
+    },
+    "backendtest\\main.py": {
+      "functions": [
+        {
+          "name": "health_check",
+          "line": 286,
+          "args": [],
+          "decorators": [
+            "app.get('/health')"
+          ]
+        },
+        {
+          "name": "get_risk_settings",
+          "line": 387,
+          "args": [],
+          "decorators": [
+            "app.get('/risk_settings')"
+          ]
+        },
+        {
+          "name": "update_risk_settings",
+          "line": 391,
+          "args": [
+            "settings"
+          ],
+          "decorators": [
+            "app.post('/risk_settings')"
+          ]
+        },
+        {
+          "name": "get_model_versions",
+          "line": 402,
+          "args": [],
+          "decorators": [
+            "app.get('/model/versions')"
+          ]
+        },
+        {
+          "name": "get_active_version",
+          "line": 406,
+          "args": [],
+          "decorators": [
+            "app.get('/model/active_version')"
+          ]
+        },
+        {
+          "name": "set_active_version",
+          "line": 410,
+          "args": [
+            "data"
+          ],
+          "decorators": [
+            "app.post('/model/active_version')"
+          ]
+        },
+        {
+          "name": "get_price",
+          "line": 421,
+          "args": [
+            "symbol"
+          ],
+          "decorators": [
+            "app.get('/price')"
+          ]
+        },
+        {
+          "name": "get_price_by_path",
+          "line": 456,
+          "args": [
+            "symbol"
+          ],
+          "decorators": [
+            "app.get('/price/{symbol}')"
+          ]
+        },
+        {
+          "name": "get_model_analytics",
+          "line": 463,
+          "args": [],
+          "decorators": [
+            "app.get('/model/analytics')"
+          ]
+        },
+        {
+          "name": "get_setting",
+          "line": 950,
+          "args": [
+            "key",
+            "default"
+          ],
+          "decorators": []
+        },
+        {
+          "name": "set_setting",
+          "line": 953,
+          "args": [
+            "key",
+            "value"
+          ],
+          "decorators": []
+        },
+        {
+          "name": "get_email_notifications_setting",
+          "line": 958,
+          "args": [],
+          "decorators": [
+            "app.get('/settings/email_notifications')"
+          ]
+        },
+        {
+          "name": "set_email_notifications_setting",
+          "line": 963,
+          "args": [
+            "data"
+          ],
+          "decorators": [
+            "app.post('/settings/email_notifications')"
+          ]
+        },
+        {
+          "name": "get_email_address_setting",
+          "line": 970,
+          "args": [],
+          "decorators": [
+            "app.get('/settings/email_address')"
+          ]
+        },
+        {
+          "name": "set_email_address_setting",
+          "line": 975,
+          "args": [
+            "data"
+          ],
+          "decorators": [
+            "app.post('/settings/email_address')"
+          ]
+        },
+        {
+          "name": "get_notifications",
+          "line": 982,
+          "args": [
+            "limit",
+            "unread_only"
+          ],
+          "decorators": [
+            "app.get('/notifications')"
+          ]
+        },
+        {
+          "name": "create_notification",
+          "line": 991,
+          "args": [
+            "data"
+          ],
+          "decorators": [
+            "app.post('/notifications')"
+          ]
+        },
+        {
+          "name": "mark_notification_as_read",
+          "line": 1008,
+          "args": [
+            "data"
+          ],
+          "decorators": [
+            "app.post('/notifications/mark_read')"
+          ]
+        },
+        {
+          "name": "delete_notification_endpoint",
+          "line": 1020,
+          "args": [
+            "notification_id"
+          ],
+          "decorators": [
+            "app.delete('/notifications/{notification_id}')"
+          ]
+        },
+        {
+          "name": "clear_all_notifications",
+          "line": 1029,
+          "args": [],
+          "decorators": [
+            "app.post('/notifications/clear')"
+          ]
+        },
+        {
+          "name": "create_manual_notification",
+          "line": 1041,
+          "args": [
+            "data"
+          ],
+          "decorators": [
+            "app.post('/notify')"
+          ]
+        },
+        {
+          "name": "get_hybrid_learning_status",
+          "line": 1060,
+          "args": [],
+          "decorators": [
+            "app.get('/ml/hybrid/status')"
+          ]
+        },
+        {
+          "name": "update_hybrid_learning_config",
+          "line": 1069,
+          "args": [
+            "config"
+          ],
+          "decorators": [
+            "app.post('/ml/hybrid/config')"
+          ]
+        },
+        {
+          "name": "get_hybrid_prediction",
+          "line": 1078,
+          "args": [
+            "symbol"
+          ],
+          "decorators": [
+            "app.get('/ml/hybrid/predict')"
+          ]
+        },
+        {
+          "name": "check_ml_compatibility",
+          "line": 1097,
+          "args": [],
+          "decorators": [
+            "app.get('/ml/compatibility/check')"
+          ]
+        },
+        {
+          "name": "fix_ml_compatibility",
+          "line": 1106,
+          "args": [],
+          "decorators": [
+            "app.post('/ml/compatibility/fix')"
+          ]
+        },
+        {
+          "name": "get_ml_recommendations",
+          "line": 1115,
+          "args": [],
+          "decorators": [
+            "app.get('/ml/compatibility/recommendations')"
+          ]
+        },
+        {
+          "name": "tune_ml_models",
+          "line": 1124,
+          "args": [
+            "params"
+          ],
+          "decorators": [
+            "app.post('/ml/tune_models')"
+          ]
+        },
+        {
+          "name": "add_online_training_data",
+          "line": 1191,
+          "args": [
+            "data"
+          ],
+          "decorators": [
+            "app.post('/ml/online/add_training_data')"
+          ]
+        },
+        {
+          "name": "trigger_online_learning_update",
+          "line": 1204,
+          "args": [],
+          "decorators": [
+            "app.post('/ml/online/update')"
+          ]
+        },
+        {
+          "name": "get_online_learning_stats",
+          "line": 1213,
+          "args": [],
+          "decorators": [
+            "app.get('/ml/online/stats')"
+          ]
+        },
+        {
+          "name": "get_data_collection_stats",
+          "line": 1222,
+          "args": [],
+          "decorators": [
+            "app.get('/ml/data_collection/stats')"
+          ]
+        },
+        {
+          "name": "start_data_collection",
+          "line": 1232,
+          "args": [
+            "config"
+          ],
+          "decorators": [
+            "app.post('/ml/data_collection/start')"
+          ]
+        },
+        {
+          "name": "stop_data_collection",
+          "line": 1242,
+          "args": [],
+          "decorators": [
+            "app.post('/ml/data_collection/stop')"
+          ]
+        },
+        {
+          "name": "get_performance_history",
+          "line": 1252,
+          "args": [
+            "symbol",
+            "days"
+          ],
+          "decorators": [
+            "app.get('/ml/performance/history')"
+          ]
+        },
+        {
+          "name": "get_email_config_endpoint",
+          "line": 1319,
+          "args": [],
+          "decorators": [
+            "app.get('/email/config')"
+          ]
+        },
+        {
+          "name": "save_email_config_endpoint",
+          "line": 1328,
+          "args": [
+            "config"
+          ],
+          "decorators": [
+            "app.post('/email/config')"
+          ]
+        },
+        {
+          "name": "test_email_config_endpoint",
+          "line": 1337,
+          "args": [],
+          "decorators": [
+            "app.post('/email/test')"
+          ]
+        },
+        {
+          "name": "send_test_email",
+          "line": 1346,
+          "args": [
+            "data"
+          ],
+          "decorators": [
+            "app.post('/email/send_test')"
+          ]
+        },
+        {
+          "name": "load_virtual_balance",
+          "line": 1526,
+          "args": [],
+          "decorators": []
+        },
+        {
+          "name": "save_virtual_balance",
+          "line": 1537,
+          "args": [
+            "balance"
+          ],
+          "decorators": []
+        },
+        {
+          "name": "calculate_current_pnl",
+          "line": 1548,
+          "args": [],
+          "decorators": []
+        },
+        {
+          "name": "get_auto_trading_status",
+          "line": 1628,
+          "args": [],
+          "decorators": [
+            "app.get('/auto_trading/status')"
+          ]
+        },
+        {
+          "name": "toggle_auto_trading",
+          "line": 1703,
+          "args": [
+            "data"
+          ],
+          "decorators": [
+            "app.post('/auto_trading/toggle')"
+          ]
+        },
+        {
+          "name": "update_auto_trading_settings",
+          "line": 1726,
+          "args": [
+            "settings"
+          ],
+          "decorators": [
+            "app.post('/auto_trading/settings')"
+          ]
+        },
+        {
+          "name": "get_auto_trading_signals",
+          "line": 1746,
+          "args": [],
+          "decorators": [
+            "app.get('/auto_trading/signals')"
+          ]
+        },
+        {
+          "name": "cleanup_old_trades",
+          "line": 1818,
+          "args": [],
+          "decorators": [
+            "app.delete('/trades/cleanup')"
+          ]
+        },
+        {
+          "name": "get_binance_account",
+          "line": 1950,
+          "args": [],
+          "decorators": [
+            "app.get('/fapi/v2/account')"
+          ]
+        },
+        {
+          "name": "get_binance_balance",
+          "line": 1959,
+          "args": [],
+          "decorators": [
+            "app.get('/fapi/v2/balance')"
+          ]
+        },
+        {
+          "name": "get_binance_position_risk",
+          "line": 1969,
+          "args": [
+            "symbol"
+          ],
+          "decorators": [
+            "app.get('/fapi/v2/positionRisk')"
+          ]
+        },
+        {
+          "name": "new_binance_order",
+          "line": 1977,
+          "args": [
+            "symbol",
+            "side",
+            "type",
+            "quantity",
+            "price",
+            "timeInForce",
+            "reduceOnly",
+            "positionSide",
+            "stopPrice",
+            "closePosition",
+            "workingType"
+          ],
+          "decorators": [
+            "app.post('/fapi/v1/order')"
+          ]
+        },
+        {
+          "name": "get_binance_open_orders",
+          "line": 2017,
+          "args": [
+            "symbol"
+          ],
+          "decorators": [
+            "app.get('/fapi/v1/openOrders')"
+          ]
+        },
+        {
+          "name": "cancel_binance_order",
+          "line": 2031,
+          "args": [
+            "symbol",
+            "orderId",
+            "origClientOrderId"
+          ],
+          "decorators": [
+            "app.delete('/fapi/v1/order')"
+          ]
+        },
+        {
+          "name": "change_binance_leverage",
+          "line": 2047,
+          "args": [
+            "symbol",
+            "leverage"
+          ],
+          "decorators": [
+            "app.post('/fapi/v1/leverage')"
+          ]
+        },
+        {
+          "name": "change_binance_margin_type",
+          "line": 2056,
+          "args": [
+            "symbol",
+            "marginType"
+          ],
+          "decorators": [
+            "app.post('/fapi/v1/marginType')"
+          ]
+        },
+        {
+          "name": "get_24hr_ticker",
+          "line": 2066,
+          "args": [
+            "symbol"
+          ],
+          "decorators": [
+            "app.get('/fapi/v1/ticker/24hr')"
+          ]
+        },
+        {
+          "name": "get_exchange_info",
+          "line": 2141,
+          "args": [],
+          "decorators": [
+            "app.get('/fapi/v1/exchangeInfo')"
+          ]
+        },
+        {
+          "name": "execute_binance_auto_signal",
+          "line": 2187,
+          "args": [
+            "signal_data"
+          ],
+          "decorators": [
+            "app.post('/binance/auto_execute')"
+          ]
+        },
+        {
+          "name": "get_hft_status",
+          "line": 2480,
+          "args": [],
+          "decorators": [
+            "app.get('/hft/status')"
+          ]
+        },
+        {
+          "name": "start_hft_analysis",
+          "line": 2516,
+          "args": [],
+          "decorators": [
+            "app.post('/hft/start')"
+          ]
+        },
+        {
+          "name": "stop_hft_analysis",
+          "line": 2580,
+          "args": [],
+          "decorators": [
+            "app.post('/hft/stop')"
+          ]
+        },
+        {
+          "name": "save_hft_config",
+          "line": 2617,
+          "args": [
+            "config"
+          ],
+          "decorators": [
+            "app.post('/hft/config')"
+          ]
+        },
+        {
+          "name": "get_hft_analytics",
+          "line": 2661,
+          "args": [],
+          "decorators": [
+            "app.get('/hft/analytics')"
+          ]
+        },
+        {
+          "name": "get_hft_opportunities",
+          "line": 2755,
+          "args": [],
+          "decorators": [
+            "app.get('/hft/opportunities')"
+          ]
+        },
+        {
+          "name": "save_data_collection_config",
+          "line": 2783,
+          "args": [
+            "config"
+          ],
+          "decorators": [
+            "app.post('/ml/data_collection/config')"
+          ]
+        },
+        {
+          "name": "get_data_collection_status",
+          "line": 2794,
+          "args": [],
+          "decorators": [
+            "app.get('/ml/data_collection/status')"
+          ]
+        },
+        {
+          "name": "save_online_learning_config",
+          "line": 2812,
+          "args": [
+            "config"
+          ],
+          "decorators": [
+            "app.post('/ml/online/config')"
+          ]
+        },
+        {
+          "name": "get_model_performance",
+          "line": 2832,
+          "args": [],
+          "decorators": [
+            "app.get('/ml/online/performance')"
+          ]
+        },
+        {
+          "name": "get_learning_buffer_status",
+          "line": 2841,
+          "args": [],
+          "decorators": [
+            "app.get('/ml/online/buffer_status')"
+          ]
+        },
+        {
+          "name": "get_performance_dashboard",
+          "line": 2875,
+          "args": [],
+          "decorators": [
+            "app.get('/performance/dashboard')"
+          ]
+        },
+        {
+          "name": "get_performance_metrics",
+          "line": 2893,
+          "args": [
+            "timeframe"
+          ],
+          "decorators": [
+            "app.get('/performance/metrics')"
+          ]
+        },
+        {
+          "name": "get_portfolio_risk_metrics",
+          "line": 2923,
+          "args": [],
+          "decorators": [
+            "app.get('/risk/portfolio_metrics')"
+          ]
+        },
+        {
+          "name": "calculate_dynamic_position_size",
+          "line": 3005,
+          "args": [
+            "data"
+          ],
+          "decorators": [
+            "app.post('/risk/calculate_position_size')"
+          ]
+        },
+        {
+          "name": "check_trade_risk",
+          "line": 3059,
+          "args": [
+            "data"
+          ],
+          "decorators": [
+            "app.post('/risk/check_trade_risk')"
+          ]
+        },
+        {
+          "name": "get_stop_loss_strategies",
+          "line": 3110,
+          "args": [
+            "symbol",
+            "entry_price"
+          ],
+          "decorators": [
+            "app.get('/risk/stop_loss_strategies')"
+          ]
+        },
+        {
+          "name": "update_advanced_risk_settings",
+          "line": 3148,
+          "args": [
+            "settings"
+          ],
+          "decorators": [
+            "app.post('/risk/update_advanced_settings')"
+          ]
+        },
+        {
+          "name": "set_sidebar_amount_50",
+          "line": 3166,
+          "args": [],
+          "decorators": [
+            "app.post('/sidebar/amount/50')"
+          ]
+        },
+        {
+          "name": "set_sidebar_amount_100",
+          "line": 3179,
+          "args": [],
+          "decorators": [
+            "app.post('/sidebar/amount/100')"
+          ]
+        },
+        {
+          "name": "set_sidebar_amount_250",
+          "line": 3192,
+          "args": [],
+          "decorators": [
+            "app.post('/sidebar/amount/250')"
+          ]
+        },
+        {
+          "name": "set_sidebar_amount_500",
+          "line": 3205,
+          "args": [],
+          "decorators": [
+            "app.post('/sidebar/amount/500')"
+          ]
+        },
+        {
+          "name": "set_sidebar_amount_1000",
+          "line": 3218,
+          "args": [],
+          "decorators": [
+            "app.post('/sidebar/amount/1000')"
+          ]
+        },
+        {
+          "name": "set_sidebar_amount_max",
+          "line": 3231,
+          "args": [],
+          "decorators": [
+            "app.post('/sidebar/amount/max')"
+          ]
+        },
+        {
+          "name": "show_price_chart",
+          "line": 3250,
+          "args": [],
+          "decorators": [
+            "app.post('/charts/show_price')"
+          ]
+        },
+        {
+          "name": "show_indicators_chart",
+          "line": 3262,
+          "args": [],
+          "decorators": [
+            "app.post('/charts/show_indicators')"
+          ]
+        },
+        {
+          "name": "get_candles",
+          "line": 3287,
+          "args": [
+            "symbol",
+            "interval",
+            "limit"
+          ],
+          "decorators": [
+            "app.get('/chart/candles')"
+          ]
+        },
+        {
+          "name": "refresh_charts",
+          "line": 3312,
+          "args": [],
+          "decorators": [
+            "app.post('/charts/refresh')"
+          ]
+        },
+        {
+          "name": "get_volume_chart_data",
+          "line": 3325,
+          "args": [
+            "symbol"
+          ],
+          "decorators": [
+            "app.get('/charts/volume')"
+          ]
+        },
+        {
+          "name": "get_momentum_chart_data",
+          "line": 3352,
+          "args": [
+            "symbol"
+          ],
+          "decorators": [
+            "app.get('/charts/momentum')"
+          ]
+        },
+        {
+          "name": "get_bollinger_bands_data",
+          "line": 3379,
+          "args": [
+            "symbol"
+          ],
+          "decorators": [
+            "app.get('/charts/bollinger')"
+          ]
+        },
+        {
+          "name": "enable_online_learning",
+          "line": 3410,
+          "args": [],
+          "decorators": [
+            "app.post('/ml/online_learning/enable')"
+          ]
+        },
+        {
+          "name": "disable_online_learning",
+          "line": 3439,
+          "args": [],
+          "decorators": [
+            "app.post('/ml/online_learning/disable')"
+          ]
+        },
+        {
+          "name": "get_online_learning_status",
+          "line": 3453,
+          "args": [],
+          "decorators": [
+            "app.get('/ml/online_learning/status')"
+          ]
+        },
+        {
+          "name": "calculate_position_size",
+          "line": 3475,
+          "args": [
+            "data"
+          ],
+          "decorators": [
+            "app.post('/risk/calculate_position_size')"
+          ]
+        },
+        {
+          "name": "test_email_alert",
+          "line": 3518,
+          "args": [],
+          "decorators": [
+            "app.post('/alerts/test_email')"
+          ]
+        },
+        {
+          "name": "send_manual_alert",
+          "line": 3545,
+          "args": [
+            "alert_data"
+          ],
+          "decorators": [
+            "app.post('/alerts/send_manual')"
+          ]
+        },
+        {
+          "name": "data_get_technical_indicators",
+          "line": 3584,
+          "args": [
+            "symbol"
+          ],
+          "decorators": []
+        },
+        {
+          "name": "refresh_technical_indicators",
+          "line": 3694,
+          "args": [
+            "symbol"
+          ],
+          "decorators": [
+            "app.post('/indicators/refresh')"
+          ]
+        },
+        {
+          "name": "get_indicators_config",
+          "line": 3721,
+          "args": [],
+          "decorators": [
+            "app.get('/indicators/config')"
+          ]
+        },
+        {
+          "name": "get_model_metrics",
+          "line": 3741,
+          "args": [],
+          "decorators": [
+            "app.get('/model/metrics')"
+          ]
+        },
+        {
+          "name": "update_indicators_config",
+          "line": 3835,
+          "args": [
+            "config"
+          ],
+          "decorators": [
+            "app.post('/indicators/config')"
+          ]
+        },
+        {
+          "name": "open_futures_position_v2",
+          "line": 3848,
+          "args": [
+            "data"
+          ],
+          "decorators": [
+            "app.post('/futures/open')"
+          ]
+        },
+        {
+          "name": "get_futures_account",
+          "line": 3884,
+          "args": [],
+          "decorators": [
+            "app.get('/futures/account')"
+          ]
+        },
+        {
+          "name": "get_futures_positions",
+          "line": 3893,
+          "args": [],
+          "decorators": [
+            "app.get('/futures/positions')"
+          ]
+        },
+        {
+          "name": "get_futures_trade_history",
+          "line": 3902,
+          "args": [
+            "limit"
+          ],
+          "decorators": [
+            "app.get('/futures/history')"
+          ]
+        },
+        {
+          "name": "open_futures_position_v3",
+          "line": 3926,
+          "args": [
+            "signal"
+          ],
+          "decorators": [
+            "app.post('/futures/open_position')"
+          ]
+        },
+        {
+          "name": "close_futures_position",
+          "line": 3950,
+          "args": [
+            "data"
+          ],
+          "decorators": [
+            "app.post('/futures/close_position')"
+          ]
+        },
+        {
+          "name": "update_futures_positions",
+          "line": 3972,
+          "args": [
+            "data"
+          ],
+          "decorators": [
+            "app.post('/futures/update_positions')"
+          ]
+        },
+        {
+          "name": "get_futures_settings",
+          "line": 4016,
+          "args": [],
+          "decorators": [
+            "app.get('/futures/settings')"
+          ]
+        },
+        {
+          "name": "update_futures_settings",
+          "line": 4031,
+          "args": [
+            "settings"
+          ],
+          "decorators": [
+            "app.post('/futures/settings')"
+          ]
+        },
+        {
+          "name": "execute_futures_signal",
+          "line": 4055,
+          "args": [
+            "signal"
+          ],
+          "decorators": [
+            "app.post('/futures/execute_signal')"
+          ]
+        },
+        {
+          "name": "get_futures_analytics",
+          "line": 4080,
+          "args": [],
+          "decorators": [
+            "app.get('/futures/analytics')"
+          ]
+        },
+        {
+          "name": "execute_auto_trading_futures_signal",
+          "line": 4129,
+          "args": [
+            "signal"
+          ],
+          "decorators": [
+            "app.post('/auto_trading/execute_futures_signal')"
+          ]
+        },
+        {
+          "name": "get_model_feature_importance",
+          "line": 4139,
+          "args": [],
+          "decorators": [
+            "app.get('/model/feature_importance')"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "AutoTradingSettings",
+          "line": 267,
+          "methods": []
+        },
+        {
+          "name": "SignalData",
+          "line": 276,
+          "methods": []
+        }
+      ],
+      "imports": [
+        "trading",
+        "get_data_collector",
+        "initialize_database",
+        "timedelta",
+        "data_collection",
+        "asynccontextmanager",
+        "online_learning_manager",
+        "logging",
+        "datetime",
+        "get_minimal_transfer_router",
+        "fails",
+        "price_feed",
+        "router",
+        "PositionSide",
+        "MIMEMultipart",
+        "pydantic",
+        "List",
+        "online_learning",
+        "futures_trading",
+        "hybrid_orchestrator.start_system",
+        "typing",
+        "email_utils",
+        "numpy",
+        "traceback",
+        "fastapi.responses",
+        "ws",
+        "get_model_performance_metrics",
+        "process",
+        "missing",
+        "email.mime.text",
+        "time",
+        "email.mime.multipart",
+        "minimal_transfer_endpoints",
+        "FastAPI",
+        "OrderSide",
+        "JSONResponse",
+        "get_email_config",
+        "smtplib",
+        "get_missing_endpoints_router",
+        "open_virtual_trade",
+        "TechnicalIndicators",
+        "db",
+        "missing_endpoints",
+        "uuid",
+        "ml_compatibility_manager",
+        "FuturesSignal",
+        "MIMEText",
+        "binance_futures_exact",
+        "BinanceFuturesTradingEngine",
+        "asyncio",
+        "fastapi",
+        "contextlib",
+        "get_technical_indicators",
+        "hybrid_orchestrator",
+        "requests",
+        "FuturesTradingEngine",
+        "AdvancedAutoTradingEngine",
+        "hybrid_learning",
+        "advanced_auto_trading",
+        "os",
+        "uvicorn",
+        "real",
+        "real_predict",
+        "MLCompatibilityManager",
+        "ml",
+        "fastapi.middleware.cors",
+        "importlib",
+        "json",
+        "and",
+        "get_ohlcv_data",
+        "BaseModel",
+        "get_binance_price",
+        "CORSMiddleware",
+        "sys",
+        "random"
+      ],
+      "api_endpoints": [
+        {
+          "method": "GET",
+          "path": "/"
+        },
+        {
+          "method": "GET",
+          "path": "/health"
+        },
+        {
+          "method": "GET",
+          "path": "/risk_settings"
+        },
+        {
+          "method": "POST",
+          "path": "/risk_settings"
+        },
+        {
+          "method": "GET",
+          "path": "/model/versions"
+        },
+        {
+          "method": "GET",
+          "path": "/model/active_version"
+        },
+        {
+          "method": "POST",
+          "path": "/model/active_version"
+        },
+        {
+          "method": "GET",
+          "path": "/price"
+        },
+        {
+          "method": "GET",
+          "path": "/price/{symbol}"
+        },
+        {
+          "method": "GET",
+          "path": "/model/analytics"
+        },
+        {
+          "method": "GET",
+          "path": "/advanced_auto_trading/status"
+        },
+        {
+          "method": "POST",
+          "path": "/advanced_auto_trading/start"
+        },
+        {
+          "method": "POST",
+          "path": "/advanced_auto_trading/stop"
+        },
+        {
+          "method": "GET",
+          "path": "/advanced_auto_trading/positions"
+        },
+        {
+          "method": "GET",
+          "path": "/advanced_auto_trading/market_data"
+        },
+        {
+          "method": "GET",
+          "path": "/advanced_auto_trading/indicators/{symbol}"
+        },
+        {
+          "method": "GET",
+          "path": "/advanced_auto_trading/ai_signals"
+        },
+        {
+          "method": "POST",
+          "path": "/advanced_auto_trading/config"
+        },
+        {
+          "method": "GET",
+          "path": "/ml/predict"
+        },
+        {
+          "method": "GET",
+          "path": "/ml/predict/enhanced"
+        },
+        {
+          "method": "GET",
+          "path": "/ml/current_signal"
+        },
+        {
+          "method": "GET",
+          "path": "/settings/email_notifications"
+        },
+        {
+          "method": "POST",
+          "path": "/settings/email_notifications"
+        },
+        {
+          "method": "GET",
+          "path": "/settings/email_address"
+        },
+        {
+          "method": "POST",
+          "path": "/settings/email_address"
+        },
+        {
+          "method": "GET",
+          "path": "/notifications"
+        },
+        {
+          "method": "POST",
+          "path": "/notifications"
+        },
+        {
+          "method": "POST",
+          "path": "/notifications/mark_read"
+        },
+        {
+          "method": "DELETE",
+          "path": "/notifications/{notification_id}"
+        },
+        {
+          "method": "POST",
+          "path": "/notifications/clear"
+        },
+        {
+          "method": "POST",
+          "path": "/notify"
+        },
+        {
+          "method": "GET",
+          "path": "/ml/hybrid/status"
+        },
+        {
+          "method": "POST",
+          "path": "/ml/hybrid/config"
+        },
+        {
+          "method": "GET",
+          "path": "/ml/hybrid/predict"
+        },
+        {
+          "method": "GET",
+          "path": "/ml/compatibility/check"
+        },
+        {
+          "method": "POST",
+          "path": "/ml/compatibility/fix"
+        },
+        {
+          "method": "GET",
+          "path": "/ml/compatibility/recommendations"
+        },
+        {
+          "method": "POST",
+          "path": "/ml/tune_models"
+        },
+        {
+          "method": "POST",
+          "path": "/ml/online/add_training_data"
+        },
+        {
+          "method": "POST",
+          "path": "/ml/online/update"
+        },
+        {
+          "method": "GET",
+          "path": "/ml/online/stats"
+        },
+        {
+          "method": "GET",
+          "path": "/ml/data_collection/stats"
+        },
+        {
+          "method": "POST",
+          "path": "/ml/data_collection/start"
+        },
+        {
+          "method": "POST",
+          "path": "/ml/data_collection/stop"
+        },
+        {
+          "method": "GET",
+          "path": "/ml/performance/history"
+        },
+        {
+          "method": "GET",
+          "path": "/email/config"
+        },
+        {
+          "method": "POST",
+          "path": "/email/config"
+        },
+        {
+          "method": "POST",
+          "path": "/email/test"
+        },
+        {
+          "method": "POST",
+          "path": "/email/send_test"
+        },
+        {
+          "method": "GET",
+          "path": "/features/indicators"
+        },
+        {
+          "method": "GET",
+          "path": "/model/upload_status"
+        },
+        {
+          "method": "POST",
+          "path": "/trade"
+        },
+        {
+          "method": "POST",
+          "path": "/trades/{trade_id}/close"
+        },
+        {
+          "method": "POST",
+          "path": "/trades/{trade_id}/cancel"
+        },
+        {
+          "method": "POST",
+          "path": "/trades/{trade_id}/activate"
+        },
+        {
+          "method": "POST",
+          "path": "/retrain"
+        },
+        {
+          "method": "GET",
+          "path": "/auto_trading/status"
+        },
+        {
+          "method": "POST",
+          "path": "/auto_trading/toggle"
+        },
+        {
+          "method": "POST",
+          "path": "/auto_trading/settings"
+        },
+        {
+          "method": "GET",
+          "path": "/auto_trading/signals"
+        },
+        {
+          "method": "POST",
+          "path": "/virtual_balance/reset"
+        },
+        {
+          "method": "GET",
+          "path": "/trades"
+        },
+        {
+          "method": "GET",
+          "path": "/trades/recent"
+        },
+        {
+          "method": "GET",
+          "path": "/balance"
+        },
+        {
+          "method": "DELETE",
+          "path": "/trades/cleanup"
+        },
+        {
+          "method": "GET",
+          "path": "/portfolio"
+        },
+        {
+          "method": "GET",
+          "path": "/fapi/v2/account"
+        },
+        {
+          "method": "GET",
+          "path": "/fapi/v2/balance"
+        },
+        {
+          "method": "GET",
+          "path": "/fapi/v2/positionRisk"
+        },
+        {
+          "method": "POST",
+          "path": "/fapi/v1/order"
+        },
+        {
+          "method": "GET",
+          "path": "/fapi/v1/openOrders"
+        },
+        {
+          "method": "DELETE",
+          "path": "/fapi/v1/order"
+        },
+        {
+          "method": "POST",
+          "path": "/fapi/v1/leverage"
+        },
+        {
+          "method": "POST",
+          "path": "/fapi/v1/marginType"
+        },
+        {
+          "method": "GET",
+          "path": "/fapi/v1/ticker/24hr"
+        },
+        {
+          "method": "GET",
+          "path": "/fapi/v1/exchangeInfo"
+        },
+        {
+          "method": "POST",
+          "path": "/binance/auto_execute"
+        },
+        {
+          "method": "GET",
+          "path": "/api/email/config"
+        },
+        {
+          "method": "POST",
+          "path": "/api/email/config"
+        },
+        {
+          "method": "POST",
+          "path": "/api/email/test"
+        },
+        {
+          "method": "POST",
+          "path": "/api/email/send"
+        },
+        {
+          "method": "GET",
+          "path": "/api/alerts/history"
+        },
+        {
+          "method": "DELETE",
+          "path": "/api/alerts/history"
+        },
+        {
+          "method": "POST",
+          "path": "/api/alerts/check"
+        },
+        {
+          "method": "GET",
+          "path": "/hft/status"
+        },
+        {
+          "method": "POST",
+          "path": "/hft/start"
+        },
+        {
+          "method": "POST",
+          "path": "/hft/stop"
+        },
+        {
+          "method": "POST",
+          "path": "/hft/config"
+        },
+        {
+          "method": "GET",
+          "path": "/hft/analytics"
+        },
+        {
+          "method": "GET",
+          "path": "/hft/opportunities"
+        },
+        {
+          "method": "POST",
+          "path": "/ml/data_collection/config"
+        },
+        {
+          "method": "GET",
+          "path": "/ml/data_collection/status"
+        },
+        {
+          "method": "POST",
+          "path": "/ml/online/config"
+        },
+        {
+          "method": "GET",
+          "path": "/ml/online/performance"
+        },
+        {
+          "method": "GET",
+          "path": "/ml/online/buffer_status"
+        },
+        {
+          "method": "GET",
+          "path": "/performance/dashboard"
+        },
+        {
+          "method": "GET",
+          "path": "/performance/metrics"
+        },
+        {
+          "method": "GET",
+          "path": "/risk/portfolio_metrics"
+        },
+        {
+          "method": "POST",
+          "path": "/risk/calculate_position_size"
+        },
+        {
+          "method": "POST",
+          "path": "/risk/check_trade_risk"
+        },
+        {
+          "method": "GET",
+          "path": "/risk/stop_loss_strategies"
+        },
+        {
+          "method": "POST",
+          "path": "/risk/update_advanced_settings"
+        },
+        {
+          "method": "POST",
+          "path": "/sidebar/amount/50"
+        },
+        {
+          "method": "POST",
+          "path": "/sidebar/amount/100"
+        },
+        {
+          "method": "POST",
+          "path": "/sidebar/amount/250"
+        },
+        {
+          "method": "POST",
+          "path": "/sidebar/amount/500"
+        },
+        {
+          "method": "POST",
+          "path": "/sidebar/amount/1000"
+        },
+        {
+          "method": "POST",
+          "path": "/sidebar/amount/max"
+        },
+        {
+          "method": "POST",
+          "path": "/charts/show_price"
+        },
+        {
+          "method": "POST",
+          "path": "/charts/show_indicators"
+        },
+        {
+          "method": "GET",
+          "path": "/chart/candles"
+        },
+        {
+          "method": "POST",
+          "path": "/charts/refresh"
+        },
+        {
+          "method": "GET",
+          "path": "/charts/volume"
+        },
+        {
+          "method": "GET",
+          "path": "/charts/momentum"
+        },
+        {
+          "method": "GET",
+          "path": "/charts/bollinger"
+        },
+        {
+          "method": "POST",
+          "path": "/ml/online_learning/enable"
+        },
+        {
+          "method": "POST",
+          "path": "/ml/online_learning/disable"
+        },
+        {
+          "method": "GET",
+          "path": "/ml/online_learning/status"
+        },
+        {
+          "method": "POST",
+          "path": "/risk/calculate_position_size"
+        },
+        {
+          "method": "POST",
+          "path": "/alerts/test_email"
+        },
+        {
+          "method": "POST",
+          "path": "/alerts/send_manual"
+        },
+        {
+          "method": "POST",
+          "path": "/indicators/refresh"
+        },
+        {
+          "method": "GET",
+          "path": "/indicators/config"
+        },
+        {
+          "method": "GET",
+          "path": "/model/metrics"
+        },
+        {
+          "method": "POST",
+          "path": "/indicators/config"
+        },
+        {
+          "method": "POST",
+          "path": "/futures/open"
+        },
+        {
+          "method": "GET",
+          "path": "/futures/account"
+        },
+        {
+          "method": "GET",
+          "path": "/futures/positions"
+        },
+        {
+          "method": "GET",
+          "path": "/futures/history"
+        },
+        {
+          "method": "POST",
+          "path": "/futures/open_position"
+        },
+        {
+          "method": "POST",
+          "path": "/futures/close_position"
+        },
+        {
+          "method": "POST",
+          "path": "/futures/update_positions"
+        },
+        {
+          "method": "GET",
+          "path": "/futures/settings"
+        },
+        {
+          "method": "POST",
+          "path": "/futures/settings"
+        },
+        {
+          "method": "POST",
+          "path": "/futures/execute_signal"
+        },
+        {
+          "method": "GET",
+          "path": "/futures/analytics"
+        },
+        {
+          "method": "POST",
+          "path": "/auto_trading/execute_futures_signal"
+        },
+        {
+          "method": "GET",
+          "path": "/model/feature_importance"
+        }
+      ],
+      "callbacks": [],
+      "syntax_valid": true,
+      "import_errors": [
+        "Cannot find module: get_data_collector",
+        "Cannot find module: initialize_database",
+        "Cannot find module: timedelta",
+        "Cannot find module: asynccontextmanager",
+        "Cannot find module: online_learning_manager",
+        "Cannot find module: get_minimal_transfer_router",
+        "Cannot find module: fails",
+        "Cannot find module: router",
+        "Cannot find module: PositionSide",
+        "Cannot find module: MIMEMultipart",
+        "Cannot find module: List",
+        "Import error: hybrid_orchestrator.start_system",
+        "Cannot find module: get_model_performance_metrics",
+        "Cannot find module: process",
+        "Cannot find module: missing",
+        "Cannot find module: FastAPI",
+        "Cannot find module: OrderSide",
+        "Cannot find module: JSONResponse",
+        "Cannot find module: get_email_config",
+        "Cannot find module: get_missing_endpoints_router",
+        "Cannot find module: open_virtual_trade",
+        "Cannot find module: TechnicalIndicators",
+        "Cannot find module: FuturesSignal",
+        "Cannot find module: MIMEText",
+        "Cannot find module: BinanceFuturesTradingEngine",
+        "Cannot find module: get_technical_indicators",
+        "Cannot find module: hybrid_orchestrator",
+        "Cannot find module: FuturesTradingEngine",
+        "Cannot find module: AdvancedAutoTradingEngine",
+        "Cannot find module: real",
+        "Cannot find module: real_predict",
+        "Cannot find module: MLCompatibilityManager",
+        "Cannot find module: and",
+        "Cannot find module: get_ohlcv_data",
+        "Cannot find module: BaseModel",
+        "Cannot find module: get_binance_price",
+        "Cannot find module: CORSMiddleware"
+      ]
+    },
+    "main.py": {
+      "functions": [
+        {
+          "name": "start_backend_server",
+          "line": 26,
+          "args": [],
+          "decorators": []
+        },
+        {
+          "name": "start_dashboard_server",
+          "line": 38,
+          "args": [],
+          "decorators": []
+        },
+        {
+          "name": "start_data_collection",
+          "line": 51,
+          "args": [],
+          "decorators": []
+        },
+        {
+          "name": "main",
+          "line": 68,
+          "args": [],
+          "decorators": []
+        }
+      ],
+      "classes": [],
+      "imports": [
+        "threading",
+        "backend",
+        "dashboard",
+        "os",
+        "Path",
+        "backendtest.data_collection",
+        "logging",
+        "dashboardtest.app",
+        "pathlib",
+        "app",
+        "time",
+        "backendtest.app",
+        "DataCollector",
+        "sys"
+      ],
+      "api_endpoints": [],
+      "callbacks": [],
+      "syntax_valid": true,
+      "import_errors": [
+        "Cannot find module: backend",
+        "Cannot find module: dashboard",
+        "Cannot find module: Path",
+        "Cannot find module: DataCollector"
+      ]
+    }
+  },
+  "dependencies": {},
+  "security_issues": [],
+  "performance_issues": [],
+  "code_quality": {}
+}

@@ -1,0 +1,23 @@
+{
+  "timestamp": "2025-06-25T18:21:42.578307",
+  "backend_sync": {
+    "batch_models": false,
+    "online_learning": false,
+    "hybrid_orchestrator": false,
+    "prediction_sync": false,
+    "data_collection": false,
+    "model_updates": false
+  },
+  "dashboard_sync": {
+    "online_learning_controls": true,
+    "hybrid_learning_status": true,
+    "model_metrics_display": true,
+    "prediction_displays": true,
+    "ml_performance_charts": true
+  },
+  "scores": {
+    "backend": 0.0,
+    "dashboard": 100.0,
+    "overall": 50.0
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "timestamp": 1752012562.6538033,
+  "results": {
+    "page_content": false,
+    "dash_endpoints": false,
+    "cors_network": false,
+    "callback_registration": true,
+    "javascript": false,
+    "component_interaction": false
+  },
+  "passed_tests": 1,
+  "total_tests": 6
+}

@@ -1,0 +1,130 @@
+{
+  "report_date": "2025-07-08T22:55:18.462575",
+  "overall_status": "GOOD",
+  "backend_components": {
+    "total_tested": 13,
+    "successful": 12,
+    "success_rate": "92.3%",
+    "details": {
+      "main.py": {
+        "status": "SUCCESS",
+        "details": "Imports without errors"
+      },
+      "routes.advanced_auto_trading_routes": {
+        "status": "SUCCESS",
+        "details": "Router available"
+      },
+      "routes.ml_prediction_routes": {
+        "status": "SUCCESS",
+        "details": "Router available"
+      },
+      "routes.system_routes": {
+        "status": "SUCCESS",
+        "details": "Router available"
+      },
+      "routes.hft_analysis_routes": {
+        "status": "SUCCESS",
+        "details": "Router available"
+      },
+      "routes.data_collection_routes": {
+        "status": "SUCCESS",
+        "details": "Router available"
+      },
+      "routes.futures_trading_routes": {
+        "status": "SUCCESS",
+        "details": "Router available"
+      },
+      "routes.settings_notifications_routes": {
+        "status": "WARNING",
+        "details": "No router found"
+      },
+      "db": {
+        "status": "SUCCESS",
+        "details": "Core module available"
+      },
+      "trading": {
+        "status": "SUCCESS",
+        "details": "Core module available"
+      },
+      "ml": {
+        "status": "SUCCESS",
+        "details": "Core module available"
+      },
+      "data_collection": {
+        "status": "SUCCESS",
+        "details": "Core module available"
+      },
+      "futures_trading": {
+        "status": "SUCCESS",
+        "details": "Core module available"
+      }
+    }
+  },
+  "endpoint_coverage": {
+    "Basic Operations": {
+      "/": "AVAILABLE",
+      "/health": "AVAILABLE",
+      "/balance": "AVAILABLE",
+      "/trades": "AVAILABLE",
+      "/portfolio": "AVAILABLE"
+    },
+    "Auto Trading": {
+      "/auto_trading/status": "AVAILABLE",
+      "/auto_trading/toggle": "AVAILABLE",
+      "/auto_trading/settings": "AVAILABLE"
+    },
+    "Advanced Auto Trading": {
+      "/advanced_auto_trading/status": "AVAILABLE",
+      "/advanced_auto_trading/start": "AVAILABLE",
+      "/advanced_auto_trading/stop": "AVAILABLE"
+    },
+    "ML & Prediction": {
+      "/ml/predict": "AVAILABLE",
+      "/ml/online/stats": "AVAILABLE",
+      "/ml/performance/history": "AVAILABLE"
+    },
+    "HFT Analysis": {
+      "/hft/status": "AVAILABLE",
+      "/hft/start": "AVAILABLE",
+      "/hft/stop": "AVAILABLE",
+      "/hft/analytics": "AVAILABLE"
+    },
+    "Data Collection": {
+      "/data/collection/start": "AVAILABLE",
+      "/data/collection/stop": "AVAILABLE",
+      "/features/indicators": "AVAILABLE"
+    },
+    "Futures Trading": {
+      "/futures/positions": "AVAILABLE",
+      "/futures/execute": "AVAILABLE",
+      "/fapi/v2/account": "AVAILABLE"
+    },
+    "Risk Management": {
+      "/risk/portfolio_metrics": "AVAILABLE",
+      "/risk/calculate_position_size": "AVAILABLE"
+    },
+    "Notifications": {
+      "/notifications": "AVAILABLE",
+      "/api/email/config": "AVAILABLE",
+      "/api/alerts/history": "AVAILABLE"
+    }
+  },
+  "dashboard_compatibility": {
+    "app.py": "AVAILABLE",
+    "layout.py": "AVAILABLE",
+    "callbacks.py": "AVAILABLE",
+    "auto_trading_layout.py": "AVAILABLE",
+    "futures_trading_layout.py": "AVAILABLE",
+    "hybrid_learning_layout.py": "AVAILABLE"
+  },
+  "recommendations": [
+    "\u26a0\ufe0f Minor issues detected",
+    "Fix any missing components",
+    "Test critical functionality"
+  ],
+  "next_steps": [
+    "Review error details",
+    "Fix critical components",
+    "Re-run verification"
+  ]
+}

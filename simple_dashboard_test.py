@@ -1,98 +1,85 @@
 #!/usr/bin/env python3
 """
-Simple callback counter and component checker
+Simple Dashboard Test - Check if callbacks are working
 """
-import os
-import re
 
-def count_callbacks():
-    """Count callbacks in all dashboard files"""
-    
-    files_to_check = {
-        'dashboard/callbacks.py': 0,
-        'dashboard/hybrid_learning_layout.py': 0,
-        'dashboard/email_config_layout.py': 0,
-        'dashboard/binance_exact_callbacks.py': 0,
-        'dashboard/auto_trading_layout.py': 0,
-        'dashboard/futures_trading_layout.py': 0,
-        'dashboard/binance_exact_layout.py': 0
-    }
-    
-    total = 0
-    
-    for file_path in files_to_check:
-        if os.path.exists(file_path):
-            try:
-                with open(file_path, 'r', encoding='utf-8') as f:
-                    content = f.read()
-                    count = len(re.findall(r'@app\.callback', content))
-                    files_to_check[file_path] = count
-                    total += count
-                    print(f"{file_path}: {count} callbacks")
-            except Exception as e:
-                print(f"Error reading {file_path}: {e}")
-        else:
-            print(f"{file_path}: FILE NOT FOUND")
-    
-    return total, files_to_check
+import dash
+from dash import dcc, html, Input, Output, callback
+import dash_bootstrap_components as dbc
+import time
 
-def check_sidebar_elements():
-    """Check sidebar elements in layout"""
-    if os.path.exists('dashboard/layout.py'):
+# Create a simple test app
+app = dash.Dash(__name__, external_stylesheets=[dbc.themes.BOOTSTRAP])
+
+# Simple layout with one button and one output
+app.layout = html.Div([
+    html.H1("Dashboard Test", className="text-center mb-4"),
+    
+    html.Div([
+        dbc.Button("Test Button", id="test-btn", color="primary", size="lg", className="me-2"),
+        dbc.Button("API Test", id="api-test-btn", color="secondary", size="lg"),
+    ], className="text-center mb-4"),
+    
+    html.Div(id="test-output", className="text-center"),
+    html.Div(id="api-output", className="text-center mt-3"),
+    
+    # Add some stores and intervals like the main app
+    dcc.Store(id="test-store", storage_type="memory"),
+    dcc.Interval(id="test-interval", interval=3000, n_intervals=0),
+])
+
+# Simple callback
+@app.callback(
+    Output("test-output", "children"),
+    Input("test-btn", "n_clicks"),
+    prevent_initial_call=True
+)
+def test_callback(n_clicks):
+    if n_clicks:
+        return html.Div([
+            html.H4(f"Button clicked {n_clicks} times!", className="text-success"),
+            html.P(f"Timestamp: {time.strftime('%H:%M:%S')}")
+        ])
+    return ""
+
+# API test callback
+@app.callback(
+    Output("api-output", "children"),
+    Input("api-test-btn", "n_clicks"),
+    prevent_initial_call=True
+)
+def api_test_callback(n_clicks):
+    if n_clicks:
         try:
-            with open('dashboard/layout.py', 'r', encoding='utf-8') as f:
-                content = f.read()
-            
-            sidebar_elements = [
-                'sidebar-symbol',
-                'virtual-balance', 
-                'reset-balance-btn',
-                'reset-balance-btn-output'
-            ]
-            
-            print("\nSIDEBAR ELEMENTS:")
-            for element in sidebar_elements:
-                if element in content:
-                    print(f"✅ {element}")
-                else:
-                    print(f"❌ {element}")
+            import requests
+            response = requests.get("http://localhost:8000/status", timeout=5)
+            if response.status_code == 200:
+                return html.Div([
+                    html.H5("✅ Backend API Connected", className="text-success"),
+                    html.P(f"Response: {response.json()}")
+                ])
+            else:
+                return html.Div([
+                    html.H5("❌ Backend API Error", className="text-danger"),
+                    html.P(f"Status: {response.status_code}")
+                ])
         except Exception as e:
-            print(f"Error checking sidebar: {e}")
+            return html.Div([
+                html.H5("❌ Connection Error", className="text-danger"),
+                html.P(f"Error: {str(e)}")
+            ])
+    return ""
 
-def check_main_tabs():
-    """Check main tabs"""
-    if os.path.exists('dashboard/layout.py'):
-        try:
-            with open('dashboard/layout.py', 'r', encoding='utf-8') as f:
-                content = f.read()
-            
-            tabs = [
-                'Dashboard',
-                'Auto Trading',
-                'Futures Trading', 
-                'Binance-Exact',
-                'Email Config'
-            ]
-            
-            print("\nMAIN TABS:")
-            for tab in tabs:
-                if tab in content:
-                    print(f"✅ {tab}")
-                else:
-                    print(f"❌ {tab}")
-        except Exception as e:
-            print(f"Error checking tabs: {e}")
+# Interval callback
+@app.callback(
+    Output("test-store", "data"),
+    Input("test-interval", "n_intervals")
+)
+def update_store(n_intervals):
+    return {"timestamp": time.time(), "intervals": n_intervals}
 
 if __name__ == "__main__":
-    print("📊 CALLBACK COUNT:")
-    total, breakdown = count_callbacks()
-    print(f"\nTOTAL: {total}/93 callbacks ({(total/93)*100:.1f}%)")
-    
-    check_sidebar_elements()
-    check_main_tabs()
-    
-    print(f"\n🏆 FINAL STATUS:")
-    if total >= 90:
-        print("✅ Dashboard is near complete!")
-    else:
-        print(f"⚠️  Missing {93-total} callbacks")
+    print("🚀 Starting Simple Dashboard Test...")
+    print("📍 URL: http://localhost:8050")
+    print("🔍 Check browser console for JavaScript errors")
+    app.run(debug=True, port=8050)

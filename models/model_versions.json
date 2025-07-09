@@ -1,36 +1,36 @@
 {
   "lgbm": [
     {
-      "file": "lgbm_20250622_034809.joblib",
-      "timestamp": "20250622_034809",
-      "accuracy": 0.5365853658536586
+      "file": "lgbm_20250707_200928.joblib",
+      "timestamp": "20250707_200928",
+      "accuracy": 0.5609756097560976
     }
   ],
   "rf": [
     {
-      "file": "rf_20250622_034809.joblib",
-      "timestamp": "20250622_034809",
+      "file": "rf_20250707_200928.joblib",
+      "timestamp": "20250707_200928",
       "accuracy": 0.6341463414634146
     }
   ],
   "xgb": [
     {
-      "file": "xgb_20250622_034809.joblib",
-      "timestamp": "20250622_034809",
-      "accuracy": 0.5609756097560976
+      "file": "xgb_20250707_200928.joblib",
+      "timestamp": "20250707_200928",
+      "accuracy": 0.5853658536585366
     }
   ],
   "cat": [
     {
-      "file": "cat_20250622_034809.joblib",
-      "timestamp": "20250622_034809",
-      "accuracy": 0.5365853658536586
+      "file": "cat_20250707_200928.joblib",
+      "timestamp": "20250707_200928",
+      "accuracy": 0.6097560975609756
     }
   ],
   "gb": [
     {
-      "file": "gb_20250622_034809.joblib",
-      "timestamp": "20250622_034809",
+      "file": "gb_20250707_200928.joblib",
+      "timestamp": "20250707_200928",
       "accuracy": 0.5121951219512195
     }
   ]

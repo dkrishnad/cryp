@@ -1,0 +1,19 @@
+sudo -i  command is used to switch to root user .
+
+su -username   command is  used to switch users .give commmand passwd commnd to give password to login to user.
+
+visudo this command will open sudoers file in vimeditor
+
+ls -l /etc/sudoers this is file  shows permissions
+
+visudo open file in vim editor . Search for /root vim editor  and type your user name under root users and give all permissions
+
+If we switch user it will ask for passwd , if we dont need the user to ask passwd , go to 
+
+visudo and under root  give  nopasswd: All , beside your  user 
+
+If we make any errors inside the vim editor and save it  will give us an syntax error ,then  we will not be able to use sudo ,because not all  users will  be granted root permission due to security purposes ,  type "e" to edit a file .
+
+cp vagrantuser devops  we can create a file devops  
+
+vim devops  to open vim editor  to add group use %devops  .  "%" shows the file is a group not a user.

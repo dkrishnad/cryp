@@ -1,0 +1,20 @@
+{
+  "timestamp": "2025-07-09T02:23:15.265926",
+  "tests": {
+    "app_import": true,
+    "layout_import": true,
+    "callbacks_import": true,
+    "complete_setup": true,
+    "dashboard_response": true,
+    "callback_endpoints": {
+      "/_dash-layout": {
+        "status_code": 200,
+        "accessible": true
+      },
+      "/_dash-dependencies": {
+        "status_code": 200,
+        "accessible": true
+      }
+    }
+  }
+}

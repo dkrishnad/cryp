@@ -431,7 +431,7 @@ def create_auto_trading_layout():
     
     # Hidden components for missing auto trading callbacks  
     hidden_auto_components = html.Div([
-        html.Div(id="auto-rollback-status", style={"display": "none"}),
+        html.Div(id="auto-rollback-status-auto-trading", style={"display": "none"}),
         html.Div(id="check-auto-alerts-result", style={"display": "none"}),
         html.Div(id="auto-trading-tab-content", style={"display": "none"}),
     ], style={"display": "none"})

@@ -6,7 +6,7 @@ All API calls, data processing, and repeated logic are centralized here.
 import requests
 from plotly import graph_objs as go
 
-API_URL = "http://localhost:8000"
+API_URL = "http://localhost:5000"
 
 # --- Sidebar Helpers ---
 def fetch_sidebar_performance(api_session):

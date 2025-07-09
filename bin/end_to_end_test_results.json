@@ -1,0 +1,88 @@
+{
+  "timestamp": "2025-07-07T01:17:22.465366",
+  "summary": {
+    "passed": 5,
+    "total": 6,
+    "success_rate": 83.33333333333334
+  },
+  "detailed_results": [
+    {
+      "test": "Backend Health Check",
+      "success": true,
+      "timestamp": "2025-07-07T01:16:48.204475",
+      "details": "Status: 200, Response length: 4352"
+    },
+    {
+      "test": "Backend price data",
+      "success": true,
+      "timestamp": "2025-07-07T01:16:50.450960",
+      "details": "Status: 200"
+    },
+    {
+      "test": "Backend balance data",
+      "success": true,
+      "timestamp": "2025-07-07T01:16:52.497876",
+      "details": "Status: 200 (Real data confirmed)"
+    },
+    {
+      "test": "Backend portfolio data",
+      "success": true,
+      "timestamp": "2025-07-07T01:16:54.587769",
+      "details": "Status: 200"
+    },
+    {
+      "test": "Backend ML predictions",
+      "success": true,
+      "timestamp": "2025-07-07T01:16:56.672879",
+      "details": "Status: 200 (Real data confirmed)"
+    },
+    {
+      "test": "Backend trading signals",
+      "success": true,
+      "timestamp": "2025-07-07T01:16:58.771099",
+      "details": "Status: 200 (Real data confirmed)"
+    },
+    {
+      "test": "Backend technical indicators",
+      "success": true,
+      "timestamp": "2025-07-07T01:17:01.065237",
+      "details": "Status: 200 (Real data confirmed)"
+    },
+    {
+      "test": "Backend auto trading status",
+      "success": true,
+      "timestamp": "2025-07-07T01:17:03.109255",
+      "details": "Status: 200"
+    },
+    {
+      "test": "Backend Binance ticker",
+      "success": false,
+      "timestamp": "2025-07-07T01:17:05.378340",
+      "details": "Status: 200"
+    },
+    {
+      "test": "Frontend Accessibility",
+      "success": true,
+      "timestamp": "2025-07-07T01:17:07.451068",
+      "details": "Status: 200, Content length: 6303, Dashboard elements found: ['dash', 'crypto', 'trading', 'bot']"
+    },
+    {
+      "test": "Backend-Frontend Integration",
+      "success": true,
+      "timestamp": "2025-07-07T01:17:09.532271",
+      "details": "Portfolio data properly formatted: $50.00 total value"
+    },
+    {
+      "test": "Real Data Flow",
+      "success": true,
+      "timestamp": "2025-07-07T01:17:18.310517",
+      "details": "4/4 endpoints confirmed real data"
+    },
+    {
+      "test": "Auto Trading Functionality",
+      "success": true,
+      "timestamp": "2025-07-07T01:17:22.447349",
+      "details": "Status: True, Signals endpoint: True"
+    }
+  ]
+}

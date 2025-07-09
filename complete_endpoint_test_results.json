@@ -1,0 +1,143 @@
+{
+  "timestamp": 1752011540.6356897,
+  "total_endpoints": 27,
+  "working_endpoints": 27,
+  "success_rate": 100.0,
+  "results": {
+    "/health": {
+      "status_code": 200,
+      "success": true,
+      "response_size": 477
+    },
+    "/": {
+      "status_code": 200,
+      "success": true,
+      "response_size": 245
+    },
+    "/account": {
+      "status_code": 200,
+      "success": true,
+      "response_size": 122
+    },
+    "/balance": {
+      "status_code": 200,
+      "success": true,
+      "response_size": 156
+    },
+    "/positions": {
+      "status_code": 200,
+      "success": true,
+      "response_size": 178
+    },
+    "/buy": {
+      "status_code": 200,
+      "success": true,
+      "response_size": 143
+    },
+    "/sell": {
+      "status_code": 200,
+      "success": true,
+      "response_size": 145
+    },
+    "/cancel_order": {
+      "status_code": 200,
+      "success": true,
+      "response_size": 88
+    },
+    "/futures/account": {
+      "status_code": 200,
+      "success": true,
+      "response_size": 751
+    },
+    "/futures/positions": {
+      "status_code": 200,
+      "success": true,
+      "response_size": 732
+    },
+    "/futures/balance": {
+      "status_code": 200,
+      "success": true,
+      "response_size": 306
+    },
+    "/futures/buy": {
+      "status_code": 200,
+      "success": true,
+      "response_size": 265
+    },
+    "/futures/sell": {
+      "status_code": 200,
+      "success": true,
+      "response_size": 267
+    },
+    "/price": {
+      "status_code": 200,
+      "success": true,
+      "response_size": 57
+    },
+    "/prices": {
+      "status_code": 200,
+      "success": true,
+      "response_size": 130
+    },
+    "/market_data": {
+      "status_code": 200,
+      "success": true,
+      "response_size": 197
+    },
+    "/klines": {
+      "status_code": 200,
+      "success": true,
+      "response_size": 11720
+    },
+    "/predict": {
+      "status_code": 200,
+      "success": true,
+      "response_size": 177
+    },
+    "/retrain": {
+      "status_code": 200,
+      "success": true,
+      "response_size": 170
+    },
+    "/model_stats": {
+      "status_code": 200,
+      "success": true,
+      "response_size": 199
+    },
+    "/analytics": {
+      "status_code": 200,
+      "success": true,
+      "response_size": 230
+    },
+    "/auto_trading/start": {
+      "status_code": 200,
+      "success": true,
+      "response_size": 179
+    },
+    "/auto_trading/stop": {
+      "status_code": 200,
+      "success": true,
+      "response_size": 138
+    },
+    "/auto_trading/status": {
+      "status_code": 200,
+      "success": true,
+      "response_size": 317
+    },
+    "/logs": {
+      "status_code": 200,
+      "success": true,
+      "response_size": 10270
+    },
+    "/settings": {
+      "status_code": 200,
+      "success": true,
+      "response_size": 299
+    },
+    "/reset": {
+      "status_code": 200,
+      "success": true,
+      "response_size": 195
+    }
+  }
+}

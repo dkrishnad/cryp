@@ -1,0 +1,521 @@
+2025-07-08 14:29:21,703 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:5000
+2025-07-08 14:29:23,757 - urllib3.connectionpool - DEBUG - http://localhost:5000 "GET /api/status HTTP/1.1" 200 87
+2025-07-08 15:00:46,028 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8051
+2025-07-08 15:00:50,131 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8051
+2025-07-08 15:53:50,760 - urllib3.connectionpool - DEBUG - Resetting dropped connection: localhost
+2025-07-08 15:53:51,451 - dash.dash - INFO - Dash is running on http://localhost:8050/
+
+2025-07-08 15:53:51,542 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://localhost:8050
+2025-07-08 15:53:51,542 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-07-08 15:53:52,841 - urllib3.connectionpool - DEBUG - http://localhost:5000 "GET /data/symbol_data HTTP/1.1" 404 22
+2025-07-08 15:53:52,886 - urllib3.connectionpool - DEBUG - http://localhost:5000 "GET /portfolio/balance HTTP/1.1" 404 22
+2025-07-08 15:53:52,924 - urllib3.connectionpool - DEBUG - http://localhost:5000 "GET /data/live_prices HTTP/1.1" 404 22
+2025-07-08 15:53:52,966 - urllib3.connectionpool - DEBUG - http://localhost:5000 "GET /trade HTTP/1.1" 404 22
+2025-07-08 15:53:53,016 - urllib3.connectionpool - DEBUG - http://localhost:5000 "GET /notifications HTTP/1.1" 404 22
+2025-07-08 15:59:08,331 - dash.dash - INFO - Dash is running on http://localhost:8050/
+
+2025-07-08 15:59:08,388 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://localhost:8050
+2025-07-08 15:59:08,389 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-07-08 15:59:16,098 - urllib3.connectionpool - DEBUG - Resetting dropped connection: localhost
+2025-07-08 15:59:18,210 - urllib3.connectionpool - DEBUG - http://localhost:5000 "GET /data/symbol_data HTTP/1.1" 404 22
+2025-07-08 15:59:18,264 - urllib3.connectionpool - DEBUG - http://localhost:5000 "GET /portfolio/balance HTTP/1.1" 404 22
+2025-07-08 15:59:18,326 - urllib3.connectionpool - DEBUG - http://localhost:5000 "GET /data/live_prices HTTP/1.1" 404 22
+2025-07-08 15:59:18,374 - urllib3.connectionpool - DEBUG - http://localhost:5000 "GET /trade HTTP/1.1" 404 22
+2025-07-08 15:59:18,428 - urllib3.connectionpool - DEBUG - http://localhost:5000 "GET /notifications HTTP/1.1" 404 22
+2025-07-08 16:47:16,392 - dash.dash - INFO - Dash is running on http://localhost:8050/
+
+2025-07-08 16:47:16,422 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://localhost:8050
+2025-07-08 16:47:16,422 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-07-08 16:47:19,060 - dash_app - ERROR - Exception on / [GET]
+Traceback (most recent call last):
+  File "c:\Users\Hari\Desktop\Testin dub\.venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Hari\Desktop\Testin dub\.venv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Hari\Desktop\Testin dub\.venv\Lib\site-packages\flask\app.py", line 915, in full_dispatch_request
+    rv = self.preprocess_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Hari\Desktop\Testin dub\.venv\Lib\site-packages\flask\app.py", line 1291, in preprocess_request
+    rv = self.ensure_sync(before_func)()
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Hari\Desktop\Testin dub\.venv\Lib\site-packages\dash\dash.py", line 1517, in _setup_server
+    _validate.validate_layout(self.layout, self._layout_value())
+  File "c:\Users\Hari\Desktop\Testin dub\.venv\Lib\site-packages\dash\_validate.py", line 455, in validate_layout
+    _validate(layout_value)
+  File "c:\Users\Hari\Desktop\Testin dub\.venv\Lib\site-packages\dash\_validate.py", line 442, in _validate
+    _validate_id(component)
+  File "c:\Users\Hari\Desktop\Testin dub\.venv\Lib\site-packages\dash\_validate.py", line 432, in _validate_id
+    raise exceptions.DuplicateIdError(
+dash.exceptions.DuplicateIdError: Duplicate component id found in the initial layout: `auto-rollback-status`
+2025-07-08 16:47:19,185 - werkzeug - INFO - 127.0.0.1 - - [08/Jul/2025 16:47:19] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-07-08 16:47:21,283 - werkzeug - INFO - 127.0.0.1 - - [08/Jul/2025 16:47:21] "GET / HTTP/1.1" 200 -
+2025-07-08 16:48:56,654 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (27): localhost:5000
+2025-07-08 16:49:03,711 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (28): localhost:5000
+2025-07-08 16:49:10,816 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (29): localhost:5000
+2025-07-08 16:49:17,907 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (30): localhost:5000
+2025-07-08 16:49:25,004 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (31): localhost:5000
+2025-07-08 16:56:41,927 - dash.dash - INFO - Dash is running on http://localhost:8050/
+
+2025-07-08 16:56:41,951 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://localhost:8050
+2025-07-08 16:56:41,951 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-07-08 16:56:45,046 - dash_app - ERROR - Exception on / [GET]
+Traceback (most recent call last):
+  File "c:\Users\Hari\Desktop\Testin dub\.venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Hari\Desktop\Testin dub\.venv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Hari\Desktop\Testin dub\.venv\Lib\site-packages\flask\app.py", line 915, in full_dispatch_request
+    rv = self.preprocess_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Hari\Desktop\Testin dub\.venv\Lib\site-packages\flask\app.py", line 1291, in preprocess_request
+    rv = self.ensure_sync(before_func)()
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Hari\Desktop\Testin dub\.venv\Lib\site-packages\dash\dash.py", line 1517, in _setup_server
+    _validate.validate_layout(self.layout, self._layout_value())
+  File "c:\Users\Hari\Desktop\Testin dub\.venv\Lib\site-packages\dash\_validate.py", line 455, in validate_layout
+    _validate(layout_value)
+  File "c:\Users\Hari\Desktop\Testin dub\.venv\Lib\site-packages\dash\_validate.py", line 442, in _validate
+    _validate_id(component)
+  File "c:\Users\Hari\Desktop\Testin dub\.venv\Lib\site-packages\dash\_validate.py", line 432, in _validate_id
+    raise exceptions.DuplicateIdError(
+dash.exceptions.DuplicateIdError: Duplicate component id found in the initial layout: `auto-rollback-status`
+2025-07-08 16:56:45,055 - werkzeug - INFO - 127.0.0.1 - - [08/Jul/2025 16:56:45] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-07-08 16:56:47,221 - werkzeug - INFO - 127.0.0.1 - - [08/Jul/2025 16:56:47] "GET / HTTP/1.1" 200 -
+2025-07-08 16:58:15,000 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (29): localhost:5000
+2025-07-08 16:58:22,073 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (30): localhost:5000
+2025-07-08 16:58:29,159 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (31): localhost:5000
+2025-07-08 16:58:36,230 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (32): localhost:5000
+2025-07-08 16:58:43,298 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (33): localhost:5000
+2025-07-08 17:16:49,283 - dash.dash - INFO - Dash is running on http://localhost:8050/
+
+2025-07-08 17:16:49,404 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://localhost:8050
+2025-07-08 17:16:49,404 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-07-08 17:16:49,498 - dash_app - ERROR - Exception on / [GET]
+Traceback (most recent call last):
+  File "C:\Users\Hari\AppData\Roaming\Python\Python312\site-packages\flask\app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Hari\AppData\Roaming\Python\Python312\site-packages\flask\app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Hari\AppData\Roaming\Python\Python312\site-packages\flask\app.py", line 1482, in full_dispatch_request
+    rv = self.preprocess_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Hari\AppData\Roaming\Python\Python312\site-packages\flask\app.py", line 1974, in preprocess_request
+    rv = self.ensure_sync(before_func)()
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Hari\AppData\Roaming\Python\Python312\site-packages\dash\dash.py", line 1449, in _setup_server
+    _validate.validate_layout(self.layout, self._layout_value())
+  File "C:\Users\Hari\AppData\Roaming\Python\Python312\site-packages\dash\_validate.py", line 455, in validate_layout
+    _validate(layout_value)
+  File "C:\Users\Hari\AppData\Roaming\Python\Python312\site-packages\dash\_validate.py", line 442, in _validate
+    _validate_id(component)
+  File "C:\Users\Hari\AppData\Roaming\Python\Python312\site-packages\dash\_validate.py", line 432, in _validate_id
+    raise exceptions.DuplicateIdError(
+dash.exceptions.DuplicateIdError: Duplicate component id found in the initial layout: `auto-rollback-status`
+2025-07-08 17:16:49,624 - werkzeug - INFO - 127.0.0.1 - - [08/Jul/2025 17:16:49] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-07-08 17:16:51,719 - werkzeug - INFO - 127.0.0.1 - - [08/Jul/2025 17:16:51] "GET / HTTP/1.1" 200 -
+2025-07-08 17:18:25,821 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (27): localhost:5000
+2025-07-08 17:18:32,932 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (28): localhost:5000
+2025-07-08 17:18:39,982 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (29): localhost:5000
+2025-07-08 17:18:47,076 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (30): localhost:5000
+2025-07-08 17:18:54,131 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (31): localhost:5000
+2025-07-08 17:26:17,926 - dash.dash - INFO - Dash is running on http://localhost:8050/
+
+2025-07-08 17:26:17,993 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://localhost:8050
+2025-07-08 17:26:17,995 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-07-08 17:26:18,971 - dash_app - ERROR - Exception on / [GET]
+Traceback (most recent call last):
+  File "c:\Users\Hari\Desktop\Testin dub\.venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Hari\Desktop\Testin dub\.venv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Hari\Desktop\Testin dub\.venv\Lib\site-packages\flask\app.py", line 915, in full_dispatch_request
+    rv = self.preprocess_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Hari\Desktop\Testin dub\.venv\Lib\site-packages\flask\app.py", line 1291, in preprocess_request
+    rv = self.ensure_sync(before_func)()
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Hari\Desktop\Testin dub\.venv\Lib\site-packages\dash\dash.py", line 1517, in _setup_server
+    _validate.validate_layout(self.layout, self._layout_value())
+  File "c:\Users\Hari\Desktop\Testin dub\.venv\Lib\site-packages\dash\_validate.py", line 455, in validate_layout
+    _validate(layout_value)
+  File "c:\Users\Hari\Desktop\Testin dub\.venv\Lib\site-packages\dash\_validate.py", line 442, in _validate
+    _validate_id(component)
+  File "c:\Users\Hari\Desktop\Testin dub\.venv\Lib\site-packages\dash\_validate.py", line 432, in _validate_id
+    raise exceptions.DuplicateIdError(
+dash.exceptions.DuplicateIdError: Duplicate component id found in the initial layout: `auto-rollback-status`
+2025-07-08 17:26:18,979 - werkzeug - INFO - 127.0.0.1 - - [08/Jul/2025 17:26:18] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-07-08 17:26:21,187 - werkzeug - INFO - 127.0.0.1 - - [08/Jul/2025 17:26:21] "GET / HTTP/1.1" 200 -
+2025-07-08 17:27:59,905 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (25): localhost:5000
+2025-07-08 17:28:06,968 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (26): localhost:5000
+2025-07-08 17:28:14,050 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (27): localhost:5000
+2025-07-08 17:28:21,160 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (28): localhost:5000
+2025-07-08 17:28:28,297 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (29): localhost:5000
+2025-07-08 17:42:45,348 - dash.dash - INFO - Dash is running on http://localhost:8050/
+
+2025-07-08 17:42:45,404 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://localhost:8050
+2025-07-08 17:42:45,404 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-07-08 17:42:45,570 - dash_app - ERROR - Exception on / [GET]
+Traceback (most recent call last):
+  File "c:\Users\Hari\Desktop\Testin dub\.venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Hari\Desktop\Testin dub\.venv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Hari\Desktop\Testin dub\.venv\Lib\site-packages\flask\app.py", line 915, in full_dispatch_request
+    rv = self.preprocess_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Hari\Desktop\Testin dub\.venv\Lib\site-packages\flask\app.py", line 1291, in preprocess_request
+    rv = self.ensure_sync(before_func)()
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Hari\Desktop\Testin dub\.venv\Lib\site-packages\dash\dash.py", line 1517, in _setup_server
+    _validate.validate_layout(self.layout, self._layout_value())
+  File "c:\Users\Hari\Desktop\Testin dub\.venv\Lib\site-packages\dash\_validate.py", line 455, in validate_layout
+    _validate(layout_value)
+  File "c:\Users\Hari\Desktop\Testin dub\.venv\Lib\site-packages\dash\_validate.py", line 442, in _validate
+    _validate_id(component)
+  File "c:\Users\Hari\Desktop\Testin dub\.venv\Lib\site-packages\dash\_validate.py", line 432, in _validate_id
+    raise exceptions.DuplicateIdError(
+dash.exceptions.DuplicateIdError: Duplicate component id found in the initial layout: `auto-rollback-status`
+2025-07-08 17:42:45,575 - werkzeug - INFO - 127.0.0.1 - - [08/Jul/2025 17:42:45] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-07-08 17:42:47,853 - werkzeug - INFO - 127.0.0.1 - - [08/Jul/2025 17:42:47] "GET / HTTP/1.1" 200 -
+2025-07-08 17:43:02,700 - urllib3.connectionpool - DEBUG - Resetting dropped connection: localhost
+2025-07-08 17:43:04,792 - urllib3.connectionpool - DEBUG - http://localhost:5000 "GET /data/symbol_data HTTP/1.1" 404 22
+2025-07-08 17:43:04,814 - urllib3.connectionpool - DEBUG - http://localhost:5000 "GET /portfolio/balance HTTP/1.1" 200 152
+2025-07-08 17:43:04,836 - urllib3.connectionpool - DEBUG - http://localhost:5000 "GET /data/live_prices HTTP/1.1" 200 147
+2025-07-08 17:43:04,869 - urllib3.connectionpool - DEBUG - http://localhost:5000 "GET /trade HTTP/1.1" 200 193
+2025-07-08 17:43:04,901 - urllib3.connectionpool - DEBUG - http://localhost:5000 "GET /notifications HTTP/1.1" 200 318
+2025-07-08 17:50:59,524 - dash.dash - INFO - Dash is running on http://localhost:8050/
+
+2025-07-08 17:50:59,598 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://localhost:8050
+2025-07-08 17:50:59,598 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-07-08 17:51:01,035 - dash_app - ERROR - Exception on / [GET]
+Traceback (most recent call last):
+  File "c:\Users\Hari\Desktop\Testin dub\.venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Hari\Desktop\Testin dub\.venv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Hari\Desktop\Testin dub\.venv\Lib\site-packages\flask\app.py", line 915, in full_dispatch_request
+    rv = self.preprocess_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Hari\Desktop\Testin dub\.venv\Lib\site-packages\flask\app.py", line 1291, in preprocess_request
+    rv = self.ensure_sync(before_func)()
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Hari\Desktop\Testin dub\.venv\Lib\site-packages\dash\dash.py", line 1517, in _setup_server
+    _validate.validate_layout(self.layout, self._layout_value())
+  File "c:\Users\Hari\Desktop\Testin dub\.venv\Lib\site-packages\dash\_validate.py", line 455, in validate_layout
+    _validate(layout_value)
+  File "c:\Users\Hari\Desktop\Testin dub\.venv\Lib\site-packages\dash\_validate.py", line 442, in _validate
+    _validate_id(component)
+  File "c:\Users\Hari\Desktop\Testin dub\.venv\Lib\site-packages\dash\_validate.py", line 432, in _validate_id
+    raise exceptions.DuplicateIdError(
+dash.exceptions.DuplicateIdError: Duplicate component id found in the initial layout: `auto-rollback-status`
+2025-07-08 17:51:01,040 - werkzeug - INFO - 127.0.0.1 - - [08/Jul/2025 17:51:01] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-07-08 17:51:03,149 - werkzeug - INFO - 127.0.0.1 - - [08/Jul/2025 17:51:03] "GET / HTTP/1.1" 200 -
+2025-07-08 17:51:16,739 - urllib3.connectionpool - DEBUG - Resetting dropped connection: localhost
+2025-07-08 17:51:18,803 - urllib3.connectionpool - DEBUG - http://localhost:5000 "GET /data/symbol_data HTTP/1.1" 404 22
+2025-07-08 17:51:18,832 - urllib3.connectionpool - DEBUG - http://localhost:5000 "GET /portfolio/balance HTTP/1.1" 200 152
+2025-07-08 17:51:18,878 - urllib3.connectionpool - DEBUG - http://localhost:5000 "GET /data/live_prices HTTP/1.1" 200 148
+2025-07-08 17:51:18,915 - urllib3.connectionpool - DEBUG - http://localhost:5000 "GET /trade HTTP/1.1" 200 194
+2025-07-08 17:51:18,947 - urllib3.connectionpool - DEBUG - http://localhost:5000 "GET /notifications HTTP/1.1" 200 318
+2025-07-08 17:56:12,902 - dash.dash - INFO - Dash is running on http://localhost:8050/
+
+2025-07-08 17:56:12,913 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://localhost:8050
+2025-07-08 17:56:12,913 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-07-08 17:56:12,939 - dash_app - ERROR - Exception on / [GET]
+Traceback (most recent call last):
+  File "c:\Users\Hari\Desktop\Testin dub\.venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Hari\Desktop\Testin dub\.venv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Hari\Desktop\Testin dub\.venv\Lib\site-packages\flask\app.py", line 915, in full_dispatch_request
+    rv = self.preprocess_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Hari\Desktop\Testin dub\.venv\Lib\site-packages\flask\app.py", line 1291, in preprocess_request
+    rv = self.ensure_sync(before_func)()
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Hari\Desktop\Testin dub\.venv\Lib\site-packages\dash\dash.py", line 1517, in _setup_server
+    _validate.validate_layout(self.layout, self._layout_value())
+  File "c:\Users\Hari\Desktop\Testin dub\.venv\Lib\site-packages\dash\_validate.py", line 455, in validate_layout
+    _validate(layout_value)
+  File "c:\Users\Hari\Desktop\Testin dub\.venv\Lib\site-packages\dash\_validate.py", line 442, in _validate
+    _validate_id(component)
+  File "c:\Users\Hari\Desktop\Testin dub\.venv\Lib\site-packages\dash\_validate.py", line 432, in _validate_id
+    raise exceptions.DuplicateIdError(
+dash.exceptions.DuplicateIdError: Duplicate component id found in the initial layout: `auto-rollback-status`
+2025-07-08 17:56:12,942 - werkzeug - INFO - 127.0.0.1 - - [08/Jul/2025 17:56:12] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-07-08 17:56:15,006 - werkzeug - INFO - 127.0.0.1 - - [08/Jul/2025 17:56:15] "GET / HTTP/1.1" 200 -
+2025-07-08 17:56:18,696 - urllib3.connectionpool - DEBUG - http://localhost:5000 "GET /data/symbol_data HTTP/1.1" 404 22
+2025-07-08 17:56:18,698 - urllib3.connectionpool - DEBUG - http://localhost:5000 "GET /portfolio/balance HTTP/1.1" 200 152
+2025-07-08 17:56:18,700 - urllib3.connectionpool - DEBUG - http://localhost:5000 "GET /data/live_prices HTTP/1.1" 200 148
+2025-07-08 17:56:18,703 - urllib3.connectionpool - DEBUG - http://localhost:5000 "GET /trade HTTP/1.1" 200 194
+2025-07-08 17:56:18,705 - urllib3.connectionpool - DEBUG - http://localhost:5000 "GET /notifications HTTP/1.1" 200 318
+2025-07-08 18:03:09,535 - dash.dash - INFO - Dash is running on http://localhost:8050/
+
+2025-07-08 18:03:09,549 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://localhost:8050
+2025-07-08 18:03:09,549 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-07-08 18:03:10,014 - dash_app - ERROR - Exception on / [GET]
+Traceback (most recent call last):
+  File "c:\Users\Hari\Desktop\Testin dub\.venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Hari\Desktop\Testin dub\.venv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Hari\Desktop\Testin dub\.venv\Lib\site-packages\flask\app.py", line 915, in full_dispatch_request
+    rv = self.preprocess_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Hari\Desktop\Testin dub\.venv\Lib\site-packages\flask\app.py", line 1291, in preprocess_request
+    rv = self.ensure_sync(before_func)()
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Hari\Desktop\Testin dub\.venv\Lib\site-packages\dash\dash.py", line 1517, in _setup_server
+    _validate.validate_layout(self.layout, self._layout_value())
+  File "c:\Users\Hari\Desktop\Testin dub\.venv\Lib\site-packages\dash\_validate.py", line 455, in validate_layout
+    _validate(layout_value)
+  File "c:\Users\Hari\Desktop\Testin dub\.venv\Lib\site-packages\dash\_validate.py", line 442, in _validate
+    _validate_id(component)
+  File "c:\Users\Hari\Desktop\Testin dub\.venv\Lib\site-packages\dash\_validate.py", line 432, in _validate_id
+    raise exceptions.DuplicateIdError(
+dash.exceptions.DuplicateIdError: Duplicate component id found in the initial layout: `auto-rollback-status`
+2025-07-08 18:03:10,014 - werkzeug - INFO - 127.0.0.1 - - [08/Jul/2025 18:03:10] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-07-08 18:03:12,063 - werkzeug - INFO - 127.0.0.1 - - [08/Jul/2025 18:03:12] "GET / HTTP/1.1" 200 -
+2025-07-08 18:03:16,093 - urllib3.connectionpool - DEBUG - http://localhost:5000 "GET /data/symbol_data HTTP/1.1" 404 22
+2025-07-08 18:03:16,098 - urllib3.connectionpool - DEBUG - http://localhost:5000 "GET /portfolio/balance HTTP/1.1" 200 152
+2025-07-08 18:03:16,102 - urllib3.connectionpool - DEBUG - http://localhost:5000 "GET /data/live_prices HTTP/1.1" 200 148
+2025-07-08 18:03:16,104 - urllib3.connectionpool - DEBUG - http://localhost:5000 "GET /trade HTTP/1.1" 200 194
+2025-07-08 18:03:16,107 - urllib3.connectionpool - DEBUG - http://localhost:5000 "GET /notifications HTTP/1.1" 200 318
+2025-07-08 18:13:23,393 - dash.dash - INFO - Dash is running on http://localhost:8050/
+
+2025-07-08 18:13:23,482 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://localhost:8050
+2025-07-08 18:13:23,482 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-07-08 18:13:26,306 - dash_app - ERROR - Exception on / [GET]
+Traceback (most recent call last):
+  File "c:\Users\Hari\Desktop\Testin dub\.venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Hari\Desktop\Testin dub\.venv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Hari\Desktop\Testin dub\.venv\Lib\site-packages\flask\app.py", line 915, in full_dispatch_request
+    rv = self.preprocess_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Hari\Desktop\Testin dub\.venv\Lib\site-packages\flask\app.py", line 1291, in preprocess_request
+    rv = self.ensure_sync(before_func)()
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Hari\Desktop\Testin dub\.venv\Lib\site-packages\dash\dash.py", line 1517, in _setup_server
+    _validate.validate_layout(self.layout, self._layout_value())
+  File "c:\Users\Hari\Desktop\Testin dub\.venv\Lib\site-packages\dash\_validate.py", line 455, in validate_layout
+    _validate(layout_value)
+  File "c:\Users\Hari\Desktop\Testin dub\.venv\Lib\site-packages\dash\_validate.py", line 442, in _validate
+    _validate_id(component)
+  File "c:\Users\Hari\Desktop\Testin dub\.venv\Lib\site-packages\dash\_validate.py", line 432, in _validate_id
+    raise exceptions.DuplicateIdError(
+dash.exceptions.DuplicateIdError: Duplicate component id found in the initial layout: `auto-rollback-status`
+2025-07-08 18:13:26,312 - werkzeug - INFO - 127.0.0.1 - - [08/Jul/2025 18:13:26] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-07-08 18:13:28,422 - werkzeug - INFO - 127.0.0.1 - - [08/Jul/2025 18:13:28] "GET / HTTP/1.1" 200 -
+2025-07-08 18:13:44,318 - urllib3.connectionpool - DEBUG - Resetting dropped connection: localhost
+2025-07-08 18:13:46,379 - urllib3.connectionpool - DEBUG - http://localhost:5000 "GET /data/symbol_data HTTP/1.1" 404 22
+2025-07-08 18:13:46,407 - urllib3.connectionpool - DEBUG - http://localhost:5000 "GET /portfolio/balance HTTP/1.1" 200 152
+2025-07-08 18:13:46,444 - urllib3.connectionpool - DEBUG - http://localhost:5000 "GET /data/live_prices HTTP/1.1" 200 147
+2025-07-08 18:13:46,484 - urllib3.connectionpool - DEBUG - http://localhost:5000 "GET /trade HTTP/1.1" 200 194
+2025-07-08 18:13:46,523 - urllib3.connectionpool - DEBUG - http://localhost:5000 "GET /notifications HTTP/1.1" 200 318
+2025-07-08 18:14:55,193 - dash.dash - INFO - Dash is running on http://localhost:8050/
+
+2025-07-08 18:14:55,252 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://localhost:8050
+2025-07-08 18:14:55,252 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-07-08 18:14:56,309 - dash_app - ERROR - Exception on / [GET]
+Traceback (most recent call last):
+  File "c:\Users\Hari\Desktop\Testin dub\.venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Hari\Desktop\Testin dub\.venv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Hari\Desktop\Testin dub\.venv\Lib\site-packages\flask\app.py", line 915, in full_dispatch_request
+    rv = self.preprocess_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Hari\Desktop\Testin dub\.venv\Lib\site-packages\flask\app.py", line 1291, in preprocess_request
+    rv = self.ensure_sync(before_func)()
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Hari\Desktop\Testin dub\.venv\Lib\site-packages\dash\dash.py", line 1517, in _setup_server
+    _validate.validate_layout(self.layout, self._layout_value())
+  File "c:\Users\Hari\Desktop\Testin dub\.venv\Lib\site-packages\dash\_validate.py", line 455, in validate_layout
+    _validate(layout_value)
+  File "c:\Users\Hari\Desktop\Testin dub\.venv\Lib\site-packages\dash\_validate.py", line 442, in _validate
+    _validate_id(component)
+  File "c:\Users\Hari\Desktop\Testin dub\.venv\Lib\site-packages\dash\_validate.py", line 432, in _validate_id
+    raise exceptions.DuplicateIdError(
+dash.exceptions.DuplicateIdError: Duplicate component id found in the initial layout: `auto-rollback-status`
+2025-07-08 18:14:56,315 - werkzeug - INFO - 127.0.0.1 - - [08/Jul/2025 18:14:56] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-07-08 18:14:58,571 - werkzeug - INFO - 127.0.0.1 - - [08/Jul/2025 18:14:58] "GET / HTTP/1.1" 200 -
+2025-07-08 18:15:05,050 - urllib3.connectionpool - DEBUG - http://localhost:5000 "GET /data/symbol_data HTTP/1.1" 404 22
+2025-07-08 18:15:05,052 - urllib3.connectionpool - DEBUG - http://localhost:5000 "GET /portfolio/balance HTTP/1.1" 200 152
+2025-07-08 18:15:05,055 - urllib3.connectionpool - DEBUG - http://localhost:5000 "GET /data/live_prices HTTP/1.1" 200 147
+2025-07-08 18:15:05,058 - urllib3.connectionpool - DEBUG - http://localhost:5000 "GET /trade HTTP/1.1" 200 194
+2025-07-08 18:15:05,060 - urllib3.connectionpool - DEBUG - http://localhost:5000 "GET /notifications HTTP/1.1" 200 318
+2025-07-08 18:22:49,489 - dash.dash - INFO - Dash is running on http://localhost:8050/
+
+2025-07-08 18:22:49,501 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://localhost:8050
+2025-07-08 18:22:49,501 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-07-08 18:22:51,267 - dash_app - ERROR - Exception on / [GET]
+Traceback (most recent call last):
+  File "c:\Users\Hari\Desktop\Testin dub\.venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Hari\Desktop\Testin dub\.venv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Hari\Desktop\Testin dub\.venv\Lib\site-packages\flask\app.py", line 915, in full_dispatch_request
+    rv = self.preprocess_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Hari\Desktop\Testin dub\.venv\Lib\site-packages\flask\app.py", line 1291, in preprocess_request
+    rv = self.ensure_sync(before_func)()
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Hari\Desktop\Testin dub\.venv\Lib\site-packages\dash\dash.py", line 1517, in _setup_server
+    _validate.validate_layout(self.layout, self._layout_value())
+  File "c:\Users\Hari\Desktop\Testin dub\.venv\Lib\site-packages\dash\_validate.py", line 455, in validate_layout
+    _validate(layout_value)
+  File "c:\Users\Hari\Desktop\Testin dub\.venv\Lib\site-packages\dash\_validate.py", line 442, in _validate
+    _validate_id(component)
+  File "c:\Users\Hari\Desktop\Testin dub\.venv\Lib\site-packages\dash\_validate.py", line 432, in _validate_id
+    raise exceptions.DuplicateIdError(
+dash.exceptions.DuplicateIdError: Duplicate component id found in the initial layout: `auto-rollback-status`
+2025-07-08 18:22:51,275 - werkzeug - INFO - 127.0.0.1 - - [08/Jul/2025 18:22:51] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-07-08 18:22:53,377 - werkzeug - INFO - 127.0.0.1 - - [08/Jul/2025 18:22:53] "GET / HTTP/1.1" 200 -
+2025-07-08 18:23:05,060 - urllib3.connectionpool - DEBUG - Resetting dropped connection: localhost
+2025-07-08 18:23:07,188 - urllib3.connectionpool - DEBUG - http://localhost:5000 "GET /data/symbol_data HTTP/1.1" 404 22
+2025-07-08 18:23:07,208 - urllib3.connectionpool - DEBUG - http://localhost:5000 "GET /portfolio/balance HTTP/1.1" 200 152
+2025-07-08 18:23:07,237 - urllib3.connectionpool - DEBUG - http://localhost:5000 "GET /data/live_prices HTTP/1.1" 200 147
+2025-07-08 18:23:07,261 - urllib3.connectionpool - DEBUG - http://localhost:5000 "GET /trade HTTP/1.1" 200 194
+2025-07-08 18:23:07,290 - urllib3.connectionpool - DEBUG - http://localhost:5000 "GET /notifications HTTP/1.1" 200 318
+2025-07-08 18:29:28,424 - dash.dash - INFO - Dash is running on http://localhost:8050/
+
+2025-07-08 18:29:28,466 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://localhost:8050
+2025-07-08 18:29:28,466 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-07-08 18:29:30,959 - dash_app - ERROR - Exception on / [GET]
+Traceback (most recent call last):
+  File "c:\Users\Hari\Desktop\Testin dub\.venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Hari\Desktop\Testin dub\.venv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Hari\Desktop\Testin dub\.venv\Lib\site-packages\flask\app.py", line 915, in full_dispatch_request
+    rv = self.preprocess_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Hari\Desktop\Testin dub\.venv\Lib\site-packages\flask\app.py", line 1291, in preprocess_request
+    rv = self.ensure_sync(before_func)()
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Hari\Desktop\Testin dub\.venv\Lib\site-packages\dash\dash.py", line 1517, in _setup_server
+    _validate.validate_layout(self.layout, self._layout_value())
+  File "c:\Users\Hari\Desktop\Testin dub\.venv\Lib\site-packages\dash\_validate.py", line 455, in validate_layout
+    _validate(layout_value)
+  File "c:\Users\Hari\Desktop\Testin dub\.venv\Lib\site-packages\dash\_validate.py", line 442, in _validate
+    _validate_id(component)
+  File "c:\Users\Hari\Desktop\Testin dub\.venv\Lib\site-packages\dash\_validate.py", line 432, in _validate_id
+    raise exceptions.DuplicateIdError(
+dash.exceptions.DuplicateIdError: Duplicate component id found in the initial layout: `auto-rollback-status`
+2025-07-08 18:29:30,965 - werkzeug - INFO - 127.0.0.1 - - [08/Jul/2025 18:29:30] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-07-08 18:29:33,170 - werkzeug - INFO - 127.0.0.1 - - [08/Jul/2025 18:29:33] "GET / HTTP/1.1" 200 -
+2025-07-08 18:29:42,302 - urllib3.connectionpool - DEBUG - http://localhost:5000 "GET /data/symbol_data HTTP/1.1" 404 22
+2025-07-08 18:29:42,307 - urllib3.connectionpool - DEBUG - http://localhost:5000 "GET /portfolio/balance HTTP/1.1" 200 152
+2025-07-08 18:29:42,313 - urllib3.connectionpool - DEBUG - http://localhost:5000 "GET /data/live_prices HTTP/1.1" 200 148
+2025-07-08 18:29:42,319 - urllib3.connectionpool - DEBUG - http://localhost:5000 "GET /trade HTTP/1.1" 200 194
+2025-07-08 18:29:42,324 - urllib3.connectionpool - DEBUG - http://localhost:5000 "GET /notifications HTTP/1.1" 200 318
+2025-07-08 18:30:58,111 - dash.dash - INFO - Dash is running on http://localhost:8050/
+
+2025-07-08 18:30:58,173 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://localhost:8050
+2025-07-08 18:30:58,173 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-07-08 18:30:58,323 - dash_app - ERROR - Exception on / [GET]
+Traceback (most recent call last):
+  File "c:\Users\Hari\Desktop\Testin dub\.venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Hari\Desktop\Testin dub\.venv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Hari\Desktop\Testin dub\.venv\Lib\site-packages\flask\app.py", line 915, in full_dispatch_request
+    rv = self.preprocess_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Hari\Desktop\Testin dub\.venv\Lib\site-packages\flask\app.py", line 1291, in preprocess_request
+    rv = self.ensure_sync(before_func)()
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Hari\Desktop\Testin dub\.venv\Lib\site-packages\dash\dash.py", line 1517, in _setup_server
+    _validate.validate_layout(self.layout, self._layout_value())
+  File "c:\Users\Hari\Desktop\Testin dub\.venv\Lib\site-packages\dash\_validate.py", line 455, in validate_layout
+    _validate(layout_value)
+  File "c:\Users\Hari\Desktop\Testin dub\.venv\Lib\site-packages\dash\_validate.py", line 442, in _validate
+    _validate_id(component)
+  File "c:\Users\Hari\Desktop\Testin dub\.venv\Lib\site-packages\dash\_validate.py", line 432, in _validate_id
+    raise exceptions.DuplicateIdError(
+dash.exceptions.DuplicateIdError: Duplicate component id found in the initial layout: `auto-rollback-status`
+2025-07-08 18:30:58,331 - werkzeug - INFO - 127.0.0.1 - - [08/Jul/2025 18:30:58] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-07-08 18:31:00,492 - werkzeug - INFO - 127.0.0.1 - - [08/Jul/2025 18:31:00] "GET / HTTP/1.1" 200 -
+2025-07-08 18:31:11,425 - urllib3.connectionpool - DEBUG - Resetting dropped connection: localhost
+2025-07-08 18:31:13,487 - urllib3.connectionpool - DEBUG - http://localhost:5000 "GET /data/symbol_data HTTP/1.1" 404 22
+2025-07-08 18:31:13,513 - urllib3.connectionpool - DEBUG - http://localhost:5000 "GET /portfolio/balance HTTP/1.1" 200 152
+2025-07-08 18:31:13,568 - urllib3.connectionpool - DEBUG - http://localhost:5000 "GET /data/live_prices HTTP/1.1" 200 147
+2025-07-08 18:31:13,714 - urllib3.connectionpool - DEBUG - http://localhost:5000 "GET /trade HTTP/1.1" 200 194
+2025-07-08 18:31:13,751 - urllib3.connectionpool - DEBUG - http://localhost:5000 "GET /notifications HTTP/1.1" 200 318
+2025-07-08 18:52:41,447 - dash.dash - INFO - Dash is running on http://localhost:8050/
+
+2025-07-08 18:52:41,457 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://localhost:8050
+2025-07-08 18:52:41,457 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-07-08 18:52:41,812 - dash_app - ERROR - Exception on / [GET]
+Traceback (most recent call last):
+  File "c:\Users\Hari\Desktop\Testin dub\.venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Hari\Desktop\Testin dub\.venv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Hari\Desktop\Testin dub\.venv\Lib\site-packages\flask\app.py", line 915, in full_dispatch_request
+    rv = self.preprocess_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Hari\Desktop\Testin dub\.venv\Lib\site-packages\flask\app.py", line 1291, in preprocess_request
+    rv = self.ensure_sync(before_func)()
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Hari\Desktop\Testin dub\.venv\Lib\site-packages\dash\dash.py", line 1517, in _setup_server
+    _validate.validate_layout(self.layout, self._layout_value())
+  File "c:\Users\Hari\Desktop\Testin dub\.venv\Lib\site-packages\dash\_validate.py", line 455, in validate_layout
+    _validate(layout_value)
+  File "c:\Users\Hari\Desktop\Testin dub\.venv\Lib\site-packages\dash\_validate.py", line 442, in _validate
+    _validate_id(component)
+  File "c:\Users\Hari\Desktop\Testin dub\.venv\Lib\site-packages\dash\_validate.py", line 432, in _validate_id
+    raise exceptions.DuplicateIdError(
+dash.exceptions.DuplicateIdError: Duplicate component id found in the initial layout: `auto-rollback-status`
+2025-07-08 18:52:41,812 - werkzeug - INFO - 127.0.0.1 - - [08/Jul/2025 18:52:41] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-07-08 18:52:43,917 - werkzeug - INFO - 127.0.0.1 - - [08/Jul/2025 18:52:43] "GET / HTTP/1.1" 200 -
+2025-07-08 18:52:47,637 - urllib3.connectionpool - DEBUG - http://localhost:5000 "GET /data/symbol_data HTTP/1.1" 404 22
+2025-07-08 18:52:47,638 - urllib3.connectionpool - DEBUG - http://localhost:5000 "GET /portfolio/balance HTTP/1.1" 200 152
+2025-07-08 18:52:47,643 - urllib3.connectionpool - DEBUG - http://localhost:5000 "GET /data/live_prices HTTP/1.1" 200 146
+2025-07-08 18:52:47,645 - urllib3.connectionpool - DEBUG - http://localhost:5000 "GET /trade HTTP/1.1" 200 194
+2025-07-08 18:52:47,647 - urllib3.connectionpool - DEBUG - http://localhost:5000 "GET /notifications HTTP/1.1" 200 318

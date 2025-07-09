@@ -1,0 +1,296 @@
+{
+  "analysis_date": "2025-07-08T23:12:21.095529",
+  "summary": {
+    "issues_found": 37,
+    "fixes_applied": 10,
+    "errors_encountered": 0
+  },
+  "issues_found": [
+    {
+      "type": "IMPORT_ERROR",
+      "description": "get_volume_data() function called but not imported",
+      "file": "c:\\Users\\Hari\\Desktop\\Test.binnew\\Testin dub\\backendtest\\main.py",
+      "timestamp": "2025-07-08T23:12:10.065485"
+    },
+    {
+      "type": "MODULARIZATION_INCOMPLETE",
+      "description": "Advanced Auto Trading endpoints still in main.py",
+      "file": "c:\\Users\\Hari\\Desktop\\Test.binnew\\Testin dub\\backendtest\\main.py",
+      "timestamp": "2025-07-08T23:12:10.098620"
+    },
+    {
+      "type": "MODULARIZATION_INCOMPLETE",
+      "description": "ML Model Tuning endpoints still in main.py",
+      "file": "c:\\Users\\Hari\\Desktop\\Test.binnew\\Testin dub\\backendtest\\main.py",
+      "timestamp": "2025-07-08T23:12:10.098620"
+    },
+    {
+      "type": "MODULARIZATION_INCOMPLETE",
+      "description": "Email Management endpoints still in main.py",
+      "file": "c:\\Users\\Hari\\Desktop\\Test.binnew\\Testin dub\\backendtest\\main.py",
+      "timestamp": "2025-07-08T23:12:10.112012"
+    },
+    {
+      "type": "MODULARIZATION_INCOMPLETE",
+      "description": "Binance Futures API endpoints still in main.py",
+      "file": "c:\\Users\\Hari\\Desktop\\Test.binnew\\Testin dub\\backendtest\\main.py",
+      "timestamp": "2025-07-08T23:12:10.112012"
+    },
+    {
+      "type": "MODULARIZATION_INCOMPLETE",
+      "description": "HFT Analysis endpoints still in main.py",
+      "file": "c:\\Users\\Hari\\Desktop\\Test.binnew\\Testin dub\\backendtest\\main.py",
+      "timestamp": "2025-07-08T23:12:10.112012"
+    },
+    {
+      "type": "MODULARIZATION_INCOMPLETE",
+      "description": "Risk Management endpoints still in main.py",
+      "file": "c:\\Users\\Hari\\Desktop\\Test.binnew\\Testin dub\\backendtest\\main.py",
+      "timestamp": "2025-07-08T23:12:10.120565"
+    },
+    {
+      "type": "MISSING_CALLBACK_ENDPOINT",
+      "description": "Callback endpoint /api/callbacks/button_click not found",
+      "file": "c:\\Users\\Hari\\Desktop\\Test.binnew\\Testin dub\\backendtest\\main.py",
+      "timestamp": "2025-07-08T23:12:10.142418"
+    },
+    {
+      "type": "MISSING_CALLBACK_ENDPOINT",
+      "description": "Callback endpoint /api/callbacks/chart_update not found",
+      "file": "c:\\Users\\Hari\\Desktop\\Test.binnew\\Testin dub\\backendtest\\main.py",
+      "timestamp": "2025-07-08T23:12:10.149493"
+    },
+    {
+      "type": "MISSING_CALLBACK_ENDPOINT",
+      "description": "Callback endpoint /api/callbacks/data_refresh not found",
+      "file": "c:\\Users\\Hari\\Desktop\\Test.binnew\\Testin dub\\backendtest\\main.py",
+      "timestamp": "2025-07-08T23:12:10.152662"
+    },
+    {
+      "type": "MISSING_CALLBACK_ENDPOINT",
+      "description": "Callback endpoint /api/data_flows/real_time not found",
+      "file": "c:\\Users\\Hari\\Desktop\\Test.binnew\\Testin dub\\backendtest\\main.py",
+      "timestamp": "2025-07-08T23:12:10.156000"
+    },
+    {
+      "type": "MISSING_CALLBACK_ENDPOINT",
+      "description": "Callback endpoint /api/data_flows/historical not found",
+      "file": "c:\\Users\\Hari\\Desktop\\Test.binnew\\Testin dub\\backendtest\\main.py",
+      "timestamp": "2025-07-08T23:12:10.156000"
+    },
+    {
+      "type": "MISSING_CALLBACK_ENDPOINT",
+      "description": "Callback endpoint /websocket/price_feed not found",
+      "file": "c:\\Users\\Hari\\Desktop\\Test.binnew\\Testin dub\\backendtest\\main.py",
+      "timestamp": "2025-07-08T23:12:10.158007"
+    },
+    {
+      "type": "MISSING_CALLBACK_ENDPOINT",
+      "description": "Callback endpoint /websocket/trade_signals not found",
+      "file": "c:\\Users\\Hari\\Desktop\\Test.binnew\\Testin dub\\backendtest\\main.py",
+      "timestamp": "2025-07-08T23:12:10.169531"
+    },
+    {
+      "type": "MISSING_CALLBACK_ENDPOINT",
+      "description": "Callback endpoint /websocket/notifications not found",
+      "file": "c:\\Users\\Hari\\Desktop\\Test.binnew\\Testin dub\\backendtest\\main.py",
+      "timestamp": "2025-07-08T23:12:10.172167"
+    },
+    {
+      "type": "MISSING_DATA_FLOW_HANDLER",
+      "description": "Data flow handler handle_price_update not found",
+      "file": "c:\\Users\\Hari\\Desktop\\Test.binnew\\Testin dub\\backendtest\\main.py",
+      "timestamp": "2025-07-08T23:12:10.178220"
+    },
+    {
+      "type": "MISSING_DATA_FLOW_HANDLER",
+      "description": "Data flow handler handle_trade_signal not found",
+      "file": "c:\\Users\\Hari\\Desktop\\Test.binnew\\Testin dub\\backendtest\\main.py",
+      "timestamp": "2025-07-08T23:12:10.189092"
+    },
+    {
+      "type": "MISSING_DATA_FLOW_HANDLER",
+      "description": "Data flow handler handle_portfolio_update not found",
+      "file": "c:\\Users\\Hari\\Desktop\\Test.binnew\\Testin dub\\backendtest\\main.py",
+      "timestamp": "2025-07-08T23:12:10.189689"
+    },
+    {
+      "type": "MISSING_DATA_FLOW_HANDLER",
+      "description": "Data flow handler handle_notification not found",
+      "file": "c:\\Users\\Hari\\Desktop\\Test.binnew\\Testin dub\\backendtest\\main.py",
+      "timestamp": "2025-07-08T23:12:10.189689"
+    },
+    {
+      "type": "MISSING_DATA_FLOW_HANDLER",
+      "description": "Data flow handler process_real_time_data not found",
+      "file": "c:\\Users\\Hari\\Desktop\\Test.binnew\\Testin dub\\backendtest\\main.py",
+      "timestamp": "2025-07-08T23:12:10.189689"
+    },
+    {
+      "type": "MISSING_DATA_FLOW_HANDLER",
+      "description": "Data flow handler update_dashboard_data not found",
+      "file": "c:\\Users\\Hari\\Desktop\\Test.binnew\\Testin dub\\backendtest\\main.py",
+      "timestamp": "2025-07-08T23:12:10.189689"
+    },
+    {
+      "type": "MISSING_DATA_FLOW_ENDPOINT",
+      "description": "Data flow endpoint /api/realtime/prices not found",
+      "file": "c:\\Users\\Hari\\Desktop\\Test.binnew\\Testin dub\\backendtest\\main.py",
+      "timestamp": "2025-07-08T23:12:10.191811"
+    },
+    {
+      "type": "MISSING_DATA_FLOW_ENDPOINT",
+      "description": "Data flow endpoint /api/realtime/orderbook not found",
+      "file": "c:\\Users\\Hari\\Desktop\\Test.binnew\\Testin dub\\backendtest\\main.py",
+      "timestamp": "2025-07-08T23:12:10.191811"
+    },
+    {
+      "type": "MISSING_DATA_FLOW_ENDPOINT",
+      "description": "Data flow endpoint /api/realtime/trades not found",
+      "file": "c:\\Users\\Hari\\Desktop\\Test.binnew\\Testin dub\\backendtest\\main.py",
+      "timestamp": "2025-07-08T23:12:10.193826"
+    },
+    {
+      "type": "MISSING_DATA_FLOW_ENDPOINT",
+      "description": "Data flow endpoint /api/realtime/market_depth not found",
+      "file": "c:\\Users\\Hari\\Desktop\\Test.binnew\\Testin dub\\backendtest\\main.py",
+      "timestamp": "2025-07-08T23:12:10.196090"
+    },
+    {
+      "type": "MISSING_DATA_FLOW_ENDPOINT",
+      "description": "Data flow endpoint /api/portfolio/real_time_value not found",
+      "file": "c:\\Users\\Hari\\Desktop\\Test.binnew\\Testin dub\\backendtest\\main.py",
+      "timestamp": "2025-07-08T23:12:10.196090"
+    },
+    {
+      "type": "MISSING_DATA_FLOW_ENDPOINT",
+      "description": "Data flow endpoint /api/portfolio/real_time_pnl not found",
+      "file": "c:\\Users\\Hari\\Desktop\\Test.binnew\\Testin dub\\backendtest\\main.py",
+      "timestamp": "2025-07-08T23:12:10.196090"
+    },
+    {
+      "type": "MISSING_DATA_FLOW_ENDPOINT",
+      "description": "Data flow endpoint /api/portfolio/positions_stream not found",
+      "file": "c:\\Users\\Hari\\Desktop\\Test.binnew\\Testin dub\\backendtest\\main.py",
+      "timestamp": "2025-07-08T23:12:10.196738"
+    },
+    {
+      "type": "MISSING_DATA_FLOW_ENDPOINT",
+      "description": "Data flow endpoint /api/trading/active_orders not found",
+      "file": "c:\\Users\\Hari\\Desktop\\Test.binnew\\Testin dub\\backendtest\\main.py",
+      "timestamp": "2025-07-08T23:12:10.196738"
+    },
+    {
+      "type": "MISSING_DATA_FLOW_ENDPOINT",
+      "description": "Data flow endpoint /api/trading/order_updates not found",
+      "file": "c:\\Users\\Hari\\Desktop\\Test.binnew\\Testin dub\\backendtest\\main.py",
+      "timestamp": "2025-07-08T23:12:10.196738"
+    },
+    {
+      "type": "MISSING_DATA_FLOW_ENDPOINT",
+      "description": "Data flow endpoint /api/trading/execution_reports not found",
+      "file": "c:\\Users\\Hari\\Desktop\\Test.binnew\\Testin dub\\backendtest\\main.py",
+      "timestamp": "2025-07-08T23:12:10.196738"
+    },
+    {
+      "type": "MISSING_DATA_FLOW_ENDPOINT",
+      "description": "Data flow endpoint /api/analytics/performance_metrics not found",
+      "file": "c:\\Users\\Hari\\Desktop\\Test.binnew\\Testin dub\\backendtest\\main.py",
+      "timestamp": "2025-07-08T23:12:10.196738"
+    },
+    {
+      "type": "MISSING_DATA_FLOW_ENDPOINT",
+      "description": "Data flow endpoint /api/analytics/risk_metrics not found",
+      "file": "c:\\Users\\Hari\\Desktop\\Test.binnew\\Testin dub\\backendtest\\main.py",
+      "timestamp": "2025-07-08T23:12:10.196738"
+    },
+    {
+      "type": "MISSING_DATA_FLOW_ENDPOINT",
+      "description": "Data flow endpoint /api/analytics/ml_predictions not found",
+      "file": "c:\\Users\\Hari\\Desktop\\Test.binnew\\Testin dub\\backendtest\\main.py",
+      "timestamp": "2025-07-08T23:12:10.197838"
+    },
+    {
+      "type": "MISSING_DATA_FLOW_ENDPOINT",
+      "description": "Data flow endpoint /api/charts/candlestick_stream not found",
+      "file": "c:\\Users\\Hari\\Desktop\\Test.binnew\\Testin dub\\backendtest\\main.py",
+      "timestamp": "2025-07-08T23:12:10.197838"
+    },
+    {
+      "type": "MISSING_DATA_FLOW_ENDPOINT",
+      "description": "Data flow endpoint /api/charts/indicator_updates not found",
+      "file": "c:\\Users\\Hari\\Desktop\\Test.binnew\\Testin dub\\backendtest\\main.py",
+      "timestamp": "2025-07-08T23:12:10.197838"
+    },
+    {
+      "type": "MISSING_DATA_FLOW_ENDPOINT",
+      "description": "Data flow endpoint /api/charts/volume_profile not found",
+      "file": "c:\\Users\\Hari\\Desktop\\Test.binnew\\Testin dub\\backendtest\\main.py",
+      "timestamp": "2025-07-08T23:12:10.197838"
+    }
+  ],
+  "fixes_applied": [
+    {
+      "type": "ENDPOINTS_EXIST",
+      "description": "Critical endpoints already added",
+      "file": null,
+      "timestamp": "2025-07-08T23:12:10.265745"
+    },
+    {
+      "type": "CALLBACK_ENDPOINTS_ADDED",
+      "description": "Added all callback and data flow endpoints to main.py",
+      "file": null,
+      "timestamp": "2025-07-08T23:12:10.391462"
+    },
+    {
+      "type": "TEST_SCRIPT_CREATED",
+      "description": "Created comprehensive callback test script: callback_data_flow_tester.py",
+      "file": null,
+      "timestamp": "2025-07-08T23:12:10.451964"
+    },
+    {
+      "type": "IMPORT_TEST",
+      "description": "main.py imports successfully",
+      "file": null,
+      "timestamp": "2025-07-08T23:12:21.093617"
+    },
+    {
+      "type": "IMPORT_TEST",
+      "description": "routes.advanced_auto_trading_routes imports successfully",
+      "file": null,
+      "timestamp": "2025-07-08T23:12:21.093617"
+    },
+    {
+      "type": "IMPORT_TEST",
+      "description": "routes.ml_prediction_routes imports successfully",
+      "file": null,
+      "timestamp": "2025-07-08T23:12:21.093617"
+    },
+    {
+      "type": "IMPORT_TEST",
+      "description": "routes.system_routes imports successfully",
+      "file": null,
+      "timestamp": "2025-07-08T23:12:21.093617"
+    },
+    {
+      "type": "IMPORT_TEST",
+      "description": "routes.hft_analysis_routes imports successfully",
+      "file": null,
+      "timestamp": "2025-07-08T23:12:21.093617"
+    },
+    {
+      "type": "IMPORT_TEST",
+      "description": "routes.data_collection_routes imports successfully",
+      "file": null,
+      "timestamp": "2025-07-08T23:12:21.093617"
+    },
+    {
+      "type": "IMPORT_TEST",
+      "description": "routes.futures_trading_routes imports successfully",
+      "file": null,
+      "timestamp": "2025-07-08T23:12:21.093617"
+    }
+  ],
+  "errors": [],
+  "status": "COMPLETED"
+}

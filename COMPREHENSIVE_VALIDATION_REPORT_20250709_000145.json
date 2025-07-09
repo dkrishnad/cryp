@@ -1,0 +1,70 @@
+{
+  "frontend": {
+    "structure": {
+      "status": "SUCCESS",
+      "total_components": 734,
+      "buttons": 239,
+      "charts": 49,
+      "inputs": 67,
+      "sample_buttons": [
+        "sidebar-predict-btn",
+        "sidebar-analytics-btn",
+        "reset-balance-btn",
+        "reset-balance-btn-output",
+        "show-performance-dashboard-btn"
+      ],
+      "sample_charts": [
+        "show-price-chart-btn",
+        "show-indicators-chart-btn",
+        "refresh-charts-btn",
+        "charts-collapse",
+        "sidebar-volume-chart-btn"
+      ]
+    },
+    "callbacks": {
+      "status": "SUCCESS",
+      "total_count": 220,
+      "analysis": {
+        "chart_callbacks": 22,
+        "button_callbacks": 97,
+        "data_callbacks": 101,
+        "interval_callbacks": 0
+      }
+    }
+  },
+  "backend": {
+    "structure": {
+      "status": "SUCCESS",
+      "routes_count": 270,
+      "app_instance": "<class 'fastapi.applications.FastAPI'>"
+    },
+    "endpoints": {
+      "success_rate": 100.0,
+      "results": {
+        "/docs": "SUCCESS",
+        "/openapi.json": "SUCCESS",
+        "/health": "SUCCESS",
+        "/ml/predict": "SUCCESS",
+        "/price": "SUCCESS",
+        "/advanced_auto_trading/status": "SUCCESS",
+        "/data/collection/status": "SUCCESS",
+        "/notifications": "SUCCESS",
+        "/hft/status": "SUCCESS",
+        "/futures/execute": "SUCCESS",
+        "/risk/portfolio_metrics": "SUCCESS",
+        "/email/config": "SUCCESS"
+      },
+      "total_tested": 12
+    }
+  },
+  "integration": {
+    "success_rate": 100.0,
+    "tests": {
+      "backend_connectivity": true,
+      "frontend_structure": true,
+      "data_flow": true
+    }
+  },
+  "overall_score": 100.0,
+  "timestamp": "2025-07-09T00:00:41.614934"
+}

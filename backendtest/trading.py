@@ -1,6 +1,9 @@
 import uuid
 import datetime
-from db import save_trade
+try:
+    from db import save_trade
+except ImportError:
+    from .db import save_trade
 
 def open_virtual_trade(symbol, direction, amount, price, tp_pct, sl_pct):
     trade_id = str(uuid.uuid4())

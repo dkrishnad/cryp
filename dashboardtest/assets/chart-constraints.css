@@ -1,0 +1,95 @@
+/* Chart Container Constraints for Crypto Trading Bot Dashboard */
+
+/* Main chart container styling */
+.chart-container {
+    max-height: 400px !important;
+    height: 400px !important;
+    overflow: hidden;
+    position: relative;
+    box-sizing: border-box;
+}
+
+/* Plotly graph constraints */
+.dash-graph {
+    max-height: 400px !important;
+    height: 400px !important;
+    width: 100% !important;
+}
+
+/* Plotly graph div constraints */
+.plotly-graph-div {
+    max-height: 400px !important;
+    height: 400px !important;
+    width: 100% !important;
+}
+
+/* SVG container constraints */
+.js-plotly-plot .plotly .main-svg {
+    max-height: 400px !important;
+    height: 400px !important;
+    width: 100% !important;
+}
+
+/* Prevent chart expansion beyond viewport */
+.main-svg {
+    max-height: 400px !important;
+    height: 400px !important;
+}
+
+/* Ensure responsive behavior without infinite expansion */
+.plotly-graph-div .plotly-graph-div {
+    max-height: 400px !important;
+    height: 400px !important;
+}
+
+/* Card body constraints for chart containers */
+.card-body .chart-container {
+    padding: 0;
+    margin: 0;
+    max-height: 400px !important;
+    height: 400px !important;
+}
+
+/* Price chart specific constraints */
+#price-chart {
+    max-height: 400px !important;
+    height: 400px !important;
+}
+
+/* Indicators chart specific constraints */
+#indicators-chart {
+    max-height: 400px !important;
+    height: 400px !important;
+}
+
+/* P&L chart specific constraints */
+#pnl-chart {
+    max-height: 400px !important;
+    height: 400px !important;
+}
+
+/* Trade distribution chart specific constraints */
+#trade-distribution-chart {
+    max-height: 400px !important;
+    height: 400px !important;
+}
+
+/* Futures technical chart constraints */
+#futures-technical-chart {
+    max-height: 400px !important;
+    height: 400px !important;
+}
+
+/* Smaller charts for compact areas */
+.chart-container.compact {
+    max-height: 250px !important;
+    height: 250px !important;
+}
+
+/* Ensure modebar doesn't interfere with sizing */
+.modebar {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 1000;
+}

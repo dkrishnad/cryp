@@ -1,0 +1,556 @@
+{
+  "missing_modules": [
+    {
+      "file": "c:\\Users\\Hari\\Desktop\\Testin dub\\main.py",
+      "module": "backendtest.app",
+      "line": 29,
+      "type": "from_import"
+    },
+    {
+      "file": "c:\\Users\\Hari\\Desktop\\Testin dub\\quick_verification.py",
+      "module": "talib",
+      "line": 54,
+      "type": "import"
+    },
+    {
+      "file": "c:\\Users\\Hari\\Desktop\\Testin dub\\backendtest\\data_collection.py",
+      "module": "talib",
+      "line": 25,
+      "type": "import"
+    }
+  ],
+  "missing_functions": [
+    {
+      "file": "c:\\Users\\Hari\\Desktop\\Testin dub\\final_system_verification.py",
+      "module": "ws",
+      "function": "router",
+      "line": 32
+    },
+    {
+      "file": "c:\\Users\\Hari\\Desktop\\Testin dub\\final_system_verification.py",
+      "module": "futures_trading",
+      "function": "FuturesTradingEngine",
+      "line": 36
+    },
+    {
+      "file": "c:\\Users\\Hari\\Desktop\\Testin dub\\final_system_verification.py",
+      "module": "advanced_auto_trading",
+      "function": "AdvancedAutoTradingEngine",
+      "line": 40
+    },
+    {
+      "file": "c:\\Users\\Hari\\Desktop\\Testin dub\\final_system_verification.py",
+      "module": "main",
+      "function": "app",
+      "line": 44
+    },
+    {
+      "file": "c:\\Users\\Hari\\Desktop\\Testin dub\\final_system_verification.py",
+      "module": "dash_app",
+      "function": "app",
+      "line": 64
+    },
+    {
+      "file": "c:\\Users\\Hari\\Desktop\\Testin dub\\final_system_verification.py",
+      "module": "layout",
+      "function": "layout",
+      "line": 68
+    },
+    {
+      "file": "c:\\Users\\Hari\\Desktop\\Testin dub\\quick_verification.py",
+      "module": "main",
+      "function": "app",
+      "line": 14
+    },
+    {
+      "file": "c:\\Users\\Hari\\Desktop\\Testin dub\\quick_verification.py",
+      "module": "dash_app",
+      "function": "app",
+      "line": 26
+    },
+    {
+      "file": "c:\\Users\\Hari\\Desktop\\Testin dub\\test_backend_imports.py",
+      "module": "ws",
+      "function": "router",
+      "line": 31
+    },
+    {
+      "file": "c:\\Users\\Hari\\Desktop\\Testin dub\\test_backend_imports.py",
+      "module": "hybrid_learning",
+      "function": "hybrid_orchestrator",
+      "line": 35
+    },
+    {
+      "file": "c:\\Users\\Hari\\Desktop\\Testin dub\\test_backend_imports.py",
+      "module": "online_learning",
+      "function": "online_learning_manager",
+      "line": 39
+    },
+    {
+      "file": "c:\\Users\\Hari\\Desktop\\Testin dub\\test_backend_imports.py",
+      "module": "futures_trading",
+      "function": "FuturesTradingEngine",
+      "line": 43
+    },
+    {
+      "file": "c:\\Users\\Hari\\Desktop\\Testin dub\\test_backend_imports.py",
+      "module": "futures_trading",
+      "function": "FuturesSignal",
+      "line": 43
+    },
+    {
+      "file": "c:\\Users\\Hari\\Desktop\\Testin dub\\test_backend_imports.py",
+      "module": "binance_futures_exact",
+      "function": "BinanceFuturesTradingEngine",
+      "line": 47
+    },
+    {
+      "file": "c:\\Users\\Hari\\Desktop\\Testin dub\\test_backend_imports.py",
+      "module": "advanced_auto_trading",
+      "function": "AdvancedAutoTradingEngine",
+      "line": 51
+    },
+    {
+      "file": "c:\\Users\\Hari\\Desktop\\Testin dub\\test_imports.py",
+      "module": "futures_trading",
+      "function": "FuturesTradingEngine",
+      "line": 27
+    },
+    {
+      "file": "c:\\Users\\Hari\\Desktop\\Testin dub\\test_imports.py",
+      "module": "futures_trading",
+      "function": "FuturesSignal",
+      "line": 27
+    },
+    {
+      "file": "c:\\Users\\Hari\\Desktop\\Testin dub\\test_imports.py",
+      "module": "futures_trading",
+      "function": "FuturesPosition",
+      "line": 27
+    },
+    {
+      "file": "c:\\Users\\Hari\\Desktop\\Testin dub\\test_imports.py",
+      "module": "futures_trading",
+      "function": "FuturesAccountInfo",
+      "line": 27
+    },
+    {
+      "file": "c:\\Users\\Hari\\Desktop\\Testin dub\\test_imports.py",
+      "module": "futures_trading",
+      "function": "FuturesSettings",
+      "line": 27
+    },
+    {
+      "file": "c:\\Users\\Hari\\Desktop\\Testin dub\\test_imports.py",
+      "module": "futures_trading",
+      "function": "PositionSide",
+      "line": 27
+    },
+    {
+      "file": "c:\\Users\\Hari\\Desktop\\Testin dub\\test_imports.py",
+      "module": "futures_trading",
+      "function": "PositionStatus",
+      "line": 27
+    },
+    {
+      "file": "c:\\Users\\Hari\\Desktop\\Testin dub\\test_imports.py",
+      "module": "binance_futures_exact",
+      "function": "BinanceFuturesTradingEngine",
+      "line": 34
+    },
+    {
+      "file": "c:\\Users\\Hari\\Desktop\\Testin dub\\test_imports.py",
+      "module": "binance_futures_exact",
+      "function": "OrderSide",
+      "line": 34
+    },
+    {
+      "file": "c:\\Users\\Hari\\Desktop\\Testin dub\\test_imports.py",
+      "module": "binance_futures_exact",
+      "function": "OrderType",
+      "line": 34
+    },
+    {
+      "file": "c:\\Users\\Hari\\Desktop\\Testin dub\\test_imports.py",
+      "module": "binance_futures_exact",
+      "function": "PositionSide",
+      "line": 34
+    },
+    {
+      "file": "c:\\Users\\Hari\\Desktop\\Testin dub\\test_imports.py",
+      "module": "binance_futures_exact",
+      "function": "TimeInForce",
+      "line": 34
+    },
+    {
+      "file": "c:\\Users\\Hari\\Desktop\\Testin dub\\test_imports.py",
+      "module": "binance_futures_exact",
+      "function": "WorkingType",
+      "line": 34
+    },
+    {
+      "file": "c:\\Users\\Hari\\Desktop\\Testin dub\\test_imports.py",
+      "module": "binance_futures_exact",
+      "function": "OrderStatus",
+      "line": 34
+    },
+    {
+      "file": "c:\\Users\\Hari\\Desktop\\Testin dub\\test_imports.py",
+      "module": "advanced_auto_trading",
+      "function": "AdvancedAutoTradingEngine",
+      "line": 41
+    },
+    {
+      "file": "c:\\Users\\Hari\\Desktop\\Testin dub\\test_imports.py",
+      "module": "advanced_auto_trading",
+      "function": "TradingSignal",
+      "line": 41
+    },
+    {
+      "file": "c:\\Users\\Hari\\Desktop\\Testin dub\\test_imports.py",
+      "module": "advanced_auto_trading",
+      "function": "AISignal",
+      "line": 41
+    },
+    {
+      "file": "c:\\Users\\Hari\\Desktop\\Testin dub\\test_imports.py",
+      "module": "ws",
+      "function": "router",
+      "line": 48
+    },
+    {
+      "file": "c:\\Users\\Hari\\Desktop\\Testin dub\\test_imports.py",
+      "module": "hybrid_learning",
+      "function": "hybrid_orchestrator",
+      "line": 55
+    },
+    {
+      "file": "c:\\Users\\Hari\\Desktop\\Testin dub\\test_imports.py",
+      "module": "online_learning",
+      "function": "online_learning_manager",
+      "line": 62
+    },
+    {
+      "file": "c:\\Users\\Hari\\Desktop\\Testin dub\\test_imports.py",
+      "module": "ml_compatibility_manager",
+      "function": "MLCompatibilityManager",
+      "line": 69
+    },
+    {
+      "file": "c:\\Users\\Hari\\Desktop\\Testin dub\\test_imports.py",
+      "module": "storage_manager",
+      "function": "StorageManager",
+      "line": 76
+    },
+    {
+      "file": "c:\\Users\\Hari\\Desktop\\Testin dub\\test_imports.py",
+      "module": "dash_app",
+      "function": "app",
+      "line": 83
+    },
+    {
+      "file": "c:\\Users\\Hari\\Desktop\\Testin dub\\test_imports.py",
+      "module": "layout",
+      "function": "layout",
+      "line": 89
+    },
+    {
+      "file": "c:\\Users\\Hari\\Desktop\\Testin dub\\test_imports.py",
+      "module": "simple_transfer_lifecycle",
+      "function": "SimpleTransferLearningLifecycle",
+      "line": 96
+    },
+    {
+      "file": "c:\\Users\\Hari\\Desktop\\Testin dub\\test_imports.py",
+      "module": "data_collection",
+      "function": "DataCollector",
+      "line": 103
+    },
+    {
+      "file": "c:\\Users\\Hari\\Desktop\\Testin dub\\test_imports.py",
+      "module": "data_collection",
+      "function": "TechnicalIndicators",
+      "line": 103
+    },
+    {
+      "file": "c:\\Users\\Hari\\Desktop\\Testin dub\\backendtest\\crypto_transfer_endpoints.py",
+      "module": "simple_transfer_lifecycle",
+      "function": "SimpleTransferLearningLifecycle",
+      "line": 18
+    },
+    {
+      "file": "c:\\Users\\Hari\\Desktop\\Testin dub\\backendtest\\crypto_transfer_endpoints.py",
+      "module": "ml_compatibility_manager",
+      "function": "MLCompatibilityManager",
+      "line": 19
+    },
+    {
+      "file": "c:\\Users\\Hari\\Desktop\\Testin dub\\backendtest\\crypto_transfer_endpoints.py",
+      "module": "storage_manager",
+      "function": "StorageManager",
+      "line": 20
+    },
+    {
+      "file": "c:\\Users\\Hari\\Desktop\\Testin dub\\backendtest\\crypto_transfer_endpoints.py",
+      "module": "crypto_transfer_learning",
+      "function": "CryptoTransferLearner",
+      "line": 120
+    },
+    {
+      "file": "c:\\Users\\Hari\\Desktop\\Testin dub\\backendtest\\hybrid_learning.py",
+      "module": "online_learning",
+      "function": "OnlineLearningManager",
+      "line": 20
+    },
+    {
+      "file": "c:\\Users\\Hari\\Desktop\\Testin dub\\backendtest\\hybrid_learning.py",
+      "module": "data_collection",
+      "function": "DataCollector",
+      "line": 21
+    },
+    {
+      "file": "c:\\Users\\Hari\\Desktop\\Testin dub\\backendtest\\main.py",
+      "module": "ws",
+      "function": "router",
+      "line": 42
+    },
+    {
+      "file": "c:\\Users\\Hari\\Desktop\\Testin dub\\backendtest\\main.py",
+      "module": "futures_trading",
+      "function": "FuturesSignal",
+      "line": 53
+    },
+    {
+      "file": "c:\\Users\\Hari\\Desktop\\Testin dub\\backendtest\\main.py",
+      "module": "hybrid_learning",
+      "function": "hybrid_orchestrator",
+      "line": 64
+    },
+    {
+      "file": "c:\\Users\\Hari\\Desktop\\Testin dub\\backendtest\\main.py",
+      "module": "online_learning",
+      "function": "online_learning_manager",
+      "line": 65
+    },
+    {
+      "file": "c:\\Users\\Hari\\Desktop\\Testin dub\\backendtest\\main.py",
+      "module": "futures_trading",
+      "function": "FuturesTradingEngine",
+      "line": 78
+    },
+    {
+      "file": "c:\\Users\\Hari\\Desktop\\Testin dub\\backendtest\\main.py",
+      "module": "futures_trading",
+      "function": "FuturesSignal",
+      "line": 78
+    },
+    {
+      "file": "c:\\Users\\Hari\\Desktop\\Testin dub\\backendtest\\main.py",
+      "module": "futures_trading",
+      "function": "FuturesPosition",
+      "line": 78
+    },
+    {
+      "file": "c:\\Users\\Hari\\Desktop\\Testin dub\\backendtest\\main.py",
+      "module": "futures_trading",
+      "function": "FuturesAccountInfo",
+      "line": 78
+    },
+    {
+      "file": "c:\\Users\\Hari\\Desktop\\Testin dub\\backendtest\\main.py",
+      "module": "futures_trading",
+      "function": "FuturesSettings",
+      "line": 78
+    },
+    {
+      "file": "c:\\Users\\Hari\\Desktop\\Testin dub\\backendtest\\main.py",
+      "module": "futures_trading",
+      "function": "PositionSide",
+      "line": 78
+    },
+    {
+      "file": "c:\\Users\\Hari\\Desktop\\Testin dub\\backendtest\\main.py",
+      "module": "futures_trading",
+      "function": "PositionStatus",
+      "line": 78
+    },
+    {
+      "file": "c:\\Users\\Hari\\Desktop\\Testin dub\\backendtest\\main.py",
+      "module": "binance_futures_exact",
+      "function": "BinanceFuturesTradingEngine",
+      "line": 84
+    },
+    {
+      "file": "c:\\Users\\Hari\\Desktop\\Testin dub\\backendtest\\main.py",
+      "module": "binance_futures_exact",
+      "function": "OrderSide",
+      "line": 85
+    },
+    {
+      "file": "c:\\Users\\Hari\\Desktop\\Testin dub\\backendtest\\main.py",
+      "module": "binance_futures_exact",
+      "function": "OrderType",
+      "line": 85
+    },
+    {
+      "file": "c:\\Users\\Hari\\Desktop\\Testin dub\\backendtest\\main.py",
+      "module": "binance_futures_exact",
+      "function": "PositionSide",
+      "line": 85
+    },
+    {
+      "file": "c:\\Users\\Hari\\Desktop\\Testin dub\\backendtest\\main.py",
+      "module": "binance_futures_exact",
+      "function": "TimeInForce",
+      "line": 85
+    },
+    {
+      "file": "c:\\Users\\Hari\\Desktop\\Testin dub\\backendtest\\main.py",
+      "module": "binance_futures_exact",
+      "function": "WorkingType",
+      "line": 85
+    },
+    {
+      "file": "c:\\Users\\Hari\\Desktop\\Testin dub\\backendtest\\main.py",
+      "module": "binance_futures_exact",
+      "function": "OrderStatus",
+      "line": 85
+    },
+    {
+      "file": "c:\\Users\\Hari\\Desktop\\Testin dub\\backendtest\\main.py",
+      "module": "advanced_auto_trading",
+      "function": "AdvancedAutoTradingEngine",
+      "line": 91
+    },
+    {
+      "file": "c:\\Users\\Hari\\Desktop\\Testin dub\\backendtest\\main.py",
+      "module": "advanced_auto_trading",
+      "function": "TradingSignal",
+      "line": 91
+    },
+    {
+      "file": "c:\\Users\\Hari\\Desktop\\Testin dub\\backendtest\\main.py",
+      "module": "advanced_auto_trading",
+      "function": "AISignal",
+      "line": 91
+    },
+    {
+      "file": "c:\\Users\\Hari\\Desktop\\Testin dub\\backendtest\\main.py",
+      "module": "ml_compatibility_manager",
+      "function": "MLCompatibilityManager",
+      "line": 103
+    },
+    {
+      "file": "c:\\Users\\Hari\\Desktop\\Testin dub\\backendtest\\main.py",
+      "module": "ml_compatibility_manager",
+      "function": "MLCompatibilityManager",
+      "line": 111
+    },
+    {
+      "file": "c:\\Users\\Hari\\Desktop\\Testin dub\\backendtest\\main.py",
+      "module": "data_collection",
+      "function": "TechnicalIndicators",
+      "line": 3591
+    },
+    {
+      "file": "c:\\Users\\Hari\\Desktop\\Testin dub\\backendtest\\main.py",
+      "module": "data_collection",
+      "function": "DataCollector",
+      "line": 3591
+    },
+    {
+      "file": "c:\\Users\\Hari\\Desktop\\Testin dub\\backendtest\\main.py",
+      "module": "futures_trading",
+      "function": "PositionSide",
+      "line": 3862
+    },
+    {
+      "file": "c:\\Users\\Hari\\Desktop\\Testin dub\\backendtest\\main.py",
+      "module": "futures_trading",
+      "function": "FuturesSignal",
+      "line": 3864
+    },
+    {
+      "file": "c:\\Users\\Hari\\Desktop\\Testin dub\\dashboardtest\\app.py",
+      "module": "dash_app",
+      "function": "app",
+      "line": 56
+    },
+    {
+      "file": "c:\\Users\\Hari\\Desktop\\Testin dub\\dashboardtest\\app.py",
+      "module": "layout",
+      "function": "layout",
+      "line": 64
+    },
+    {
+      "file": "c:\\Users\\Hari\\Desktop\\Testin dub\\dashboardtest\\callbacks.py",
+      "module": "debug_logger",
+      "function": "debugger",
+      "line": 20
+    },
+    {
+      "file": "c:\\Users\\Hari\\Desktop\\Testin dub\\dashboardtest\\callbacks.py",
+      "module": "debug_logger",
+      "function": "callback_logger",
+      "line": 20
+    },
+    {
+      "file": "c:\\Users\\Hari\\Desktop\\Testin dub\\dashboardtest\\callbacks.py",
+      "module": "debug_logger",
+      "function": "button_logger",
+      "line": 20
+    },
+    {
+      "file": "c:\\Users\\Hari\\Desktop\\Testin dub\\dashboardtest\\callbacks.py",
+      "module": "dash_app",
+      "function": "app",
+      "line": 26
+    },
+    {
+      "file": "c:\\Users\\Hari\\Desktop\\Testin dub\\dashboardtest\\callbacks.py",
+      "module": "dash_app",
+      "function": "app",
+      "line": 31
+    },
+    {
+      "file": "c:\\Users\\Hari\\Desktop\\Testin dub\\dashboardtest\\minimal_button_test.py",
+      "module": "debug_logger",
+      "function": "debugger",
+      "line": 20
+    },
+    {
+      "file": "c:\\Users\\Hari\\Desktop\\Testin dub\\dashboardtest\\test_callbacks_simple.py",
+      "module": "callbacks",
+      "function": "app",
+      "line": 5
+    },
+    {
+      "file": "c:\\Users\\Hari\\Desktop\\Testin dub\\dashboardtest\\test_callbacks_simple.py",
+      "module": "layout",
+      "function": "layout",
+      "line": 12
+    },
+    {
+      "file": "c:\\Users\\Hari\\Desktop\\Testin dub\\dashboardtest\\test_imports.py",
+      "module": "dash_app",
+      "function": "app",
+      "line": 18
+    },
+    {
+      "file": "c:\\Users\\Hari\\Desktop\\Testin dub\\dashboardtest\\test_imports.py",
+      "module": "layout",
+      "function": "layout",
+      "line": 26
+    },
+    {
+      "file": "c:\\Users\\Hari\\Desktop\\Testin dub\\dashboardtest\\test_imports_debug.py",
+      "module": "layout",
+      "function": "layout",
+      "line": 53
+    }
+  ],
+  "missing_files": [],
+  "import_errors": [],
+  "syntax_errors": [],
+  "critical_issues": []
+}

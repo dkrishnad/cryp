@@ -1,0 +1,67 @@
+{
+  "frontend": {
+    "structure": {
+      "status": "SUCCESS",
+      "total_components": 734,
+      "buttons": 239,
+      "charts": 49,
+      "inputs": 67,
+      "sample_buttons": [
+        "sidebar-predict-btn",
+        "sidebar-analytics-btn",
+        "reset-balance-btn",
+        "reset-balance-btn-output",
+        "show-performance-dashboard-btn"
+      ],
+      "sample_charts": [
+        "show-price-chart-btn",
+        "show-indicators-chart-btn",
+        "refresh-charts-btn",
+        "charts-collapse",
+        "sidebar-volume-chart-btn"
+      ]
+    },
+    "callbacks": {
+      "status": "SUCCESS",
+      "total_count": 220,
+      "analysis": {
+        "chart_callbacks": 22,
+        "button_callbacks": 97,
+        "data_callbacks": 101,
+        "interval_callbacks": 0
+      }
+    }
+  },
+  "backend": {
+    "structure": {
+      "status": "SUCCESS",
+      "routes_count": 270,
+      "app_instance": "<class 'fastapi.applications.FastAPI'>"
+    },
+    "endpoints": {
+      "success_rate": 33.33333333333333,
+      "results": {
+        "/docs": "SUCCESS",
+        "/openapi.json": "SUCCESS",
+        "/health": "SUCCESS",
+        "/api/v1/trades": "WARNING_404",
+        "/api/v1/data/current_price": "WARNING_404",
+        "/api/v1/ml/predict": "WARNING_404",
+        "/api/v1/system/status": "WARNING_404",
+        "/api/v1/notifications": "WARNING_404",
+        "/ws": "SKIPPED"
+      },
+      "total_tested": 9
+    }
+  },
+  "integration": {
+    "success_rate": 100.0,
+    "tests": {
+      "backend_connectivity": true,
+      "frontend_structure": true,
+      "data_flow": true
+    }
+  },
+  "overall_score": 80.0,
+  "timestamp": "2025-07-08T23:41:59.774780"
+}

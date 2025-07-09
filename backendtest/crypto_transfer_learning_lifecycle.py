@@ -66,7 +66,8 @@ class TransferLearningLifecycle:
             )
         ''')
         
-        # Performance monitoring        cursor.execute('''
+        # Performance monitoring
+        cursor.execute('''
             CREATE TABLE IF NOT EXISTS transfer_performance (
                 id INTEGER PRIMARY KEY,
                 model_id INTEGER,

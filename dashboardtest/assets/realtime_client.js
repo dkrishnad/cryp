@@ -145,7 +145,7 @@ class RealTimePriceClient {
         const symbolElement = document.querySelector('#sidebar-symbol .Select-value-label');
         const symbol = symbolElement ? symbolElement.textContent.toLowerCase() : 'btcusdt';
         
-        fetch(`http://localhost:8001/price/${symbol}`)
+        fetch(`http://localhost:8000/price/${symbol}`)
             .then(response => response.json())
             .then(data => {
                 this.updatePriceDisplay(data);

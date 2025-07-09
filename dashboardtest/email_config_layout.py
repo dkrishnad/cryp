@@ -6,7 +6,7 @@ import dash
 from dash import dcc, html, Input, Output, State
 import requests
 
-API_URL = "http://localhost:8000"
+API_URL = "http://localhost:5000"
 
 def create_email_config_layout():
     """Create email configuration layout"""

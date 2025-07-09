@@ -1,0 +1,11 @@
+{
+  "default_leverage": 10,
+  "max_leverage": 125,
+  "default_margin_per_trade": 100.0,
+  "auto_stop_loss": true,
+  "auto_take_profit": true,
+  "default_stop_loss_percent": 2.0,
+  "default_take_profit_percent": 5.0,
+  "liquidation_buffer_percent": 0.5,
+  "risk_per_trade_percent": 1.0
+}

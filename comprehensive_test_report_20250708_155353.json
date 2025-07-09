@@ -1,0 +1,1001 @@
+{
+  "test_summary": {
+    "timestamp": "2025-07-08T15:53:53.042180",
+    "total_buttons_tested": 81,
+    "successful_buttons": 0,
+    "failed_buttons": 69,
+    "frontend_only_buttons": 12,
+    "total_data_flows": 10,
+    "successful_data_flows": 0,
+    "callback_coverage": {
+      "total_callbacks": 220,
+      "button_callbacks": 147,
+      "interval_callbacks": 20,
+      "store_callbacks": 0,
+      "chart_callbacks": 2
+    }
+  },
+  "detailed_results": {
+    "button_tests": {
+      "auto-trading-status-refresh-btn": {
+        "button_id": "auto-trading-status-refresh-btn",
+        "endpoint": "/auto_trading/status",
+        "timestamp": "2025-07-08T15:53:38.234296",
+        "frontend_only": false,
+        "status": "error",
+        "status_code": 404,
+        "response_time": 0.016178,
+        "content_length": 22,
+        "content_type": "application/json"
+      },
+      "stop-advanced-auto-trading-btn": {
+        "button_id": "stop-advanced-auto-trading-btn",
+        "endpoint": "/auto_trading/stop",
+        "timestamp": "2025-07-08T15:53:38.289801",
+        "frontend_only": false,
+        "status": "error",
+        "status_code": 404,
+        "response_time": 0.019358,
+        "content_length": 22,
+        "content_type": "application/json"
+      },
+      "trade-execute-btn": {
+        "button_id": "trade-execute-btn",
+        "endpoint": "/trade",
+        "timestamp": "2025-07-08T15:53:38.083467",
+        "frontend_only": false,
+        "status": "error",
+        "status_code": 404,
+        "response_time": 0.021945,
+        "content_length": 22,
+        "content_type": "application/json"
+      },
+      "futures-execute-signal-btn": {
+        "button_id": "futures-execute-signal-btn",
+        "endpoint": "/futures/execute",
+        "timestamp": "2025-07-08T15:53:38.309816",
+        "frontend_only": false,
+        "status": "error",
+        "status_code": 404,
+        "response_time": 0.018232,
+        "content_length": 22,
+        "content_type": "application/json"
+      },
+      "start-advanced-auto-trading-btn": {
+        "button_id": "start-advanced-auto-trading-btn",
+        "endpoint": "/auto_trading/start",
+        "timestamp": "2025-07-08T15:53:38.251713",
+        "frontend_only": false,
+        "status": "error",
+        "status_code": 404,
+        "response_time": 0.013053,
+        "content_length": 22,
+        "content_type": "application/json"
+      },
+      "auto-trading-settings-btn": {
+        "button_id": "auto-trading-settings-btn",
+        "endpoint": "/auto_trading/settings",
+        "timestamp": "2025-07-08T15:53:38.202934",
+        "frontend_only": false,
+        "status": "error",
+        "status_code": 404,
+        "response_time": 0.002067,
+        "content_length": 22,
+        "content_type": "application/json"
+      },
+      "trades-list-btn": {
+        "button_id": "trades-list-btn",
+        "endpoint": "/trades",
+        "timestamp": "2025-07-08T15:53:38.132786",
+        "frontend_only": false,
+        "status": "error",
+        "status_code": 404,
+        "response_time": 0.032722,
+        "content_length": 22,
+        "content_type": "application/json"
+      },
+      "quick-prediction-btn": {
+        "button_id": "quick-prediction-btn",
+        "endpoint": "/ml/predict_batch",
+        "timestamp": "2025-07-08T15:53:38.056123",
+        "frontend_only": false,
+        "status": "error",
+        "status_code": 404,
+        "response_time": 0.02505,
+        "content_length": 22,
+        "content_type": "application/json"
+      },
+      "test-ml-btn": {
+        "button_id": "test-ml-btn",
+        "endpoint": "/ml/tune_models",
+        "timestamp": "2025-07-08T15:53:38.166721",
+        "frontend_only": false,
+        "status": "error",
+        "status_code": 404,
+        "response_time": 0.010918,
+        "content_length": 22,
+        "content_type": "application/json"
+      },
+      "sidebar-analytics-btn": {
+        "button_id": "sidebar-analytics-btn",
+        "endpoint": "/model/feature_importance",
+        "timestamp": "2025-07-08T15:53:38.181685",
+        "frontend_only": false,
+        "status": "error",
+        "status_code": 404,
+        "response_time": 0.019827,
+        "content_length": 22,
+        "content_type": "application/json"
+      },
+      "get-prediction-btn": {
+        "button_id": "get-prediction-btn",
+        "endpoint": "/ml/predict",
+        "timestamp": "2025-07-08T15:53:38.035902",
+        "frontend_only": false,
+        "status": "error",
+        "status_code": 404,
+        "response_time": 0.018497,
+        "content_length": 22,
+        "content_type": "application/json"
+      },
+      "futures-history-btn": {
+        "button_id": "futures-history-btn",
+        "endpoint": "/futures/history",
+        "timestamp": "2025-07-08T15:53:38.339920",
+        "frontend_only": false,
+        "status": "error",
+        "status_code": 404,
+        "response_time": 0.023307,
+        "content_length": 22,
+        "content_type": "application/json"
+      },
+      "open-futures-position": {
+        "button_id": "open-futures-position",
+        "endpoint": "/futures/open_position",
+        "timestamp": "2025-07-08T15:53:38.361027",
+        "frontend_only": false,
+        "status": "error",
+        "status_code": 404,
+        "response_time": 0.022895,
+        "content_length": 22,
+        "content_type": "application/json"
+      },
+      "update-futures-positions": {
+        "button_id": "update-futures-positions",
+        "endpoint": "/futures/positions",
+        "timestamp": "2025-07-08T15:53:38.387786",
+        "frontend_only": false,
+        "status": "error",
+        "status_code": 404,
+        "response_time": 0.021781,
+        "content_length": 22,
+        "content_type": "application/json"
+      },
+      "binance-auto-execute-btn": {
+        "button_id": "binance-auto-execute-btn",
+        "endpoint": "/binance/execute",
+        "timestamp": "2025-07-08T15:53:38.410609",
+        "frontend_only": false,
+        "status": "error",
+        "status_code": 404,
+        "response_time": 0.016681,
+        "content_length": 22,
+        "content_type": "application/json"
+      },
+      "binance-manual-trade-btn": {
+        "button_id": "binance-manual-trade-btn",
+        "endpoint": "/binance/manual_trade",
+        "timestamp": "2025-07-08T15:53:38.428243",
+        "frontend_only": false,
+        "status": "error",
+        "status_code": 404,
+        "response_time": 0.01491,
+        "content_length": 22,
+        "content_type": "application/json"
+      },
+      "binance-check-balance-btn": {
+        "button_id": "binance-check-balance-btn",
+        "endpoint": "/binance/balance",
+        "timestamp": "2025-07-08T15:53:38.444443",
+        "frontend_only": false,
+        "status": "error",
+        "status_code": 404,
+        "response_time": 0.017674,
+        "content_length": 22,
+        "content_type": "application/json"
+      },
+      "binance-get-positions-btn": {
+        "button_id": "binance-get-positions-btn",
+        "endpoint": "/binance/positions",
+        "timestamp": "2025-07-08T15:53:38.462782",
+        "frontend_only": false,
+        "status": "error",
+        "status_code": 404,
+        "response_time": 0.016293,
+        "content_length": 22,
+        "content_type": "application/json"
+      },
+      "show-price-chart-btn": {
+        "button_id": "show-price-chart-btn",
+        "endpoint": "/data/price_data",
+        "timestamp": "2025-07-08T15:53:38.480124",
+        "frontend_only": false,
+        "status": "error",
+        "status_code": 404,
+        "response_time": 0.020084,
+        "content_length": 22,
+        "content_type": "application/json"
+      },
+      "show-indicators-chart-btn": {
+        "button_id": "show-indicators-chart-btn",
+        "endpoint": "/data/indicators",
+        "timestamp": "2025-07-08T15:53:38.501500",
+        "frontend_only": false,
+        "status": "error",
+        "status_code": 404,
+        "response_time": 0.020062,
+        "content_length": 22,
+        "content_type": "application/json"
+      },
+      "refresh-charts-btn": {
+        "button_id": "refresh-charts-btn",
+        "endpoint": "/data/refresh",
+        "timestamp": "2025-07-08T15:53:38.522119",
+        "frontend_only": false,
+        "status": "error",
+        "status_code": 404,
+        "response_time": 0.021385,
+        "content_length": 22,
+        "content_type": "application/json"
+      },
+      "chart-refresh-btn": {
+        "button_id": "chart-refresh-btn",
+        "endpoint": "/data/price_data",
+        "timestamp": "2025-07-08T15:53:38.544534",
+        "frontend_only": false,
+        "status": "error",
+        "status_code": 404,
+        "response_time": 0.012489,
+        "content_length": 22,
+        "content_type": "application/json"
+      },
+      "chart-bollinger-btn": {
+        "button_id": "chart-bollinger-btn",
+        "endpoint": "/indicators/bollinger",
+        "timestamp": "2025-07-08T15:53:38.558024",
+        "frontend_only": false,
+        "status": "error",
+        "status_code": 404,
+        "response_time": 0.010851,
+        "content_length": 22,
+        "content_type": "application/json"
+      },
+      "chart-momentum-btn": {
+        "button_id": "chart-momentum-btn",
+        "endpoint": "/indicators/momentum",
+        "timestamp": "2025-07-08T15:53:38.570138",
+        "frontend_only": false,
+        "status": "error",
+        "status_code": 404,
+        "response_time": 0.019579,
+        "content_length": 22,
+        "content_type": "application/json"
+      },
+      "chart-volume-btn": {
+        "button_id": "chart-volume-btn",
+        "endpoint": "/indicators/volume",
+        "timestamp": "2025-07-08T15:53:38.590525",
+        "frontend_only": false,
+        "status": "error",
+        "status_code": 404,
+        "response_time": 0.020639,
+        "content_length": 22,
+        "content_type": "application/json"
+      },
+      "refresh-model-analytics": {
+        "button_id": "refresh-model-analytics",
+        "endpoint": "/model/analytics",
+        "timestamp": "2025-07-08T15:53:38.611712",
+        "frontend_only": false,
+        "status": "error",
+        "status_code": 404,
+        "response_time": 0.014457,
+        "content_length": 22,
+        "content_type": "application/json"
+      },
+      "refresh-feature-importance": {
+        "button_id": "refresh-feature-importance",
+        "endpoint": "/model/feature_importance",
+        "timestamp": "2025-07-08T15:53:38.626886",
+        "frontend_only": false,
+        "status": "error",
+        "status_code": 404,
+        "response_time": 0.013353,
+        "content_length": 22,
+        "content_type": "application/json"
+      },
+      "refresh-model-metrics": {
+        "button_id": "refresh-model-metrics",
+        "endpoint": "/model/metrics",
+        "timestamp": "2025-07-08T15:53:38.641346",
+        "frontend_only": false,
+        "status": "error",
+        "status_code": 404,
+        "response_time": 0.014833,
+        "content_length": 22,
+        "content_type": "application/json"
+      },
+      "check-transfer-setup": {
+        "button_id": "check-transfer-setup",
+        "endpoint": "/model/transfer_learning/status",
+        "timestamp": "2025-07-08T15:53:38.656669",
+        "frontend_only": false,
+        "status": "error",
+        "status_code": 404,
+        "response_time": 0.023026,
+        "content_length": 22,
+        "content_type": "application/json"
+      },
+      "init-transfer-learning": {
+        "button_id": "init-transfer-learning",
+        "endpoint": "/model/transfer_learning/init",
+        "timestamp": "2025-07-08T15:53:38.681362",
+        "frontend_only": false,
+        "status": "error",
+        "status_code": 404,
+        "response_time": 0.012057,
+        "content_length": 22,
+        "content_type": "application/json"
+      },
+      "train-target-model": {
+        "button_id": "train-target-model",
+        "endpoint": "/model/transfer_learning/train",
+        "timestamp": "2025-07-08T15:53:38.694544",
+        "frontend_only": false,
+        "status": "error",
+        "status_code": 404,
+        "response_time": 0.027195,
+        "content_length": 22,
+        "content_type": "application/json"
+      },
+      "send-manual-alert-btn": {
+        "button_id": "send-manual-alert-btn",
+        "endpoint": "/notifications/send",
+        "timestamp": "2025-07-08T15:53:38.722908",
+        "frontend_only": false,
+        "status": "error",
+        "status_code": 404,
+        "response_time": 0.017593,
+        "content_length": 22,
+        "content_type": "application/json"
+      },
+      "test-email-system-btn": {
+        "button_id": "test-email-system-btn",
+        "endpoint": "/email/test",
+        "timestamp": "2025-07-08T15:53:38.741240",
+        "frontend_only": false,
+        "status": "error",
+        "status_code": 404,
+        "response_time": 0.017744,
+        "content_length": 22,
+        "content_type": "application/json"
+      },
+      "clear-all-notifications-btn": {
+        "button_id": "clear-all-notifications-btn",
+        "endpoint": "/notifications/clear",
+        "timestamp": "2025-07-08T15:53:38.760037",
+        "frontend_only": false,
+        "status": "error",
+        "status_code": 404,
+        "response_time": 0.024167,
+        "content_length": 22,
+        "content_type": "application/json"
+      },
+      "mark-all-read-btn": {
+        "button_id": "mark-all-read-btn",
+        "endpoint": "/notifications/mark_read",
+        "timestamp": "2025-07-08T15:53:38.785182",
+        "frontend_only": false,
+        "status": "error",
+        "status_code": 404,
+        "response_time": 0.016368,
+        "content_length": 22,
+        "content_type": "application/json"
+      },
+      "refresh-notifications-btn": {
+        "button_id": "refresh-notifications-btn",
+        "endpoint": "/notifications",
+        "timestamp": "2025-07-08T15:53:38.802133",
+        "frontend_only": false,
+        "status": "error",
+        "status_code": 404,
+        "response_time": 0.015026,
+        "content_length": 22,
+        "content_type": "application/json"
+      },
+      "start-hft-analysis-btn": {
+        "button_id": "start-hft-analysis-btn",
+        "endpoint": "/hft/start",
+        "timestamp": "2025-07-08T15:53:38.818155",
+        "frontend_only": false,
+        "status": "error",
+        "status_code": 404,
+        "response_time": 0.023225,
+        "content_length": 22,
+        "content_type": "application/json"
+      },
+      "stop-hft-analysis-btn": {
+        "button_id": "stop-hft-analysis-btn",
+        "endpoint": "/hft/stop",
+        "timestamp": "2025-07-08T15:53:38.842396",
+        "frontend_only": false,
+        "status": "error",
+        "status_code": 404,
+        "response_time": 0.025652,
+        "content_length": 22,
+        "content_type": "application/json"
+      },
+      "hft-analytics-btn": {
+        "button_id": "hft-analytics-btn",
+        "endpoint": "/hft/analytics",
+        "timestamp": "2025-07-08T15:53:38.868283",
+        "frontend_only": false,
+        "status": "error",
+        "status_code": 404,
+        "response_time": 0.0206,
+        "content_length": 22,
+        "content_type": "application/json"
+      },
+      "hft-config-btn": {
+        "button_id": "hft-config-btn",
+        "endpoint": "/hft/config",
+        "timestamp": "2025-07-08T15:53:38.890344",
+        "frontend_only": false,
+        "status": "error",
+        "status_code": 404,
+        "response_time": 0.020878,
+        "content_length": 22,
+        "content_type": "application/json"
+      },
+      "start-data-collection-btn": {
+        "button_id": "start-data-collection-btn",
+        "endpoint": "/data_collection/start",
+        "timestamp": "2025-07-08T15:53:38.912164",
+        "frontend_only": false,
+        "status": "error",
+        "status_code": 404,
+        "response_time": 0.017596,
+        "content_length": 22,
+        "content_type": "application/json"
+      },
+      "stop-data-collection-btn": {
+        "button_id": "stop-data-collection-btn",
+        "endpoint": "/data_collection/stop",
+        "timestamp": "2025-07-08T15:53:38.931221",
+        "frontend_only": false,
+        "status": "error",
+        "status_code": 404,
+        "response_time": 0.018421,
+        "content_length": 22,
+        "content_type": "application/json"
+      },
+      "data-collection-status-btn": {
+        "button_id": "data-collection-status-btn",
+        "endpoint": "/data_collection/status",
+        "timestamp": "2025-07-08T15:53:38.950290",
+        "frontend_only": false,
+        "status": "error",
+        "status_code": 404,
+        "response_time": 0.018705,
+        "content_length": 22,
+        "content_type": "application/json"
+      },
+      "disable-online-learning-btn": {
+        "button_id": "disable-online-learning-btn",
+        "endpoint": "/ml/online_learning/disable",
+        "timestamp": "2025-07-08T15:53:38.970388",
+        "frontend_only": false,
+        "status": "error",
+        "status_code": 404,
+        "response_time": 0.025048,
+        "content_length": 22,
+        "content_type": "application/json"
+      },
+      "optimize-learning-rates-btn": {
+        "button_id": "optimize-learning-rates-btn",
+        "endpoint": "/ml/online_learning/optimize",
+        "timestamp": "2025-07-08T15:53:38.996241",
+        "frontend_only": false,
+        "status": "error",
+        "status_code": 404,
+        "response_time": 0.012589,
+        "content_length": 22,
+        "content_type": "application/json"
+      },
+      "reset-learning-rates-btn": {
+        "button_id": "reset-learning-rates-btn",
+        "endpoint": "/ml/online_learning/reset",
+        "timestamp": "2025-07-08T15:53:39.009371",
+        "frontend_only": false,
+        "status": "error",
+        "status_code": 404,
+        "response_time": 0.008388,
+        "content_length": 22,
+        "content_type": "application/json"
+      },
+      "calculate-position-size-btn": {
+        "button_id": "calculate-position-size-btn",
+        "endpoint": "/risk/position_size",
+        "timestamp": "2025-07-08T15:53:39.019143",
+        "frontend_only": false,
+        "status": "error",
+        "status_code": 404,
+        "response_time": 0.024528,
+        "content_length": 22,
+        "content_type": "application/json"
+      },
+      "check-trade-risk-btn": {
+        "button_id": "check-trade-risk-btn",
+        "endpoint": "/risk/check",
+        "timestamp": "2025-07-08T15:53:39.044580",
+        "frontend_only": false,
+        "status": "error",
+        "status_code": 404,
+        "response_time": 0.025589,
+        "content_length": 22,
+        "content_type": "application/json"
+      },
+      "update-risk-settings-btn": {
+        "button_id": "update-risk-settings-btn",
+        "endpoint": "/risk/settings",
+        "timestamp": "2025-07-08T15:53:39.071123",
+        "frontend_only": false,
+        "status": "error",
+        "status_code": 404,
+        "response_time": 0.021914,
+        "content_length": 22,
+        "content_type": "application/json"
+      },
+      "risk-portfolio-metrics-btn": {
+        "button_id": "risk-portfolio-metrics-btn",
+        "endpoint": "/risk/portfolio",
+        "timestamp": "2025-07-08T15:53:39.094120",
+        "frontend_only": false,
+        "status": "error",
+        "status_code": 404,
+        "response_time": 0.010798,
+        "content_length": 22,
+        "content_type": "application/json"
+      },
+      "performance-dashboard-btn": {
+        "button_id": "performance-dashboard-btn",
+        "endpoint": "/performance/dashboard",
+        "timestamp": "2025-07-08T15:53:39.106222",
+        "frontend_only": false,
+        "status": "error",
+        "status_code": 404,
+        "response_time": 0.02166,
+        "content_length": 22,
+        "content_type": "application/json"
+      },
+      "performance-metrics-btn": {
+        "button_id": "performance-metrics-btn",
+        "endpoint": "/performance/metrics",
+        "timestamp": "2025-07-08T15:53:39.128396",
+        "frontend_only": false,
+        "status": "error",
+        "status_code": 404,
+        "response_time": 0.013206,
+        "content_length": 22,
+        "content_type": "application/json"
+      },
+      "portfolio-btn": {
+        "button_id": "portfolio-btn",
+        "endpoint": "/portfolio/status",
+        "timestamp": "2025-07-08T15:53:39.142847",
+        "frontend_only": false,
+        "status": "error",
+        "status_code": 404,
+        "response_time": 0.022815,
+        "content_length": 22,
+        "content_type": "application/json"
+      },
+      "force-model-update-btn": {
+        "button_id": "force-model-update-btn",
+        "endpoint": "/model/force_update",
+        "timestamp": "2025-07-08T15:53:39.166484",
+        "frontend_only": false,
+        "status": "error",
+        "status_code": 404,
+        "response_time": 0.016954,
+        "content_length": 22,
+        "content_type": "application/json"
+      },
+      "ml-compatibility-check-btn": {
+        "button_id": "ml-compatibility-check-btn",
+        "endpoint": "/ml/compatibility/check",
+        "timestamp": "2025-07-08T15:53:39.184522",
+        "frontend_only": false,
+        "status": "error",
+        "status_code": 404,
+        "response_time": 0.015146,
+        "content_length": 22,
+        "content_type": "application/json"
+      },
+      "ml-compatibility-fix-btn": {
+        "button_id": "ml-compatibility-fix-btn",
+        "endpoint": "/ml/compatibility/fix",
+        "timestamp": "2025-07-08T15:53:39.200528",
+        "frontend_only": false,
+        "status": "error",
+        "status_code": 404,
+        "response_time": 0.014624,
+        "content_length": 22,
+        "content_type": "application/json"
+      },
+      "start-model-retrain": {
+        "button_id": "start-model-retrain",
+        "endpoint": "/model/retrain",
+        "timestamp": "2025-07-08T15:53:39.216422",
+        "frontend_only": false,
+        "status": "error",
+        "status_code": 404,
+        "response_time": 0.012362,
+        "content_length": 22,
+        "content_type": "application/json"
+      },
+      "activate-model-version": {
+        "button_id": "activate-model-version",
+        "endpoint": "/model/activate_version",
+        "timestamp": "2025-07-08T15:53:39.229795",
+        "frontend_only": false,
+        "status": "error",
+        "status_code": 404,
+        "response_time": 0.008287,
+        "content_length": 22,
+        "content_type": "application/json"
+      },
+      "run-comprehensive-backtest": {
+        "button_id": "run-comprehensive-backtest",
+        "endpoint": "/backtest",
+        "timestamp": "2025-07-08T15:53:39.238994",
+        "frontend_only": false,
+        "status": "error",
+        "status_code": 404,
+        "response_time": 0.011467,
+        "content_length": 22,
+        "content_type": "application/json"
+      },
+      "load-backtest-results": {
+        "button_id": "load-backtest-results",
+        "endpoint": "/backtest/results",
+        "timestamp": "2025-07-08T15:53:39.251361",
+        "frontend_only": false,
+        "status": "error",
+        "status_code": 404,
+        "response_time": 0.015016,
+        "content_length": 22,
+        "content_type": "application/json"
+      },
+      "amount-50-btn": {
+        "button_id": "amount-50-btn",
+        "endpoint": null,
+        "timestamp": "2025-07-08T15:53:39.267310",
+        "frontend_only": true,
+        "status": "frontend_only",
+        "message": "Button affects frontend state only"
+      },
+      "amount-100-btn": {
+        "button_id": "amount-100-btn",
+        "endpoint": null,
+        "timestamp": "2025-07-08T15:53:39.267310",
+        "frontend_only": true,
+        "status": "frontend_only",
+        "message": "Button affects frontend state only"
+      },
+      "amount-250-btn": {
+        "button_id": "amount-250-btn",
+        "endpoint": null,
+        "timestamp": "2025-07-08T15:53:39.267310",
+        "frontend_only": true,
+        "status": "frontend_only",
+        "message": "Button affects frontend state only"
+      },
+      "amount-500-btn": {
+        "button_id": "amount-500-btn",
+        "endpoint": null,
+        "timestamp": "2025-07-08T15:53:39.267310",
+        "frontend_only": true,
+        "status": "frontend_only",
+        "message": "Button affects frontend state only"
+      },
+      "amount-1000-btn": {
+        "button_id": "amount-1000-btn",
+        "endpoint": null,
+        "timestamp": "2025-07-08T15:53:39.267310",
+        "frontend_only": true,
+        "status": "frontend_only",
+        "message": "Button affects frontend state only"
+      },
+      "amount-max-btn": {
+        "button_id": "amount-max-btn",
+        "endpoint": null,
+        "timestamp": "2025-07-08T15:53:39.267310",
+        "frontend_only": true,
+        "status": "frontend_only",
+        "message": "Button affects frontend state only"
+      },
+      "sidebar-amount-50-btn": {
+        "button_id": "sidebar-amount-50-btn",
+        "endpoint": null,
+        "timestamp": "2025-07-08T15:53:39.267310",
+        "frontend_only": true,
+        "status": "frontend_only",
+        "message": "Button affects frontend state only"
+      },
+      "sidebar-amount-100-btn": {
+        "button_id": "sidebar-amount-100-btn",
+        "endpoint": null,
+        "timestamp": "2025-07-08T15:53:39.267310",
+        "frontend_only": true,
+        "status": "frontend_only",
+        "message": "Button affects frontend state only"
+      },
+      "sidebar-amount-250-btn": {
+        "button_id": "sidebar-amount-250-btn",
+        "endpoint": null,
+        "timestamp": "2025-07-08T15:53:39.267310",
+        "frontend_only": true,
+        "status": "frontend_only",
+        "message": "Button affects frontend state only"
+      },
+      "sidebar-amount-500-btn": {
+        "button_id": "sidebar-amount-500-btn",
+        "endpoint": null,
+        "timestamp": "2025-07-08T15:53:39.267310",
+        "frontend_only": true,
+        "status": "frontend_only",
+        "message": "Button affects frontend state only"
+      },
+      "sidebar-amount-1000-btn": {
+        "button_id": "sidebar-amount-1000-btn",
+        "endpoint": null,
+        "timestamp": "2025-07-08T15:53:39.267310",
+        "frontend_only": true,
+        "status": "frontend_only",
+        "message": "Button affects frontend state only"
+      },
+      "sidebar-amount-max-btn": {
+        "button_id": "sidebar-amount-max-btn",
+        "endpoint": null,
+        "timestamp": "2025-07-08T15:53:39.267310",
+        "frontend_only": true,
+        "status": "frontend_only",
+        "message": "Button affects frontend state only"
+      },
+      "buy-btn": {
+        "button_id": "buy-btn",
+        "endpoint": "/trade",
+        "timestamp": "2025-07-08T15:53:38.056123",
+        "frontend_only": false,
+        "status": "error",
+        "status_code": 404,
+        "response_time": 2.042054,
+        "content_length": 22,
+        "content_type": "application/json"
+      },
+      "sell-btn": {
+        "button_id": "sell-btn",
+        "endpoint": "/trade",
+        "timestamp": "2025-07-08T15:53:38.076217",
+        "frontend_only": false,
+        "status": "error",
+        "status_code": 404,
+        "response_time": 2.039996,
+        "content_length": 22,
+        "content_type": "application/json"
+      },
+      "reset-balance-btn": {
+        "button_id": "reset-balance-btn",
+        "endpoint": "/trades/cleanup",
+        "timestamp": "2025-07-08T15:53:38.132786",
+        "frontend_only": false,
+        "status": "error",
+        "status_code": 404,
+        "response_time": 2.074281,
+        "content_length": 22,
+        "content_type": "application/json"
+      },
+      "auto-trading-toggle-btn": {
+        "button_id": "auto-trading-toggle-btn",
+        "endpoint": "/auto_trading/toggle",
+        "timestamp": "2025-07-08T15:53:38.197155",
+        "frontend_only": false,
+        "status": "error",
+        "status_code": 404,
+        "response_time": 2.072889,
+        "content_length": 22,
+        "content_type": "application/json"
+      },
+      "enable-online-learning-btn": {
+        "button_id": "enable-online-learning-btn",
+        "endpoint": "/ml/online_learning/enable",
+        "timestamp": "2025-07-08T15:53:38.181685",
+        "frontend_only": false,
+        "status": "error",
+        "status_code": 404,
+        "response_time": 2.108252,
+        "content_length": 22,
+        "content_type": "application/json"
+      },
+      "auto-trading-signals-btn": {
+        "button_id": "auto-trading-signals-btn",
+        "endpoint": "/auto_trading/signals",
+        "timestamp": "2025-07-08T15:53:38.234296",
+        "frontend_only": false,
+        "status": "error",
+        "status_code": 404,
+        "response_time": 2.077521,
+        "content_length": 22,
+        "content_type": "application/json"
+      },
+      "check-advanced-auto-trading-btn": {
+        "button_id": "check-advanced-auto-trading-btn",
+        "endpoint": "/auto_trading/status",
+        "timestamp": "2025-07-08T15:53:38.289801",
+        "frontend_only": false,
+        "status": "error",
+        "status_code": 404,
+        "response_time": 2.041945,
+        "content_length": 22,
+        "content_type": "application/json"
+      },
+      "futures-open-btn": {
+        "button_id": "futures-open-btn",
+        "endpoint": "/futures/open_position",
+        "timestamp": "2025-07-08T15:53:38.339920",
+        "frontend_only": false,
+        "status": "error",
+        "status_code": 404,
+        "response_time": 2.070868,
+        "content_length": 22,
+        "content_type": "application/json"
+      },
+      "close-futures-position": {
+        "button_id": "close-futures-position",
+        "endpoint": "/futures/close_position",
+        "timestamp": "2025-07-08T15:53:38.364506",
+        "frontend_only": false,
+        "status": "error",
+        "status_code": 404,
+        "response_time": 2.054608,
+        "content_length": 22,
+        "content_type": "application/json"
+      }
+    },
+    "data_flow_tests": {
+      "live_price_feed": {
+        "status": "error",
+        "status_code": 404,
+        "response_time": 0.019762,
+        "content_length": 22,
+        "content_type": "application/json"
+      },
+      "ml_predictions": {
+        "status": "error",
+        "status_code": 404,
+        "response_time": 0.015952,
+        "content_length": 22,
+        "content_type": "application/json"
+      },
+      "trade_execution": {
+        "status": "error",
+        "status_code": 404,
+        "response_time": 0.014086,
+        "content_length": 22,
+        "content_type": "application/json"
+      },
+      "portfolio_sync": {
+        "status": "error",
+        "status_code": 404,
+        "response_time": 0.014412,
+        "content_length": 22,
+        "content_type": "application/json"
+      },
+      "notifications_system": {
+        "status": "error",
+        "status_code": 404,
+        "response_time": 0.016336,
+        "content_length": 22,
+        "content_type": "application/json"
+      },
+      "auto_trading_signals": {
+        "status": "error",
+        "status_code": 404,
+        "response_time": 0.021172,
+        "content_length": 22,
+        "content_type": "application/json"
+      },
+      "futures_positions": {
+        "status": "error",
+        "status_code": 404,
+        "response_time": 0.014548,
+        "content_length": 22,
+        "content_type": "application/json"
+      },
+      "model_analytics": {
+        "status": "error",
+        "status_code": 404,
+        "response_time": 0.04063,
+        "content_length": 22,
+        "content_type": "application/json"
+      },
+      "backtest_results": {
+        "status": "error",
+        "status_code": 404,
+        "response_time": 0.030063,
+        "content_length": 22,
+        "content_type": "application/json"
+      },
+      "email_system": {
+        "status": "error",
+        "status_code": 404,
+        "response_time": 0.00901,
+        "content_length": 22,
+        "content_type": "application/json"
+      }
+    },
+    "sync_tests": {
+      "Symbol Selection Sync": {
+        "status": "error",
+        "status_code": 404,
+        "response_time": 2.08825,
+        "content_length": 22,
+        "content_type": "application/json"
+      },
+      "Balance Updates": {
+        "status": "error",
+        "status_code": 404,
+        "response_time": 0.020338,
+        "content_length": 22,
+        "content_type": "application/json"
+      },
+      "Live Price Updates": {
+        "status": "error",
+        "status_code": 404,
+        "response_time": 0.031027,
+        "content_length": 22,
+        "content_type": "application/json"
+      },
+      "Trade Execution Sync": {
+        "status": "error",
+        "status_code": 404,
+        "response_time": 0.026836,
+        "content_length": 22,
+        "content_type": "application/json"
+      },
+      "Notification Sync": {
+        "status": "error",
+        "status_code": 404,
+        "response_time": 0.028692,
+        "content_length": 22,
+        "content_type": "application/json"
+      }
+    },
+    "callback_analysis": {
+      "total_callbacks": 220,
+      "button_callbacks": 147,
+      "interval_callbacks": 20,
+      "store_callbacks": 0,
+      "chart_callbacks": 2
+    }
+  },
+  "recommendations": [
+    "Review and fix failed backend endpoints",
+    "Check backend service availability and endpoint implementations"
+  ],
+  "critical_issues": [
+    "Some buttons are not connected to working backend endpoints",
+    "Some data flows are not working"
+  ]
+}

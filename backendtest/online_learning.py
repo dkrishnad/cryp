@@ -469,6 +469,85 @@ class OnlineLearningManager:
                 "error": str(e)
             }
 
+    def update_hyperparameters(self, hyperparameters: Dict[str, Any]) -> Dict[str, Any]:
+        """
+        Update hyperparameters for online learning models
+        """
+        try:
+            print(f"[ONLINE_LEARNING] Updating hyperparameters: {hyperparameters}")
+            
+            # Store hyperparameters for future model initialization
+            hyperparams_file = os.path.join(self.online_models_dir, "hyperparameters.json")
+            with open(hyperparams_file, 'w') as f:
+                json.dump(hyperparameters, f, indent=2)
+            
+            # Reinitialize models with new hyperparameters if needed
+            for model_name in self.models:
+                if model_name in hyperparameters:
+                    # Update specific model config
+                    self.model_configs[model_name]['params'].update(hyperparameters[model_name])
+                    # Reinitialize the model
+                    self._initialize_model(model_name)
+            
+            return {
+                "status": "success",
+                "hyperparameters_updated": hyperparameters,
+                "models_reinitialized": list(self.models.keys()),
+                "timestamp": datetime.now().isoformat()
+            }
+            
+        except Exception as e:
+            logger.error(f"Failed to update hyperparameters: {e}")
+            return {
+                "status": "error",
+                "message": str(e)
+            }
+
+    def update_config(self, config: Dict[str, Any]) -> Dict[str, Any]:
+        """
+        Update online learning configuration
+        """
+        try:
+            print(f"[ONLINE_LEARNING] Updating config: {config}")
+            
+            # Update hyperparameters if provided
+            if "hyperparameters" in config:
+                hyperparams_result = self.update_hyperparameters(config["hyperparameters"])
+                if hyperparams_result["status"] == "error":
+                    return hyperparams_result
+            
+            # Update other configuration options
+            config_updates = {}
+            
+            # Update symbol if provided
+            if "symbol" in config:
+                config_updates["symbol"] = config["symbol"]
+            
+            # Update learning parameters
+            if "learning_rate" in config:
+                for model_name in self.model_configs:
+                    if "eta0" in self.model_configs[model_name]["params"]:
+                        self.model_configs[model_name]["params"]["eta0"] = config["learning_rate"]
+                config_updates["learning_rate"] = config["learning_rate"]
+            
+            # Save updated config
+            config_file = os.path.join(self.online_models_dir, "config.json")
+            with open(config_file, 'w') as f:
+                json.dump(config_updates, f, indent=2)
+            
+            return {
+                "status": "success",
+                "config_updated": config_updates,
+                "timestamp": datetime.now().isoformat()
+            }
+            
+        except Exception as e:
+            logger.error(f"Failed to update config: {e}")
+            return {
+                "status": "error",
+                "message": str(e)
+            }
+
 # Global instance
 online_learning_manager = OnlineLearningManager()
 

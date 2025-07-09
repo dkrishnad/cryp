@@ -38,15 +38,30 @@ def safe_dropdown(id, options=None, value=None, **kwargs):
         )
 
 def safe_graph(id, figure=None, **kwargs):
-    """Graph with fallback for loading errors"""
+    """Graph with fallback for loading errors and proper sizing"""
     try:
+        # Add default styling if not provided
+        if 'style' not in kwargs:
+            kwargs['style'] = {'height': '400px'}
+        elif 'height' not in kwargs['style']:
+            kwargs['style']['height'] = '400px'
+        
+        # Add config for better chart behavior
+        if 'config' not in kwargs:
+            kwargs['config'] = {
+                'displayModeBar': True,
+                'displaylogo': False,
+                'modeBarButtonsToRemove': ['pan2d', 'select2d', 'lasso2d'],
+                'responsive': True
+            }
+        
         return dcc.Graph(id=id, figure=figure or {}, **kwargs)
     except Exception as e:
         print(f"[LAYOUT FIX] Graph {id} fallback: {e}")
         return html.Div([
             html.H6("📊 Chart Loading..."),
             html.P("Chart will appear when data is available")
-        ], id=id, className="text-center p-4 border", **kwargs)
+        ], id=id, className="text-center p-4 border", style={'height': '400px'}, **{k: v for k, v in kwargs.items() if k in ['className']})
 
 # Stores and intervals
 stores_and_intervals = html.Div([
@@ -62,6 +77,8 @@ stores_and_intervals = html.Div([
     dcc.Interval(id="auto-trading-interval", interval=5*1000, n_intervals=0),
     dcc.Interval(id="notifications-interval", interval=10*1000, n_intervals=0),
     dcc.Interval(id="alert-history-interval", interval=30*1000, n_intervals=0),
+    dcc.Interval(id="performance-interval", interval=10*1000, n_intervals=0),
+    dcc.Interval(id="balance-sync-interval", interval=5*1000, n_intervals=0),
 ])
 
 # Sidebar with comprehensive controls
@@ -93,7 +110,7 @@ sidebar = html.Div([
     html.Div([
         dbc.Label([html.I(className="bi bi-wallet2 me-1 text-success"), "💰 Virtual Balance"]),
         html.Div(id="virtual-balance", style={"fontWeight": "bold", "fontSize": 18, "color": "#00ff88"}),
-        html.Div(id="sidebar-virtual-balance", className="text-center"),  # <-- FIXED: Added missing comma
+        html.Div(id="sidebar-virtual-balance", className="text-center"),
         html.Small(id="balance-pnl-display", className="text-muted"),
     ], className="mb-3"),
     
@@ -249,19 +266,19 @@ sidebar = html.Div([
         dbc.Button("⏹️ Stop HFT", id="stop-hft-analysis-btn", color="danger", size="sm", className="mb-1 w-100"),
         dbc.Badge(id="hft-status-badge", color="secondary", pill=True, className="mb-2 w-100"),
         dbc.Switch(id="hft-enabled-switch", label="Enable HFT", value=False, className="mb-2"),
-        html.Div(id="hft-action-output"),
-        html.Div(id="hft-config-output"),
+        # DUPLICATE_REMOVED: html.Div(id="hft-action-output"),
+        # DUPLICATE_REMOVED: html.Div(id="hft-config-output"),
     ], id="hft-tools-collapse", is_open=False),
     
     # Data Collection Tools  
     dbc.Collapse([
         html.H6([html.I(className="bi bi-database me-1"), "🗄️ Data Collection"], className="mb-2"),
-        dbc.Button("▶️ Start Collection", id="start-data-collection-btn", color="success", size="sm", className="mb-1 w-100"),
-        dbc.Button("⏹️ Stop Collection", id="stop-data-collection-btn", color="danger", size="sm", className="mb-1 w-100"),
+        dbc.Button("▶️ Start Collection", id="start-data-collection-btn-duplicate", color="success", size="sm", className="mb-1 w-100"),
+        dbc.Button("⏹️ Stop Collection", id="stop-data-collection-btn-duplicate", color="danger", size="sm", className="mb-1 w-100"),
         dbc.Badge(id="data-collection-status", color="secondary", pill=True, className="mb-2 w-100"),
         dbc.Switch(id="auto-collection-switch", label="Auto Collection", value=True, className="mb-2"),
-        html.Div(id="data-collection-action-output"),
-        html.Div(id="collection-config-output"),
+        # DUPLICATE_REMOVED: html.Div(id="data-collection-action-output"),
+        # DUPLICATE_REMOVED: html.Div(id="collection-config-output"),
     ], id="data-collection-collapse", is_open=False),
     
     # Online Learning Tools
@@ -271,19 +288,19 @@ sidebar = html.Div([
         dbc.Button("⏹️ Disable Learning", id="disable-online-learning-btn", color="danger", size="sm", className="mb-1 w-100"),
         dbc.Badge(id="online-learning-status", color="secondary", pill=True, className="mb-2 w-100"),
         dbc.Switch(id="auto-learning-switch", label="Auto Learning", value=True, className="mb-2"),
-        html.Div(id="online-learning-action-output"),
-        html.Div(id="learning-config-output"),
+        # DUPLICATE_REMOVED: html.Div(id="online-learning-action-output"),
+        # DUPLICATE_REMOVED: html.Div(id="learning-config-output"),
     ], id="online-learning-collapse", is_open=False),
     
     # Risk Management Tools
     dbc.Collapse([
         html.H6([html.I(className="bi bi-shield me-1"), "⚠️ Risk Management"], className="mb-2"),
-        dbc.Button("📊 Calculate Position", id="calculate-position-size-btn", color="primary", size="sm", className="mb-1 w-100"),
-        dbc.Button("✅ Check Risk", id="check-trade-risk-btn", color="info", size="sm", className="mb-1 w-100"),
+        # DUPLICATE_REMOVED: dbc.Button("📊 Calculate Position", id="calculate-position-size-btn", color="primary", size="sm", className="mb-1 w-100"),
+        # DUPLICATE_REMOVED: dbc.Button("✅ Check Risk", id="check-trade-risk-btn", color="info", size="sm", className="mb-1 w-100"),
         dbc.Badge(id="risk-status-badge", color="success", pill=True, className="mb-2 w-100"),
-        html.Div(id="risk-management-output"),
-        html.Div(id="position-sizing-output"),
-        html.Div(id="trade-risk-check-output"),
+        # DUPLICATE_REMOVED: html.Div(id="risk-management-output"),
+        # DUPLICATE_REMOVED: html.Div(id="position-sizing-output"),
+        # DUPLICATE_REMOVED: html.Div(id="trade-risk-check-output"),
     ], id="risk-management-collapse", is_open=False),
     
     # Notification Tools
@@ -292,8 +309,8 @@ sidebar = html.Div([
         dbc.Button("🔄 Refresh", id="refresh-notifications-btn", color="info", size="sm", className="mb-1 w-100"),
         dbc.Button("🗑️ Clear All", id="clear-notifications-btn", color="warning", size="sm", className="mb-1 w-100"),
         dbc.Badge(id="notification-count", color="danger", pill=True, className="mb-2 w-100"),
-        html.Div(id="notification-action-output"),
-        html.Div(id="manual-notification-output"),
+        # DUPLICATE_REMOVED: html.Div(id="notification-action-output"),
+        # DUPLICATE_REMOVED: html.Div(id="manual-notification-output"),
     ], id="notifications-collapse", is_open=False),
     
     # Email/Alert Tools
@@ -303,8 +320,8 @@ sidebar = html.Div([
         dbc.Button("� Send Alert", id="send-test-alert-btn", color="warning", size="sm", className="mb-1 w-100"),
         dbc.Switch(id="email-enabled-switch", label="Email Alerts", value=False, className="mb-1"),
         dbc.Switch(id="auto-alerts-switch", label="Auto Alerts", value=True, className="mb-2"),
-        html.Div(id="email-config-output"),
-        html.Div(id="alert-send-output"),
+        # DUPLICATE_REMOVED: html.Div(id="email-config-output"),
+        # DUPLICATE_REMOVED: html.Div(id="alert-send-output"),
     ], id="email-alerts-collapse", is_open=False),
     
     # Basic Dev Tools
@@ -324,7 +341,7 @@ sidebar = html.Div([
         html.H6([html.I(className="bi bi-bar-chart me-1"), "📈 Technical Analysis"], className="mb-2"),
         dbc.Button("📊 Price Chart", id="show-price-chart-btn", color="info", size="sm", className="mb-1 w-100"),
         dbc.Button("📈 Indicators Chart", id="show-indicators-chart-btn", color="info", size="sm", className="mb-1 w-100"),
-        dbc.Button("🔄 Refresh Charts", id="refresh-charts-btn", color="primary", size="sm", className="mb-2 w-100"),
+        # DUPLICATE_REMOVED: dbc.Button("🔄 Refresh Charts", id="refresh-charts-btn", color="primary", size="sm", className="mb-2 w-100"),
         
         # Technical Indicator Cards (moved from futures tab)
         dbc.Row([
@@ -515,7 +532,7 @@ dashboard_tab = html.Div([
         dbc.Col([
             html.H4([html.I(className="bi bi-wallet2 me-1 text-success"), "💰 Portfolio Status"]),
             html.Div(id="portfolio-status", style={"fontSize": 18, "color": "#00bfff"}),
-            html.Div(id="sidebar-virtual-balance", className="text-center"),  # <-- FIXED: Added missing comma
+            html.Div(id="sidebar-virtual-balance-main", className="text-center"),
         ], width=3),
         dbc.Col([
             html.H4([html.I(className="bi bi-graph-up me-1 text-info"), "📈 Performance"]),
@@ -527,11 +544,19 @@ dashboard_tab = html.Div([
     dbc.Row([
         dbc.Col([
             html.H4("📊 Price Chart"),
-            safe_graph("price-chart", figure={}),
+            html.Div([
+                html.Div(id="price-chart", children=[
+                    safe_graph("price-chart-graph", figure={})
+                ])
+            ], className="chart-container"),
         ], width=6),
         dbc.Col([
             html.H4("📈 Technical Indicators"),
-            safe_graph("indicators-chart", figure={}),
+            html.Div([
+                html.Div(id="indicators-chart", children=[
+                    safe_graph("indicators-chart-graph", figure={})
+                ])
+            ], className="chart-container"),
         ], width=6),
     ], className="mb-4"),
     
@@ -549,6 +574,12 @@ dashboard_tab = html.Div([
             dbc.Button("💸 Sell", id="sell-btn", color="danger", size="lg", className="me-2"),
             dbc.Button("🔮 Quick Prediction", id="quick-prediction-btn", color="primary", size="lg"),
         ], width=12),
+    ], className="mb-4"),
+    
+    # Trading Results Area
+    html.Div([
+        html.H4([html.I(className="bi bi-activity me-1 text-info"), "💹 Trading Activity"], className="mb-3"),
+        html.Div(id="trading-results-output")
     ], className="mb-4"),
     
     # AI/ML Model Monitoring Dashboard
@@ -649,7 +680,7 @@ dashboard_tab = html.Div([
         dbc.Card([
             dbc.CardBody([
                 html.Div(id="virtual-balance-display", className="text-center"),
-                html.Div(id="sidebar-virtual-balance", className="text-center"),  # <-- FIXED: Added missing comma
+                html.Div(id="sidebar-virtual-balance-duplicate", className="text-center"),  # <-- FIXED: Changed duplicate ID
             ])
         ])
     ], className="mb-4"),
@@ -685,9 +716,9 @@ dashboard_tab = html.Div([
         html.H4([html.I(className="bi bi-graph-up me-1 text-warning"), "📊 Enhanced Backtest Results"], className="mb-3"),
         dbc.Card([
             dbc.CardBody([
-                html.Div(id="comprehensive-backtest-output"),
-                dbc.Progress(id="backtest-progress", value=0, className="mt-2"),
-                html.Div(id="backtest-results-enhanced", className="mt-3")
+        # DUPLICATE_REMOVED: html.Div(id="comprehensive-backtest-output"),
+        # DUPLICATE_REMOVED: dbc.Progress(id="backtest-progress", value=0, className="mt-2"),
+        # DUPLICATE_REMOVED: html.Div(id="backtest-results-enhanced", className="mt-3")
             ])
         ])
     ], className="mb-4"),
@@ -731,7 +762,7 @@ dashboard_tab = html.Div([
     
     # Data Collection Controls
     html.Div([
-        html.H4([html.I(className="bi bi-database me-1 text-info"), "🗄️ Data Collection"], className="mb-3"),  # <-- FIXED: corrected html.I(...)
+        html.H4([html.I(className="bi bi-database me-1 text-info"), "🗄️ Data Collection"], className="mb-3"),
         dbc.Card([
             dbc.CardBody([
                 html.Div(id="data-collection-controls")
@@ -760,8 +791,8 @@ dashboard_tab = html.Div([
                     dbc.CardHeader("📊 Analytics"),
                     dbc.CardBody([
                         html.Div(id="futures-analytics-display"),
-                        html.Div(id="pnl-analytics-display", className="mt-2"),
-                        html.Div(id="check-auto-alerts-result", className="mt-2")
+                        html.Div(id="pnl-analytics-display", className="mt-2")
+                        # check-auto-alerts-result removed - exists in auto_trading_layout.py
                     ])
                 ])
             ], width=6),
@@ -823,7 +854,9 @@ performance_dashboard_tab = html.Div([
                     html.H5([html.I(className="bi bi-graph-up me-1"), "P&L Over Time"], className="mb-0"),
                 ]),
                 dbc.CardBody([
-                    safe_graph("pnl-chart", figure={}),
+                    html.Div([
+                        safe_graph("pnl-chart", figure={})
+                    ], className="chart-container"),
                 ])
             ])
         ], width=6),
@@ -833,7 +866,9 @@ performance_dashboard_tab = html.Div([
                     html.H5([html.I(className="bi bi-pie-chart me-1"), "Trade Distribution"], className="mb-0"),
                 ]),
                 dbc.CardBody([
-                    safe_graph("trade-distribution-chart", figure={}),
+                    html.Div([
+                        safe_graph("trade-distribution-chart", figure={})
+                    ], className="chart-container"),
                 ])
             ])
         ], width=6),
@@ -854,7 +889,7 @@ performance_dashboard_tab = html.Div([
         dbc.Col([
             dbc.Card([
                 dbc.CardHeader([
-                    html.H5([html.I(className="bi bi-clock me-1"), "Time Analysis"], className="mb-0"),  # <-- FIXED: corrected html.I(...)
+                    html.H5([html.I(className="bi bi-clock me-1"), "Time Analysis"], className="mb-0"),
                 ]),
                 dbc.CardBody([
                     html.Div(id="time-analysis-display"),
@@ -943,6 +978,308 @@ email_config_tab = create_email_config_layout()
 # Hybrid Learning tab content - Use the full layout
 hybrid_learning_tab = create_hybrid_learning_layout()
 
+# ADVANCED FEATURES TAB - NEW ENDPOINTS
+advanced_features_tab = html.Div([
+    html.H2([html.I(className="bi bi-gear me-2 text-info"), "⚙️ Advanced Features"], className="mb-4"),
+    
+    # Chart Controls Section
+    dbc.Card([
+        dbc.CardHeader("📊 Chart Controls"),
+        dbc.CardBody([
+            dbc.Row([
+                dbc.Col([
+                    dbc.Button("🔄 Refresh Charts", id="chart-refresh-btn", color="primary", size="sm"),
+                    html.Div(id="chart-refresh-status", className="mt-2")
+                ], width=3),
+                dbc.Col([
+                    dbc.Button("📈 Bollinger Bands", id="chart-bollinger-btn", color="info", size="sm"),
+                    html.Div(id="chart-bollinger-data", className="mt-2")
+                ], width=3),
+                dbc.Col([
+                    dbc.Button("⚡ Momentum", id="chart-momentum-btn", color="warning", size="sm"),
+                    html.Div(id="chart-momentum-data", className="mt-2")
+                ], width=3),
+                dbc.Col([
+                    dbc.Button("📊 Volume", id="chart-volume-btn", color="success", size="sm"),
+                    html.Div(id="chart-volume-data", className="mt-2")
+                ], width=3)
+            ], className="mb-3"),
+            dbc.Row([
+                dbc.Col([
+                    dbc.Button("📈 Show Indicators", id="chart-show-indicators-btn", color="secondary", size="sm"),
+                    html.Div(id="chart-indicators-status", className="mt-2")
+                ], width=6),
+                dbc.Col([
+                    dbc.Button("💹 Show Price", id="chart-show-price-btn", color="secondary", size="sm"),
+                    html.Div(id="chart-price-status", className="mt-2")
+                ], width=6)
+            ])
+        ])
+    ], className="mb-4"),
+    
+    # HFT Analytics Section
+    dbc.Card([
+        dbc.CardHeader("⚡ High Frequency Trading Analytics"),
+        dbc.CardBody([
+            dbc.Row([
+                dbc.Col([
+                    dbc.Button("📊 HFT Analytics", id="hft-analytics-btn", color="primary", size="sm"),
+                    html.Div(id="hft-analytics-data", className="mt-2")
+                ], width=4),
+                dbc.Col([
+                    dbc.Button("⚙️ HFT Config", id="hft-config-btn", color="info", size="sm"),
+                    html.Div(id="hft-config-status", className="mt-2")
+                ], width=4),
+                dbc.Col([
+                    dbc.Button("🎯 Opportunities", id="hft-opportunities-btn", color="warning", size="sm"),
+                    html.Div(id="hft-opportunities-data", className="mt-2")
+                ], width=4)
+            ], className="mb-3"),
+            dbc.Row([
+                dbc.Col([
+        # DUPLICATE_REMOVED: dbc.Button("▶️ Start HFT", id="hft-start-btn", color="success", size="sm"),
+                    html.Div(id="hft-start-status", className="mt-2")
+                ], width=4),
+                dbc.Col([
+        # DUPLICATE_REMOVED: dbc.Button("⏹️ Stop HFT", id="hft-stop-btn", color="danger", size="sm"),
+                    html.Div(id="hft-stop-status", className="mt-2")
+                ], width=4),
+                dbc.Col([
+                    dbc.Button("📊 Status", id="hft-status-btn", color="secondary", size="sm"),
+                    html.Div(id="hft-status-display", className="mt-2")
+                ], width=4)
+            ])
+        ])
+    ], className="mb-4"),
+    
+    # Performance & Portfolio Section
+    dbc.Card([
+        dbc.CardHeader("📈 Performance & Portfolio Analytics"),
+        dbc.CardBody([
+            dbc.Row([
+                dbc.Col([
+                    dbc.Button("📊 Performance Dashboard", id="performance-dashboard-btn", color="primary", size="sm"),
+                    html.Div(id="performance-dashboard-data", className="mt-2")
+                ], width=4),
+                dbc.Col([
+                    dbc.Button("📊 Performance Metrics", id="performance-metrics-btn", color="info", size="sm"),
+                    html.Div(id="performance-metrics-data", className="mt-2")
+                ], width=4),
+                dbc.Col([
+                    dbc.Button("💼 Portfolio", id="portfolio-btn", color="warning", size="sm"),
+                    html.Div(id="portfolio-data", className="mt-2")
+                ], width=4)
+            ])
+        ])
+    ], className="mb-4"),
+    
+    # Advanced ML Section
+    dbc.Card([
+        dbc.CardHeader("🧠 Advanced Machine Learning"),
+        dbc.CardBody([
+            dbc.Row([
+                dbc.Col([
+                    dbc.Button("🔍 ML Compatibility", id="ml-compatibility-check-btn", color="primary", size="sm"),
+                    html.Div(id="ml-compatibility-check-data", className="mt-2")
+                ], width=4),
+                dbc.Col([
+                    dbc.Button("🔧 Fix ML Issues", id="ml-compatibility-fix-btn", color="danger", size="sm"),
+                    html.Div(id="ml-compatibility-fix-status", className="mt-2")
+                ], width=4),
+                dbc.Col([
+                    dbc.Button("💡 ML Recommendations", id="ml-recommendations-btn", color="info", size="sm"),
+                    html.Div(id="ml-recommendations-data", className="mt-2")
+                ], width=4)
+            ], className="mb-3"),
+            dbc.Row([
+                dbc.Col([
+                    dbc.Button("⚙️ Online ML Config", id="ml-online-config-btn", color="secondary", size="sm"),
+                    html.Div(id="ml-online-config-data", className="mt-2")
+                ], width=6),
+                dbc.Col([
+                    dbc.Button("📊 Online ML Performance", id="ml-online-performance-btn", color="success", size="sm"),
+                    html.Div(id="ml-online-performance-data", className="mt-2")
+                ], width=6)
+            ])
+        ])
+    ], className="mb-4"),
+    
+    # Risk Management Section
+    dbc.Card([
+        dbc.CardHeader("⚠️ Advanced Risk Management"),
+        dbc.CardBody([
+            dbc.Row([
+                dbc.Col([
+        # DUPLICATE_REMOVED: dbc.Input(id="risk-amount-input", type="number", placeholder="Amount", value=1000),
+                    dbc.Button("📏 Calculate Position Size", id="risk-position-size-btn", color="primary", size="sm", className="mt-2"),
+                    html.Div(id="risk-position-size-data", className="mt-2")
+                ], width=3),
+                dbc.Col([
+                    dbc.Button("🔍 Check Trade Risk", id="risk-trade-check-btn", color="warning", size="sm"),
+                    html.Div(id="risk-trade-check-data", className="mt-2")
+                ], width=3),
+                dbc.Col([
+                    dbc.Button("📊 Portfolio Risk", id="risk-portfolio-metrics-btn", color="info", size="sm"),
+                    html.Div(id="risk-portfolio-metrics-data", className="mt-2")
+                ], width=3),
+                dbc.Col([
+                    dbc.Button("🛑 Stop Loss Strategies", id="risk-stop-loss-btn", color="danger", size="sm"),
+                    html.Div(id="risk-stop-loss-data", className="mt-2")
+                ], width=3)
+            ])
+        ])
+    ], className="mb-4"),
+    
+    # Auto Trading Controls Section
+    dbc.Card([
+        dbc.CardHeader("🤖 Auto Trading Controls"),
+        dbc.CardBody([
+            dbc.Row([
+                dbc.Col([
+                    dbc.Button("🔄 Toggle Auto Trading", id="auto-trading-toggle-btn", color="primary", size="sm"),
+                    html.Div(id="auto-trading-toggle-status", className="mt-2")
+                ], width=3),
+                dbc.Col([
+                    dbc.Button("⚙️ Trading Settings", id="auto-trading-settings-btn", color="info", size="sm"),
+                    html.Div(id="auto-trading-settings-data", className="mt-2")
+                ], width=3),
+                dbc.Col([
+                    dbc.Button("📊 Trading Signals", id="auto-trading-signals-btn", color="warning", size="sm"),
+                    html.Div(id="auto-trading-signals-data", className="mt-2")
+                ], width=3),
+                dbc.Col([
+                    dbc.Button("📈 Trading Status", id="auto-trading-status-refresh-btn", color="success", size="sm"),
+                    html.Div(id="auto-trading-status-display", className="mt-2")
+                ], width=3)
+            ], className="mb-3"),
+            dbc.Row([
+                dbc.Col([
+                    dbc.Button("⚡ Execute Futures Signal", id="futures-execute-signal-btn", color="danger", size="sm"),
+                    html.Div(id="futures-execute-signal-status", className="mt-2")
+                ], width=6),
+                dbc.Col([
+                    dbc.Button("🔥 Binance Auto Execute", id="binance-auto-execute-btn", color="warning", size="sm"),
+                    html.Div(id="binance-auto-execute-status", className="mt-2")
+                ], width=6)
+            ])
+        ])
+    ], className="mb-4"),
+    
+    # Email & Notifications Section
+    dbc.Card([
+        dbc.CardHeader("📧 Email & Notifications"),
+        dbc.CardBody([
+            dbc.Row([
+                dbc.Col([
+                    dbc.Button("⚙️ Email Config", id="email-config-btn", color="primary", size="sm"),
+        # DUPLICATE_REMOVED: html.Div(id="email-config-status", className="mt-2")
+                ], width=3),
+                dbc.Col([
+                    dbc.Button("✉️ Test Email", id="email-test-btn", color="info", size="sm"),
+                    html.Div(id="email-test-status", className="mt-2")
+                ], width=3),
+                dbc.Col([
+                    dbc.Button("🔔 Toggle Notifications", id="email-notifications-toggle-btn", color="warning", size="sm"),
+                    html.Div(id="email-notifications-status", className="mt-2")
+                ], width=3),
+                dbc.Col([
+        # DUPLICATE_REMOVED: dbc.Input(id="email-address-input", type="email", placeholder="Email Address"),
+                    dbc.Button("📧 Update Email", id="email-address-update-btn", color="success", size="sm", className="mt-2"),
+                    html.Div(id="email-address-status", className="mt-2")
+                ], width=3)
+            ], className="mb-3"),
+            dbc.Row([
+                dbc.Col([
+                    dbc.Button("🗑️ Clear Notifications", id="notifications-clear-btn", color="danger", size="sm"),
+                    html.Div(id="notifications-clear-status", className="mt-2")
+                ], width=4),
+                dbc.Col([
+                    dbc.Button("✅ Mark All Read", id="notifications-mark-read-btn", color="success", size="sm"),
+                    html.Div(id="notifications-mark-read-status", className="mt-2")
+                ], width=4),
+                dbc.Col([
+                    dbc.Input(id="manual-alert-message", type="text", placeholder="Alert message"),
+                    dbc.Button("📢 Send Alert", id="manual-alert-btn", color="warning", size="sm", className="mt-2"),
+                    html.Div(id="manual-alert-status", className="mt-2")
+                ], width=4)
+            ])
+        ])
+    ], className="mb-4"),
+    
+    # Trading Controls Section
+    dbc.Card([
+        dbc.CardHeader("💰 Trading Controls"),
+        dbc.CardBody([
+            dbc.Row([
+                dbc.Col([
+                    dbc.Input(id="trade-symbol-input", type="text", placeholder="Symbol", value="BTCUSDT"),
+                    dbc.Select(id="trade-side-dropdown", options=[
+                        {"label": "BUY", "value": "BUY"},
+                        {"label": "SELL", "value": "SELL"}
+                    ], value="BUY"),
+                    dbc.Button("💰 Execute Trade", id="trade-execute-btn", color="success", size="sm", className="mt-2"),
+                    html.Div(id="trade-execute-status", className="mt-2")
+                ], width=3),
+                dbc.Col([
+                    dbc.Button("📊 All Trades", id="trades-list-btn", color="info", size="sm"),
+                    html.Div(id="trades-list-data", className="mt-2")
+                ], width=3),
+                dbc.Col([
+                    dbc.Button("📈 Futures History", id="futures-history-btn", color="warning", size="sm"),
+                    html.Div(id="futures-history-data", className="mt-2")
+                ], width=3),
+                dbc.Col([
+                    dbc.Button("🔓 Open Futures", id="futures-open-btn", color="primary", size="sm"),
+                    html.Div(id="futures-open-data", className="mt-2")
+                ], width=3)
+            ], className="mb-3"),
+            dbc.Row([
+                dbc.Col([
+                    dbc.Button("🔄 Reset Virtual Balance", id="virtual-balance-reset-btn", color="danger", size="sm"),
+                    html.Div(id="virtual-balance-reset-status", className="mt-2")
+                ], width=6),
+                dbc.Col([
+                    dbc.Button("📊 Test Email Alert", id="test-email-alert-btn", color="info", size="sm"),
+                    html.Div(id="test-email-alert-status", className="mt-2")
+                ], width=6)
+            ])
+        ])
+    ], className="mb-4"),
+    
+    # Quick Amount Selection
+    dbc.Card([
+        dbc.CardHeader("💰 Quick Amount Selection"),
+        dbc.CardBody([
+            dbc.Row([
+                dbc.Col([
+                    dbc.Button("$50", id="amount-50-btn", color="outline-primary", size="sm"),
+                    html.Div(id="amount-50-status", className="mt-2")
+                ], width=2),
+                dbc.Col([
+                    dbc.Button("$100", id="amount-100-btn", color="outline-primary", size="sm"),
+                    html.Div(id="amount-100-status", className="mt-2")
+                ], width=2),
+                dbc.Col([
+                    dbc.Button("$250", id="amount-250-btn", color="outline-primary", size="sm"),
+                    html.Div(id="amount-250-status", className="mt-2")
+                ], width=2),
+                dbc.Col([
+                    dbc.Button("$500", id="amount-500-btn", color="outline-primary", size="sm"),
+                    html.Div(id="amount-500-status", className="mt-2")
+                ], width=2),
+                dbc.Col([
+                    dbc.Button("$1000", id="amount-1000-btn", color="outline-primary", size="sm"),
+                    html.Div(id="amount-1000-status", className="mt-2")
+                ], width=2),
+                dbc.Col([
+                    dbc.Button("MAX", id="amount-max-btn", color="outline-warning", size="sm"),
+                    html.Div(id="amount-max-status", className="mt-2")
+                ], width=2)
+            ])
+        ])
+    ])
+])
+
 # Tabs component
 tabs = dcc.Tabs([
     dcc.Tab(label="📊 Dashboard", children=[dashboard_tab], value="dashboard"),
@@ -952,6 +1289,7 @@ tabs = dcc.Tabs([
     dcc.Tab(label="✉️ Email Config", children=[email_config_tab], value="email-config"),
     dcc.Tab(label="🧠 Hybrid Learning", children=[hybrid_learning_tab], value="hybrid-learning"),
     dcc.Tab(label="📊 Performance Monitor", children=[performance_dashboard_tab], value="performance-monitor"),
+    dcc.Tab(label="⚙️ Advanced Features", children=[advanced_features_tab], value="advanced-features"),
 ], id="main-tabs", value="dashboard")
 
 # Notification toast
@@ -967,6 +1305,50 @@ notification_toast = dbc.Toast(
 hidden_components = html.Div([
     # Hidden outputs for callbacks
     html.Div(id="dummy-div", style={"display": "none"}),
+
+    # Missing callback output components (auto-generated)
+        # DUPLICATE_REMOVED: html.Div(id="auto-balance-display", style={"display": "none"}),
+        # DUPLICATE_REMOVED: html.Div(id="auto-pnl-display", style={"display": "none"}),
+        # DUPLICATE_REMOVED: html.Div(id="auto-trade-log", style={"display": "none"}),
+        # DUPLICATE_REMOVED: html.Div(id="auto-trades-display", style={"display": "none"}),
+        # DUPLICATE_REMOVED: html.Div(id="auto-trading-toggle-output", style={"display": "none"}),
+        # DUPLICATE_REMOVED: html.Div(id="auto-winrate-display", style={"display": "none"}),
+        # DUPLICATE_REMOVED: html.Div(id="auto-wl-display", style={"display": "none"}),
+        # DUPLICATE_REMOVED: html.Div(id="calculated-amount-display", style={"display": "none"}),
+    html.Div(id="chart-candles-data", style={"display": "none"}),
+        # DUPLICATE_REMOVED: html.Div(id="current-signal-display", style={"display": "none"}),
+        # DUPLICATE_REMOVED: html.Div(id="execute-signal-btn", style={"display": "none"}),
+    html.Div(id="fapi-account-data", style={"display": "none"}),
+    html.Div(id="fapi-balance-data", style={"display": "none"}),
+    html.Div(id="fapi-exchange-info-data", style={"display": "none"}),
+    html.Div(id="fapi-position-risk-data", style={"display": "none"}),
+    html.Div(id="fapi-ticker-data", style={"display": "none"}),
+        # DUPLICATE_REMOVED: html.Div(id="fixed-amount-section", style={"display": "none"}),
+        # DUPLICATE_REMOVED: html.Div(id="futures-available-balance", style={"display": "none"}),
+        # DUPLICATE_REMOVED: html.Div(id="futures-margin-ratio", style={"display": "none"}),
+        # DUPLICATE_REMOVED: html.Div(id="futures-margin-used", style={"display": "none"}),
+        # DUPLICATE_REMOVED: html.Div(id="futures-open-positions", style={"display": "none"}),
+        # DUPLICATE_REMOVED: html.Div(id="futures-pnl-display", style={"display": "none"}),
+        # DUPLICATE_REMOVED: html.Div(id="futures-reset-balance-btn", style={"display": "none"}),
+        # DUPLICATE_REMOVED: html.Div(id="futures-settings-result", style={"display": "none"}),
+        # DUPLICATE_REMOVED: html.Div(id="futures-trading-status", style={"display": "none"}),
+        # DUPLICATE_REMOVED: html.Div(id="futures-unrealized-pnl", style={"display": "none"}),
+        # DUPLICATE_REMOVED: html.Div(id="futures-virtual-total-balance", style={"display": "none"}),
+    html.Div(id="indicators-config-data", style={"display": "none"}),
+    html.Div(id="indicators-refresh-status", style={"display": "none"}),
+    html.Div(id="model-analytics-data", style={"display": "none"}),
+    html.Div(id="model-upload-status-data", style={"display": "none"}),
+        # DUPLICATE_REMOVED: html.Div(id="open-positions-table", style={"display": "none"}),
+        # DUPLICATE_REMOVED: html.Div(id="optimize-gala-btn", style={"display": "none"}),
+        # DUPLICATE_REMOVED: html.Div(id="optimize-jasmy-btn", style={"display": "none"}),
+        # DUPLICATE_REMOVED: html.Div(id="optimize-kaia-btn", style={"display": "none"}),
+        # DUPLICATE_REMOVED: html.Div(id="percentage-amount-section", style={"display": "none"}),
+        # DUPLICATE_REMOVED: html.Div(id="percentage-amount-slider", style={"display": "none"}),
+    html.Div(id="price-chart-hidden", style={"display": "none"}),
+    html.Div(id="price-general-data", style={"display": "none"}),
+        # DUPLICATE_REMOVED: html.Div(id="reset-auto-trading-btn", style={"display": "none"}),
+    html.Div(id="retrain-model-status", style={"display": "none"}),
+    html.Div(id="system-health-data", style={"display": "none"}),
     html.Div(id="test-output", style={"display": "none"}),
     html.Div(id="backtest-result", style={"display": "none"}),
     
@@ -980,24 +1362,22 @@ hidden_components = html.Div([
     
     # Hidden tab content divs for dynamic loading
     html.Div(id="hybrid-learning-tab-content", style={"display": "none"}),
-    html.Div(id="email-config-tab-content", style={"display": "none"}),
-    html.Div(id="auto-trading-tab-content", style={"display": "none"}),
-    html.Div(id="futures-trading-tab-content", style={"display": "none"}),
-    html.Div(id="binance-exact-tab-content", style={"display": "none"}),
+        # DUPLICATE_REMOVED: html.Div(id="email-config-tab-content", style={"display": "none"}),
+        # DUPLICATE_REMOVED: html.Div(id="auto-trading-tab-content", style={"display": "none"}),
+        # DUPLICATE_REMOVED: html.Div(id="futures-trading-tab-content", style={"display": "none"}),
+        # DUPLICATE_REMOVED: html.Div(id="binance-exact-tab-content", style={"display": "none"}),
     
-    # Hidden futures trading components
-    html.Div(id="futures-trading-controls", style={"display": "none"}),
-    html.Div(id="futures-rsi-indicator", style={"display": "none"}),
-    html.Div(id="futures-macd-indicator", style={"display": "none"}),
-    html.Div(id="futures-bollinger-indicator", style={"display": "none"}),
-    html.Div(id="futures-stochastic-indicator", style={"display": "none"}),
-    html.Div(id="futures-atr-indicator", style={"display": "none"}),
-    html.Div(id="futures-volume-indicator", style={"display": "none"}),
-    html.Div(id="futures-technical-chart", style={"display": "none"}),
+        # DUPLICATE_REMOVED: # Hidden futures trading components    html.Div(id="futures-rsi-indicator", style={"display": "none"}),
+        # DUPLICATE_REMOVED: html.Div(id="futures-macd-indicator", style={"display": "none"}),
+        # DUPLICATE_REMOVED: html.Div(id="futures-bollinger-indicator", style={"display": "none"}),
+        # DUPLICATE_REMOVED: html.Div(id="futures-stochastic-indicator", style={"display": "none"}),
+        # DUPLICATE_REMOVED: html.Div(id="futures-atr-indicator", style={"display": "none"}),
+        # DUPLICATE_REMOVED: html.Div(id="futures-volume-indicator", style={"display": "none"}),
+        # DUPLICATE_REMOVED: html.Div(id="futures-technical-chart", style={"display": "none"}),
     
     # Hidden AI/ML model management outputs
     html.Div(id="model-metrics-display", style={"display": "none"}),
-    html.Div(id="hybrid-status-display", style={"display": "none"}),
+        # DUPLICATE_REMOVED: html.Div(id="hybrid-status-display", style={"display": "none"}),
     html.Div(id="refresh-hft-btn", style={"display": "none"}),
     html.Div(id="save-hft-config-btn", style={"display": "none"}),
     html.Div(id="hft-interval-input", style={"display": "none"}),
@@ -1005,7 +1385,7 @@ hidden_components = html.Div([
     html.Div(id="hft-max-orders-input", style={"display": "none"}),
     
     # Hidden data collection outputs (moved to sidebar)
-    html.Div(id="data-collection-stats", style={"display": "none"}),
+        # DUPLICATE_REMOVED: html.Div(id="data-collection-stats", style={"display": "none"}),
     html.Div(id="refresh-data-collection-btn", style={"display": "none"}),
     html.Div(id="save-collection-config-btn", style={"display": "none"}),
     html.Div(id="collection-interval-input", style={"display": "none"}),
@@ -1020,7 +1400,7 @@ hidden_components = html.Div([
     html.Div(id="model-performance-display", style={"display": "none"}),
     html.Div(id="model-performance-chart", style={"display": "none"}),
     html.Div(id="learning-buffer-status", style={"display": "none"}),
-    html.Div(id="online-learning-stats", style={"display": "none"}),
+        # DUPLICATE_REMOVED: html.Div(id="online-learning-stats", style={"display": "none"}),
     
     # Hidden advanced risk management outputs (moved to sidebar)
     html.Div(id="refresh-risk-btn", style={"display": "none"}),
@@ -1036,19 +1416,19 @@ hidden_components = html.Div([
     # Hidden notification outputs (moved to sidebar)
     html.Div(id="test-notification-btn", style={"display": "none"}),
     dbc.Collapse(id="manual-notification-collapse", is_open=False, children=[]),
-    html.Div(id="manual-notification-type", style={"display": "none"}),
-    html.Div(id="manual-notification-message", style={"display": "none"}),
+        # DUPLICATE_REMOVED: html.Div(id="manual-notification-type", style={"display": "none"}),
+        # DUPLICATE_REMOVED: html.Div(id="manual-notification-message", style={"display": "none"}),
     html.Div(id="send-manual-notification-btn", style={"display": "none"}),
     html.Div(id="notifications-display", style={"display": "none"}),
-    html.Div(id="show-unread-only", style={"display": "none"}),
+        # DUPLICATE_REMOVED: html.Div(id="show-unread-only", style={"display": "none"}),
     html.Div(id="notification-stats", style={"display": "none"}),
     
     # Hidden email/alert outputs (moved to sidebar)
-    html.Div(id="smtp-server-input", style={"display": "none"}),
-    html.Div(id="smtp-port-input", style={"display": "none"}),
-    html.Div(id="email-address-input", style={"display": "none"}),
-    html.Div(id="email-password-input", style={"display": "none"}),
-    html.Div(id="save-email-config-btn", style={"display": "none"}),
+        # DUPLICATE_REMOVED: html.Div(id="smtp-server-input", style={"display": "none"}),
+        # DUPLICATE_REMOVED: html.Div(id="smtp-port-input", style={"display": "none"}),
+        # DUPLICATE_REMOVED: html.Div(id="email-address-input", style={"display": "none"}),
+        # DUPLICATE_REMOVED: html.Div(id="email-password-input", style={"display": "none"}),
+        # DUPLICATE_REMOVED: html.Div(id="save-email-config-btn", style={"display": "none"}),
     html.Div(id="email-test-result", style={"display": "none"}),
     html.Div(id="profit-threshold-input", style={"display": "none"}),
     html.Div(id="loss-threshold-input", style={"display": "none"}),
@@ -1059,44 +1439,70 @@ hidden_components = html.Div([
     html.Div(id="alert-stats", style={"display": "none"}),
     
     # Original hidden outputs
-    html.Div(id="notification-action-output", style={"display": "none"}),
-    html.Div(id="manual-notification-output", style={"display": "none"}),
-    html.Div(id="email-config-output", style={"display": "none"}),
+        # DUPLICATE_REMOVED: html.Div(id="notification-action-output", style={"display": "none"}),
+        # DUPLICATE_REMOVED: html.Div(id="manual-notification-output", style={"display": "none"}),
+        # DUPLICATE_REMOVED: html.Div(id="email-config-output", style={"display": "none"}),
     html.Div(id="email-test-output", style={"display": "none"}),
-    html.Div(id="alert-send-output", style={"display": "none"}),
+        # DUPLICATE_REMOVED: html.Div(id="alert-send-output", style={"display": "none"}),
     html.Div(id="alert-history-action-output", style={"display": "none"}),
-    html.Div(id="hft-action-output", style={"display": "none"}),
-    html.Div(id="hft-config-output", style={"display": "none"}),
-    html.Div(id="data-collection-action-output", style={"display": "none"}),
-    html.Div(id="collection-config-output", style={"display": "none"}),
-    html.Div(id="online-learning-action-output", style={"display": "none"}),
-    html.Div(id="learning-config-output", style={"display": "none"}),
-    html.Div(id="risk-management-output", style={"display": "none"}),
-    html.Div(id="position-sizing-output", style={"display": "none"}),
-    html.Div(id="trade-risk-check-output", style={"display": "none"}),
+        # DUPLICATE_REMOVED: html.Div(id="hft-action-output", style={"display": "none"}),
+        # DUPLICATE_REMOVED: html.Div(id="hft-config-output", style={"display": "none"}),
+        # DUPLICATE_REMOVED: html.Div(id="data-collection-action-output", style={"display": "none"}),
+        # DUPLICATE_REMOVED: html.Div(id="collection-config-output", style={"display": "none"}),
+        # DUPLICATE_REMOVED: html.Div(id="online-learning-action-output", style={"display": "none"}),
+        # DUPLICATE_REMOVED: html.Div(id="learning-config-output", style={"display": "none"}),
+        # DUPLICATE_REMOVED: html.Div(id="risk-management-output", style={"display": "none"}),
+        # DUPLICATE_REMOVED: html.Div(id="position-sizing-output", style={"display": "none"}),
+        # DUPLICATE_REMOVED: html.Div(id="trade-risk-check-output", style={"display": "none"}),
     html.Div(id="performance-dashboard-output", style={"display": "none"}),
     html.Div(id="export-performance-output", style={"display": "none"}),
     
     # Hidden inputs wrapped in divs to avoid style prop issues
     html.Div([
-        dcc.Dropdown(id="auto-symbol-dropdown"),
-        dcc.Input(id="fixed-amount-input", type="number", value=100),
-        dcc.Input(id="percentage-amount-input", type="number", value=10),
+        # DUPLICATE_REMOVED: dcc.Dropdown(id="auto-symbol-dropdown"),
+        # DUPLICATE_REMOVED: dcc.Input(id="fixed-amount-input", type="number", value=100),
+        # DUPLICATE_REMOVED: dcc.Input(id="percentage-amount-input", type="number", value=10),
     ], style={"display": "none"}),
 ], style={"display": "none"})
 
 # --- FIX: Use correct Dash components for callback compatibility ---
 hidden_callback_components = [
-    dcc.Checklist(id="show-unread-only", options=[{"label": "Show Unread Only", "value": "unread"}], value=[], style={"display": "none"}),
-    dcc.Input(id="email-password-input", type="password", style={"display": "none"}),
-    dcc.Input(id="email-address-input", type="email", style={"display": "none"}),
-    dcc.Input(id="smtp-port-input", type="number", style={"display": "none"}),
-    dcc.Input(id="smtp-server-input", type="text", style={"display": "none"}),
-    dcc.Textarea(id="manual-notification-message", style={"display": "none"}),
-    dcc.Input(id="manual-notification-type", type="text", style={"display": "none"}),
-    dcc.Graph(id="futures-technical-chart", style={"display": "none"}),
+        # DUPLICATE_REMOVED: dcc.Checklist(id="show-unread-only", options=[{"label": "Show Unread Only", "value": "unread"}], value=[], style={"display": "none"}),
+        # DUPLICATE_REMOVED: dcc.Input(id="email-password-input", type="password", style={"display": "none"}),
+        # DUPLICATE_REMOVED: dcc.Input(id="email-address-input", type="email", style={"display": "none"}),
+        # DUPLICATE_REMOVED: dcc.Input(id="smtp-port-input", type="number", style={"display": "none"}),
+        # DUPLICATE_REMOVED: dcc.Input(id="smtp-server-input", type="text", style={"display": "none"}),
+        # DUPLICATE_REMOVED: dcc.Textarea(id="manual-notification-message", style={"display": "none"}),
+        # DUPLICATE_REMOVED: dcc.Input(id="manual-notification-type", type="text", style={"display": "none"}),
+        # DUPLICATE_REMOVED: dcc.Graph(id="futures-technical-chart", style={"display": "none"}),
 ]
 # --- END FIX ---
+
+# CSS for chart dimension constraints - Add to app external stylesheets
+chart_constraints_css = """
+/* Chart Container Constraints */
+.chart-container {
+    max-height: 400px !important;
+    overflow: hidden;
+}
+
+/* Graph components should not exceed container height */
+.js-plotly-plot .plotly .main-svg {
+    max-height: 400px !important;
+}
+
+/* Prevent chart expansion beyond container */
+.dash-graph {
+    max-height: 400px !important;
+    height: 400px !important;
+}
+
+/* Ensure responsive behavior without expansion */
+.plotly-graph-div {
+    max-height: 400px !important;
+    height: 400px !important;
+}
+"""
 
 # Main layout
 layout = html.Div([
@@ -1132,7 +1538,306 @@ layout = html.Div([
         "minHeight": "100vh", 
         "backgroundColor": "#2a2a2a"
     }, className="main-content"),
+    
+    # Hidden callback output divs
+    html.Div([
+        html.Div(id='sidebar-amount-50-output', style={'display': 'none'}),
+        html.Div(id='sidebar-amount-100-output', style={'display': 'none'}),
+        html.Div(id='sidebar-amount-250-output', style={'display': 'none'}),
+        html.Div(id='sidebar-amount-500-output', style={'display': 'none'}),
+        html.Div(id='sidebar-amount-1000-output', style={'display': 'none'}),
+        html.Div(id='sidebar-amount-max-output', style={'display': 'none'}),
+        html.Div(id='sidebar-amount-50-btn-output', style={'display': 'none'}),
+        html.Div(id='sidebar-amount-100-btn-output', style={'display': 'none'}),
+        html.Div(id='sidebar-amount-250-btn-output', style={'display': 'none'}),
+        html.Div(id='sidebar-amount-500-btn-output', style={'display': 'none'}),
+        html.Div(id='sidebar-amount-1000-btn-output', style={'display': 'none'}),
+        html.Div(id='sidebar-amount-max-btn-output', style={'display': 'none'}),
+        html.Div(id='amount-50-btn-output', style={'display': 'none'}),
+        html.Div(id='amount-100-btn-output', style={'display': 'none'}),
+        html.Div(id='amount-250-btn-output', style={'display': 'none'}),
+        html.Div(id='amount-500-btn-output', style={'display': 'none'}),
+        html.Div(id='amount-1000-btn-output', style={'display': 'none'}),
+        html.Div(id='amount-max-btn-output', style={'display': 'none'}),
+        html.Div(id='sidebar-predict-output', style={'display': 'none'}),
+        html.Div(id='sidebar-analytics-output', style={'display': 'none'}),
+        html.Div(id='test-ml-output', style={'display': 'none'}),
+        html.Div(id='reset-balance-output', style={'display': 'none'}),
+        html.Div(id='enable-online-learning-output', style={'display': 'none'}),
+        html.Div(id='get-prediction-btn-output', style={'display': 'none'}),
+        html.Div(id='quick-prediction-btn-output', style={'display': 'none'}),
+        html.Div(id='buy-btn-output', style={'display': 'none'}),
+        html.Div(id='sell-btn-output', style={'display': 'none'}),
+        html.Div(id='trade-execute-btn-output', style={'display': 'none'}),
+        html.Div(id='trades-list-btn-output', style={'display': 'none'}),
+        html.Div(id='auto-trading-toggle-btn-output', style={'display': 'none'}),
+        html.Div(id='auto-trading-settings-btn-output', style={'display': 'none'}),
+        html.Div(id='auto-trading-signals-btn-output', style={'display': 'none'}),
+        html.Div(id='auto-trading-status-refresh-btn-output', style={'display': 'none'}),
+        html.Div(id='futures-execute-signal-btn-output', style={'display': 'none'}),
+        html.Div(id='futures-history-btn-output', style={'display': 'none'}),
+        html.Div(id='futures-open-btn-output', style={'display': 'none'}),
+        html.Div(id='binance-auto-execute-btn-output', style={'display': 'none'}),
+        html.Div(id='show-price-chart-btn-output', style={'display': 'none'}),
+        html.Div(id='show-indicators-chart-btn-output', style={'display': 'none'}),
+        html.Div(id='refresh-charts-btn-output', style={'display': 'none'}),
+        html.Div(id='chart-refresh-btn-output', style={'display': 'none'}),
+        html.Div(id='chart-bollinger-btn-output', style={'display': 'none'}),
+        html.Div(id='chart-momentum-btn-output', style={'display': 'none'}),
+        html.Div(id='chart-volume-btn-output', style={'display': 'none'}),
+        html.Div(id='chart-show-indicators-btn-output', style={'display': 'none'}),
+        html.Div(id='chart-show-price-btn-output', style={'display': 'none'}),
+        html.Div(id='show-bollinger-btn-output', style={'display': 'none'}),
+        html.Div(id='show-momentum-btn-output', style={'display': 'none'}),
+        html.Div(id='show-volume-btn-output', style={'display': 'none'}),
+        html.Div(id='sidebar-ml-predict-btn-output', style={'display': 'none'}),
+        html.Div(id='sidebar-ml-status-btn-output', style={'display': 'none'}),
+        html.Div(id='sidebar-feature-importance-btn-output', style={'display': 'none'}),
+        html.Div(id='sidebar-volume-chart-btn-output', style={'display': 'none'}),
+        html.Div(id='sidebar-momentum-chart-btn-output', style={'display': 'none'}),
+        html.Div(id='sidebar-bollinger-btn-output', style={'display': 'none'}),
+        html.Div(id='toggle-hft-tools-output', style={'display': 'none'}),
+        html.Div(id='toggle-data-collection-output', style={'display': 'none'}),
+        html.Div(id='toggle-online-learning-output', style={'display': 'none'}),
+        html.Div(id='toggle-risk-management-output', style={'display': 'none'}),
+        html.Div(id='toggle-notifications-output', style={'display': 'none'}),
+        html.Div(id='toggle-email-alerts-output', style={'display': 'none'}),
+        html.Div(id='toggle-analytics-output', style={'display': 'none'}),
+        html.Div(id='toggle-ml-tools-output', style={'display': 'none'}),
+        html.Div(id='toggle-charts-output', style={'display': 'none'}),
+        html.Div(id='toggle-dev-tools-output', style={'display': 'none'}),
+        html.Div(id='start-hft-analysis-btn-output', style={'display': 'none'}),
+        html.Div(id='stop-hft-analysis-btn-output', style={'display': 'none'}),
+        html.Div(id='hft-analytics-btn-output', style={'display': 'none'}),
+        html.Div(id='hft-config-btn-output', style={'display': 'none'}),
+        html.Div(id='hft-opportunities-btn-output', style={'display': 'none'}),
+        html.Div(id='hft-start-btn-output', style={'display': 'none'}),
+        html.Div(id='hft-stop-btn-output', style={'display': 'none'}),
+        html.Div(id='hft-status-btn-output', style={'display': 'none'}),
+        html.Div(id='hft-analytics-refresh-btn-output', style={'display': 'none'}),
+        html.Div(id='start-data-collection-btn-duplicate-output', style={'display': 'none'}),
+        html.Div(id='stop-data-collection-btn-duplicate-output', style={'display': 'none'}),
+        html.Div(id='enable-online-learning-btn-output', style={'display': 'none'}),
+        html.Div(id='disable-online-learning-btn-output', style={'display': 'none'}),
+        html.Div(id='optimize-learning-rates-btn-output', style={'display': 'none'}),
+        html.Div(id='reset-learning-rates-btn-output', style={'display': 'none'}),
+        html.Div(id='ml-online-config-btn-output', style={'display': 'none'}),
+        html.Div(id='ml-online-performance-btn-output', style={'display': 'none'}),
+        html.Div(id='calculate-position-size-btn-output', style={'display': 'none'}),
+        html.Div(id='check-trade-risk-btn-output', style={'display': 'none'}),
+        html.Div(id='update-risk-settings-btn-output', style={'display': 'none'}),
+        html.Div(id='risk-position-size-btn-output', style={'display': 'none'}),
+        html.Div(id='risk-trade-check-btn-output', style={'display': 'none'}),
+        html.Div(id='risk-portfolio-metrics-btn-output', style={'display': 'none'}),
+        html.Div(id='risk-stop-loss-btn-output', style={'display': 'none'}),
+        html.Div(id='refresh-notifications-btn-output', style={'display': 'none'}),
+        html.Div(id='clear-notifications-btn-output', style={'display': 'none'}),
+        html.Div(id='notifications-clear-btn-output', style={'display': 'none'}),
+        html.Div(id='notifications-mark-read-btn-output', style={'display': 'none'}),
+        html.Div(id='clear-all-notifications-btn-output', style={'display': 'none'}),
+        html.Div(id='mark-all-read-btn-output', style={'display': 'none'}),
+        html.Div(id='manual-alert-btn-output', style={'display': 'none'}),
+        html.Div(id='send-manual-alert-btn-output', style={'display': 'none'}),
+        html.Div(id='test-email-btn-output', style={'display': 'none'}),
+        html.Div(id='send-test-alert-btn-output', style={'display': 'none'}),
+        html.Div(id='email-config-btn-output', style={'display': 'none'}),
+        html.Div(id='email-test-btn-output', style={'display': 'none'}),
+        html.Div(id='email-notifications-toggle-btn-output', style={'display': 'none'}),
+        html.Div(id='email-address-update-btn-output', style={'display': 'none'}),
+        html.Div(id='test-email-alert-btn-output', style={'display': 'none'}),
+        html.Div(id='test-email-system-btn-output', style={'display': 'none'}),
+        html.Div(id='ml-compatibility-check-btn-output', style={'display': 'none'}),
+        html.Div(id='ml-compatibility-fix-btn-output', style={'display': 'none'}),
+        html.Div(id='ml-recommendations-btn-output', style={'display': 'none'}),
+        html.Div(id='force-model-update-btn-output', style={'display': 'none'}),
+        html.Div(id='performance-dashboard-btn-output', style={'display': 'none'}),
+        html.Div(id='performance-metrics-btn-output', style={'display': 'none'}),
+        html.Div(id='portfolio-btn-output', style={'display': 'none'}),
+        html.Div(id='load-auto-settings-btn-output', style={'display': 'none'}),
+        html.Div(id='save-auto-settings-btn-output', style={'display': 'none'}),
+        html.Div(id='enable-trade-integration-btn-output', style={'display': 'none'}),
+        html.Div(id='disable-trade-integration-btn-output', style={'display': 'none'}),
+        html.Div(id='virtual-balance-reset-btn-output', style={'display': 'none'}),
+        html.Div(id='start-advanced-auto-trading-btn-output', style={'display': 'none'}),
+        html.Div(id='stop-advanced-auto-trading-btn-output', style={'display': 'none'}),
+        html.Div(id='check-advanced-auto-trading-btn-output', style={'display': 'none'}),
+    ], style={'display': 'none'})
 ])
 
 if __name__ == "__main__":
     print("Layout module loaded successfully")
+
+# ========================================
+# ENHANCED LAYOUT COMPONENTS - UNUSED ENDPOINTS
+# ========================================
+
+def create_advanced_auto_trading_section():
+    """Advanced auto trading controls section"""
+    return dbc.Card([
+        dbc.CardHeader([
+            html.H5("🤖 Advanced Auto Trading System", className="mb-0"),
+            dbc.Badge("Enhanced", color="primary", className="ms-2")
+        ]),
+        dbc.CardBody([
+            dbc.Row([
+                dbc.Col([
+                    html.Div(id="advanced-auto-trading-status"),
+                    html.Div(id="advanced-auto-trading-controls"),
+                ], width=6),
+                dbc.Col([
+                    html.Div(id="ai-signals-display"),
+                    dcc.Interval(id="ai-signals-refresh-interval", interval=30000, n_intervals=0)
+                ], width=6)
+            ])
+        ])
+    ])
+
+def create_market_data_section():
+    """Market data dashboard section"""
+    return dbc.Card([
+        dbc.CardHeader([
+            html.H5("📊 Real-Time Market Data", className="mb-0"),
+            dbc.Badge("Live", color="success", className="ms-2")
+        ]),
+        dbc.CardBody([
+            html.Div(id="market-data-display"),
+            dcc.Interval(id="market-data-refresh-interval", interval=15000, n_intervals=0)
+        ])
+    ])
+
+def create_hft_analytics_section():
+    """HFT analytics controls section"""
+    return dbc.Card([
+        dbc.CardHeader([
+            html.H5("⚡ High-Frequency Trading", className="mb-0"),
+            dbc.Badge("Pro", color="warning", className="ms-2")
+        ]),
+        dbc.CardBody([
+            dbc.ButtonGroup([
+                dbc.Button("📊 Refresh", id="hft-analytics-refresh-btn", color="info", size="sm"),
+        # DUPLICATE_REMOVED: dbc.Button("▶️ Start HFT", id="hft-start-btn", color="success", size="sm"),
+        # DUPLICATE_REMOVED: dbc.Button("⏹️ Stop HFT", id="hft-stop-btn", color="danger", size="sm")
+            ], className="mb-3"),
+            html.Div(id="hft-analytics-display")
+        ])
+    ])
+
+def create_enhanced_charts_section():
+    """Enhanced chart controls section"""
+    return dbc.Card([
+        dbc.CardHeader([
+            html.H5("📈 Enhanced Charts", className="mb-0"),
+            dbc.Badge("Advanced", color="info", className="ms-2")
+        ]),
+        dbc.CardBody([
+            dbc.ButtonGroup([
+                dbc.Button("📊 Bollinger", id="show-bollinger-btn", color="primary", size="sm"),
+                dbc.Button("📈 Momentum", id="show-momentum-btn", color="success", size="sm"),
+                dbc.Button("📊 Volume", id="show-volume-btn", color="warning", size="sm"),
+        # DUPLICATE_REMOVED: dbc.Button("🔄 Refresh", id="refresh-charts-btn", color="info", size="sm")
+            ], className="mb-3"),
+            html.Div(id="enhanced-chart-display")
+        ])
+    ])
+
+def create_risk_management_section():
+    """Advanced risk management section"""
+    return dbc.Card([
+        dbc.CardHeader([
+            html.H5("⚠️ Risk Management", className="mb-0"),
+            dbc.Badge("Safety", color="danger", className="ms-2")
+        ]),
+        dbc.CardBody([
+            dbc.Row([
+                dbc.Col([
+                    dbc.Label("Amount ($)"),
+        # DUPLICATE_REMOVED: dbc.Input(id="risk-amount-input", type="number", value=1000, step=50),
+                    dbc.Label("Risk % of Portfolio"),
+                    dbc.Input(id="risk-percentage-input", type="number", value=2, step=0.5, min=0.1, max=10)
+                ], width=4),
+                dbc.Col([
+                    dbc.ButtonGroup([
+        # DUPLICATE_REMOVED: dbc.Button("💰 Calculate Position", id="calculate-position-size-btn", color="primary", size="sm"),
+        # DUPLICATE_REMOVED: dbc.Button("⚠️ Check Risk", id="check-trade-risk-btn", color="warning", size="sm"),
+                        dbc.Button("💾 Update Settings", id="update-risk-settings-btn", color="success", size="sm")
+                    ], vertical=True, className="mb-2")
+                ], width=4),
+                dbc.Col([
+                    html.Div(id="risk-management-display"),
+                    html.Div(id="risk-recommendations")
+                ], width=4)
+            ])
+        ])
+    ])
+
+def create_auto_trading_settings_section():
+    """Auto trading settings section"""
+    return dbc.Card([
+        dbc.CardHeader([
+            html.H5("⚙️ Auto Trading Settings", className="mb-0"),
+            dbc.Badge("Config", color="secondary", className="ms-2")
+        ]),
+        dbc.CardBody([
+            dbc.Row([
+                dbc.Col([
+                    dbc.Label("Trading Symbol"),
+                    dbc.Select(
+                        id="auto-symbol-setting",
+                        options=[
+                            {"label": "BTC/USDT", "value": "BTCUSDT"},
+                            {"label": "ETH/USDT", "value": "ETHUSDT"},
+                            {"label": "ADA/USDT", "value": "ADAUSDT"},
+                            {"label": "SOL/USDT", "value": "SOLUSDT"}
+                        ],
+                        value="BTCUSDT"
+                    ),
+                    dbc.Label("Trade Amount ($)"),
+                    dbc.Input(id="auto-amount-setting", type="number", value=100, step=10)
+                ], width=4),
+                dbc.Col([
+                    dbc.ButtonGroup([
+                        dbc.Button("📥 Load Settings", id="load-auto-settings-btn", color="info", size="sm"),
+        # DUPLICATE_REMOVED: dbc.Button("💾 Save Settings", id="save-auto-settings-btn", color="success", size="sm")
+                    ], vertical=True)
+                ], width=4),
+                dbc.Col([
+                    html.Div(id="auto-trading-settings-display")
+                ], width=4)
+            ])
+        ])
+    ])
+
+def create_notifications_management_section():
+    """Enhanced notifications management"""
+    return dbc.Card([
+        dbc.CardHeader([
+            html.H5("🔔 Notifications Management", className="mb-0"),
+            dbc.Badge("Enhanced", color="info", className="ms-2")
+        ]),
+        dbc.CardBody([
+            dbc.ButtonGroup([
+                dbc.Button("📧 Send Manual Alert", id="send-manual-alert-btn", color="primary", size="sm"),
+                dbc.Button("✉️ Test Email", id="test-email-system-btn", color="info", size="sm"),
+                dbc.Button("🗑️ Clear All", id="clear-all-notifications-btn", color="danger", size="sm"),
+                dbc.Button("✅ Mark All Read", id="mark-all-read-btn", color="success", size="sm")
+            ], className="mb-3"),
+            html.Div(id="notifications-management-display")
+        ])
+    ])
+
+def create_sidebar_amount_buttons():
+    """Enhanced sidebar amount selection buttons"""
+    return dbc.Card([
+        dbc.CardHeader("💰 Quick Amount Selection"),
+        dbc.CardBody([
+            dbc.ButtonGroup([
+                dbc.Button("$50", id="sidebar-amount-50-btn", color="outline-primary", size="sm"),
+                dbc.Button("$100", id="sidebar-amount-100-btn", color="outline-primary", size="sm"),
+                dbc.Button("$250", id="sidebar-amount-250-btn", color="outline-primary", size="sm"),
+                dbc.Button("$500", id="sidebar-amount-500-btn", color="outline-primary", size="sm"),
+                dbc.Button("$1K", id="sidebar-amount-1000-btn", color="outline-primary", size="sm"),
+                dbc.Button("Max", id="sidebar-amount-max-btn", color="outline-warning", size="sm")
+            ], vertical=True)
+        ])
+    ])
+

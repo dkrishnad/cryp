@@ -1,0 +1,10 @@
+{
+  "source_models": {},
+  "target_model": {
+    "trained": false,
+    "last_training": null,
+    "accuracy": 0.0
+  },
+  "training_history": [],
+  "last_updated": "2025-06-23T01:23:30.763091"
+}

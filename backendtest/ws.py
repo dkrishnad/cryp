@@ -13,7 +13,7 @@ logger = logging.getLogger(__name__)
 
 router = APIRouter()
 
-@router.websocket("/ws/prices")
+@router.websocket("/ws/price")
 async def prices_ws(websocket: WebSocket):
     await websocket.accept()
     while True:

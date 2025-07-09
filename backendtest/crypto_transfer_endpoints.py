@@ -117,7 +117,7 @@ async def initial_train_source_models(request: SourcePairs, background_tasks: Ba
 async def _train_source_models_background(source_pairs: List[str], target_pair: str, candles: int):
     """Background task for training source models"""
     try:
-        from backend.crypto_transfer_learning import CryptoTransferLearner
+        from crypto_transfer_learning import CryptoTransferLearner
         
         # Initialize transfer learner
         transfer_learner = CryptoTransferLearner(

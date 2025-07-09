@@ -1,0 +1,23 @@
+{
+  "timestamp": "2025-07-09T02:18:02.929255",
+  "tests": {
+    "callback_registration": false,
+    "dashboard_response": true,
+    "callback_endpoints": {
+      "/_dash-component-suites/": {
+        "status_code": 200,
+        "accessible": true
+      },
+      "/_dash-layout": {
+        "status_code": 200,
+        "accessible": true
+      },
+      "/_dash-dependencies": {
+        "status_code": 200,
+        "accessible": true
+      }
+    },
+    "callback_simulation": false,
+    "browser_console": true
+  }
+}

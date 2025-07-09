@@ -1,0 +1,494 @@
+{
+  "backend_files": [
+    {
+      "name": "advanced_auto_trading.py",
+      "size": 40082,
+      "lines": 944,
+      "endpoints": 0,
+      "functions": 36,
+      "imports": 14
+    },
+    {
+      "name": "binance_futures_exact.py",
+      "size": 27793,
+      "lines": 665,
+      "endpoints": 0,
+      "functions": 12,
+      "imports": 7
+    },
+    {
+      "name": "crypto_transfer_endpoints.py",
+      "size": 17646,
+      "lines": 454,
+      "endpoints": 0,
+      "functions": 18,
+      "imports": 13
+    },
+    {
+      "name": "crypto_transfer_learning.py",
+      "size": 18231,
+      "lines": 453,
+      "endpoints": 0,
+      "functions": 12,
+      "imports": 12
+    },
+    {
+      "name": "crypto_transfer_learning_lifecycle.py",
+      "size": 17982,
+      "lines": 472,
+      "endpoints": 0,
+      "functions": 14,
+      "imports": 8
+    },
+    {
+      "name": "data_collection.py",
+      "size": 35445,
+      "lines": 831,
+      "endpoints": 0,
+      "functions": 21,
+      "imports": 12
+    },
+    {
+      "name": "db.py",
+      "size": 5785,
+      "lines": 170,
+      "endpoints": 0,
+      "functions": 14,
+      "imports": 3
+    },
+    {
+      "name": "email_utils.py",
+      "size": 6031,
+      "lines": 156,
+      "endpoints": 0,
+      "functions": 6,
+      "imports": 7
+    },
+    {
+      "name": "fix_unicode.py",
+      "size": 2266,
+      "lines": 78,
+      "endpoints": 0,
+      "functions": 1,
+      "imports": 1
+    },
+    {
+      "name": "futures_trading.py",
+      "size": 17983,
+      "lines": 440,
+      "endpoints": 0,
+      "functions": 16,
+      "imports": 7
+    },
+    {
+      "name": "hybrid_learning.py",
+      "size": 27712,
+      "lines": 684,
+      "endpoints": 0,
+      "functions": 21,
+      "imports": 16
+    },
+    {
+      "name": "main.py",
+      "size": 169287,
+      "lines": 4113,
+      "endpoints": 137,
+      "functions": 144,
+      "imports": 35
+    },
+    {
+      "name": "minimal_transfer_endpoints.py",
+      "size": 6810,
+      "lines": 212,
+      "endpoints": 0,
+      "functions": 13,
+      "imports": 5
+    },
+    {
+      "name": "ml.py",
+      "size": 3423,
+      "lines": 95,
+      "endpoints": 0,
+      "functions": 3,
+      "imports": 4
+    },
+    {
+      "name": "ml_compatibility_manager.py",
+      "size": 21942,
+      "lines": 498,
+      "endpoints": 0,
+      "functions": 17,
+      "imports": 6
+    },
+    {
+      "name": "ml_engine.py",
+      "size": 443,
+      "lines": 12,
+      "endpoints": 0,
+      "functions": 0,
+      "imports": 5
+    },
+    {
+      "name": "online_learning.py",
+      "size": 20354,
+      "lines": 497,
+      "endpoints": 0,
+      "functions": 14,
+      "imports": 16
+    },
+    {
+      "name": "price_feed.py",
+      "size": 706,
+      "lines": 22,
+      "endpoints": 0,
+      "functions": 1,
+      "imports": 1
+    },
+    {
+      "name": "storage_manager.py",
+      "size": 16134,
+      "lines": 371,
+      "endpoints": 0,
+      "functions": 13,
+      "imports": 8
+    },
+    {
+      "name": "tasks.py",
+      "size": 513,
+      "lines": 15,
+      "endpoints": 0,
+      "functions": 3,
+      "imports": 1
+    },
+    {
+      "name": "trading.py",
+      "size": 818,
+      "lines": 26,
+      "endpoints": 0,
+      "functions": 1,
+      "imports": 3
+    },
+    {
+      "name": "train_model.py",
+      "size": 10966,
+      "lines": 274,
+      "endpoints": 0,
+      "functions": 10,
+      "imports": 11
+    },
+    {
+      "name": "ws.py",
+      "size": 10967,
+      "lines": 237,
+      "endpoints": 0,
+      "functions": 11,
+      "imports": 8
+    },
+    {
+      "name": "__init__.py",
+      "size": 42,
+      "lines": 2,
+      "endpoints": 0,
+      "functions": 0,
+      "imports": 0
+    }
+  ],
+  "dashboard_files": [
+    {
+      "name": "app.py",
+      "size": 3003,
+      "lines": 93,
+      "callbacks": 0,
+      "functions": 1,
+      "ports_used": [
+        "8050"
+      ]
+    },
+    {
+      "name": "auto_trading_layout.py",
+      "size": 24767,
+      "lines": 461,
+      "callbacks": 2,
+      "functions": 4,
+      "ports_used": []
+    },
+    {
+      "name": "binance_exact_callbacks.py",
+      "size": 18240,
+      "lines": 400,
+      "callbacks": 7,
+      "functions": 8,
+      "ports_used": []
+    },
+    {
+      "name": "binance_exact_layout.py",
+      "size": 19431,
+      "lines": 456,
+      "callbacks": 2,
+      "functions": 15,
+      "ports_used": [
+        "8000"
+      ]
+    },
+    {
+      "name": "callbacks.py",
+      "size": 225909,
+      "lines": 5209,
+      "callbacks": 113,
+      "functions": 117,
+      "ports_used": [
+        "8000"
+      ]
+    },
+    {
+      "name": "callbacks_backup_before_duplicate_fix.py",
+      "size": 105795,
+      "lines": 2589,
+      "callbacks": 76,
+      "functions": 77,
+      "ports_used": [
+        "8001"
+      ]
+    },
+    {
+      "name": "check_missing_endpoints.py",
+      "size": 0,
+      "lines": 1,
+      "callbacks": 0,
+      "functions": 0,
+      "ports_used": []
+    },
+    {
+      "name": "dashboard_utils.py",
+      "size": 28667,
+      "lines": 739,
+      "callbacks": 0,
+      "functions": 44,
+      "ports_used": [
+        "8000"
+      ]
+    },
+    {
+      "name": "dash_app.py",
+      "size": 853,
+      "lines": 30,
+      "callbacks": 0,
+      "functions": 0,
+      "ports_used": []
+    },
+    {
+      "name": "deep_search.py",
+      "size": 1794,
+      "lines": 53,
+      "callbacks": 0,
+      "functions": 1,
+      "ports_used": []
+    },
+    {
+      "name": "email_config_layout.py",
+      "size": 12242,
+      "lines": 291,
+      "callbacks": 4,
+      "functions": 6,
+      "ports_used": [
+        "8000"
+      ]
+    },
+    {
+      "name": "final_fix_callbacks.py",
+      "size": 0,
+      "lines": 1,
+      "callbacks": 0,
+      "functions": 0,
+      "ports_used": []
+    },
+    {
+      "name": "final_validation.py",
+      "size": 4758,
+      "lines": 143,
+      "callbacks": 0,
+      "functions": 2,
+      "ports_used": [
+        "8000"
+      ]
+    },
+    {
+      "name": "find_duplicates.py",
+      "size": 0,
+      "lines": 1,
+      "callbacks": 0,
+      "functions": 0,
+      "ports_used": []
+    },
+    {
+      "name": "fixed_app.py",
+      "size": 2071,
+      "lines": 68,
+      "callbacks": 0,
+      "functions": 1,
+      "ports_used": [
+        "8050",
+        "8001"
+      ]
+    },
+    {
+      "name": "futures_callbacks.py",
+      "size": 13164,
+      "lines": 289,
+      "callbacks": 5,
+      "functions": 6,
+      "ports_used": [
+        "8000"
+      ]
+    },
+    {
+      "name": "futures_trading_layout.py",
+      "size": 30197,
+      "lines": 662,
+      "callbacks": 2,
+      "functions": 6,
+      "ports_used": []
+    },
+    {
+      "name": "hybrid_learning_layout.py",
+      "size": 21841,
+      "lines": 501,
+      "callbacks": 6,
+      "functions": 8,
+      "ports_used": [
+        "8000"
+      ]
+    },
+    {
+      "name": "layout.py",
+      "size": 79858,
+      "lines": 1657,
+      "callbacks": 0,
+      "functions": 10,
+      "ports_used": []
+    },
+    {
+      "name": "refactoredcallback.py",
+      "size": 68754,
+      "lines": 1544,
+      "callbacks": 50,
+      "functions": 92,
+      "ports_used": [
+        "8000"
+      ]
+    },
+    {
+      "name": "refactored_callbacks_full.py",
+      "size": 0,
+      "lines": 1,
+      "callbacks": 0,
+      "functions": 0,
+      "ports_used": []
+    },
+    {
+      "name": "refactored_callbacks_step1.py",
+      "size": 37940,
+      "lines": 790,
+      "callbacks": 72,
+      "functions": 74,
+      "ports_used": [
+        "8000"
+      ]
+    },
+    {
+      "name": "utils.py",
+      "size": 7607,
+      "lines": 227,
+      "callbacks": 0,
+      "functions": 20,
+      "ports_used": [
+        "8000"
+      ]
+    },
+    {
+      "name": "ws_patch_imports.py",
+      "size": 2,
+      "lines": 2,
+      "callbacks": 0,
+      "functions": 0,
+      "ports_used": []
+    },
+    {
+      "name": "__init__.py",
+      "size": 36,
+      "lines": 2,
+      "callbacks": 0,
+      "functions": 0,
+      "ports_used": []
+    }
+  ],
+  "bin_files": {
+    "count": 585
+  },
+  "issues": [],
+  "port_usage": {
+    "8050": [
+      "app.py",
+      "fixed_app.py"
+    ],
+    "8000": [
+      "binance_exact_layout.py",
+      "callbacks.py",
+      "dashboard_utils.py",
+      "email_config_layout.py",
+      "final_validation.py",
+      "final_validation.py",
+      "futures_callbacks.py",
+      "hybrid_learning_layout.py",
+      "refactoredcallback.py",
+      "refactored_callbacks_step1.py",
+      "utils.py",
+      "utils.py",
+      "utils.py",
+      "utils.py",
+      "utils.py",
+      "utils.py",
+      "utils.py",
+      "utils.py",
+      "utils.py",
+      "utils.py",
+      "utils.py",
+      "utils.py",
+      "utils.py",
+      "utils.py",
+      "utils.py",
+      "utils.py",
+      "utils.py",
+      "utils.py",
+      "utils.py",
+      "utils.py",
+      "utils.py"
+    ],
+    "8001": [
+      "callbacks_backup_before_duplicate_fix.py",
+      "fixed_app.py"
+    ]
+  },
+  "missing_endpoints": [],
+  "skeleton_functions": [
+    "app.py",
+    "auto_trading_layout.py",
+    "binance_exact_layout.py",
+    "callbacks.py",
+    "callbacks_backup_before_duplicate_fix.py",
+    "dashboard_utils.py",
+    "email_config_layout.py",
+    "final_validation.py",
+    "layout.py",
+    "refactoredcallback.py",
+    "refactored_callbacks_step1.py"
+  ],
+  "summary": {
+    "backend_endpoints": 137,
+    "dashboard_callbacks": 113,
+    "port_synchronization": "Good",
+    "skeleton_functions_found": 11,
+    "files_in_bin": 585,
+    "total_issues": 0
+  }
+}

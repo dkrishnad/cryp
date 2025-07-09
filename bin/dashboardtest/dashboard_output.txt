@@ -1,0 +1,81 @@
+🔧 Loading Dash app configuration...
+✅ Dash app loaded successfully
+🔧 Loading callbacks...
+>>> callbacks.py imported and executing
+[DEBUG] Using absolute import for app
+[OK] Hybrid learning callbacks registered
+[OK] Email configuration callbacks registered
+[OK] Auto trading callbacks registered
+[OK] Auto trading callbacks registered
+[OK] Futures trading callbacks registered
+[OK] Futures trading callbacks registered
+[OK] Binance-exact callbacks registered
+[OK] Binance-exact callbacks registered
+✅ Futures trading callbacks registered successfully
+[OK] Additional futures callbacks registered
+[SUCCESS] ALL MISSING CALLBACKS RESTORED!
+[INFO] Total callbacks added: 25+
+[TARGET] Coverage: 100% of identified missing features
+[TARGET] NOTIFICATION SYSTEM CALLBACKS ADDED!
+[CHART] Added 8 notification-related callbacks
+[ROCKET] Next: Add Data Collection callbacks above
+[SUCCESS] ENHANCED EMAIL/ALERT SYSTEM CALLBACKS ADDED!
+[INFO] Added 6 email/alert system callbacks
+[INFO] Added 1 HFT analysis callback
+[NEXT] Add Performance Monitoring callbacks
+[TARGET] ONLINE LEARNING SYSTEM CALLBACKS ADDED!
+[BRAIN] Added 7 online learning callbacks:
+   - Real-time model adaptation
+   - SGD & Passive Aggressive classifiers
+   - Incremental learning buffers
+   - Automatic trade-based updates
+   - Learning rate optimization
+   - Performance monitoring
+   - Buffer management
+[ROCKET] Next: Add Performance Monitor Dashboard
+[OK] ADVANCED TECHNICAL INDICATORS CALLBACKS ADDED!
+[CHART] Added 7 technical analysis callbacks for Futures Trading:
+   - RSI (Relative Strength Index) indicator
+   - MACD (Moving Average Convergence Divergence)
+   - Bollinger Bands with signals
+   - Stochastic oscillator
+   - Volume analysis with alerts
+   - ATR (Average True Range) volatility
+   - Comprehensive technical analysis chart
+[TARGET] All advanced indicators now synchronized with Futures Trading tab!
+[OK] ADVANCED TOOLS SIDEBAR TOGGLES ADDED!
+[SIDEBAR] Added 6 new toggle callbacks for advanced tools:
+   - HFT Analysis Tools
+   - Data Collection Tools
+   - Online Learning Tools
+   - Risk Management Tools
+   - Notifications Tools
+   - Email/Alerts Tools
+[DECLUTTER] Step 1 Complete: Advanced/Dev Tools moved to sidebar!
+[OK] STEP 2 SIDEBAR TOGGLES ADDED!
+[SIDEBAR] Added 3 new toggle callbacks for main dashboard decluttering:
+   - Analytics Section Toggle
+   - ML Tools Section Toggle
+   - Charts Section Toggle
+[DECLUTTER] Step 2 Complete: Main dashboard simplified, advanced features moved to sidebar!
+[OK] SIDEBAR COMPONENT CALLBACKS ADDED!
+[SIDEBAR] Added 8 new callbacks for sidebar functionality:
+   - Technical indicators (RSI, MACD, Bollinger)
+   - Analytics display (win rate, trades)
+   - ML tools status (accuracy, confidence)
+   - Risk management display
+   - Amount selection buttons
+[COMPLETE] Step 2 dashboard decluttering fully implemented!
+✅ Callbacks loaded successfully
+🔧 Loading layout...
+✅ Layout loaded successfully
+🚀 Starting Full-Featured Crypto Bot Dashboard...
+📊 All tabs and features enabled!
+📊 Dashboard will be available at: http://localhost:8050
+Dash is running on http://localhost:8050/
+
+ * Serving Flask app 'dash_app'
+ * Debug mode: off
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on http://localhost:8050
+Press CTRL+C to quit

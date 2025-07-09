@@ -1,0 +1,201 @@
+{
+  "timestamp": "2025-07-09T02:30:50.012758",
+  "base_url": "http://localhost:5000",
+  "endpoints": {
+    "/health": {
+      "method": "GET",
+      "status_code": 200,
+      "success": true,
+      "content": "{\"status\":\"healthy\",\"message\":\"Crypto bot backend is running\",\"timestamp\":\"2025-07-09T02:30:52.162784\",\"components\":{\"database\":{\"status\":\"not_initialized\",\"message\":\"Database function not set\"},\"futu...",
+      "error": ""
+    },
+    "/": {
+      "method": "GET",
+      "status_code": 200,
+      "success": true,
+      "content": "{\"status\":\"running\",\"message\":\"Crypto Trading Bot Backend is active\",\"timestamp\":\"2025-07-09T02:30:54.253216\",\"version\":\"1.0\",\"endpoints\":{\"health\":\"/health\",\"docs\":\"/docs\",\"trades\":\"/trades\",\"notific...",
+      "error": ""
+    },
+    "/account": {
+      "method": "GET",
+      "status_code": 404,
+      "success": false,
+      "content": "{\"detail\":\"Not Found\"}",
+      "error": ""
+    },
+    "/balance": {
+      "method": "GET",
+      "status_code": 200,
+      "success": true,
+      "content": "{\"status\":\"success\",\"balance\":5000.0,\"currency\":\"USDT\",\"available\":5000.0,\"locked\":0.0,\"data_source\":\"real_auto_trading_balance\",\"real_data_confirmed\":true}",
+      "error": ""
+    },
+    "/positions": {
+      "method": "GET",
+      "status_code": 404,
+      "success": false,
+      "content": "{\"detail\":\"Not Found\"}",
+      "error": ""
+    },
+    "/buy": {
+      "method": "POST",
+      "status_code": 404,
+      "success": false,
+      "content": "{\"detail\":\"Not Found\"}",
+      "error": ""
+    },
+    "/sell": {
+      "method": "POST",
+      "status_code": 404,
+      "success": false,
+      "content": "{\"detail\":\"Not Found\"}",
+      "error": ""
+    },
+    "/cancel_order": {
+      "method": "POST",
+      "status_code": 404,
+      "success": false,
+      "content": "{\"detail\":\"Not Found\"}",
+      "error": ""
+    },
+    "/futures/account": {
+      "method": "GET",
+      "status_code": 200,
+      "success": true,
+      "content": "{\"status\":\"success\",\"account\":{\"totalWalletBalance\":\"12500.75\",\"totalUnrealizedProfit\":\"125.50\",\"totalMarginBalance\":\"12626.25\",\"totalPositionInitialMargin\":\"2500.00\",\"totalOpenOrderInitialMargin\":\"0....",
+      "error": ""
+    },
+    "/futures/positions": {
+      "method": "GET",
+      "status_code": 200,
+      "success": true,
+      "content": "{\"status\":\"success\",\"positions\":[{\"symbol\":\"BTCUSDT\",\"positionAmt\":\"0.050\",\"entryPrice\":\"45200.00\",\"markPrice\":\"45750.00\",\"unRealizedProfit\":\"27.50\",\"liquidationPrice\":\"0\",\"leverage\":\"10\",\"maxNotional...",
+      "error": ""
+    },
+    "/futures/balance": {
+      "method": "GET",
+      "status_code": 200,
+      "success": true,
+      "content": "{\"status\":\"success\",\"balance\":{\"accountAlias\":\"FuturesAccount\",\"asset\":\"USDT\",\"balance\":\"12500.75\",\"crossWalletBalance\":\"12626.25\",\"crossUnPnl\":\"125.50\",\"availableBalance\":\"10126.25\",\"maxWithdrawAmoun...",
+      "error": ""
+    },
+    "/futures/buy": {
+      "method": "POST",
+      "status_code": 404,
+      "success": false,
+      "content": "{\"detail\":\"Not Found\"}",
+      "error": ""
+    },
+    "/futures/sell": {
+      "method": "POST",
+      "status_code": 404,
+      "success": false,
+      "content": "{\"detail\":\"Not Found\"}",
+      "error": ""
+    },
+    "/price": {
+      "method": "GET",
+      "status_code": 200,
+      "success": true,
+      "content": "{\"symbol\":\"BTCUSDT\",\"price\":108628.28,\"status\":\"success\"}",
+      "error": ""
+    },
+    "/prices": {
+      "method": "GET",
+      "status_code": 404,
+      "success": false,
+      "content": "{\"detail\":\"Not Found\"}",
+      "error": ""
+    },
+    "/market_data": {
+      "method": "GET",
+      "status_code": 404,
+      "success": false,
+      "content": "{\"detail\":\"Not Found\"}",
+      "error": ""
+    },
+    "/klines": {
+      "method": "GET",
+      "status_code": 404,
+      "success": false,
+      "content": "{\"detail\":\"Not Found\"}",
+      "error": ""
+    },
+    "/predict": {
+      "method": "POST",
+      "status_code": 404,
+      "success": false,
+      "content": "{\"detail\":\"Not Found\"}",
+      "error": ""
+    },
+    "/retrain": {
+      "method": "POST",
+      "status_code": 422,
+      "success": false,
+      "content": "{\"detail\":[{\"type\":\"missing\",\"loc\":[\"body\",\"file\"],\"msg\":\"Field required\",\"input\":null}]}",
+      "error": ""
+    },
+    "/model_stats": {
+      "method": "GET",
+      "status_code": 404,
+      "success": false,
+      "content": "{\"detail\":\"Not Found\"}",
+      "error": ""
+    },
+    "/analytics": {
+      "method": "GET",
+      "status_code": 404,
+      "success": false,
+      "content": "{\"detail\":\"Not Found\"}",
+      "error": ""
+    },
+    "/auto_trading/start": {
+      "method": "POST",
+      "status_code": 404,
+      "success": false,
+      "content": "{\"detail\":\"Not Found\"}",
+      "error": ""
+    },
+    "/auto_trading/stop": {
+      "method": "POST",
+      "status_code": 404,
+      "success": false,
+      "content": "{\"detail\":\"Not Found\"}",
+      "error": ""
+    },
+    "/auto_trading/status": {
+      "method": "GET",
+      "status_code": 200,
+      "success": true,
+      "content": "{\"status\":\"success\",\"auto_trading\":{\"enabled\":true,\"active_trades\":[],\"total_profit\":0.0,\"signals_processed\":0,\"balance\":5000.0,\"active_trades_count\":0,\"open_positions\":0,\"last_updated\":\"2025-07-09T02...",
+      "error": ""
+    },
+    "/logs": {
+      "method": "GET",
+      "status_code": 404,
+      "success": false,
+      "content": "{\"detail\":\"Not Found\"}",
+      "error": ""
+    },
+    "/settings": {
+      "method": "GET",
+      "status_code": 404,
+      "success": false,
+      "content": "{\"detail\":\"Not Found\"}",
+      "error": ""
+    },
+    "/reset": {
+      "method": "POST",
+      "status_code": 404,
+      "success": false,
+      "content": "{\"detail\":\"Not Found\"}",
+      "error": ""
+    }
+  },
+  "summary": {
+    "total": 27,
+    "working": 8,
+    "missing": 18,
+    "errors": 1
+  }
+}

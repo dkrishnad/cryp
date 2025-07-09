@@ -1,0 +1,7691 @@
+{
+  "timestamp": "2025-07-07T20:02:04.450897",
+  "summary": {
+    "main_compilation": "SUCCESS",
+    "total_files_checked": 25,
+    "syntax_errors_count": 1,
+    "import_errors_count": 46,
+    "missing_files_count": 0,
+    "critical_issues_count": 0
+  },
+  "files_checked": [
+    "c:\\Users\\Hari\\Desktop\\Testin dub\\backendtest\\advanced_auto_trading.py",
+    "c:\\Users\\Hari\\Desktop\\Testin dub\\backendtest\\binance_futures_exact.py",
+    "c:\\Users\\Hari\\Desktop\\Testin dub\\backendtest\\crypto_transfer_endpoints.py",
+    "c:\\Users\\Hari\\Desktop\\Testin dub\\backendtest\\crypto_transfer_learning.py",
+    "c:\\Users\\Hari\\Desktop\\Testin dub\\backendtest\\crypto_transfer_learning_lifecycle.py",
+    "c:\\Users\\Hari\\Desktop\\Testin dub\\backendtest\\data_collection.py",
+    "c:\\Users\\Hari\\Desktop\\Testin dub\\backendtest\\db.py",
+    "c:\\Users\\Hari\\Desktop\\Testin dub\\backendtest\\email_utils.py",
+    "c:\\Users\\Hari\\Desktop\\Testin dub\\backendtest\\fix_unicode.py",
+    "c:\\Users\\Hari\\Desktop\\Testin dub\\backendtest\\futures_trading.py",
+    "c:\\Users\\Hari\\Desktop\\Testin dub\\backendtest\\hybrid_learning.py",
+    "c:\\Users\\Hari\\Desktop\\Testin dub\\backendtest\\minimal_transfer_endpoints.py",
+    "c:\\Users\\Hari\\Desktop\\Testin dub\\backendtest\\missing_endpoints.py",
+    "c:\\Users\\Hari\\Desktop\\Testin dub\\backendtest\\ml.py",
+    "c:\\Users\\Hari\\Desktop\\Testin dub\\backendtest\\ml_compatibility_manager.py",
+    "c:\\Users\\Hari\\Desktop\\Testin dub\\backendtest\\ml_engine.py",
+    "c:\\Users\\Hari\\Desktop\\Testin dub\\backendtest\\online_learning.py",
+    "c:\\Users\\Hari\\Desktop\\Testin dub\\backendtest\\price_feed.py",
+    "c:\\Users\\Hari\\Desktop\\Testin dub\\backendtest\\storage_manager.py",
+    "c:\\Users\\Hari\\Desktop\\Testin dub\\backendtest\\tasks.py",
+    "c:\\Users\\Hari\\Desktop\\Testin dub\\backendtest\\trading.py",
+    "c:\\Users\\Hari\\Desktop\\Testin dub\\backendtest\\train_model.py",
+    "c:\\Users\\Hari\\Desktop\\Testin dub\\backendtest\\ws.py",
+    "c:\\Users\\Hari\\Desktop\\Testin dub\\backendtest\\__init__.py"
+  ],
+  "syntax_errors": [
+    {
+      "file": "c:\\Users\\Hari\\Desktop\\Testin dub\\backendtest\\crypto_transfer_learning_lifecycle.py",
+      "error": "Syntax error at line 70: unexpected indent"
+    }
+  ],
+  "import_errors": [
+    {
+      "file": "c:\\Users\\Hari\\Desktop\\Testin dub\\backendtest\\main.py",
+      "error": "Import from 'db' failed: No module named 'db'"
+    },
+    {
+      "file": "c:\\Users\\Hari\\Desktop\\Testin dub\\backendtest\\main.py",
+      "error": "Import from 'trading' failed: No module named 'trading'"
+    },
+    {
+      "file": "c:\\Users\\Hari\\Desktop\\Testin dub\\backendtest\\main.py",
+      "error": "Import 'ml' failed: No module named 'ml'"
+    },
+    {
+      "file": "c:\\Users\\Hari\\Desktop\\Testin dub\\backendtest\\main.py",
+      "error": "Import from 'ml' failed: No module named 'ml'"
+    },
+    {
+      "file": "c:\\Users\\Hari\\Desktop\\Testin dub\\backendtest\\main.py",
+      "error": "Import from 'ws' failed: No module named 'ws'"
+    },
+    {
+      "file": "c:\\Users\\Hari\\Desktop\\Testin dub\\backendtest\\main.py",
+      "error": "Import from 'hybrid_learning' failed: No module named 'hybrid_learning'"
+    },
+    {
+      "file": "c:\\Users\\Hari\\Desktop\\Testin dub\\backendtest\\main.py",
+      "error": "Import from 'online_learning' failed: No module named 'online_learning'"
+    },
+    {
+      "file": "c:\\Users\\Hari\\Desktop\\Testin dub\\backendtest\\main.py",
+      "error": "Import from 'data_collection' failed: No module named 'data_collection'"
+    },
+    {
+      "file": "c:\\Users\\Hari\\Desktop\\Testin dub\\backendtest\\main.py",
+      "error": "Import from 'email_utils' failed: No module named 'email_utils'"
+    },
+    {
+      "file": "c:\\Users\\Hari\\Desktop\\Testin dub\\backendtest\\main.py",
+      "error": "Import from 'price_feed' failed: No module named 'price_feed'"
+    },
+    {
+      "file": "c:\\Users\\Hari\\Desktop\\Testin dub\\backendtest\\main.py",
+      "error": "Import from 'futures_trading' failed: No module named 'futures_trading'"
+    },
+    {
+      "file": "c:\\Users\\Hari\\Desktop\\Testin dub\\backendtest\\main.py",
+      "error": "Import from 'binance_futures_exact' failed: No module named 'binance_futures_exact'"
+    },
+    {
+      "file": "c:\\Users\\Hari\\Desktop\\Testin dub\\backendtest\\main.py",
+      "error": "Import from 'binance_futures_exact' failed: No module named 'binance_futures_exact'"
+    },
+    {
+      "file": "c:\\Users\\Hari\\Desktop\\Testin dub\\backendtest\\main.py",
+      "error": "Import from 'advanced_auto_trading' failed: No module named 'advanced_auto_trading'"
+    },
+    {
+      "file": "c:\\Users\\Hari\\Desktop\\Testin dub\\backendtest\\main.py",
+      "error": "Import from 'minimal_transfer_endpoints' failed: No module named 'minimal_transfer_endpoints'"
+    },
+    {
+      "file": "c:\\Users\\Hari\\Desktop\\Testin dub\\backendtest\\main.py",
+      "error": "Import from 'ml_compatibility_manager' failed: No module named 'ml_compatibility_manager'"
+    },
+    {
+      "file": "c:\\Users\\Hari\\Desktop\\Testin dub\\backendtest\\main.py",
+      "error": "Import from 'minimal_transfer_endpoints' failed: No module named 'minimal_transfer_endpoints'"
+    },
+    {
+      "file": "c:\\Users\\Hari\\Desktop\\Testin dub\\backendtest\\main.py",
+      "error": "Import from 'ml_compatibility_manager' failed: No module named 'ml_compatibility_manager'"
+    },
+    {
+      "file": "c:\\Users\\Hari\\Desktop\\Testin dub\\backendtest\\main.py",
+      "error": "Import from 'futures_trading' failed: No module named 'futures_trading'"
+    },
+    {
+      "file": "c:\\Users\\Hari\\Desktop\\Testin dub\\backendtest\\main.py",
+      "error": "Import from 'missing_endpoints' failed: No module named 'missing_endpoints'"
+    },
+    {
+      "file": "c:\\Users\\Hari\\Desktop\\Testin dub\\backendtest\\main.py",
+      "error": "Import from 'data_collection' failed: No module named 'data_collection'"
+    },
+    {
+      "file": "c:\\Users\\Hari\\Desktop\\Testin dub\\backendtest\\main.py",
+      "error": "Import from 'data_collection' failed: No module named 'data_collection'"
+    },
+    {
+      "file": "c:\\Users\\Hari\\Desktop\\Testin dub\\backendtest\\main.py",
+      "error": "Import from 'futures_trading' failed: No module named 'futures_trading'"
+    },
+    {
+      "file": "c:\\Users\\Hari\\Desktop\\Testin dub\\backendtest\\main.py",
+      "error": "Import from 'futures_trading' failed: No module named 'futures_trading'"
+    },
+    {
+      "file": "c:\\Users\\Hari\\Desktop\\Testin dub\\backendtest\\main.py",
+      "error": "Import from 'data_collection' failed: No module named 'data_collection'"
+    },
+    {
+      "file": "c:\\Users\\Hari\\Desktop\\Testin dub\\backendtest\\main.py",
+      "error": "Import from 'data_collection' failed: No module named 'data_collection'"
+    },
+    {
+      "file": "c:\\Users\\Hari\\Desktop\\Testin dub\\backendtest\\main.py",
+      "error": "Import from 'ml' failed: No module named 'ml'"
+    },
+    {
+      "file": "c:\\Users\\Hari\\Desktop\\Testin dub\\dashboardtest\\app.py",
+      "error": "Import from 'dash_app' failed: No module named 'dash_app'"
+    },
+    {
+      "file": "c:\\Users\\Hari\\Desktop\\Testin dub\\dashboardtest\\app.py",
+      "error": "Import 'callbacks' failed: No module named 'callbacks'"
+    },
+    {
+      "file": "c:\\Users\\Hari\\Desktop\\Testin dub\\dashboardtest\\app.py",
+      "error": "Import from 'layout' failed: No module named 'layout'"
+    },
+    {
+      "file": "c:\\Users\\Hari\\Desktop\\Testin dub\\dashboardtest\\callbacks.py",
+      "error": "Import from 'utils' failed: No module named 'utils'"
+    },
+    {
+      "file": "c:\\Users\\Hari\\Desktop\\Testin dub\\dashboardtest\\callbacks.py",
+      "error": "Import from 'hybrid_learning_layout' failed: No module named 'hybrid_learning_layout'"
+    },
+    {
+      "file": "c:\\Users\\Hari\\Desktop\\Testin dub\\dashboardtest\\callbacks.py",
+      "error": "Import from 'email_config_layout' failed: No module named 'email_config_layout'"
+    },
+    {
+      "file": "c:\\Users\\Hari\\Desktop\\Testin dub\\dashboardtest\\callbacks.py",
+      "error": "Import from 'auto_trading_layout' failed: No module named 'auto_trading_layout'"
+    },
+    {
+      "file": "c:\\Users\\Hari\\Desktop\\Testin dub\\dashboardtest\\callbacks.py",
+      "error": "Import from 'futures_trading_layout' failed: No module named 'futures_trading_layout'"
+    },
+    {
+      "file": "c:\\Users\\Hari\\Desktop\\Testin dub\\dashboardtest\\callbacks.py",
+      "error": "Import from 'binance_exact_layout' failed: No module named 'binance_exact_layout'"
+    },
+    {
+      "file": "c:\\Users\\Hari\\Desktop\\Testin dub\\dashboardtest\\callbacks.py",
+      "error": "Import from 'futures_callbacks' failed: No module named 'futures_callbacks'"
+    },
+    {
+      "file": "c:\\Users\\Hari\\Desktop\\Testin dub\\dashboardtest\\callbacks.py",
+      "error": "Import from 'auto_trading_layout' failed: No module named 'auto_trading_layout'"
+    },
+    {
+      "file": "c:\\Users\\Hari\\Desktop\\Testin dub\\dashboardtest\\callbacks.py",
+      "error": "Import from 'futures_trading_layout' failed: No module named 'futures_trading_layout'"
+    },
+    {
+      "file": "c:\\Users\\Hari\\Desktop\\Testin dub\\dashboardtest\\callbacks.py",
+      "error": "Import from 'binance_exact_layout' failed: No module named 'binance_exact_layout'"
+    },
+    {
+      "file": "c:\\Users\\Hari\\Desktop\\Testin dub\\dashboardtest\\callbacks.py",
+      "error": "Import from 'dash_app' failed: No module named 'dash_app'"
+    },
+    {
+      "file": "c:\\Users\\Hari\\Desktop\\Testin dub\\dashboardtest\\layout.py",
+      "error": "Import from 'auto_trading_layout' failed: No module named 'auto_trading_layout'"
+    },
+    {
+      "file": "c:\\Users\\Hari\\Desktop\\Testin dub\\dashboardtest\\layout.py",
+      "error": "Import from 'futures_trading_layout' failed: No module named 'futures_trading_layout'"
+    },
+    {
+      "file": "c:\\Users\\Hari\\Desktop\\Testin dub\\dashboardtest\\layout.py",
+      "error": "Import from 'binance_exact_layout' failed: No module named 'binance_exact_layout'"
+    },
+    {
+      "file": "c:\\Users\\Hari\\Desktop\\Testin dub\\dashboardtest\\layout.py",
+      "error": "Import from 'email_config_layout' failed: No module named 'email_config_layout'"
+    },
+    {
+      "file": "c:\\Users\\Hari\\Desktop\\Testin dub\\dashboardtest\\layout.py",
+      "error": "Import from 'hybrid_learning_layout' failed: No module named 'hybrid_learning_layout'"
+    }
+  ],
+  "missing_files": [],
+  "function_analysis": {
+    "main.py": {
+      "defined": [
+        {
+          "name": "lifespan",
+          "line": 114,
+          "args": [
+            "app"
+          ],
+          "is_async": true
+        },
+        {
+          "name": "health_check",
+          "line": 256,
+          "args": [],
+          "is_async": false
+        },
+        {
+          "name": "get_risk_settings",
+          "line": 357,
+          "args": [],
+          "is_async": false
+        },
+        {
+          "name": "update_risk_settings",
+          "line": 361,
+          "args": [
+            "settings"
+          ],
+          "is_async": false
+        },
+        {
+          "name": "get_model_versions",
+          "line": 372,
+          "args": [],
+          "is_async": false
+        },
+        {
+          "name": "get_active_version",
+          "line": 376,
+          "args": [],
+          "is_async": false
+        },
+        {
+          "name": "set_active_version",
+          "line": 380,
+          "args": [
+            "data"
+          ],
+          "is_async": false
+        },
+        {
+          "name": "get_price",
+          "line": 391,
+          "args": [
+            "symbol"
+          ],
+          "is_async": false
+        },
+        {
+          "name": "get_price_by_path",
+          "line": 426,
+          "args": [
+            "symbol"
+          ],
+          "is_async": false
+        },
+        {
+          "name": "get_model_analytics",
+          "line": 433,
+          "args": [],
+          "is_async": false
+        },
+        {
+          "name": "get_advanced_auto_trading_status",
+          "line": 454,
+          "args": [],
+          "is_async": true
+        },
+        {
+          "name": "start_advanced_auto_trading",
+          "line": 481,
+          "args": [],
+          "is_async": true
+        },
+        {
+          "name": "stop_advanced_auto_trading",
+          "line": 512,
+          "args": [],
+          "is_async": true
+        },
+        {
+          "name": "get_advanced_positions",
+          "line": 543,
+          "args": [],
+          "is_async": true
+        },
+        {
+          "name": "get_advanced_market_data",
+          "line": 575,
+          "args": [],
+          "is_async": true
+        },
+        {
+          "name": "get_advanced_indicators",
+          "line": 601,
+          "args": [
+            "symbol"
+          ],
+          "is_async": true
+        },
+        {
+          "name": "get_advanced_ai_signals",
+          "line": 643,
+          "args": [],
+          "is_async": true
+        },
+        {
+          "name": "update_advanced_config",
+          "line": 670,
+          "args": [
+            "config"
+          ],
+          "is_async": true
+        },
+        {
+          "name": "get_ml_prediction",
+          "line": 696,
+          "args": [
+            "symbol"
+          ],
+          "is_async": true
+        },
+        {
+          "name": "get_enhanced_ml_prediction",
+          "line": 759,
+          "args": [
+            "symbol",
+            "timeframes",
+            "include_confidence",
+            "include_explanation"
+          ],
+          "is_async": true
+        },
+        {
+          "name": "get_current_trading_signal",
+          "line": 843,
+          "args": [],
+          "is_async": true
+        },
+        {
+          "name": "get_setting",
+          "line": 920,
+          "args": [
+            "key",
+            "default"
+          ],
+          "is_async": false
+        },
+        {
+          "name": "set_setting",
+          "line": 923,
+          "args": [
+            "key",
+            "value"
+          ],
+          "is_async": false
+        },
+        {
+          "name": "get_email_notifications_setting",
+          "line": 928,
+          "args": [],
+          "is_async": false
+        },
+        {
+          "name": "set_email_notifications_setting",
+          "line": 933,
+          "args": [
+            "data"
+          ],
+          "is_async": false
+        },
+        {
+          "name": "get_email_address_setting",
+          "line": 940,
+          "args": [],
+          "is_async": false
+        },
+        {
+          "name": "set_email_address_setting",
+          "line": 945,
+          "args": [
+            "data"
+          ],
+          "is_async": false
+        },
+        {
+          "name": "get_notifications",
+          "line": 952,
+          "args": [
+            "limit",
+            "unread_only"
+          ],
+          "is_async": false
+        },
+        {
+          "name": "create_notification",
+          "line": 961,
+          "args": [
+            "data"
+          ],
+          "is_async": false
+        },
+        {
+          "name": "mark_notification_as_read",
+          "line": 978,
+          "args": [
+            "data"
+          ],
+          "is_async": false
+        },
+        {
+          "name": "delete_notification_endpoint",
+          "line": 990,
+          "args": [
+            "notification_id"
+          ],
+          "is_async": false
+        },
+        {
+          "name": "clear_all_notifications",
+          "line": 999,
+          "args": [],
+          "is_async": false
+        },
+        {
+          "name": "create_manual_notification",
+          "line": 1011,
+          "args": [
+            "data"
+          ],
+          "is_async": false
+        },
+        {
+          "name": "get_hybrid_learning_status",
+          "line": 1030,
+          "args": [],
+          "is_async": false
+        },
+        {
+          "name": "update_hybrid_learning_config",
+          "line": 1039,
+          "args": [
+            "config"
+          ],
+          "is_async": false
+        },
+        {
+          "name": "get_hybrid_prediction",
+          "line": 1048,
+          "args": [
+            "symbol"
+          ],
+          "is_async": false
+        },
+        {
+          "name": "check_ml_compatibility",
+          "line": 1067,
+          "args": [],
+          "is_async": false
+        },
+        {
+          "name": "fix_ml_compatibility",
+          "line": 1076,
+          "args": [],
+          "is_async": false
+        },
+        {
+          "name": "get_ml_recommendations",
+          "line": 1085,
+          "args": [],
+          "is_async": false
+        },
+        {
+          "name": "tune_ml_models",
+          "line": 1094,
+          "args": [
+            "params"
+          ],
+          "is_async": false
+        },
+        {
+          "name": "add_online_training_data",
+          "line": 1161,
+          "args": [
+            "data"
+          ],
+          "is_async": false
+        },
+        {
+          "name": "trigger_online_learning_update",
+          "line": 1174,
+          "args": [],
+          "is_async": false
+        },
+        {
+          "name": "get_online_learning_stats",
+          "line": 1183,
+          "args": [],
+          "is_async": false
+        },
+        {
+          "name": "get_data_collection_stats",
+          "line": 1192,
+          "args": [],
+          "is_async": false
+        },
+        {
+          "name": "start_data_collection",
+          "line": 1202,
+          "args": [
+            "config"
+          ],
+          "is_async": false
+        },
+        {
+          "name": "stop_data_collection",
+          "line": 1212,
+          "args": [],
+          "is_async": false
+        },
+        {
+          "name": "get_performance_history",
+          "line": 1222,
+          "args": [
+            "symbol",
+            "days"
+          ],
+          "is_async": false
+        },
+        {
+          "name": "get_email_config_endpoint",
+          "line": 1289,
+          "args": [],
+          "is_async": false
+        },
+        {
+          "name": "save_email_config_endpoint",
+          "line": 1298,
+          "args": [
+            "config"
+          ],
+          "is_async": false
+        },
+        {
+          "name": "test_email_config_endpoint",
+          "line": 1307,
+          "args": [],
+          "is_async": false
+        },
+        {
+          "name": "send_test_email",
+          "line": 1316,
+          "args": [
+            "data"
+          ],
+          "is_async": false
+        },
+        {
+          "name": "get_technical_indicators",
+          "line": 1331,
+          "args": [
+            "symbol"
+          ],
+          "is_async": true
+        },
+        {
+          "name": "get_model_upload_status",
+          "line": 1385,
+          "args": [],
+          "is_async": true
+        },
+        {
+          "name": "create_trade",
+          "line": 1426,
+          "args": [
+            "trade_data"
+          ],
+          "is_async": true
+        },
+        {
+          "name": "close_trade",
+          "line": 1457,
+          "args": [
+            "trade_id"
+          ],
+          "is_async": true
+        },
+        {
+          "name": "cancel_trade",
+          "line": 1470,
+          "args": [
+            "trade_id"
+          ],
+          "is_async": true
+        },
+        {
+          "name": "activate_trade",
+          "line": 1483,
+          "args": [
+            "trade_id"
+          ],
+          "is_async": true
+        },
+        {
+          "name": "load_virtual_balance",
+          "line": 1496,
+          "args": [],
+          "is_async": false
+        },
+        {
+          "name": "save_virtual_balance",
+          "line": 1507,
+          "args": [
+            "balance"
+          ],
+          "is_async": false
+        },
+        {
+          "name": "calculate_current_pnl",
+          "line": 1518,
+          "args": [],
+          "is_async": false
+        },
+        {
+          "name": "retrain_model",
+          "line": 1544,
+          "args": [
+            "file"
+          ],
+          "is_async": true
+        },
+        {
+          "name": "get_auto_trading_status",
+          "line": 1598,
+          "args": [],
+          "is_async": false
+        },
+        {
+          "name": "toggle_auto_trading",
+          "line": 1673,
+          "args": [
+            "data"
+          ],
+          "is_async": false
+        },
+        {
+          "name": "update_auto_trading_settings",
+          "line": 1696,
+          "args": [
+            "settings"
+          ],
+          "is_async": false
+        },
+        {
+          "name": "get_auto_trading_signals",
+          "line": 1716,
+          "args": [],
+          "is_async": false
+        },
+        {
+          "name": "reset_virtual_balance",
+          "line": 1730,
+          "args": [],
+          "is_async": true
+        },
+        {
+          "name": "get_all_trades",
+          "line": 1750,
+          "args": [],
+          "is_async": true
+        },
+        {
+          "name": "get_recent_trades",
+          "line": 1759,
+          "args": [
+            "limit"
+          ],
+          "is_async": true
+        },
+        {
+          "name": "get_balance",
+          "line": 1770,
+          "args": [],
+          "is_async": true
+        },
+        {
+          "name": "cleanup_old_trades",
+          "line": 1788,
+          "args": [],
+          "is_async": false
+        },
+        {
+          "name": "get_portfolio",
+          "line": 1820,
+          "args": [],
+          "is_async": true
+        },
+        {
+          "name": "get_binance_account",
+          "line": 1920,
+          "args": [],
+          "is_async": false
+        },
+        {
+          "name": "get_binance_balance",
+          "line": 1929,
+          "args": [],
+          "is_async": false
+        },
+        {
+          "name": "get_binance_position_risk",
+          "line": 1939,
+          "args": [
+            "symbol"
+          ],
+          "is_async": false
+        },
+        {
+          "name": "new_binance_order",
+          "line": 1947,
+          "args": [
+            "symbol",
+            "side",
+            "type",
+            "quantity",
+            "price",
+            "timeInForce",
+            "reduceOnly",
+            "positionSide",
+            "stopPrice",
+            "closePosition",
+            "workingType"
+          ],
+          "is_async": false
+        },
+        {
+          "name": "get_binance_open_orders",
+          "line": 1987,
+          "args": [
+            "symbol"
+          ],
+          "is_async": false
+        },
+        {
+          "name": "cancel_binance_order",
+          "line": 2001,
+          "args": [
+            "symbol",
+            "orderId",
+            "origClientOrderId"
+          ],
+          "is_async": false
+        },
+        {
+          "name": "change_binance_leverage",
+          "line": 2017,
+          "args": [
+            "symbol",
+            "leverage"
+          ],
+          "is_async": false
+        },
+        {
+          "name": "change_binance_margin_type",
+          "line": 2026,
+          "args": [
+            "symbol",
+            "marginType"
+          ],
+          "is_async": false
+        },
+        {
+          "name": "get_24hr_ticker",
+          "line": 2036,
+          "args": [
+            "symbol"
+          ],
+          "is_async": false
+        },
+        {
+          "name": "get_exchange_info",
+          "line": 2111,
+          "args": [],
+          "is_async": false
+        },
+        {
+          "name": "execute_binance_auto_signal",
+          "line": 2157,
+          "args": [
+            "signal_data"
+          ],
+          "is_async": false
+        },
+        {
+          "name": "get_email_config_api",
+          "line": 2244,
+          "args": [],
+          "is_async": true
+        },
+        {
+          "name": "update_email_config",
+          "line": 2254,
+          "args": [
+            "config"
+          ],
+          "is_async": true
+        },
+        {
+          "name": "test_email_connection",
+          "line": 2272,
+          "args": [],
+          "is_async": true
+        },
+        {
+          "name": "send_email_alert",
+          "line": 2292,
+          "args": [
+            "alert_data"
+          ],
+          "is_async": true
+        },
+        {
+          "name": "get_alert_history",
+          "line": 2352,
+          "args": [],
+          "is_async": true
+        },
+        {
+          "name": "clear_alert_history",
+          "line": 2360,
+          "args": [],
+          "is_async": true
+        },
+        {
+          "name": "check_auto_alerts",
+          "line": 2370,
+          "args": [],
+          "is_async": true
+        },
+        {
+          "name": "get_hft_status",
+          "line": 2450,
+          "args": [],
+          "is_async": false
+        },
+        {
+          "name": "start_hft_analysis",
+          "line": 2486,
+          "args": [],
+          "is_async": false
+        },
+        {
+          "name": "stop_hft_analysis",
+          "line": 2550,
+          "args": [],
+          "is_async": false
+        },
+        {
+          "name": "save_hft_config",
+          "line": 2587,
+          "args": [
+            "config"
+          ],
+          "is_async": false
+        },
+        {
+          "name": "get_hft_analytics",
+          "line": 2631,
+          "args": [],
+          "is_async": false
+        },
+        {
+          "name": "get_hft_opportunities",
+          "line": 2725,
+          "args": [],
+          "is_async": false
+        },
+        {
+          "name": "save_data_collection_config",
+          "line": 2753,
+          "args": [
+            "config"
+          ],
+          "is_async": false
+        },
+        {
+          "name": "get_data_collection_status",
+          "line": 2764,
+          "args": [],
+          "is_async": false
+        },
+        {
+          "name": "save_online_learning_config",
+          "line": 2782,
+          "args": [
+            "config"
+          ],
+          "is_async": false
+        },
+        {
+          "name": "get_model_performance",
+          "line": 2802,
+          "args": [],
+          "is_async": false
+        },
+        {
+          "name": "get_learning_buffer_status",
+          "line": 2811,
+          "args": [],
+          "is_async": false
+        },
+        {
+          "name": "get_performance_dashboard",
+          "line": 2845,
+          "args": [],
+          "is_async": false
+        },
+        {
+          "name": "get_performance_metrics",
+          "line": 2863,
+          "args": [
+            "timeframe"
+          ],
+          "is_async": false
+        },
+        {
+          "name": "get_portfolio_risk_metrics",
+          "line": 2893,
+          "args": [],
+          "is_async": false
+        },
+        {
+          "name": "calculate_dynamic_position_size",
+          "line": 2975,
+          "args": [
+            "data"
+          ],
+          "is_async": false
+        },
+        {
+          "name": "check_trade_risk",
+          "line": 3029,
+          "args": [
+            "data"
+          ],
+          "is_async": false
+        },
+        {
+          "name": "get_stop_loss_strategies",
+          "line": 3080,
+          "args": [
+            "symbol",
+            "entry_price"
+          ],
+          "is_async": false
+        },
+        {
+          "name": "update_advanced_risk_settings",
+          "line": 3118,
+          "args": [
+            "settings"
+          ],
+          "is_async": false
+        },
+        {
+          "name": "set_sidebar_amount_50",
+          "line": 3136,
+          "args": [],
+          "is_async": false
+        },
+        {
+          "name": "set_sidebar_amount_100",
+          "line": 3149,
+          "args": [],
+          "is_async": false
+        },
+        {
+          "name": "set_sidebar_amount_250",
+          "line": 3162,
+          "args": [],
+          "is_async": false
+        },
+        {
+          "name": "set_sidebar_amount_500",
+          "line": 3175,
+          "args": [],
+          "is_async": false
+        },
+        {
+          "name": "set_sidebar_amount_1000",
+          "line": 3188,
+          "args": [],
+          "is_async": false
+        },
+        {
+          "name": "set_sidebar_amount_max",
+          "line": 3201,
+          "args": [],
+          "is_async": false
+        },
+        {
+          "name": "show_price_chart",
+          "line": 3220,
+          "args": [],
+          "is_async": false
+        },
+        {
+          "name": "show_indicators_chart",
+          "line": 3232,
+          "args": [],
+          "is_async": false
+        },
+        {
+          "name": "get_candles",
+          "line": 3257,
+          "args": [
+            "symbol",
+            "interval",
+            "limit"
+          ],
+          "is_async": false
+        },
+        {
+          "name": "refresh_charts",
+          "line": 3282,
+          "args": [],
+          "is_async": false
+        },
+        {
+          "name": "get_volume_chart_data",
+          "line": 3295,
+          "args": [
+            "symbol"
+          ],
+          "is_async": false
+        },
+        {
+          "name": "get_momentum_chart_data",
+          "line": 3322,
+          "args": [
+            "symbol"
+          ],
+          "is_async": false
+        },
+        {
+          "name": "get_bollinger_bands_data",
+          "line": 3349,
+          "args": [
+            "symbol"
+          ],
+          "is_async": false
+        },
+        {
+          "name": "enable_online_learning",
+          "line": 3380,
+          "args": [],
+          "is_async": false
+        },
+        {
+          "name": "disable_online_learning",
+          "line": 3409,
+          "args": [],
+          "is_async": false
+        },
+        {
+          "name": "get_online_learning_status",
+          "line": 3423,
+          "args": [],
+          "is_async": false
+        },
+        {
+          "name": "calculate_position_size",
+          "line": 3445,
+          "args": [
+            "data"
+          ],
+          "is_async": false
+        },
+        {
+          "name": "test_email_alert",
+          "line": 3488,
+          "args": [],
+          "is_async": false
+        },
+        {
+          "name": "send_manual_alert",
+          "line": 3515,
+          "args": [
+            "alert_data"
+          ],
+          "is_async": false
+        },
+        {
+          "name": "data_get_technical_indicators",
+          "line": 3554,
+          "args": [
+            "symbol"
+          ],
+          "is_async": false
+        },
+        {
+          "name": "refresh_technical_indicators",
+          "line": 3664,
+          "args": [
+            "symbol"
+          ],
+          "is_async": false
+        },
+        {
+          "name": "get_indicators_config",
+          "line": 3691,
+          "args": [],
+          "is_async": false
+        },
+        {
+          "name": "get_model_metrics",
+          "line": 3711,
+          "args": [],
+          "is_async": false
+        },
+        {
+          "name": "update_indicators_config",
+          "line": 3805,
+          "args": [
+            "config"
+          ],
+          "is_async": false
+        },
+        {
+          "name": "open_futures_position_v2",
+          "line": 3818,
+          "args": [
+            "data"
+          ],
+          "is_async": false
+        },
+        {
+          "name": "get_futures_account",
+          "line": 3854,
+          "args": [],
+          "is_async": false
+        },
+        {
+          "name": "get_futures_positions",
+          "line": 3863,
+          "args": [],
+          "is_async": false
+        },
+        {
+          "name": "get_futures_trade_history",
+          "line": 3872,
+          "args": [
+            "limit"
+          ],
+          "is_async": false
+        },
+        {
+          "name": "open_futures_position_v3",
+          "line": 3896,
+          "args": [
+            "signal"
+          ],
+          "is_async": false
+        },
+        {
+          "name": "close_futures_position",
+          "line": 3920,
+          "args": [
+            "data"
+          ],
+          "is_async": false
+        },
+        {
+          "name": "update_futures_positions",
+          "line": 3942,
+          "args": [
+            "data"
+          ],
+          "is_async": false
+        },
+        {
+          "name": "get_futures_settings",
+          "line": 3986,
+          "args": [],
+          "is_async": false
+        },
+        {
+          "name": "update_futures_settings",
+          "line": 4001,
+          "args": [
+            "settings"
+          ],
+          "is_async": false
+        },
+        {
+          "name": "execute_futures_signal",
+          "line": 4025,
+          "args": [
+            "signal"
+          ],
+          "is_async": false
+        },
+        {
+          "name": "get_futures_analytics",
+          "line": 4050,
+          "args": [],
+          "is_async": false
+        },
+        {
+          "name": "execute_auto_trading_futures_signal",
+          "line": 4099,
+          "args": [
+            "signal"
+          ],
+          "is_async": false
+        },
+        {
+          "name": "get_model_feature_importance",
+          "line": 4109,
+          "args": [],
+          "is_async": false
+        }
+      ],
+      "called": [
+        "print",
+        "print",
+        "dirname",
+        "dirname",
+        "print",
+        "print",
+        "print",
+        "print",
+        "print",
+        "print",
+        "get_data_collector",
+        "FuturesTradingEngine",
+        "BinanceFuturesTradingEngine",
+        "print",
+        "getLogger",
+        "FastAPI",
+        "get",
+        "get",
+        "post",
+        "get",
+        "get",
+        "post",
+        "get",
+        "get",
+        "get",
+        "get",
+        "post",
+        "post",
+        "get",
+        "get",
+        "get",
+        "get",
+        "post",
+        "get",
+        "get",
+        "get",
+        "get",
+        "post",
+        "get",
+        "post",
+        "get",
+        "post",
+        "post",
+        "delete",
+        "post",
+        "post",
+        "get",
+        "post",
+        "get",
+        "include_router",
+        "MLCompatibilityManager",
+        "get",
+        "post",
+        "get",
+        "post",
+        "post",
+        "post",
+        "get",
+        "get",
+        "post",
+        "post",
+        "get",
+        "get",
+        "post",
+        "post",
+        "post",
+        "get",
+        "get",
+        "post",
+        "post",
+        "post",
+        "post",
+        "post",
+        "get",
+        "post",
+        "post",
+        "get",
+        "post",
+        "get",
+        "get",
+        "get",
+        "delete",
+        "get",
+        "get",
+        "get",
+        "get",
+        "post",
+        "get",
+        "delete",
+        "post",
+        "post",
+        "get",
+        "get",
+        "post",
+        "get",
+        "post",
+        "post",
+        "post",
+        "get",
+        "delete",
+        "post",
+        "get",
+        "post",
+        "post",
+        "post",
+        "get",
+        "get",
+        "post",
+        "get",
+        "post",
+        "get",
+        "get",
+        "get",
+        "get",
+        "get",
+        "post",
+        "post",
+        "get",
+        "post",
+        "post",
+        "post",
+        "post",
+        "post",
+        "post",
+        "post",
+        "post",
+        "post",
+        "get",
+        "post",
+        "get",
+        "get",
+        "get",
+        "post",
+        "post",
+        "get",
+        "post",
+        "post",
+        "post",
+        "post",
+        "get",
+        "get",
+        "post",
+        "post",
+        "get",
+        "get",
+        "get",
+        "post",
+        "post",
+        "post",
+        "get",
+        "post",
+        "post",
+        "get",
+        "post",
+        "get",
+        "abspath",
+        "insert",
+        "insert",
+        "print",
+        "include_router",
+        "print",
+        "print",
+        "get_missing_endpoints_router",
+        "include_router",
+        "print",
+        "print",
+        "print",
+        "print",
+        "Body",
+        "update",
+        "Body",
+        "get",
+        "range",
+        "get_price",
+        "Body",
+        "get",
+        "get_setting",
+        "Body",
+        "get",
+        "set_setting",
+        "get_setting",
+        "Body",
+        "get",
+        "set_setting",
+        "Body",
+        "Body",
+        "Body",
+        "Body",
+        "get_minimal_transfer_router",
+        "Body",
+        "Body",
+        "Body",
+        "Body",
+        "Body",
+        "File",
+        "Body",
+        "Query",
+        "Query",
+        "Query",
+        "Body",
+        "Body",
+        "Body",
+        "Body",
+        "Body",
+        "Body",
+        "Body",
+        "print",
+        "Body",
+        "Body",
+        "print",
+        "Exception",
+        "Body",
+        "Body",
+        "Body",
+        "Body",
+        "Body",
+        "Body",
+        "Body",
+        "Body",
+        "print",
+        "print",
+        "print",
+        "print",
+        "print",
+        "print",
+        "print",
+        "print",
+        "print",
+        "print",
+        "exit",
+        "exists",
+        "start_system",
+        "print",
+        "stop_system",
+        "print",
+        "print",
+        "print",
+        "print",
+        "print_exc",
+        "get",
+        "upper",
+        "values",
+        "items",
+        "upper",
+        "update",
+        "makedirs",
+        "split",
+        "max",
+        "db_get_notifications",
+        "save_notification",
+        "get",
+        "delete_notification",
+        "db_get_notifications",
+        "save_notification",
+        "get_system_status",
+        "update_config",
+        "get_prediction",
+        "check_compatibility",
+        "fix_compatibility",
+        "get_recommendations",
+        "get",
+        "get",
+        "hasattr",
+        "get",
+        "get",
+        "get",
+        "add_training_data",
+        "update_models",
+        "get_stats",
+        "get_data_collector",
+        "get_collection_stats",
+        "get_data_collector",
+        "start_collection",
+        "get_data_collector",
+        "stop_collection",
+        "get_email_config",
+        "save_email_config",
+        "test_email_connection",
+        "get",
+        "get",
+        "get",
+        "send_email",
+        "get_data_collector",
+        "get_price",
+        "save_trade",
+        "update_trade",
+        "update_trade",
+        "update_trade",
+        "exists",
+        "makedirs",
+        "load_virtual_balance",
+        "makedirs",
+        "exists",
+        "get",
+        "exists",
+        "copy",
+        "update",
+        "get",
+        "makedirs",
+        "update",
+        "makedirs",
+        "makedirs",
+        "get_trades",
+        "get_trades",
+        "get",
+        "get_trades",
+        "get",
+        "exists",
+        "get_account",
+        "get_account",
+        "get",
+        "get_position_risk",
+        "OrderSide",
+        "OrderType",
+        "TimeInForce",
+        "new_order",
+        "values",
+        "change_leverage",
+        "change_margin_type",
+        "print",
+        "get",
+        "get",
+        "get",
+        "get",
+        "get",
+        "get",
+        "get",
+        "get_account",
+        "float",
+        "min",
+        "new_order",
+        "copy",
+        "pop",
+        "update",
+        "get",
+        "SMTP",
+        "starttls",
+        "login",
+        "quit",
+        "MIMEMultipart",
+        "attach",
+        "SMTP",
+        "starttls",
+        "login",
+        "as_string",
+        "sendmail",
+        "quit",
+        "append",
+        "isoformat",
+        "isoformat",
+        "clear",
+        "clear",
+        "clear",
+        "clear",
+        "update",
+        "makedirs",
+        "now",
+        "get_data_collector",
+        "get_data_collector",
+        "makedirs",
+        "get_model_stats",
+        "get_stats",
+        "get_trades",
+        "len",
+        "sum",
+        "get_trades",
+        "sum",
+        "load_virtual_balance",
+        "calculate_current_pnl",
+        "sum",
+        "float",
+        "max",
+        "float",
+        "get",
+        "get",
+        "float",
+        "float",
+        "float",
+        "float",
+        "load_virtual_balance",
+        "min",
+        "min",
+        "get",
+        "float",
+        "float",
+        "float",
+        "float",
+        "float",
+        "float",
+        "load_virtual_balance",
+        "calculate_current_pnl",
+        "get_portfolio_risk_metrics",
+        "get",
+        "get",
+        "get",
+        "update",
+        "makedirs",
+        "load_virtual_balance",
+        "print",
+        "get_ohlcv_data",
+        "isoformat",
+        "get_volume_data",
+        "get_momentum_data",
+        "get_bollinger_data",
+        "enable_learning",
+        "makedirs",
+        "disable_learning",
+        "get_status",
+        "get_stats",
+        "get",
+        "get",
+        "get",
+        "get",
+        "abs",
+        "send_test_email",
+        "get",
+        "get",
+        "save_notification",
+        "get_price",
+        "data_get_technical_indicators",
+        "get",
+        "get",
+        "float",
+        "int",
+        "get",
+        "FuturesSignal",
+        "open_position",
+        "get_account",
+        "get_position_risk",
+        "list",
+        "get",
+        "get",
+        "new_order",
+        "dict",
+        "isoformat",
+        "append",
+        "get",
+        "get",
+        "get",
+        "get",
+        "new_order",
+        "save_data",
+        "get",
+        "get",
+        "new_order",
+        "dict",
+        "isoformat",
+        "append",
+        "get_account",
+        "get_position_risk",
+        "list",
+        "len",
+        "sum",
+        "sum",
+        "execute_futures_signal",
+        "run",
+        "getcwd",
+        "print",
+        "print",
+        "start_collection",
+        "print",
+        "print",
+        "print",
+        "stop_collection",
+        "print",
+        "print",
+        "isoformat",
+        "get_trades",
+        "get_stats",
+        "get_data_collector",
+        "get_collection_stats",
+        "get",
+        "get",
+        "start",
+        "stop",
+        "append",
+        "len",
+        "len",
+        "append",
+        "len",
+        "open",
+        "dump",
+        "hasattr",
+        "get_prediction",
+        "real_predict",
+        "upper",
+        "hasattr",
+        "split",
+        "set",
+        "sum",
+        "len",
+        "upper",
+        "hasattr",
+        "get_prediction",
+        "real_predict",
+        "isoformat",
+        "str",
+        "get",
+        "get",
+        "isoformat",
+        "mark_notification_read",
+        "delete_notification",
+        "str",
+        "get",
+        "get",
+        "isoformat",
+        "tune_models",
+        "hasattr",
+        "update_config",
+        "getattr",
+        "get_indicators",
+        "upper",
+        "get",
+        "get",
+        "Exception",
+        "print",
+        "exists",
+        "str",
+        "get",
+        "get",
+        "float",
+        "float",
+        "isoformat",
+        "float",
+        "isoformat",
+        "open",
+        "dump",
+        "isoformat",
+        "read",
+        "open",
+        "write",
+        "update_models",
+        "append",
+        "update_config",
+        "append",
+        "get_trades",
+        "open",
+        "dump",
+        "open",
+        "dump",
+        "model_dump",
+        "open",
+        "dump",
+        "len",
+        "isoformat",
+        "open",
+        "dump",
+        "sorted",
+        "now",
+        "timedelta",
+        "print",
+        "sum",
+        "len",
+        "isoformat",
+        "print",
+        "PositionSide",
+        "WorkingType",
+        "json",
+        "print",
+        "print",
+        "print",
+        "json",
+        "int",
+        "print",
+        "print",
+        "get",
+        "MIMEText",
+        "calculate_current_pnl",
+        "float",
+        "total_seconds",
+        "len",
+        "int",
+        "isoformat",
+        "len",
+        "open",
+        "dump",
+        "int",
+        "isoformat",
+        "len",
+        "len",
+        "len",
+        "isoformat",
+        "len",
+        "open",
+        "dump",
+        "isoformat",
+        "hasattr",
+        "len",
+        "hasattr",
+        "len",
+        "get",
+        "get_position_risk",
+        "get",
+        "get",
+        "float",
+        "percentile",
+        "max",
+        "len",
+        "min",
+        "append",
+        "append",
+        "append",
+        "get",
+        "get",
+        "get",
+        "get",
+        "max",
+        "abs",
+        "get",
+        "get",
+        "get",
+        "get",
+        "get",
+        "get",
+        "isinstance",
+        "get",
+        "append",
+        "append",
+        "append",
+        "abs",
+        "append",
+        "open",
+        "dump",
+        "open",
+        "dump",
+        "load_virtual_balance",
+        "str",
+        "isoformat",
+        "send_test_email",
+        "DataCollector",
+        "get_recent_data",
+        "print",
+        "get_technical_indicators",
+        "print",
+        "hasattr",
+        "print",
+        "get",
+        "get",
+        "print",
+        "upper",
+        "isoformat",
+        "get_trades",
+        "get_stats",
+        "get",
+        "get",
+        "get",
+        "isoformat",
+        "len",
+        "values",
+        "append",
+        "len",
+        "list",
+        "get",
+        "get_position_risk",
+        "get_position_risk",
+        "len",
+        "isoformat",
+        "get",
+        "get",
+        "change_leverage",
+        "get",
+        "get",
+        "change_margin_type",
+        "get",
+        "list",
+        "values",
+        "mean",
+        "mean",
+        "len",
+        "isoformat",
+        "get",
+        "hasattr",
+        "print",
+        "print",
+        "open",
+        "load",
+        "update",
+        "print",
+        "print",
+        "AdvancedAutoTradingEngine",
+        "print",
+        "print",
+        "get_positions",
+        "values",
+        "isoformat",
+        "json",
+        "float",
+        "info",
+        "error",
+        "str",
+        "len",
+        "str",
+        "get",
+        "get",
+        "str",
+        "str",
+        "str",
+        "isoformat",
+        "str",
+        "str",
+        "str",
+        "str",
+        "upper",
+        "print",
+        "lower",
+        "upper",
+        "print",
+        "str",
+        "get_enhanced_prediction",
+        "upper",
+        "real_predict",
+        "values",
+        "max",
+        "min",
+        "str",
+        "get_current_signal",
+        "isinstance",
+        "print",
+        "isinstance",
+        "print",
+        "isinstance",
+        "print",
+        "print",
+        "str",
+        "str",
+        "uuid4",
+        "str",
+        "str",
+        "str",
+        "str",
+        "uuid4",
+        "str",
+        "str",
+        "str",
+        "str",
+        "str",
+        "str",
+        "str",
+        "update_hyperparameters",
+        "hasattr",
+        "print",
+        "str",
+        "str",
+        "str",
+        "str",
+        "str",
+        "str",
+        "str",
+        "get_performance_history",
+        "ImportError",
+        "print",
+        "str",
+        "str",
+        "str",
+        "str",
+        "str",
+        "upper",
+        "print",
+        "isoformat",
+        "upper",
+        "upper",
+        "stat",
+        "append",
+        "str",
+        "int",
+        "get",
+        "get",
+        "get",
+        "str",
+        "isoformat",
+        "str",
+        "isoformat",
+        "str",
+        "isoformat",
+        "str",
+        "open",
+        "load",
+        "get",
+        "str",
+        "print",
+        "print",
+        "len",
+        "str",
+        "open",
+        "load",
+        "update",
+        "open",
+        "load",
+        "get",
+        "print",
+        "get_positions",
+        "print",
+        "isinstance",
+        "float",
+        "len",
+        "len",
+        "get",
+        "isoformat",
+        "str",
+        "str",
+        "str",
+        "str",
+        "str",
+        "str",
+        "str",
+        "str",
+        "fromisoformat",
+        "str",
+        "open",
+        "load",
+        "get",
+        "get_account_info",
+        "print",
+        "hasattr",
+        "get_trades",
+        "print",
+        "isinstance",
+        "len",
+        "len",
+        "isoformat",
+        "str",
+        "int",
+        "model_dump",
+        "str",
+        "int",
+        "str",
+        "str",
+        "str",
+        "test_email_connection",
+        "str",
+        "get",
+        "get",
+        "strftime",
+        "get",
+        "get",
+        "get",
+        "get",
+        "get",
+        "isoformat",
+        "get",
+        "get",
+        "str",
+        "str",
+        "get",
+        "print",
+        "send_email_alert",
+        "append",
+        "send_email_alert",
+        "append",
+        "str",
+        "get_price",
+        "str",
+        "now",
+        "now",
+        "get_price",
+        "str",
+        "str",
+        "str",
+        "len",
+        "sum",
+        "max",
+        "str",
+        "fromisoformat",
+        "str",
+        "str",
+        "str",
+        "str",
+        "str",
+        "hasattr",
+        "str",
+        "len",
+        "get",
+        "str",
+        "get",
+        "len",
+        "len",
+        "sum",
+        "abs",
+        "str",
+        "append",
+        "abs",
+        "abs",
+        "str",
+        "str",
+        "append",
+        "str",
+        "import_module",
+        "getattr",
+        "str",
+        "str",
+        "str",
+        "str",
+        "str",
+        "str",
+        "str",
+        "str",
+        "str",
+        "str",
+        "now",
+        "str",
+        "makedirs",
+        "str",
+        "isoformat",
+        "str",
+        "str",
+        "str",
+        "uuid4",
+        "get",
+        "str",
+        "calculate_indicators",
+        "print",
+        "upper",
+        "str",
+        "str",
+        "get_model_performance_metrics",
+        "isinstance",
+        "print",
+        "len",
+        "min",
+        "print",
+        "isinstance",
+        "print",
+        "str",
+        "str",
+        "upper",
+        "get",
+        "get",
+        "str",
+        "str",
+        "len",
+        "str",
+        "upper",
+        "now",
+        "keys",
+        "str",
+        "upper",
+        "str",
+        "float",
+        "float",
+        "float",
+        "float",
+        "float",
+        "float",
+        "get",
+        "abs",
+        "append",
+        "str",
+        "model_dump",
+        "str",
+        "str",
+        "upper",
+        "now",
+        "keys",
+        "str",
+        "sum",
+        "abs",
+        "float",
+        "float",
+        "sum",
+        "get",
+        "len",
+        "len",
+        "sum",
+        "abs",
+        "str",
+        "str",
+        "get_feature_importance",
+        "print",
+        "str",
+        "getcwd",
+        "print",
+        "now",
+        "len",
+        "str",
+        "str",
+        "str",
+        "str",
+        "len",
+        "upper",
+        "upper",
+        "warning",
+        "sleep",
+        "error",
+        "sleep",
+        "isoformat",
+        "get_prediction",
+        "upper",
+        "print",
+        "upper",
+        "upper",
+        "lower",
+        "isinstance",
+        "len",
+        "get",
+        "get",
+        "get",
+        "get",
+        "get",
+        "isoformat",
+        "len",
+        "isoformat",
+        "now",
+        "now",
+        "len",
+        "now",
+        "update_config",
+        "makedirs",
+        "get_stats",
+        "upper",
+        "now",
+        "now",
+        "now",
+        "get",
+        "exists",
+        "now",
+        "get",
+        "lower",
+        "delete_trade",
+        "get",
+        "print",
+        "float",
+        "now",
+        "bool",
+        "bool",
+        "append",
+        "int",
+        "int",
+        "int",
+        "int",
+        "str",
+        "timestamp",
+        "len",
+        "append",
+        "isoformat",
+        "append",
+        "append",
+        "append",
+        "print",
+        "now",
+        "now",
+        "get_price",
+        "len",
+        "now",
+        "replace",
+        "total_seconds",
+        "append",
+        "now",
+        "get",
+        "startswith",
+        "get",
+        "get",
+        "sum",
+        "float",
+        "min",
+        "float",
+        "append",
+        "abs",
+        "get_atr",
+        "ImportError",
+        "isoformat",
+        "open",
+        "dump",
+        "get",
+        "get",
+        "now",
+        "len",
+        "get",
+        "get",
+        "isoformat",
+        "isoformat",
+        "now",
+        "print",
+        "len",
+        "now",
+        "float",
+        "get",
+        "get",
+        "get",
+        "get",
+        "get",
+        "get",
+        "now",
+        "float",
+        "float",
+        "len",
+        "float",
+        "float",
+        "sum",
+        "get",
+        "getattr",
+        "sum",
+        "now",
+        "get",
+        "len",
+        "str",
+        "now",
+        "upper",
+        "len",
+        "values",
+        "isoformat",
+        "open",
+        "dump",
+        "isinstance",
+        "get",
+        "get",
+        "get",
+        "print",
+        "now",
+        "str",
+        "isoformat",
+        "len",
+        "time",
+        "now",
+        "now",
+        "now",
+        "get",
+        "isinstance",
+        "now",
+        "len",
+        "len",
+        "get",
+        "get",
+        "len",
+        "get",
+        "abs",
+        "append",
+        "hasattr",
+        "append",
+        "isinstance",
+        "float",
+        "str",
+        "now",
+        "str",
+        "str",
+        "str",
+        "model_dump",
+        "str",
+        "timestamp",
+        "str",
+        "str",
+        "str",
+        "timestamp",
+        "str",
+        "str",
+        "now",
+        "now",
+        "str",
+        "isoformat",
+        "now",
+        "fromisoformat",
+        "get_24hr_ticker",
+        "append",
+        "append",
+        "print",
+        "get",
+        "isoformat",
+        "get",
+        "std",
+        "get",
+        "get",
+        "get",
+        "locals",
+        "get",
+        "str",
+        "str",
+        "str",
+        "str",
+        "str",
+        "now",
+        "isoformat",
+        "float",
+        "float",
+        "float",
+        "float",
+        "float",
+        "float",
+        "float",
+        "float",
+        "float",
+        "float",
+        "isoformat",
+        "getattr",
+        "getattr",
+        "getattr",
+        "getattr",
+        "getattr",
+        "getattr",
+        "getattr",
+        "getattr",
+        "getattr",
+        "getattr",
+        "isoformat",
+        "get_model_performance_metrics",
+        "len",
+        "len",
+        "isoformat",
+        "get",
+        "get",
+        "get",
+        "get",
+        "get",
+        "isoformat",
+        "str",
+        "str",
+        "float",
+        "get",
+        "get",
+        "get",
+        "get",
+        "get",
+        "getattr",
+        "getattr",
+        "getattr",
+        "getattr",
+        "float",
+        "float",
+        "now",
+        "now",
+        "get",
+        "get",
+        "get",
+        "float",
+        "hasattr",
+        "get",
+        "len",
+        "abs",
+        "get",
+        "hasattr",
+        "isinstance",
+        "get",
+        "isinstance",
+        "get",
+        "isinstance",
+        "float",
+        "isinstance",
+        "float",
+        "isinstance",
+        "float",
+        "isinstance",
+        "float",
+        "isinstance",
+        "float",
+        "timestamp",
+        "timestamp",
+        "timestamp",
+        "timestamp",
+        "now",
+        "now",
+        "isinstance",
+        "float",
+        "len",
+        "get",
+        "get",
+        "get",
+        "abs",
+        "float",
+        "float",
+        "float",
+        "now",
+        "isoformat",
+        "str",
+        "isoformat",
+        "get",
+        "get",
+        "get",
+        "get",
+        "get",
+        "get",
+        "get",
+        "get",
+        "get",
+        "get",
+        "now",
+        "now",
+        "print",
+        "float",
+        "getattr",
+        "float",
+        "abs",
+        "float",
+        "getattr",
+        "float",
+        "float",
+        "now",
+        "fromtimestamp",
+        "get",
+        "abs",
+        "append",
+        "hasattr",
+        "get",
+        "hasattr",
+        "get",
+        "hasattr",
+        "get",
+        "hasattr",
+        "get",
+        "hasattr",
+        "get",
+        "hasattr",
+        "now",
+        "now",
+        "now",
+        "get_volume_data",
+        "append",
+        "print",
+        "append",
+        "abs",
+        "min",
+        "min",
+        "append",
+        "date",
+        "get",
+        "now",
+        "now",
+        "now",
+        "get",
+        "now",
+        "now",
+        "getattr",
+        "get",
+        "getattr",
+        "get",
+        "get",
+        "get",
+        "get",
+        "abs",
+        "append",
+        "hasattr",
+        "hasattr",
+        "hasattr",
+        "str",
+        "now",
+        "now",
+        "get",
+        "append",
+        "append",
+        "get",
+        "float",
+        "float",
+        "now",
+        "now",
+        "float",
+        "float",
+        "isoformat",
+        "range",
+        "float",
+        "now",
+        "timedelta",
+        "now",
+        "timedelta",
+        "len",
+        "float",
+        "now",
+        "get",
+        "get",
+        "now",
+        "timedelta"
+      ],
+      "async": [
+        "lifespan",
+        "get_advanced_auto_trading_status",
+        "start_advanced_auto_trading",
+        "stop_advanced_auto_trading",
+        "get_advanced_positions",
+        "get_advanced_market_data",
+        "get_advanced_indicators",
+        "get_advanced_ai_signals",
+        "update_advanced_config",
+        "get_ml_prediction",
+        "get_enhanced_ml_prediction",
+        "get_current_trading_signal",
+        "get_technical_indicators",
+        "get_model_upload_status",
+        "create_trade",
+        "close_trade",
+        "cancel_trade",
+        "activate_trade",
+        "retrain_model",
+        "reset_virtual_balance",
+        "get_all_trades",
+        "get_recent_trades",
+        "get_balance",
+        "get_portfolio",
+        "get_email_config_api",
+        "update_email_config",
+        "test_email_connection",
+        "send_email_alert",
+        "get_alert_history",
+        "clear_alert_history",
+        "check_auto_alerts"
+      ],
+      "missing_params": []
+    },
+    "advanced_auto_trading.py": {
+      "defined": [
+        {
+          "name": "__init__",
+          "line": 130,
+          "args": [
+            "self",
+            "config_path"
+          ],
+          "is_async": false
+        },
+        {
+          "name": "_load_config",
+          "line": 159,
+          "args": [
+            "self"
+          ],
+          "is_async": false
+        },
+        {
+          "name": "_save_config",
+          "line": 216,
+          "args": [
+            "self"
+          ],
+          "is_async": false
+        },
+        {
+          "name": "start",
+          "line": 225,
+          "args": [
+            "self"
+          ],
+          "is_async": true
+        },
+        {
+          "name": "stop",
+          "line": 255,
+          "args": [
+            "self"
+          ],
+          "is_async": true
+        },
+        {
+          "name": "_data_feed_loop",
+          "line": 279,
+          "args": [
+            "self"
+          ],
+          "is_async": true
+        },
+        {
+          "name": "_ai_signal_loop",
+          "line": 302,
+          "args": [
+            "self"
+          ],
+          "is_async": true
+        },
+        {
+          "name": "_risk_monitor_loop",
+          "line": 321,
+          "args": [
+            "self"
+          ],
+          "is_async": true
+        },
+        {
+          "name": "_main_trading_loop",
+          "line": 342,
+          "args": [
+            "self"
+          ],
+          "is_async": true
+        },
+        {
+          "name": "_fetch_market_data",
+          "line": 365,
+          "args": [
+            "self",
+            "symbol"
+          ],
+          "is_async": true
+        },
+        {
+          "name": "_calculate_indicators",
+          "line": 385,
+          "args": [
+            "self",
+            "symbol"
+          ],
+          "is_async": true
+        },
+        {
+          "name": "_generate_ai_signal",
+          "line": 420,
+          "args": [
+            "self",
+            "symbol"
+          ],
+          "is_async": true
+        },
+        {
+          "name": "_calculate_risk_score",
+          "line": 488,
+          "args": [
+            "self",
+            "indicators",
+            "market_data"
+          ],
+          "is_async": false
+        },
+        {
+          "name": "_process_ai_signal",
+          "line": 515,
+          "args": [
+            "self",
+            "signal"
+          ],
+          "is_async": true
+        },
+        {
+          "name": "_calculate_position_size",
+          "line": 544,
+          "args": [
+            "self",
+            "signal"
+          ],
+          "is_async": false
+        },
+        {
+          "name": "_open_position",
+          "line": 588,
+          "args": [
+            "self",
+            "symbol",
+            "signal",
+            "size"
+          ],
+          "is_async": true
+        },
+        {
+          "name": "_process_market_update",
+          "line": 631,
+          "args": [
+            "self",
+            "market_data"
+          ],
+          "is_async": true
+        },
+        {
+          "name": "_update_position_pnl",
+          "line": 665,
+          "args": [
+            "self"
+          ],
+          "is_async": true
+        },
+        {
+          "name": "_check_exit_conditions",
+          "line": 691,
+          "args": [
+            "self"
+          ],
+          "is_async": true
+        },
+        {
+          "name": "_close_position",
+          "line": 720,
+          "args": [
+            "self",
+            "position_id",
+            "reason"
+          ],
+          "is_async": true
+        },
+        {
+          "name": "_monitor_portfolio_risk",
+          "line": 754,
+          "args": [
+            "self"
+          ],
+          "is_async": true
+        },
+        {
+          "name": "_process_risk_alert",
+          "line": 773,
+          "args": [
+            "self",
+            "alert_data"
+          ],
+          "is_async": true
+        },
+        {
+          "name": "_close_all_positions",
+          "line": 795,
+          "args": [
+            "self"
+          ],
+          "is_async": true
+        },
+        {
+          "name": "_save_position_to_backend",
+          "line": 805,
+          "args": [
+            "self",
+            "position"
+          ],
+          "is_async": true
+        },
+        {
+          "name": "get_status",
+          "line": 824,
+          "args": [
+            "self"
+          ],
+          "is_async": true
+        },
+        {
+          "name": "get_positions",
+          "line": 843,
+          "args": [
+            "self"
+          ],
+          "is_async": true
+        },
+        {
+          "name": "get_recent_signals",
+          "line": 854,
+          "args": [
+            "self"
+          ],
+          "is_async": true
+        },
+        {
+          "name": "get_prediction",
+          "line": 858,
+          "args": [
+            "self",
+            "symbol"
+          ],
+          "is_async": true
+        },
+        {
+          "name": "get_enhanced_prediction",
+          "line": 882,
+          "args": [
+            "self",
+            "symbol",
+            "timeframe"
+          ],
+          "is_async": true
+        },
+        {
+          "name": "get_current_signal",
+          "line": 925,
+          "args": [
+            "self"
+          ],
+          "is_async": true
+        },
+        {
+          "name": "momentum_rsi",
+          "line": 29,
+          "args": [
+            "close",
+            "window"
+          ],
+          "is_async": false
+        },
+        {
+          "name": "trend_macd",
+          "line": 32,
+          "args": [
+            "close"
+          ],
+          "is_async": false
+        },
+        {
+          "name": "volatility_bollinger_hband",
+          "line": 35,
+          "args": [
+            "close",
+            "window"
+          ],
+          "is_async": false
+        },
+        {
+          "name": "volatility_bollinger_lband",
+          "line": 38,
+          "args": [
+            "close",
+            "window"
+          ],
+          "is_async": false
+        },
+        {
+          "name": "trend_sma_fast",
+          "line": 41,
+          "args": [
+            "close",
+            "window"
+          ],
+          "is_async": false
+        },
+        {
+          "name": "trend_ema_fast",
+          "line": 44,
+          "args": [
+            "close",
+            "window"
+          ],
+          "is_async": false
+        }
+      ],
+      "called": [
+        "basicConfig",
+        "getLogger",
+        "print",
+        "print",
+        "MockTA",
+        "_load_config",
+        "Queue",
+        "info",
+        "info",
+        "get",
+        "info",
+        "info",
+        "info",
+        "info",
+        "info",
+        "values",
+        "exists",
+        "makedirs",
+        "warning",
+        "create_task",
+        "create_task",
+        "create_task",
+        "create_task",
+        "info",
+        "max",
+        "append",
+        "max",
+        "append",
+        "float",
+        "_calculate_position_size",
+        "min",
+        "Position",
+        "info",
+        "get",
+        "float",
+        "list",
+        "values",
+        "sum",
+        "list",
+        "get",
+        "now",
+        "sum",
+        "info",
+        "sum",
+        "get",
+        "len",
+        "len",
+        "asdict",
+        "isoformat",
+        "append",
+        "asdict",
+        "sum",
+        "error",
+        "dirname",
+        "open",
+        "dump",
+        "error",
+        "_data_feed_loop",
+        "sleep",
+        "_ai_signal_loop",
+        "sleep",
+        "_risk_monitor_loop",
+        "sleep",
+        "_main_trading_loop",
+        "error",
+        "cancel",
+        "_close_all_positions",
+        "ClientSession",
+        "error",
+        "ClientSession",
+        "error",
+        "ClientSession",
+        "error",
+        "append",
+        "abs",
+        "mean",
+        "clip",
+        "error",
+        "len",
+        "info",
+        "info",
+        "info",
+        "error",
+        "error",
+        "_save_position_to_backend",
+        "error",
+        "get",
+        "now",
+        "items",
+        "error",
+        "error",
+        "values",
+        "error",
+        "sum",
+        "sum",
+        "_save_position_to_backend",
+        "error",
+        "error",
+        "error",
+        "error",
+        "ClientSession",
+        "asdict",
+        "isoformat",
+        "debug",
+        "values",
+        "values",
+        "isoformat",
+        "_generate_ai_signal",
+        "error",
+        "max",
+        "error",
+        "isoformat",
+        "error",
+        "len",
+        "len",
+        "open",
+        "load",
+        "update",
+        "stop",
+        "done",
+        "sleep",
+        "error",
+        "sleep",
+        "error",
+        "_update_position_pnl",
+        "_check_exit_conditions",
+        "_monitor_portfolio_risk",
+        "sleep",
+        "error",
+        "empty",
+        "sleep",
+        "error",
+        "get",
+        "lower",
+        "get",
+        "lower",
+        "dumps",
+        "join",
+        "get",
+        "min",
+        "_open_position",
+        "max",
+        "int",
+        "now",
+        "get",
+        "put",
+        "min",
+        "warning",
+        "values",
+        "_close_position",
+        "isoformat",
+        "post",
+        "get_prediction",
+        "values",
+        "str",
+        "_fetch_market_data",
+        "sleep",
+        "sleep",
+        "sleep",
+        "get",
+        "sleep",
+        "lower",
+        "MarketData",
+        "TechnicalIndicators",
+        "get",
+        "float",
+        "_calculate_risk_score",
+        "AISignal",
+        "append",
+        "min",
+        "time",
+        "values",
+        "values",
+        "values",
+        "abs",
+        "put",
+        "values",
+        "_close_position",
+        "_close_all_positions",
+        "debug",
+        "values",
+        "len",
+        "now",
+        "_calculate_indicators",
+        "_process_ai_signal",
+        "ClientTimeout",
+        "json",
+        "ClientTimeout",
+        "json",
+        "ClientTimeout",
+        "json",
+        "get",
+        "len",
+        "_close_position",
+        "_close_position",
+        "values",
+        "values",
+        "ClientTimeout",
+        "_generate_ai_signal",
+        "_process_market_update",
+        "float",
+        "float",
+        "now",
+        "float",
+        "float",
+        "float",
+        "float",
+        "float",
+        "float",
+        "float",
+        "float",
+        "float",
+        "float",
+        "float",
+        "float",
+        "float",
+        "float",
+        "float",
+        "float",
+        "float",
+        "float",
+        "float",
+        "list",
+        "get",
+        "get",
+        "_close_position",
+        "put",
+        "_process_risk_alert",
+        "get",
+        "get",
+        "get",
+        "get",
+        "get",
+        "get",
+        "get",
+        "get",
+        "get",
+        "get",
+        "get",
+        "get",
+        "get",
+        "get",
+        "get",
+        "get",
+        "get",
+        "get",
+        "get",
+        "get",
+        "get",
+        "keys",
+        "_close_position",
+        "_close_position"
+      ],
+      "async": [
+        "start",
+        "stop",
+        "_data_feed_loop",
+        "_ai_signal_loop",
+        "_risk_monitor_loop",
+        "_main_trading_loop",
+        "_fetch_market_data",
+        "_calculate_indicators",
+        "_generate_ai_signal",
+        "_process_ai_signal",
+        "_open_position",
+        "_process_market_update",
+        "_update_position_pnl",
+        "_check_exit_conditions",
+        "_close_position",
+        "_monitor_portfolio_risk",
+        "_process_risk_alert",
+        "_close_all_positions",
+        "_save_position_to_backend",
+        "get_status",
+        "get_positions",
+        "get_recent_signals",
+        "get_prediction",
+        "get_enhanced_prediction",
+        "get_current_signal"
+      ],
+      "missing_params": []
+    },
+    "binance_futures_exact.py": {
+      "defined": [
+        {
+          "name": "__init__",
+          "line": 155,
+          "args": [
+            "self"
+          ],
+          "is_async": false
+        },
+        {
+          "name": "get_maintenance_margin_rate",
+          "line": 223,
+          "args": [
+            "self",
+            "symbol",
+            "notional"
+          ],
+          "is_async": false
+        },
+        {
+          "name": "calculate_liquidation_price_binance",
+          "line": 234,
+          "args": [
+            "self",
+            "symbol",
+            "side",
+            "position_amt",
+            "entry_price",
+            "leverage",
+            "wallet_balance"
+          ],
+          "is_async": false
+        },
+        {
+          "name": "calculate_margin_ratio",
+          "line": 255,
+          "args": [
+            "self",
+            "symbol",
+            "position_amt",
+            "mark_price",
+            "wallet_balance"
+          ],
+          "is_async": false
+        },
+        {
+          "name": "new_order",
+          "line": 270,
+          "args": [
+            "self",
+            "symbol",
+            "side",
+            "order_type",
+            "quantity",
+            "price",
+            "position_side",
+            "time_in_force",
+            "reduce_only",
+            "close_position",
+            "stop_price",
+            "working_type"
+          ],
+          "is_async": false
+        },
+        {
+          "name": "_execute_order",
+          "line": 363,
+          "args": [
+            "self",
+            "order",
+            "execution_price"
+          ],
+          "is_async": false
+        },
+        {
+          "name": "get_position_risk",
+          "line": 461,
+          "args": [
+            "self",
+            "symbol"
+          ],
+          "is_async": false
+        },
+        {
+          "name": "get_account",
+          "line": 487,
+          "args": [
+            "self"
+          ],
+          "is_async": false
+        },
+        {
+          "name": "change_leverage",
+          "line": 537,
+          "args": [
+            "self",
+            "symbol",
+            "leverage"
+          ],
+          "is_async": false
+        },
+        {
+          "name": "change_margin_type",
+          "line": 567,
+          "args": [
+            "self",
+            "symbol",
+            "margin_type"
+          ],
+          "is_async": false
+        },
+        {
+          "name": "save_data",
+          "line": 596,
+          "args": [
+            "self"
+          ],
+          "is_async": false
+        },
+        {
+          "name": "load_data",
+          "line": 626,
+          "args": [
+            "self"
+          ],
+          "is_async": false
+        }
+      ],
+      "called": [
+        "BinanceFuturesTradingEngine",
+        "BinanceFuturesAccountInfo",
+        "BinanceFuturesBalance",
+        "load_data",
+        "get",
+        "abs",
+        "get_maintenance_margin_rate",
+        "max",
+        "abs",
+        "get_maintenance_margin_rate",
+        "float",
+        "float",
+        "str",
+        "str",
+        "str",
+        "int",
+        "float",
+        "calculate_liquidation_price_binance",
+        "str",
+        "int",
+        "str",
+        "int",
+        "save_data",
+        "values",
+        "sum",
+        "sum",
+        "str",
+        "str",
+        "str",
+        "int",
+        "float",
+        "get",
+        "float",
+        "BinanceFuturesOrder",
+        "BinanceFuturesPosition",
+        "float",
+        "int",
+        "str",
+        "str",
+        "abs",
+        "str",
+        "get_position_risk",
+        "values",
+        "save_data",
+        "lower",
+        "values",
+        "save_data",
+        "makedirs",
+        "exists",
+        "exists",
+        "exists",
+        "exists",
+        "int",
+        "int",
+        "float",
+        "_execute_order",
+        "timestamp",
+        "abs",
+        "timestamp",
+        "append",
+        "float",
+        "float",
+        "timestamp",
+        "model_dump",
+        "open",
+        "dump",
+        "open",
+        "dump",
+        "str",
+        "model_dump",
+        "open",
+        "dump",
+        "open",
+        "dump",
+        "print",
+        "print",
+        "float",
+        "float",
+        "int",
+        "int",
+        "str",
+        "str",
+        "get",
+        "int",
+        "values",
+        "abs",
+        "float",
+        "values",
+        "float",
+        "str",
+        "str",
+        "lower",
+        "items",
+        "model_dump",
+        "items",
+        "open",
+        "load",
+        "open",
+        "load",
+        "BinanceFuturesAccountInfo",
+        "open",
+        "load",
+        "open",
+        "load",
+        "get",
+        "get",
+        "timestamp",
+        "timestamp",
+        "get",
+        "abs",
+        "abs",
+        "now",
+        "now",
+        "float",
+        "now",
+        "BinanceFuturesPosition",
+        "int",
+        "BinanceFuturesOrder",
+        "timestamp",
+        "timestamp",
+        "str",
+        "timestamp",
+        "float",
+        "float",
+        "float",
+        "str",
+        "str",
+        "items",
+        "items",
+        "now",
+        "now",
+        "now",
+        "now",
+        "now"
+      ],
+      "async": [],
+      "missing_params": []
+    },
+    "crypto_transfer_endpoints.py": {
+      "defined": [
+        {
+          "name": "get_source_status",
+          "line": 51,
+          "args": [],
+          "is_async": true
+        },
+        {
+          "name": "check_initial_setup_required",
+          "line": 69,
+          "args": [],
+          "is_async": true
+        },
+        {
+          "name": "initial_train_source_models",
+          "line": 85,
+          "args": [
+            "request",
+            "background_tasks"
+          ],
+          "is_async": true
+        },
+        {
+          "name": "_train_source_models_background",
+          "line": 117,
+          "args": [
+            "source_pairs",
+            "target_pair",
+            "candles"
+          ],
+          "is_async": true
+        },
+        {
+          "name": "train_target_model",
+          "line": 146,
+          "args": [
+            "request"
+          ],
+          "is_async": true
+        },
+        {
+          "name": "check_retrain_needed",
+          "line": 187,
+          "args": [],
+          "is_async": true
+        },
+        {
+          "name": "get_training_schedule",
+          "line": 201,
+          "args": [],
+          "is_async": true
+        },
+        {
+          "name": "get_transfer_performance",
+          "line": 216,
+          "args": [],
+          "is_async": true
+        },
+        {
+          "name": "predict_with_transfer_learning",
+          "line": 250,
+          "args": [
+            "request"
+          ],
+          "is_async": true
+        },
+        {
+          "name": "get_storage_status",
+          "line": 277,
+          "args": [],
+          "is_async": true
+        },
+        {
+          "name": "cleanup_old_models",
+          "line": 297,
+          "args": [
+            "request"
+          ],
+          "is_async": true
+        },
+        {
+          "name": "optimize_storage",
+          "line": 318,
+          "args": [],
+          "is_async": true
+        },
+        {
+          "name": "get_online_learning_status",
+          "line": 340,
+          "args": [],
+          "is_async": true
+        },
+        {
+          "name": "update_continuous_learning",
+          "line": 357,
+          "args": [
+            "new_trade_data"
+          ],
+          "is_async": true
+        },
+        {
+          "name": "ensemble_predict_with_transfer",
+          "line": 378,
+          "args": [
+            "request",
+            "include_transfer"
+          ],
+          "is_async": true
+        },
+        {
+          "name": "get_hybrid_learning_status",
+          "line": 411,
+          "args": [],
+          "is_async": true
+        },
+        {
+          "name": "get_individual_model_status",
+          "line": 427,
+          "args": [],
+          "is_async": true
+        },
+        {
+          "name": "get_transfer_learning_routers",
+          "line": 451,
+          "args": [],
+          "is_async": false
+        }
+      ],
+      "called": [
+        "getLogger",
+        "APIRouter",
+        "SimpleTransferLearningLifecycle",
+        "MLCompatibilityManager",
+        "StorageManager",
+        "get",
+        "get",
+        "post",
+        "post",
+        "get",
+        "get",
+        "get",
+        "post",
+        "get",
+        "post",
+        "get",
+        "APIRouter",
+        "get",
+        "post",
+        "post",
+        "get",
+        "get",
+        "check_initial_setup_required",
+        "check_initial_setup_required",
+        "schedule_initial_training",
+        "add_task",
+        "CryptoTransferLearner",
+        "train_source_models",
+        "info",
+        "check_retrain_needed",
+        "record_training_completion",
+        "check_retrain_needed",
+        "get_training_schedule",
+        "array",
+        "min",
+        "get_current_storage_usage",
+        "project_6_month_storage",
+        "cleanup_old_models",
+        "optimize_storage",
+        "get_compatibility_status",
+        "array",
+        "mean",
+        "len",
+        "error",
+        "HTTPException",
+        "error",
+        "HTTPException",
+        "error",
+        "HTTPException",
+        "record_training_completion",
+        "error",
+        "error",
+        "HTTPException",
+        "error",
+        "HTTPException",
+        "get_lifecycle_status",
+        "error",
+        "HTTPException",
+        "isoformat",
+        "error",
+        "HTTPException",
+        "error",
+        "HTTPException",
+        "error",
+        "HTTPException",
+        "error",
+        "HTTPException",
+        "error",
+        "HTTPException",
+        "isoformat",
+        "error",
+        "HTTPException",
+        "isoformat",
+        "error",
+        "HTTPException",
+        "list",
+        "error",
+        "HTTPException",
+        "error",
+        "HTTPException",
+        "len",
+        "error",
+        "HTTPException",
+        "len",
+        "strftime",
+        "len",
+        "values",
+        "str",
+        "str",
+        "str",
+        "str",
+        "str",
+        "str",
+        "now",
+        "str",
+        "str",
+        "str",
+        "str",
+        "str",
+        "now",
+        "str",
+        "now",
+        "str",
+        "str",
+        "str",
+        "str",
+        "now"
+      ],
+      "async": [
+        "get_source_status",
+        "check_initial_setup_required",
+        "initial_train_source_models",
+        "_train_source_models_background",
+        "train_target_model",
+        "check_retrain_needed",
+        "get_training_schedule",
+        "get_transfer_performance",
+        "predict_with_transfer_learning",
+        "get_storage_status",
+        "cleanup_old_models",
+        "optimize_storage",
+        "get_online_learning_status",
+        "update_continuous_learning",
+        "ensemble_predict_with_transfer",
+        "get_hybrid_learning_status",
+        "get_individual_model_status"
+      ],
+      "missing_params": []
+    },
+    "crypto_transfer_learning.py": {
+      "defined": [
+        {
+          "name": "__init__",
+          "line": 27,
+          "args": [
+            "self",
+            "source_pairs",
+            "target_pair"
+          ],
+          "is_async": false
+        },
+        {
+          "name": "_get_crypto_data",
+          "line": 56,
+          "args": [
+            "self",
+            "symbol",
+            "limit"
+          ],
+          "is_async": false
+        },
+        {
+          "name": "_engineer_features",
+          "line": 102,
+          "args": [
+            "self",
+            "df"
+          ],
+          "is_async": false
+        },
+        {
+          "name": "_calculate_rsi",
+          "line": 150,
+          "args": [
+            "self",
+            "prices",
+            "period"
+          ],
+          "is_async": false
+        },
+        {
+          "name": "_bollinger_position",
+          "line": 158,
+          "args": [
+            "self",
+            "prices",
+            "period",
+            "std"
+          ],
+          "is_async": false
+        },
+        {
+          "name": "train_source_models",
+          "line": 166,
+          "args": [
+            "self"
+          ],
+          "is_async": false
+        },
+        {
+          "name": "train_target_model_with_transfer",
+          "line": 234,
+          "args": [
+            "self"
+          ],
+          "is_async": false
+        },
+        {
+          "name": "_get_source_predictions",
+          "line": 312,
+          "args": [
+            "self",
+            "X"
+          ],
+          "is_async": false
+        },
+        {
+          "name": "predict",
+          "line": 335,
+          "args": [
+            "self",
+            "features"
+          ],
+          "is_async": false
+        },
+        {
+          "name": "_calculate_source_agreement",
+          "line": 378,
+          "args": [
+            "self",
+            "source_predictions"
+          ],
+          "is_async": false
+        },
+        {
+          "name": "load_models",
+          "line": 399,
+          "args": [
+            "self"
+          ],
+          "is_async": false
+        },
+        {
+          "name": "get_model_info",
+          "line": 438,
+          "args": [
+            "self"
+          ],
+          "is_async": false
+        }
+      ],
+      "called": [
+        "getLogger",
+        "StandardScaler",
+        "makedirs",
+        "info",
+        "copy",
+        "pct_change",
+        "std",
+        "_calculate_rsi",
+        "mean",
+        "mean",
+        "mean",
+        "_bollinger_position",
+        "astype",
+        "astype",
+        "dropna",
+        "info",
+        "diff",
+        "mean",
+        "mean",
+        "mean",
+        "std",
+        "info",
+        "items",
+        "std",
+        "mean",
+        "max",
+        "min",
+        "date_range",
+        "seed",
+        "get",
+        "normal",
+        "DataFrame",
+        "info",
+        "shift",
+        "info",
+        "_get_crypto_data",
+        "_engineer_features",
+        "transform",
+        "_get_source_predictions",
+        "column_stack",
+        "RandomForestRegressor",
+        "fit",
+        "score",
+        "predict",
+        "mean_squared_error",
+        "RandomForestRegressor",
+        "fit",
+        "score",
+        "join",
+        "dump",
+        "join",
+        "dump",
+        "info",
+        "column_stack",
+        "zeros",
+        "transform",
+        "_get_source_predictions",
+        "column_stack",
+        "predict",
+        "_calculate_source_agreement",
+        "min",
+        "join",
+        "exists",
+        "info",
+        "list",
+        "hasattr",
+        "len",
+        "append",
+        "error",
+        "rolling",
+        "rolling",
+        "rolling",
+        "rolling",
+        "shift",
+        "rolling",
+        "rolling",
+        "rolling",
+        "rolling",
+        "info",
+        "_get_crypto_data",
+        "_engineer_features",
+        "fit_transform",
+        "items",
+        "max",
+        "join",
+        "dump",
+        "len",
+        "error",
+        "predict",
+        "append",
+        "ValueError",
+        "tolist",
+        "len",
+        "error",
+        "join",
+        "exists",
+        "join",
+        "load",
+        "info",
+        "load",
+        "info",
+        "error",
+        "keys",
+        "len",
+        "now",
+        "hash",
+        "max",
+        "uniform",
+        "shift",
+        "shift",
+        "len",
+        "RandomForestRegressor",
+        "GradientBoostingRegressor",
+        "fit",
+        "score",
+        "info",
+        "keys",
+        "error",
+        "len",
+        "len",
+        "str",
+        "warning",
+        "append",
+        "len",
+        "load",
+        "info",
+        "listdir",
+        "sorted",
+        "len",
+        "len",
+        "where",
+        "str",
+        "strftime",
+        "zeros",
+        "startswith",
+        "endswith",
+        "where",
+        "len",
+        "abs",
+        "abs",
+        "values",
+        "get",
+        "now",
+        "normal",
+        "normal"
+      ],
+      "async": [],
+      "missing_params": []
+    },
+    "crypto_transfer_learning_lifecycle.py": {
+      "defined": [],
+      "called": [],
+      "async": [],
+      "missing_params": [],
+      "error": "unexpected indent (<unknown>, line 70)"
+    },
+    "data_collection.py": {
+      "defined": [
+        {
+          "name": "get_atr",
+          "line": 514,
+          "args": [
+            "symbol"
+          ],
+          "is_async": false
+        },
+        {
+          "name": "get_technical_indicators",
+          "line": 528,
+          "args": [
+            "symbol"
+          ],
+          "is_async": false
+        },
+        {
+          "name": "get_fallback_indicators",
+          "line": 597,
+          "args": [],
+          "is_async": false
+        },
+        {
+          "name": "get_data_collector",
+          "line": 645,
+          "args": [],
+          "is_async": false
+        },
+        {
+          "name": "get_ohlcv_data",
+          "line": 653,
+          "args": [
+            "symbol",
+            "interval",
+            "limit"
+          ],
+          "is_async": false
+        },
+        {
+          "name": "get_volume_data",
+          "line": 730,
+          "args": [
+            "symbol"
+          ],
+          "is_async": false
+        },
+        {
+          "name": "get_momentum_data",
+          "line": 743,
+          "args": [
+            "symbol"
+          ],
+          "is_async": false
+        },
+        {
+          "name": "get_bollinger_data",
+          "line": 788,
+          "args": [
+            "symbol"
+          ],
+          "is_async": false
+        },
+        {
+          "name": "calculate_indicators",
+          "line": 50,
+          "args": [
+            "df"
+          ],
+          "is_async": false
+        },
+        {
+          "name": "__init__",
+          "line": 157,
+          "args": [
+            "self",
+            "db_path"
+          ],
+          "is_async": false
+        },
+        {
+          "name": "_init_database",
+          "line": 177,
+          "args": [
+            "self"
+          ],
+          "is_async": false
+        },
+        {
+          "name": "fetch_binance_klines",
+          "line": 230,
+          "args": [
+            "self",
+            "symbol",
+            "interval",
+            "limit"
+          ],
+          "is_async": true
+        },
+        {
+          "name": "calculate_target",
+          "line": 290,
+          "args": [
+            "self",
+            "df"
+          ],
+          "is_async": false
+        },
+        {
+          "name": "collect_symbol_data",
+          "line": 308,
+          "args": [
+            "self",
+            "symbol"
+          ],
+          "is_async": true
+        },
+        {
+          "name": "_store_market_data",
+          "line": 339,
+          "args": [
+            "self",
+            "df",
+            "symbol"
+          ],
+          "is_async": false
+        },
+        {
+          "name": "collect_all_symbols",
+          "line": 411,
+          "args": [
+            "self"
+          ],
+          "is_async": true
+        },
+        {
+          "name": "_collection_loop",
+          "line": 421,
+          "args": [
+            "self"
+          ],
+          "is_async": false
+        },
+        {
+          "name": "start_collection",
+          "line": 439,
+          "args": [
+            "self"
+          ],
+          "is_async": false
+        },
+        {
+          "name": "stop_collection",
+          "line": 450,
+          "args": [
+            "self"
+          ],
+          "is_async": false
+        },
+        {
+          "name": "get_recent_data",
+          "line": 457,
+          "args": [
+            "self",
+            "symbol",
+            "hours"
+          ],
+          "is_async": false
+        },
+        {
+          "name": "get_collection_stats",
+          "line": 477,
+          "args": [
+            "self"
+          ],
+          "is_async": false
+        },
+        {
+          "name": "get_indicators",
+          "line": 831,
+          "args": [
+            "self",
+            "symbol"
+          ],
+          "is_async": false
+        }
+      ],
+      "called": [
+        "basicConfig",
+        "getLogger",
+        "info",
+        "get_fallback_indicators",
+        "float",
+        "max",
+        "info",
+        "now",
+        "endswith",
+        "reverse",
+        "range",
+        "info",
+        "info",
+        "info",
+        "info",
+        "_init_database",
+        "range",
+        "info",
+        "info",
+        "Thread",
+        "start",
+        "info",
+        "info",
+        "get_technical_indicators",
+        "get",
+        "get",
+        "connect",
+        "read_sql_query",
+        "close",
+        "reset_index",
+        "get",
+        "get",
+        "info",
+        "get",
+        "uniform",
+        "min",
+        "round",
+        "round",
+        "round",
+        "round",
+        "round",
+        "round",
+        "round",
+        "round",
+        "round",
+        "round",
+        "round",
+        "round",
+        "round",
+        "round",
+        "DataCollector",
+        "DataCollector",
+        "get_historical_data",
+        "int",
+        "endswith",
+        "startswith",
+        "append",
+        "get_ohlcv_data",
+        "get_ohlcv_data",
+        "DataFrame",
+        "set_index",
+        "diff",
+        "where",
+        "mean",
+        "mean",
+        "mean",
+        "mean",
+        "mean",
+        "enumerate",
+        "get_ohlcv_data",
+        "DataFrame",
+        "set_index",
+        "fillna",
+        "connect",
+        "cursor",
+        "execute",
+        "execute",
+        "commit",
+        "close",
+        "info",
+        "astype",
+        "DataFrame",
+        "calculate_indicators",
+        "calculate_target",
+        "_store_market_data",
+        "info",
+        "connect",
+        "cursor",
+        "execute",
+        "copy",
+        "rename",
+        "iterrows",
+        "commit",
+        "close",
+        "info",
+        "info",
+        "warning",
+        "join",
+        "connect",
+        "read_sql_query",
+        "close",
+        "connect",
+        "cursor",
+        "close",
+        "float",
+        "error",
+        "len",
+        "warning",
+        "get_fallback_indicators",
+        "calculate_indicators",
+        "isna",
+        "isna",
+        "error",
+        "get_fallback_indicators",
+        "float",
+        "uniform",
+        "uniform",
+        "uniform",
+        "iterrows",
+        "error",
+        "endswith",
+        "timestamp",
+        "range",
+        "startswith",
+        "error",
+        "where",
+        "error",
+        "len",
+        "mean",
+        "std",
+        "enumerate",
+        "error",
+        "get_recent_data",
+        "calculate_indicators",
+        "len",
+        "warning",
+        "astype",
+        "astype",
+        "astype",
+        "astype",
+        "RSI",
+        "STOCH",
+        "WILLR",
+        "ROC",
+        "MACD",
+        "ADX",
+        "CCI",
+        "SMA",
+        "EMA",
+        "BBANDS",
+        "ATR",
+        "OBV",
+        "MACD",
+        "AD",
+        "diff",
+        "mean",
+        "mean",
+        "mean",
+        "mean",
+        "error",
+        "error",
+        "ClientTimeout",
+        "error",
+        "fetch_binance_klines",
+        "warning",
+        "pct_change",
+        "error",
+        "fetchone",
+        "fromisoformat",
+        "len",
+        "info",
+        "close",
+        "hasattr",
+        "execute",
+        "error",
+        "collect_symbol_data",
+        "gather",
+        "error",
+        "run",
+        "sleep",
+        "now",
+        "timedelta",
+        "error",
+        "DataFrame",
+        "execute",
+        "fetchone",
+        "error",
+        "isna",
+        "error",
+        "get_fallback_indicators",
+        "float",
+        "float",
+        "float",
+        "float",
+        "float",
+        "float",
+        "float",
+        "float",
+        "float",
+        "float",
+        "float",
+        "float",
+        "float",
+        "float",
+        "float",
+        "uniform",
+        "uniform",
+        "uniform",
+        "uniform",
+        "uniform",
+        "append",
+        "int",
+        "random",
+        "random",
+        "int",
+        "rolling",
+        "rolling",
+        "ewm",
+        "ewm",
+        "ewm",
+        "append",
+        "print",
+        "print",
+        "float",
+        "float",
+        "float",
+        "float",
+        "float",
+        "float",
+        "float",
+        "float",
+        "float",
+        "float",
+        "float",
+        "float",
+        "float",
+        "float",
+        "float",
+        "float",
+        "float",
+        "float",
+        "isoformat",
+        "error",
+        "hasattr",
+        "debug",
+        "pct_change",
+        "pct_change",
+        "bfill",
+        "ClientSession",
+        "warning",
+        "error",
+        "isoformat",
+        "hasattr",
+        "collect_all_symbols",
+        "error",
+        "sleep",
+        "str",
+        "isna",
+        "get",
+        "isna",
+        "get",
+        "isna",
+        "get",
+        "isna",
+        "get",
+        "isna",
+        "get",
+        "isna",
+        "get",
+        "isna",
+        "get",
+        "isna",
+        "get",
+        "abs",
+        "isna",
+        "get",
+        "isna",
+        "get",
+        "isna",
+        "get",
+        "isna",
+        "get",
+        "isna",
+        "get",
+        "json",
+        "uniform",
+        "uniform",
+        "uniform",
+        "uniform",
+        "uniform",
+        "random",
+        "random",
+        "isna",
+        "isna",
+        "rolling",
+        "rolling",
+        "isna",
+        "append",
+        "get",
+        "get",
+        "get",
+        "get",
+        "get",
+        "get",
+        "get",
+        "get",
+        "get",
+        "get",
+        "get",
+        "get",
+        "get",
+        "get",
+        "get",
+        "get",
+        "get",
+        "get",
+        "rolling",
+        "rolling",
+        "rolling",
+        "ewm",
+        "get",
+        "error",
+        "shift",
+        "len",
+        "strftime",
+        "len",
+        "isoformat",
+        "len",
+        "get",
+        "get",
+        "get",
+        "get",
+        "get",
+        "get",
+        "get",
+        "get",
+        "get",
+        "isna",
+        "get",
+        "abs",
+        "get",
+        "get",
+        "get",
+        "get",
+        "get",
+        "float",
+        "float",
+        "float",
+        "float",
+        "float",
+        "int",
+        "timedelta",
+        "int",
+        "float",
+        "float",
+        "float",
+        "now",
+        "len",
+        "sleep",
+        "sleep",
+        "get",
+        "int",
+        "int",
+        "int",
+        "float",
+        "float",
+        "float",
+        "where",
+        "json",
+        "append",
+        "warning",
+        "error",
+        "isna",
+        "where",
+        "sleep",
+        "timestamp",
+        "mean",
+        "fromtimestamp",
+        "float",
+        "float",
+        "float",
+        "float",
+        "float",
+        "cumsum",
+        "rolling"
+      ],
+      "async": [
+        "fetch_binance_klines",
+        "collect_symbol_data",
+        "collect_all_symbols"
+      ],
+      "missing_params": []
+    },
+    "db.py": {
+      "defined": [
+        {
+          "name": "initialize_database",
+          "line": 7,
+          "args": [],
+          "is_async": false
+        },
+        {
+          "name": "save_trade",
+          "line": 54,
+          "args": [
+            "trade"
+          ],
+          "is_async": false
+        },
+        {
+          "name": "get_trades",
+          "line": 65,
+          "args": [
+            "limit"
+          ],
+          "is_async": false
+        },
+        {
+          "name": "update_trade",
+          "line": 75,
+          "args": [
+            "trade_id",
+            "updates"
+          ],
+          "is_async": false
+        },
+        {
+          "name": "delete_trade",
+          "line": 84,
+          "args": [
+            "trade_id"
+          ],
+          "is_async": false
+        },
+        {
+          "name": "save_backtest_result",
+          "line": 92,
+          "args": [
+            "result"
+          ],
+          "is_async": false
+        },
+        {
+          "name": "get_backtest_results",
+          "line": 101,
+          "args": [
+            "limit"
+          ],
+          "is_async": false
+        },
+        {
+          "name": "delete_backtest_result",
+          "line": 110,
+          "args": [
+            "backtest_id"
+          ],
+          "is_async": false
+        },
+        {
+          "name": "save_notification",
+          "line": 118,
+          "args": [
+            "notification"
+          ],
+          "is_async": false
+        },
+        {
+          "name": "get_notifications",
+          "line": 127,
+          "args": [
+            "limit",
+            "unread_only"
+          ],
+          "is_async": false
+        },
+        {
+          "name": "mark_notification_read",
+          "line": 139,
+          "args": [
+            "notification_id"
+          ],
+          "is_async": false
+        },
+        {
+          "name": "delete_notification",
+          "line": 146,
+          "args": [
+            "notification_id"
+          ],
+          "is_async": false
+        },
+        {
+          "name": "set_setting",
+          "line": 154,
+          "args": [
+            "key",
+            "value"
+          ],
+          "is_async": false
+        },
+        {
+          "name": "get_setting",
+          "line": 161,
+          "args": [
+            "key",
+            "default"
+          ],
+          "is_async": false
+        }
+      ],
+      "called": [
+        "connect",
+        "cursor",
+        "execute",
+        "execute",
+        "execute",
+        "execute",
+        "commit",
+        "close",
+        "connect",
+        "cursor",
+        "execute",
+        "commit",
+        "close",
+        "connect",
+        "cursor",
+        "execute",
+        "fetchall",
+        "close",
+        "connect",
+        "cursor",
+        "join",
+        "execute",
+        "commit",
+        "close",
+        "connect",
+        "cursor",
+        "execute",
+        "commit",
+        "close",
+        "connect",
+        "cursor",
+        "execute",
+        "commit",
+        "close",
+        "connect",
+        "cursor",
+        "execute",
+        "fetchall",
+        "close",
+        "connect",
+        "cursor",
+        "execute",
+        "commit",
+        "close",
+        "connect",
+        "cursor",
+        "execute",
+        "commit",
+        "close",
+        "connect",
+        "cursor",
+        "fetchall",
+        "close",
+        "connect",
+        "cursor",
+        "execute",
+        "commit",
+        "close",
+        "connect",
+        "cursor",
+        "execute",
+        "commit",
+        "close",
+        "connect",
+        "cursor",
+        "execute",
+        "commit",
+        "close",
+        "connect",
+        "cursor",
+        "execute",
+        "fetchone",
+        "close",
+        "dict",
+        "list",
+        "dict",
+        "execute",
+        "execute",
+        "dict",
+        "zip",
+        "values",
+        "zip",
+        "int",
+        "zip",
+        "keys",
+        "get"
+      ],
+      "async": [],
+      "missing_params": []
+    },
+    "email_utils.py": {
+      "defined": [
+        {
+          "name": "get_email_config",
+          "line": 13,
+          "args": [],
+          "is_async": false
+        },
+        {
+          "name": "save_email_config",
+          "line": 36,
+          "args": [
+            "config"
+          ],
+          "is_async": false
+        },
+        {
+          "name": "test_email_connection",
+          "line": 47,
+          "args": [],
+          "is_async": false
+        },
+        {
+          "name": "send_email",
+          "line": 62,
+          "args": [
+            "subject",
+            "body",
+            "to_email"
+          ],
+          "is_async": false
+        },
+        {
+          "name": "send_trade_notification",
+          "line": 124,
+          "args": [
+            "trade_data"
+          ],
+          "is_async": false
+        },
+        {
+          "name": "send_system_notification",
+          "line": 140,
+          "args": [
+            "event_type",
+            "message",
+            "details"
+          ],
+          "is_async": false
+        }
+      ],
+      "called": [
+        "getLogger",
+        "join",
+        "dirname",
+        "exists",
+        "get_email_config",
+        "get_email_config",
+        "send_email",
+        "send_email",
+        "get",
+        "int",
+        "get",
+        "get",
+        "get",
+        "get",
+        "get",
+        "makedirs",
+        "info",
+        "warning",
+        "MIMEMultipart",
+        "attach",
+        "attach",
+        "info",
+        "get",
+        "get",
+        "get",
+        "get",
+        "get",
+        "get",
+        "dirname",
+        "open",
+        "dump",
+        "error",
+        "SMTP",
+        "starttls",
+        "login",
+        "MIMEText",
+        "MIMEText",
+        "SMTP",
+        "starttls",
+        "login",
+        "sendmail",
+        "error",
+        "get",
+        "get",
+        "get",
+        "get",
+        "get",
+        "get",
+        "get",
+        "get",
+        "open",
+        "load",
+        "warning",
+        "get",
+        "get",
+        "strftime",
+        "as_string",
+        "str",
+        "now",
+        "str"
+      ],
+      "async": [],
+      "missing_params": []
+    },
+    "fix_unicode.py": {
+      "defined": [
+        {
+          "name": "fix_unicode_chars",
+          "line": 8,
+          "args": [],
+          "is_async": false
+        }
+      ],
+      "called": [
+        "sub",
+        "items",
+        "sub",
+        "print",
+        "fix_unicode_chars",
+        "open",
+        "read",
+        "replace",
+        "open",
+        "write"
+      ],
+      "async": [],
+      "missing_params": []
+    },
+    "futures_trading.py": {
+      "defined": [
+        {
+          "name": "__init__",
+          "line": 79,
+          "args": [
+            "self"
+          ],
+          "is_async": false
+        },
+        {
+          "name": "calculate_position_size",
+          "line": 94,
+          "args": [
+            "self",
+            "margin",
+            "leverage",
+            "price"
+          ],
+          "is_async": false
+        },
+        {
+          "name": "calculate_liquidation_price",
+          "line": 98,
+          "args": [
+            "self",
+            "entry_price",
+            "leverage",
+            "side"
+          ],
+          "is_async": false
+        },
+        {
+          "name": "calculate_unrealized_pnl",
+          "line": 112,
+          "args": [
+            "self",
+            "position",
+            "current_price"
+          ],
+          "is_async": false
+        },
+        {
+          "name": "check_liquidation",
+          "line": 124,
+          "args": [
+            "self",
+            "position",
+            "current_price"
+          ],
+          "is_async": false
+        },
+        {
+          "name": "check_stop_loss",
+          "line": 131,
+          "args": [
+            "self",
+            "position",
+            "current_price"
+          ],
+          "is_async": false
+        },
+        {
+          "name": "check_take_profit",
+          "line": 141,
+          "args": [
+            "self",
+            "position",
+            "current_price"
+          ],
+          "is_async": false
+        },
+        {
+          "name": "open_position",
+          "line": 151,
+          "args": [
+            "self",
+            "signal"
+          ],
+          "is_async": false
+        },
+        {
+          "name": "close_position",
+          "line": 233,
+          "args": [
+            "self",
+            "position_id",
+            "current_price",
+            "reason"
+          ],
+          "is_async": false
+        },
+        {
+          "name": "update_positions",
+          "line": 292,
+          "args": [
+            "self",
+            "symbol",
+            "current_price"
+          ],
+          "is_async": false
+        },
+        {
+          "name": "update_account_totals",
+          "line": 346,
+          "args": [
+            "self"
+          ],
+          "is_async": false
+        },
+        {
+          "name": "get_positions",
+          "line": 367,
+          "args": [
+            "self"
+          ],
+          "is_async": false
+        },
+        {
+          "name": "get_account_info",
+          "line": 371,
+          "args": [
+            "self"
+          ],
+          "is_async": false
+        },
+        {
+          "name": "get_trade_history",
+          "line": 376,
+          "args": [
+            "self",
+            "limit"
+          ],
+          "is_async": false
+        },
+        {
+          "name": "save_data",
+          "line": 380,
+          "args": [
+            "self"
+          ],
+          "is_async": false
+        },
+        {
+          "name": "load_data",
+          "line": 403,
+          "args": [
+            "self"
+          ],
+          "is_async": false
+        }
+      ],
+      "called": [
+        "FuturesTradingEngine",
+        "FuturesAccountInfo",
+        "FuturesSettings",
+        "load_data",
+        "max",
+        "items",
+        "update_account_totals",
+        "sum",
+        "sum",
+        "update_account_totals",
+        "model_dump",
+        "calculate_position_size",
+        "calculate_liquidation_price",
+        "FuturesPosition",
+        "save_data",
+        "calculate_unrealized_pnl",
+        "isoformat",
+        "append",
+        "save_data",
+        "calculate_unrealized_pnl",
+        "check_liquidation",
+        "close_position",
+        "model_dump",
+        "makedirs",
+        "exists",
+        "exists",
+        "exists",
+        "exists",
+        "update_account_totals",
+        "model_dump",
+        "model_dump",
+        "model_dump",
+        "upper",
+        "upper",
+        "append",
+        "append",
+        "check_stop_loss",
+        "values",
+        "model_dump",
+        "open",
+        "dump",
+        "open",
+        "dump",
+        "open",
+        "dump",
+        "open",
+        "dump",
+        "print",
+        "print",
+        "strftime",
+        "now",
+        "append",
+        "append",
+        "check_take_profit",
+        "values",
+        "values",
+        "items",
+        "model_dump",
+        "model_dump",
+        "open",
+        "load",
+        "open",
+        "load",
+        "FuturesAccountInfo",
+        "open",
+        "load",
+        "open",
+        "load",
+        "FuturesSettings",
+        "append",
+        "append",
+        "FuturesPosition",
+        "now",
+        "str",
+        "str",
+        "items"
+      ],
+      "async": [],
+      "missing_params": []
+    },
+    "hybrid_learning.py": {
+      "defined": [
+        {
+          "name": "__init__",
+          "line": 37,
+          "args": [
+            "self"
+          ],
+          "is_async": false
+        },
+        {
+          "name": "_load_batch_model",
+          "line": 64,
+          "args": [
+            "self"
+          ],
+          "is_async": false
+        },
+        {
+          "name": "start_system",
+          "line": 73,
+          "args": [
+            "self"
+          ],
+          "is_async": false
+        },
+        {
+          "name": "stop_system",
+          "line": 96,
+          "args": [
+            "self"
+          ],
+          "is_async": false
+        },
+        {
+          "name": "_setup_scheduling",
+          "line": 111,
+          "args": [
+            "self"
+          ],
+          "is_async": false
+        },
+        {
+          "name": "_scheduler_loop",
+          "line": 133,
+          "args": [
+            "self"
+          ],
+          "is_async": false
+        },
+        {
+          "name": "_scheduled_online_update",
+          "line": 147,
+          "args": [
+            "self"
+          ],
+          "is_async": false
+        },
+        {
+          "name": "_scheduled_batch_retrain",
+          "line": 175,
+          "args": [
+            "self"
+          ],
+          "is_async": false
+        },
+        {
+          "name": "_scheduled_performance_evaluation",
+          "line": 203,
+          "args": [
+            "self"
+          ],
+          "is_async": false
+        },
+        {
+          "name": "_scheduled_cleanup",
+          "line": 233,
+          "args": [
+            "self"
+          ],
+          "is_async": false
+        },
+        {
+          "name": "_prepare_online_training_data",
+          "line": 249,
+          "args": [
+            "self"
+          ],
+          "is_async": false
+        },
+        {
+          "name": "_extract_features",
+          "line": 277,
+          "args": [
+            "self",
+            "row"
+          ],
+          "is_async": false
+        },
+        {
+          "name": "_should_retrain_batch",
+          "line": 302,
+          "args": [
+            "self"
+          ],
+          "is_async": false
+        },
+        {
+          "name": "_export_training_data",
+          "line": 323,
+          "args": [
+            "self"
+          ],
+          "is_async": false
+        },
+        {
+          "name": "_get_test_data",
+          "line": 358,
+          "args": [
+            "self"
+          ],
+          "is_async": false
+        },
+        {
+          "name": "predict_hybrid_ensemble",
+          "line": 378,
+          "args": [
+            "self",
+            "features"
+          ],
+          "is_async": false
+        },
+        {
+          "name": "predict",
+          "line": 468,
+          "args": [
+            "self",
+            "features",
+            "symbol"
+          ],
+          "is_async": false
+        },
+        {
+          "name": "evaluate_ensemble_performance",
+          "line": 512,
+          "args": [
+            "self",
+            "test_data"
+          ],
+          "is_async": false
+        },
+        {
+          "name": "get_system_status",
+          "line": 547,
+          "args": [
+            "self"
+          ],
+          "is_async": false
+        },
+        {
+          "name": "update_config",
+          "line": 566,
+          "args": [
+            "self",
+            "new_config"
+          ],
+          "is_async": false
+        },
+        {
+          "name": "get_prediction",
+          "line": 575,
+          "args": [
+            "self",
+            "symbol"
+          ],
+          "is_async": false
+        }
+      ],
+      "called": [
+        "basicConfig",
+        "getLogger",
+        "HybridLearningOrchestrator",
+        "print",
+        "start_system",
+        "sleep",
+        "get_system_status",
+        "print",
+        "predict_hybrid_ensemble",
+        "print",
+        "stop_system",
+        "OnlineLearningManager",
+        "DataCollector",
+        "_load_batch_model",
+        "info",
+        "_setup_scheduling",
+        "Thread",
+        "start",
+        "info",
+        "info",
+        "stop_collection",
+        "info",
+        "do",
+        "do",
+        "do",
+        "info",
+        "info",
+        "info",
+        "random",
+        "load_model",
+        "info",
+        "warning",
+        "start_collection",
+        "info",
+        "join",
+        "do",
+        "info",
+        "_prepare_online_training_data",
+        "iterrows",
+        "update_models_incremental",
+        "info",
+        "info",
+        "_export_training_data",
+        "run",
+        "info",
+        "_get_test_data",
+        "evaluate_ensemble_performance",
+        "append",
+        "info",
+        "info",
+        "info",
+        "concat",
+        "dropna",
+        "tail",
+        "get",
+        "float",
+        "concat",
+        "rename",
+        "makedirs",
+        "to_csv",
+        "info",
+        "tail",
+        "predict_ensemble",
+        "get",
+        "get",
+        "get",
+        "get",
+        "predict_hybrid_ensemble",
+        "get",
+        "get",
+        "iterrows",
+        "update",
+        "info",
+        "get_technical_indicators",
+        "predict_hybrid_ensemble",
+        "get",
+        "get",
+        "update",
+        "error",
+        "at",
+        "run_pending",
+        "sleep",
+        "len",
+        "info",
+        "_extract_features",
+        "int",
+        "add_training_data",
+        "error",
+        "_should_retrain_batch",
+        "info",
+        "info",
+        "_load_batch_model",
+        "now",
+        "error",
+        "error",
+        "len",
+        "warning",
+        "len",
+        "error",
+        "now",
+        "timedelta",
+        "error",
+        "get_recent_data",
+        "DataFrame",
+        "error",
+        "DataFrame",
+        "get",
+        "get_recent_data",
+        "len",
+        "error",
+        "get_recent_data",
+        "warning",
+        "dirname",
+        "error",
+        "get_recent_data",
+        "DataFrame",
+        "error",
+        "DataFrame",
+        "int",
+        "error",
+        "float",
+        "float",
+        "error",
+        "len",
+        "isna",
+        "_extract_features",
+        "predict_hybrid_ensemble",
+        "int",
+        "error",
+        "get_collection_stats",
+        "get_model_stats",
+        "error",
+        "error",
+        "upper",
+        "get",
+        "get",
+        "get",
+        "get",
+        "get",
+        "get",
+        "get",
+        "get",
+        "get",
+        "get",
+        "get",
+        "get",
+        "get",
+        "get",
+        "get",
+        "get",
+        "get",
+        "get",
+        "get",
+        "get",
+        "get",
+        "get",
+        "get",
+        "error",
+        "dumps",
+        "every",
+        "every",
+        "error",
+        "sleep",
+        "get",
+        "min",
+        "dirname",
+        "isoformat",
+        "len",
+        "append",
+        "now",
+        "total_seconds",
+        "len",
+        "append",
+        "len",
+        "append",
+        "concat",
+        "round",
+        "str",
+        "str",
+        "get",
+        "str",
+        "isoformat",
+        "str",
+        "get",
+        "get",
+        "get",
+        "get",
+        "isoformat",
+        "str",
+        "every",
+        "len",
+        "abspath",
+        "len",
+        "DataFrame",
+        "catch_warnings",
+        "filterwarnings",
+        "int",
+        "hasattr",
+        "debug",
+        "every",
+        "len",
+        "now",
+        "predict",
+        "float",
+        "now",
+        "predict_proba",
+        "max",
+        "catch_warnings",
+        "filterwarnings",
+        "reshape",
+        "int",
+        "debug",
+        "predict",
+        "array",
+        "get"
+      ],
+      "async": [],
+      "missing_params": []
+    },
+    "minimal_transfer_endpoints.py": {
+      "defined": [
+        {
+          "name": "get_transfer_learning_status",
+          "line": 34,
+          "args": [],
+          "is_async": true
+        },
+        {
+          "name": "get_source_status",
+          "line": 50,
+          "args": [],
+          "is_async": true
+        },
+        {
+          "name": "check_initial_setup_required",
+          "line": 62,
+          "args": [],
+          "is_async": true
+        },
+        {
+          "name": "initial_train_source_models",
+          "line": 73,
+          "args": [
+            "request"
+          ],
+          "is_async": true
+        },
+        {
+          "name": "train_target_model",
+          "line": 85,
+          "args": [
+            "request"
+          ],
+          "is_async": true
+        },
+        {
+          "name": "check_retrain_needed",
+          "line": 101,
+          "args": [],
+          "is_async": true
+        },
+        {
+          "name": "get_training_schedule",
+          "line": 114,
+          "args": [],
+          "is_async": true
+        },
+        {
+          "name": "get_transfer_performance",
+          "line": 130,
+          "args": [],
+          "is_async": true
+        },
+        {
+          "name": "predict_with_transfer_learning",
+          "line": 156,
+          "args": [
+            "request"
+          ],
+          "is_async": true
+        },
+        {
+          "name": "get_storage_status",
+          "line": 168,
+          "args": [],
+          "is_async": true
+        },
+        {
+          "name": "cleanup_old_models",
+          "line": 185,
+          "args": [
+            "request"
+          ],
+          "is_async": true
+        },
+        {
+          "name": "optimize_storage",
+          "line": 197,
+          "args": [],
+          "is_async": true
+        },
+        {
+          "name": "get_minimal_transfer_router",
+          "line": 209,
+          "args": [],
+          "is_async": false
+        }
+      ],
+      "called": [
+        "getLogger",
+        "APIRouter",
+        "get",
+        "get",
+        "get",
+        "post",
+        "post",
+        "get",
+        "get",
+        "get",
+        "post",
+        "get",
+        "post",
+        "get",
+        "isoformat",
+        "isoformat",
+        "now",
+        "now",
+        "len",
+        "strftime",
+        "now"
+      ],
+      "async": [
+        "get_transfer_learning_status",
+        "get_source_status",
+        "check_initial_setup_required",
+        "initial_train_source_models",
+        "train_target_model",
+        "check_retrain_needed",
+        "get_training_schedule",
+        "get_transfer_performance",
+        "predict_with_transfer_learning",
+        "get_storage_status",
+        "cleanup_old_models",
+        "optimize_storage"
+      ],
+      "missing_params": []
+    },
+    "missing_endpoints.py": {
+      "defined": [
+        {
+          "name": "run_backtest",
+          "line": 30,
+          "args": [
+            "data"
+          ],
+          "is_async": true
+        },
+        {
+          "name": "get_backtest_results",
+          "line": 137,
+          "args": [
+            "backtest_id"
+          ],
+          "is_async": true
+        },
+        {
+          "name": "get_model_logs",
+          "line": 174,
+          "args": [
+            "limit"
+          ],
+          "is_async": true
+        },
+        {
+          "name": "get_model_errors",
+          "line": 226,
+          "args": [
+            "limit"
+          ],
+          "is_async": true
+        },
+        {
+          "name": "predict_batch",
+          "line": 273,
+          "args": [
+            "data"
+          ],
+          "is_async": true
+        },
+        {
+          "name": "upload_and_retrain_model",
+          "line": 344,
+          "args": [
+            "file"
+          ],
+          "is_async": true
+        },
+        {
+          "name": "check_trade_safety",
+          "line": 397,
+          "args": [
+            "data"
+          ],
+          "is_async": true
+        },
+        {
+          "name": "get_system_status",
+          "line": 462,
+          "args": [],
+          "is_async": true
+        },
+        {
+          "name": "get_trades_analytics",
+          "line": 555,
+          "args": [],
+          "is_async": true
+        },
+        {
+          "name": "get_missing_endpoints_router",
+          "line": 646,
+          "args": [],
+          "is_async": false
+        }
+      ],
+      "called": [
+        "APIRouter",
+        "getLogger",
+        "post",
+        "get",
+        "get",
+        "get",
+        "post",
+        "post",
+        "post",
+        "get",
+        "get",
+        "Body",
+        "Body",
+        "File",
+        "Body",
+        "get",
+        "get",
+        "get",
+        "get",
+        "get",
+        "str",
+        "makedirs",
+        "seed",
+        "randint",
+        "uniform",
+        "int",
+        "uniform",
+        "uniform",
+        "range",
+        "get",
+        "get",
+        "makedirs",
+        "str",
+        "makedirs",
+        "get",
+        "get",
+        "get",
+        "get",
+        "get",
+        "uniform",
+        "uniform",
+        "all",
+        "exists",
+        "uniform",
+        "int",
+        "uniform",
+        "uniform",
+        "range",
+        "uuid4",
+        "isoformat",
+        "open",
+        "dump",
+        "isoformat",
+        "min",
+        "append",
+        "open",
+        "dump",
+        "error",
+        "exists",
+        "exists",
+        "listdir",
+        "sort",
+        "error",
+        "exists",
+        "len",
+        "error",
+        "exists",
+        "len",
+        "error",
+        "append",
+        "enumerate",
+        "len",
+        "error",
+        "read",
+        "open",
+        "write",
+        "uuid4",
+        "len",
+        "isoformat",
+        "isoformat",
+        "open",
+        "dump",
+        "error",
+        "append",
+        "append",
+        "append",
+        "append",
+        "values",
+        "len",
+        "error",
+        "isoformat",
+        "exists",
+        "isoformat",
+        "randint",
+        "uniform",
+        "uniform",
+        "error",
+        "len",
+        "randint",
+        "round",
+        "round",
+        "round",
+        "round",
+        "round",
+        "round",
+        "round",
+        "round",
+        "round",
+        "round",
+        "round",
+        "round",
+        "append",
+        "isoformat",
+        "error",
+        "uniform",
+        "uniform",
+        "now",
+        "timedelta",
+        "isoformat",
+        "uniform",
+        "uniform",
+        "randint",
+        "str",
+        "endswith",
+        "str",
+        "endswith",
+        "str",
+        "endswith",
+        "str",
+        "enumerate",
+        "str",
+        "uniform",
+        "uniform",
+        "uniform",
+        "uniform",
+        "randint",
+        "randint",
+        "str",
+        "str",
+        "exists",
+        "values",
+        "str",
+        "connect",
+        "cursor",
+        "execute",
+        "fetchall",
+        "close",
+        "round",
+        "uniform",
+        "uniform",
+        "uniform",
+        "uniform",
+        "uniform",
+        "uniform",
+        "uniform",
+        "now",
+        "timedelta",
+        "str",
+        "now",
+        "now",
+        "open",
+        "load",
+        "isoformat",
+        "range",
+        "real_predict",
+        "isinstance",
+        "append",
+        "append",
+        "now",
+        "now",
+        "now",
+        "round",
+        "str",
+        "now",
+        "get",
+        "isoformat",
+        "choice",
+        "choice",
+        "round",
+        "round",
+        "round",
+        "now",
+        "abs",
+        "abs",
+        "randint",
+        "random",
+        "open",
+        "load",
+        "append",
+        "get",
+        "open",
+        "load",
+        "open",
+        "readlines",
+        "append",
+        "min",
+        "open",
+        "load",
+        "open",
+        "readlines",
+        "lower",
+        "append",
+        "abs",
+        "abs",
+        "randint",
+        "uniform",
+        "uniform",
+        "uniform",
+        "uniform",
+        "append",
+        "isoformat",
+        "choice",
+        "uniform",
+        "isoformat",
+        "getsize",
+        "isoformat",
+        "strip",
+        "now",
+        "timedelta",
+        "lower",
+        "lower",
+        "choice",
+        "uniform",
+        "isoformat",
+        "isoformat",
+        "strip",
+        "now",
+        "now",
+        "now",
+        "now",
+        "now",
+        "lower"
+      ],
+      "async": [
+        "run_backtest",
+        "get_backtest_results",
+        "get_model_logs",
+        "get_model_errors",
+        "predict_batch",
+        "upload_and_retrain_model",
+        "check_trade_safety",
+        "get_system_status",
+        "get_trades_analytics"
+      ],
+      "missing_params": []
+    },
+    "ml.py": {
+      "defined": [
+        {
+          "name": "load_model",
+          "line": 14,
+          "args": [],
+          "is_async": false
+        },
+        {
+          "name": "real_predict",
+          "line": 30,
+          "args": [
+            "row"
+          ],
+          "is_async": false
+        },
+        {
+          "name": "get_model_performance_metrics",
+          "line": 47,
+          "args": [
+            "realtime"
+          ],
+          "is_async": false
+        },
+        {
+          "name": "tune_models",
+          "line": 100,
+          "args": [
+            "symbol",
+            "hyperparameters"
+          ],
+          "is_async": false
+        },
+        {
+          "name": "get_feature_importance",
+          "line": 137,
+          "args": [],
+          "is_async": false
+        }
+      ],
+      "called": [
+        "join",
+        "Lock",
+        "dirname",
+        "load_model",
+        "array",
+        "load_model",
+        "hasattr",
+        "load_model",
+        "print",
+        "load_model",
+        "hasattr",
+        "predict",
+        "hasattr",
+        "float",
+        "print",
+        "str",
+        "getattr",
+        "print",
+        "str",
+        "isoformat",
+        "print",
+        "dict",
+        "len",
+        "print",
+        "exists",
+        "str",
+        "str",
+        "zip",
+        "print",
+        "get",
+        "predict_proba",
+        "type",
+        "print",
+        "type",
+        "now",
+        "load",
+        "print"
+      ],
+      "async": [],
+      "missing_params": []
+    },
+    "ml_compatibility_manager.py": {
+      "defined": [
+        {
+          "name": "integrate_ml_compatibility",
+          "line": 464,
+          "args": [],
+          "is_async": false
+        },
+        {
+          "name": "__init__",
+          "line": 20,
+          "args": [
+            "self"
+          ],
+          "is_async": false
+        },
+        {
+          "name": "load_existing_models",
+          "line": 33,
+          "args": [
+            "self",
+            "models_dict"
+          ],
+          "is_async": false
+        },
+        {
+          "name": "integrate_transfer_model",
+          "line": 43,
+          "args": [
+            "self",
+            "transfer_model"
+          ],
+          "is_async": false
+        },
+        {
+          "name": "_rebalance_ensemble_weights",
+          "line": 57,
+          "args": [
+            "self"
+          ],
+          "is_async": false
+        },
+        {
+          "name": "enhanced_ensemble_predict",
+          "line": 77,
+          "args": [
+            "self",
+            "features",
+            "include_transfer"
+          ],
+          "is_async": false
+        },
+        {
+          "name": "_calculate_weighted_prediction",
+          "line": 126,
+          "args": [
+            "self",
+            "predictions"
+          ],
+          "is_async": false
+        },
+        {
+          "name": "_calculate_ensemble_confidence",
+          "line": 144,
+          "args": [
+            "self",
+            "confidences",
+            "predictions"
+          ],
+          "is_async": false
+        },
+        {
+          "name": "_calculate_prediction_agreement",
+          "line": 168,
+          "args": [
+            "self",
+            "predictions"
+          ],
+          "is_async": false
+        },
+        {
+          "name": "update_online_learning",
+          "line": 185,
+          "args": [
+            "self",
+            "trade_result"
+          ],
+          "is_async": false
+        },
+        {
+          "name": "continuous_learning_update",
+          "line": 241,
+          "args": [
+            "self",
+            "performance_data"
+          ],
+          "is_async": false
+        },
+        {
+          "name": "_calculate_weight_adjustments",
+          "line": 281,
+          "args": [
+            "self",
+            "model_accuracies"
+          ],
+          "is_async": false
+        },
+        {
+          "name": "get_compatibility_status",
+          "line": 306,
+          "args": [
+            "self"
+          ],
+          "is_async": false
+        },
+        {
+          "name": "validate_all_features",
+          "line": 324,
+          "args": [
+            "self",
+            "test_features"
+          ],
+          "is_async": false
+        },
+        {
+          "name": "check_compatibility",
+          "line": 393,
+          "args": [
+            "self"
+          ],
+          "is_async": false
+        },
+        {
+          "name": "fix_compatibility",
+          "line": 422,
+          "args": [
+            "self"
+          ],
+          "is_async": false
+        },
+        {
+          "name": "get_recommendations",
+          "line": 440,
+          "args": [
+            "self"
+          ],
+          "is_async": false
+        }
+      ],
+      "called": [
+        "getLogger",
+        "MLCompatibilityManager",
+        "load_existing_models",
+        "randn",
+        "validate_all_features",
+        "print",
+        "print",
+        "print",
+        "print",
+        "integrate_ml_compatibility",
+        "sum",
+        "items",
+        "_calculate_weighted_prediction",
+        "_calculate_ensemble_confidence",
+        "items",
+        "items",
+        "_calculate_prediction_agreement",
+        "min",
+        "values",
+        "std",
+        "max",
+        "get",
+        "reshape",
+        "array",
+        "items",
+        "get",
+        "get",
+        "mean",
+        "items",
+        "info",
+        "_rebalance_ensemble_weights",
+        "info",
+        "values",
+        "len",
+        "append",
+        "append",
+        "_calculate_weight_adjustments",
+        "items",
+        "sum",
+        "list",
+        "len",
+        "copy",
+        "enhanced_ensemble_predict",
+        "update_online_learning",
+        "continuous_learning_update",
+        "all",
+        "_rebalance_ensemble_weights",
+        "error",
+        "error",
+        "hasattr",
+        "float",
+        "get",
+        "array",
+        "hasattr",
+        "hasattr",
+        "values",
+        "values",
+        "tolist",
+        "values",
+        "len",
+        "len",
+        "append",
+        "append",
+        "len",
+        "hasattr",
+        "predict_proba",
+        "predict",
+        "warning",
+        "items",
+        "float",
+        "float",
+        "isinstance",
+        "float",
+        "partial_fit",
+        "append",
+        "append",
+        "partial_fit",
+        "append",
+        "hasattr",
+        "append",
+        "max",
+        "append",
+        "len",
+        "len",
+        "sum",
+        "str",
+        "str",
+        "str",
+        "len",
+        "predict_proba",
+        "predict",
+        "warning",
+        "max",
+        "abs",
+        "isinstance",
+        "isinstance",
+        "len",
+        "hasattr",
+        "fit",
+        "append",
+        "update_target_model",
+        "append",
+        "min",
+        "str",
+        "str",
+        "str",
+        "values",
+        "max",
+        "abs",
+        "len",
+        "len",
+        "len",
+        "len",
+        "len",
+        "len",
+        "str",
+        "str"
+      ],
+      "async": [],
+      "missing_params": []
+    },
+    "ml_engine.py": {
+      "defined": [],
+      "called": [],
+      "async": [],
+      "missing_params": []
+    },
+    "online_learning.py": {
+      "defined": [
+        {
+          "name": "__init__",
+          "line": 32,
+          "args": [
+            "self",
+            "models_dir",
+            "db_path"
+          ],
+          "is_async": false
+        },
+        {
+          "name": "_load_models",
+          "line": 84,
+          "args": [
+            "self"
+          ],
+          "is_async": false
+        },
+        {
+          "name": "_initialize_model",
+          "line": 128,
+          "args": [
+            "self",
+            "model_name"
+          ],
+          "is_async": false
+        },
+        {
+          "name": "_save_model",
+          "line": 155,
+          "args": [
+            "self",
+            "model_name"
+          ],
+          "is_async": false
+        },
+        {
+          "name": "add_training_data",
+          "line": 178,
+          "args": [
+            "self",
+            "features",
+            "target",
+            "symbol"
+          ],
+          "is_async": false
+        },
+        {
+          "name": "update_models_incremental",
+          "line": 204,
+          "args": [
+            "self",
+            "batch_size"
+          ],
+          "is_async": false
+        },
+        {
+          "name": "predict_ensemble",
+          "line": 272,
+          "args": [
+            "self",
+            "features"
+          ],
+          "is_async": false
+        },
+        {
+          "name": "get_model_stats",
+          "line": 344,
+          "args": [
+            "self"
+          ],
+          "is_async": false
+        },
+        {
+          "name": "reset_models",
+          "line": 369,
+          "args": [
+            "self"
+          ],
+          "is_async": false
+        },
+        {
+          "name": "update_models",
+          "line": 381,
+          "args": [
+            "self"
+          ],
+          "is_async": false
+        },
+        {
+          "name": "get_stats",
+          "line": 397,
+          "args": [
+            "self"
+          ],
+          "is_async": false
+        },
+        {
+          "name": "enable_learning",
+          "line": 414,
+          "args": [
+            "self"
+          ],
+          "is_async": false
+        },
+        {
+          "name": "disable_learning",
+          "line": 436,
+          "args": [
+            "self"
+          ],
+          "is_async": false
+        },
+        {
+          "name": "get_status",
+          "line": 454,
+          "args": [
+            "self"
+          ],
+          "is_async": false
+        },
+        {
+          "name": "update_hyperparameters",
+          "line": 472,
+          "args": [
+            "self",
+            "hyperparameters"
+          ],
+          "is_async": false
+        },
+        {
+          "name": "update_config",
+          "line": 506,
+          "args": [
+            "self",
+            "config"
+          ],
+          "is_async": false
+        }
+      ],
+      "called": [
+        "basicConfig",
+        "getLogger",
+        "OnlineLearningManager",
+        "print",
+        "range",
+        "update_models_incremental",
+        "print",
+        "predict_ensemble",
+        "print",
+        "get_model_stats",
+        "print",
+        "abspath",
+        "join",
+        "makedirs",
+        "deque",
+        "_load_models",
+        "randint",
+        "add_training_data",
+        "random",
+        "keys",
+        "StandardScaler",
+        "random",
+        "randint",
+        "fit_transform",
+        "fit",
+        "now",
+        "_save_model",
+        "info",
+        "join",
+        "join",
+        "dump",
+        "dump",
+        "join",
+        "append",
+        "info",
+        "len",
+        "info",
+        "array",
+        "array",
+        "items",
+        "keys",
+        "reshape",
+        "items",
+        "keys",
+        "len",
+        "len",
+        "list",
+        "clear",
+        "info",
+        "update_models_incremental",
+        "get_model_stats",
+        "info",
+        "info",
+        "print",
+        "join",
+        "print",
+        "join",
+        "random",
+        "join",
+        "join",
+        "join",
+        "error",
+        "error",
+        "isoformat",
+        "get",
+        "len",
+        "open",
+        "dump",
+        "error",
+        "get",
+        "isoformat",
+        "error",
+        "list",
+        "_save_model",
+        "error",
+        "int",
+        "mean",
+        "float",
+        "len",
+        "error",
+        "get",
+        "error",
+        "keys",
+        "_initialize_model",
+        "error",
+        "list",
+        "error",
+        "len",
+        "list",
+        "error",
+        "error",
+        "get_stats",
+        "error",
+        "getattr",
+        "len",
+        "len",
+        "getattr",
+        "sum",
+        "list",
+        "error",
+        "open",
+        "dump",
+        "list",
+        "isoformat",
+        "error",
+        "update_hyperparameters",
+        "open",
+        "dump",
+        "isoformat",
+        "error",
+        "dumps",
+        "exists",
+        "exists",
+        "load",
+        "load",
+        "exists",
+        "info",
+        "_initialize_model",
+        "len",
+        "transform",
+        "hasattr",
+        "predict",
+        "accuracy_score",
+        "append",
+        "now",
+        "info",
+        "array",
+        "transform",
+        "int",
+        "hasattr",
+        "round",
+        "str",
+        "isoformat",
+        "len",
+        "str",
+        "keys",
+        "str",
+        "keys",
+        "str",
+        "list",
+        "len",
+        "list",
+        "str",
+        "str",
+        "values",
+        "set",
+        "str",
+        "update",
+        "_initialize_model",
+        "keys",
+        "str",
+        "str",
+        "now",
+        "now",
+        "len",
+        "len",
+        "partial_fit",
+        "fit",
+        "len",
+        "error",
+        "predict",
+        "error",
+        "mean",
+        "get",
+        "mean",
+        "type",
+        "keys",
+        "keys",
+        "now",
+        "now",
+        "get",
+        "info",
+        "isoformat",
+        "len",
+        "get",
+        "predict_proba",
+        "float",
+        "float",
+        "float",
+        "decision_function",
+        "float",
+        "float",
+        "list",
+        "values",
+        "get",
+        "getattr",
+        "open",
+        "load",
+        "fromisoformat",
+        "now",
+        "warning",
+        "now",
+        "max",
+        "exp",
+        "values",
+        "now",
+        "now",
+        "len",
+        "abs"
+      ],
+      "async": [],
+      "missing_params": []
+    },
+    "price_feed.py": {
+      "defined": [
+        {
+          "name": "get_binance_price",
+          "line": 5,
+          "args": [
+            "symbol"
+          ],
+          "is_async": false
+        }
+      ],
+      "called": [
+        "upper",
+        "print",
+        "get",
+        "raise_for_status",
+        "json",
+        "float",
+        "get_binance_price",
+        "RuntimeError"
+      ],
+      "async": [],
+      "missing_params": []
+    },
+    "storage_manager.py": {
+      "defined": [
+        {
+          "name": "integrate_storage_management",
+          "line": 350,
+          "args": [],
+          "is_async": false
+        },
+        {
+          "name": "__init__",
+          "line": 22,
+          "args": [
+            "self",
+            "base_path"
+          ],
+          "is_async": false
+        },
+        {
+          "name": "get_current_storage_usage",
+          "line": 36,
+          "args": [
+            "self"
+          ],
+          "is_async": false
+        },
+        {
+          "name": "_get_directory_size",
+          "line": 56,
+          "args": [
+            "self",
+            "directory"
+          ],
+          "is_async": false
+        },
+        {
+          "name": "_get_file_size",
+          "line": 68,
+          "args": [
+            "self",
+            "file_path"
+          ],
+          "is_async": false
+        },
+        {
+          "name": "project_6_month_storage",
+          "line": 74,
+          "args": [
+            "self"
+          ],
+          "is_async": false
+        },
+        {
+          "name": "_get_cleanup_recommendations",
+          "line": 99,
+          "args": [
+            "self",
+            "projected_gb"
+          ],
+          "is_async": false
+        },
+        {
+          "name": "cleanup_old_models",
+          "line": 114,
+          "args": [
+            "self",
+            "keep_versions",
+            "compress_old"
+          ],
+          "is_async": false
+        },
+        {
+          "name": "_cleanup_model_directory",
+          "line": 150,
+          "args": [
+            "self",
+            "directory",
+            "keep_versions",
+            "compress_old",
+            "stats"
+          ],
+          "is_async": false
+        },
+        {
+          "name": "optimize_storage",
+          "line": 201,
+          "args": [
+            "self"
+          ],
+          "is_async": false
+        },
+        {
+          "name": "_compress_old_logs",
+          "line": 245,
+          "args": [
+            "self"
+          ],
+          "is_async": false
+        },
+        {
+          "name": "_optimize_database",
+          "line": 277,
+          "args": [
+            "self"
+          ],
+          "is_async": false
+        },
+        {
+          "name": "get_storage_health_report",
+          "line": 313,
+          "args": [
+            "self"
+          ],
+          "is_async": false
+        }
+      ],
+      "called": [
+        "getLogger",
+        "StorageManager",
+        "get_storage_health_report",
+        "print",
+        "print",
+        "print",
+        "integrate_storage_management",
+        "Path",
+        "sum",
+        "rglob",
+        "get_current_storage_usage",
+        "glob",
+        "sort",
+        "enumerate",
+        "glob",
+        "get_current_storage_usage",
+        "project_6_month_storage",
+        "print",
+        "optimize_storage",
+        "print",
+        "_get_directory_size",
+        "_get_directory_size",
+        "_get_file_size",
+        "_get_directory_size",
+        "_get_directory_size",
+        "values",
+        "exists",
+        "is_file",
+        "exists",
+        "sum",
+        "_get_cleanup_recommendations",
+        "append",
+        "append",
+        "append",
+        "append",
+        "append",
+        "_cleanup_model_directory",
+        "exists",
+        "exists",
+        "is_file",
+        "get_current_storage_usage",
+        "cleanup_old_models",
+        "_compress_old_logs",
+        "_optimize_database",
+        "get_current_storage_usage",
+        "exists",
+        "now",
+        "timedelta",
+        "exists",
+        "connect",
+        "cursor",
+        "execute",
+        "execute",
+        "close",
+        "append",
+        "append",
+        "append",
+        "max",
+        "stat",
+        "values",
+        "iterdir",
+        "append",
+        "error",
+        "append",
+        "append",
+        "append",
+        "append",
+        "append",
+        "error",
+        "timestamp",
+        "stat",
+        "now",
+        "timedelta",
+        "stat",
+        "error",
+        "append",
+        "stat",
+        "is_dir",
+        "timestamp",
+        "stat",
+        "with_suffix",
+        "strftime",
+        "_cleanup_model_directory",
+        "unlink",
+        "exists",
+        "unlink",
+        "error",
+        "str",
+        "stat",
+        "now",
+        "append",
+        "with_suffix",
+        "str",
+        "open",
+        "stat",
+        "stat",
+        "stat",
+        "exists",
+        "unlink",
+        "append",
+        "open",
+        "copyfileobj",
+        "open",
+        "stat",
+        "stat",
+        "str",
+        "open",
+        "copyfileobj",
+        "str"
+      ],
+      "async": [],
+      "missing_params": []
+    },
+    "tasks.py": {
+      "defined": [
+        {
+          "name": "__init__",
+          "line": 4,
+          "args": [
+            "self"
+          ],
+          "is_async": false
+        },
+        {
+          "name": "run_task",
+          "line": 6,
+          "args": [
+            "self",
+            "name",
+            "func"
+          ],
+          "is_async": false
+        },
+        {
+          "name": "is_running",
+          "line": 13,
+          "args": [
+            "self",
+            "name"
+          ],
+          "is_async": false
+        }
+      ],
+      "called": [
+        "Thread",
+        "start",
+        "is_alive",
+        "print",
+        "is_alive"
+      ],
+      "async": [],
+      "missing_params": []
+    },
+    "trading.py": {
+      "defined": [
+        {
+          "name": "open_virtual_trade",
+          "line": 5,
+          "args": [
+            "symbol",
+            "direction",
+            "amount",
+            "price",
+            "tp_pct",
+            "sl_pct"
+          ],
+          "is_async": false
+        }
+      ],
+      "called": [
+        "str",
+        "save_trade",
+        "uuid4",
+        "str",
+        "now"
+      ],
+      "async": [],
+      "missing_params": []
+    },
+    "train_model.py": {
+      "defined": [
+        {
+          "name": "optimize_lgbm",
+          "line": 60,
+          "args": [
+            "X",
+            "y"
+          ],
+          "is_async": false
+        },
+        {
+          "name": "optimize_rf",
+          "line": 77,
+          "args": [
+            "X",
+            "y"
+          ],
+          "is_async": false
+        },
+        {
+          "name": "optimize_xgb",
+          "line": 94,
+          "args": [
+            "X",
+            "y"
+          ],
+          "is_async": false
+        },
+        {
+          "name": "optimize_cat",
+          "line": 114,
+          "args": [
+            "X",
+            "y"
+          ],
+          "is_async": false
+        },
+        {
+          "name": "optimize_gb",
+          "line": 130,
+          "args": [
+            "X",
+            "y"
+          ],
+          "is_async": false
+        },
+        {
+          "name": "objective",
+          "line": 61,
+          "args": [
+            "trial"
+          ],
+          "is_async": false
+        },
+        {
+          "name": "objective",
+          "line": 78,
+          "args": [
+            "trial"
+          ],
+          "is_async": false
+        },
+        {
+          "name": "objective",
+          "line": 95,
+          "args": [
+            "trial"
+          ],
+          "is_async": false
+        },
+        {
+          "name": "objective",
+          "line": 115,
+          "args": [
+            "trial"
+          ],
+          "is_async": false
+        },
+        {
+          "name": "objective",
+          "line": 131,
+          "args": [
+            "trial"
+          ],
+          "is_async": false
+        }
+      ],
+      "called": [
+        "read_csv",
+        "abspath",
+        "makedirs",
+        "strftime",
+        "join",
+        "exists",
+        "astype",
+        "dropna",
+        "fillna",
+        "train_test_split",
+        "print",
+        "optimize_rf",
+        "print",
+        "RandomForestClassifier",
+        "fit",
+        "accuracy_score",
+        "print",
+        "max",
+        "print",
+        "optimize_gb",
+        "print",
+        "GradientBoostingClassifier",
+        "fit",
+        "accuracy_score",
+        "print",
+        "max",
+        "print",
+        "items",
+        "join",
+        "create_study",
+        "optimize",
+        "create_study",
+        "optimize",
+        "create_study",
+        "optimize",
+        "create_study",
+        "optimize",
+        "create_study",
+        "optimize",
+        "print",
+        "optimize_lgbm",
+        "print",
+        "LGBMClassifier",
+        "fit",
+        "accuracy_score",
+        "print",
+        "max",
+        "predict",
+        "join",
+        "dump",
+        "print",
+        "print",
+        "optimize_xgb",
+        "print",
+        "XGBClassifier",
+        "fit",
+        "accuracy_score",
+        "print",
+        "max",
+        "print",
+        "optimize_cat",
+        "print",
+        "CatBoostClassifier",
+        "fit",
+        "accuracy_score",
+        "print",
+        "max",
+        "predict",
+        "join",
+        "dump",
+        "print",
+        "append",
+        "append",
+        "append",
+        "append",
+        "append",
+        "print",
+        "VotingClassifier",
+        "fit",
+        "join",
+        "dump",
+        "accuracy_score",
+        "append",
+        "open",
+        "dump",
+        "print",
+        "dirname",
+        "now",
+        "open",
+        "load",
+        "LGBMClassifier",
+        "mean",
+        "RandomForestClassifier",
+        "mean",
+        "XGBClassifier",
+        "mean",
+        "CatBoostClassifier",
+        "mean",
+        "GradientBoostingClassifier",
+        "mean",
+        "predict",
+        "join",
+        "dump",
+        "print",
+        "predict",
+        "join",
+        "dump",
+        "print",
+        "predict",
+        "join",
+        "dump",
+        "print",
+        "predict",
+        "get",
+        "shift",
+        "suggest_int",
+        "suggest_int",
+        "suggest_float",
+        "suggest_int",
+        "suggest_int",
+        "suggest_int",
+        "suggest_int",
+        "suggest_int",
+        "suggest_int",
+        "suggest_int",
+        "suggest_float",
+        "suggest_float",
+        "suggest_float",
+        "suggest_int",
+        "suggest_int",
+        "suggest_float",
+        "suggest_int",
+        "suggest_int",
+        "suggest_float",
+        "get",
+        "get",
+        "cross_val_score",
+        "cross_val_score",
+        "cross_val_score",
+        "cross_val_score",
+        "cross_val_score",
+        "get",
+        "get",
+        "get"
+      ],
+      "async": [],
+      "missing_params": []
+    },
+    "ws.py": {
+      "defined": [
+        {
+          "name": "prices_ws",
+          "line": 17,
+          "args": [
+            "websocket"
+          ],
+          "is_async": true
+        },
+        {
+          "name": "websocket_price",
+          "line": 170,
+          "args": [
+            "websocket"
+          ],
+          "is_async": true
+        },
+        {
+          "name": "__init__",
+          "line": 32,
+          "args": [
+            "self"
+          ],
+          "is_async": false
+        },
+        {
+          "name": "connect",
+          "line": 37,
+          "args": [
+            "self",
+            "websocket",
+            "client_id"
+          ],
+          "is_async": true
+        },
+        {
+          "name": "disconnect",
+          "line": 52,
+          "args": [
+            "self",
+            "client_id"
+          ],
+          "is_async": true
+        },
+        {
+          "name": "send_message",
+          "line": 65,
+          "args": [
+            "self",
+            "client_id",
+            "message"
+          ],
+          "is_async": true
+        },
+        {
+          "name": "heartbeat",
+          "line": 82,
+          "args": [
+            "self",
+            "client_id"
+          ],
+          "is_async": true
+        },
+        {
+          "name": "__init__",
+          "line": 102,
+          "args": [
+            "self"
+          ],
+          "is_async": false
+        },
+        {
+          "name": "stop_streamer",
+          "line": 112,
+          "args": [
+            "self"
+          ],
+          "is_async": true
+        },
+        {
+          "name": "start_streamer",
+          "line": 131,
+          "args": [
+            "self",
+            "symbol",
+            "websocket"
+          ],
+          "is_async": true
+        },
+        {
+          "name": "price_streamer",
+          "line": 140,
+          "args": [
+            "self",
+            "symbol",
+            "websocket",
+            "version"
+          ],
+          "is_async": true
+        }
+      ],
+      "called": [
+        "getLogger",
+        "APIRouter",
+        "websocket",
+        "Lock",
+        "WebSocketConnectionManager",
+        "websocket",
+        "print",
+        "print",
+        "PriceStreamerManager",
+        "accept",
+        "Event",
+        "Lock",
+        "print",
+        "print",
+        "accept",
+        "print",
+        "send_json",
+        "sleep",
+        "time",
+        "info",
+        "create_task",
+        "print",
+        "create_task",
+        "is_set",
+        "range",
+        "hasattr",
+        "get",
+        "print",
+        "start_streamer",
+        "print",
+        "accept",
+        "heartbeat",
+        "error",
+        "pop",
+        "pop",
+        "pop",
+        "info",
+        "send_text",
+        "info",
+        "error",
+        "print",
+        "set",
+        "clear",
+        "print",
+        "price_streamer",
+        "print",
+        "print",
+        "print",
+        "is_set",
+        "stop_streamer",
+        "print",
+        "print",
+        "close",
+        "warning",
+        "dumps",
+        "disconnect",
+        "disconnect",
+        "sleep",
+        "error",
+        "sleep",
+        "AsyncClient",
+        "is_set",
+        "print",
+        "send_text",
+        "print",
+        "sleep",
+        "print",
+        "print",
+        "stop_streamer",
+        "stop_streamer",
+        "send_message",
+        "wait_for",
+        "print",
+        "cancel",
+        "get",
+        "dumps",
+        "wait_for",
+        "loads",
+        "print",
+        "print",
+        "print",
+        "get",
+        "json",
+        "receive_text",
+        "isinstance",
+        "isinstance",
+        "strip",
+        "print",
+        "stop_streamer",
+        "start_streamer",
+        "time",
+        "upper",
+        "upper"
+      ],
+      "async": [
+        "prices_ws",
+        "websocket_price",
+        "connect",
+        "disconnect",
+        "send_message",
+        "heartbeat",
+        "stop_streamer",
+        "start_streamer",
+        "price_streamer"
+      ],
+      "missing_params": []
+    },
+    "__init__.py": {
+      "defined": [],
+      "called": [],
+      "async": [],
+      "missing_params": []
+    }
+  },
+  "endpoint_analysis": {
+    "main.py": {
+      "total_endpoints": 274,
+      "endpoints": [
+        "DELETE /api/alerts/history",
+        "DELETE /fapi/v1/order",
+        "DELETE /notifications/{notification_id}",
+        "DELETE /trades/cleanup",
+        "GET /advanced_auto_trading/ai_signals",
+        "GET /advanced_auto_trading/indicators/{symbol}",
+        "GET /advanced_auto_trading/market_data",
+        "GET /advanced_auto_trading/positions",
+        "GET /advanced_auto_trading/status",
+        "GET /api/alerts/history",
+        "GET /api/email/config",
+        "GET /auto_trading/signals",
+        "GET /auto_trading/status",
+        "GET /balance",
+        "GET /chart/candles",
+        "GET /charts/bollinger",
+        "GET /charts/momentum",
+        "GET /charts/volume",
+        "GET /email/config",
+        "GET /fapi/v1/exchangeInfo",
+        "GET /fapi/v1/openOrders",
+        "GET /fapi/v1/ticker/24hr",
+        "GET /fapi/v2/account",
+        "GET /fapi/v2/balance",
+        "GET /fapi/v2/positionRisk",
+        "GET /features/indicators",
+        "GET /futures/account",
+        "GET /futures/analytics",
+        "GET /futures/history",
+        "GET /futures/positions",
+        "GET /futures/settings",
+        "GET /health",
+        "GET /hft/analytics",
+        "GET /hft/opportunities",
+        "GET /hft/status",
+        "GET /indicators/config",
+        "GET /ml/compatibility/check",
+        "GET /ml/compatibility/recommendations",
+        "GET /ml/current_signal",
+        "GET /ml/data_collection/stats",
+        "GET /ml/data_collection/status",
+        "GET /ml/hybrid/predict",
+        "GET /ml/hybrid/status",
+        "GET /ml/online/buffer_status",
+        "GET /ml/online/performance",
+        "GET /ml/online/stats",
+        "GET /ml/online_learning/status",
+        "GET /ml/performance/history",
+        "GET /ml/predict",
+        "GET /ml/predict/enhanced",
+        "GET /model/active_version",
+        "GET /model/analytics",
+        "GET /model/feature_importance",
+        "GET /model/metrics",
+        "GET /model/upload_status",
+        "GET /model/versions",
+        "GET /notifications",
+        "GET /performance/dashboard",
+        "GET /performance/metrics",
+        "GET /portfolio",
+        "GET /price",
+        "GET /price/{symbol}",
+        "GET /risk/portfolio_metrics",
+        "GET /risk/stop_loss_strategies",
+        "GET /risk_settings",
+        "GET /settings/email_address",
+        "GET /settings/email_notifications",
+        "GET /trades",
+        "GET /trades/recent",
+        "POST /advanced_auto_trading/config",
+        "POST /advanced_auto_trading/start",
+        "POST /advanced_auto_trading/stop",
+        "POST /alerts/send_manual",
+        "POST /alerts/test_email",
+        "POST /api/alerts/check",
+        "POST /api/email/config",
+        "POST /api/email/send",
+        "POST /api/email/test",
+        "POST /auto_trading/execute_futures_signal",
+        "POST /auto_trading/settings",
+        "POST /auto_trading/toggle",
+        "POST /binance/auto_execute",
+        "POST /charts/refresh",
+        "POST /charts/show_indicators",
+        "POST /charts/show_price",
+        "POST /email/config",
+        "POST /email/send_test",
+        "POST /email/test",
+        "POST /fapi/v1/leverage",
+        "POST /fapi/v1/marginType",
+        "POST /fapi/v1/order",
+        "POST /futures/close_position",
+        "POST /futures/execute_signal",
+        "POST /futures/open",
+        "POST /futures/open_position",
+        "POST /futures/settings",
+        "POST /futures/update_positions",
+        "POST /hft/config",
+        "POST /hft/start",
+        "POST /hft/stop",
+        "POST /indicators/config",
+        "POST /indicators/refresh",
+        "POST /ml/compatibility/fix",
+        "POST /ml/data_collection/config",
+        "POST /ml/data_collection/start",
+        "POST /ml/data_collection/stop",
+        "POST /ml/hybrid/config",
+        "POST /ml/online/add_training_data",
+        "POST /ml/online/config",
+        "POST /ml/online/update",
+        "POST /ml/online_learning/disable",
+        "POST /ml/online_learning/enable",
+        "POST /ml/tune_models",
+        "POST /model/active_version",
+        "POST /notifications",
+        "POST /notifications/clear",
+        "POST /notifications/mark_read",
+        "POST /notify",
+        "POST /retrain",
+        "POST /risk/calculate_position_size",
+        "POST /risk/check_trade_risk",
+        "POST /risk/update_advanced_settings",
+        "POST /risk_settings",
+        "POST /settings/email_address",
+        "POST /settings/email_notifications",
+        "POST /sidebar/amount/100",
+        "POST /sidebar/amount/1000",
+        "POST /sidebar/amount/250",
+        "POST /sidebar/amount/50",
+        "POST /sidebar/amount/500",
+        "POST /sidebar/amount/max",
+        "POST /trade",
+        "POST /trades/{trade_id}/activate",
+        "POST /trades/{trade_id}/cancel",
+        "POST /trades/{trade_id}/close",
+        "POST /virtual_balance/reset"
+      ]
+    }
+  },
+  "critical_issues": [],
+  "recommendations": [
+    "Fix syntax errors in Python files before proceeding",
+    "Many import errors detected - check Python environment and install missing packages"
+  ]
+}

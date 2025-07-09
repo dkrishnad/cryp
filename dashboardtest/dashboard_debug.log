@@ -1,0 +1,1141 @@
+2025-07-07 22:29:08,308 - dash.dash - INFO - Dash is running on http://localhost:8050/
+
+2025-07-07 22:29:08,536 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://localhost:8050
+2025-07-07 22:29:08,546 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-07-07 22:31:25,984 - dash.dash - INFO - Dash is running on http://localhost:8050/
+
+2025-07-07 22:31:26,324 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://localhost:8050
+2025-07-07 22:31:26,359 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-07-07 22:32:43,863 - dash.dash - INFO - Dash is running on http://localhost:8050/
+
+2025-07-07 22:32:44,024 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://localhost:8050
+2025-07-07 22:32:44,040 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-07-07 22:35:15,045 - dash.dash - INFO - Dash is running on http://localhost:8050/
+
+2025-07-07 22:35:15,130 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://localhost:8050
+2025-07-07 22:35:15,131 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-07-07 22:35:59,888 - dash_app - ERROR - Exception on / [GET]
+Traceback (most recent call last):
+  File "c:\Users\Hari\Desktop\Testin dub\.venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Hari\Desktop\Testin dub\.venv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Hari\Desktop\Testin dub\.venv\Lib\site-packages\flask\app.py", line 915, in full_dispatch_request
+    rv = self.preprocess_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Hari\Desktop\Testin dub\.venv\Lib\site-packages\flask\app.py", line 1291, in preprocess_request
+    rv = self.ensure_sync(before_func)()
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Hari\Desktop\Testin dub\.venv\Lib\site-packages\dash\dash.py", line 1517, in _setup_server
+    _validate.validate_layout(self.layout, self._layout_value())
+  File "c:\Users\Hari\Desktop\Testin dub\.venv\Lib\site-packages\dash\_validate.py", line 455, in validate_layout
+    _validate(layout_value)
+  File "c:\Users\Hari\Desktop\Testin dub\.venv\Lib\site-packages\dash\_validate.py", line 442, in _validate
+    _validate_id(component)
+  File "c:\Users\Hari\Desktop\Testin dub\.venv\Lib\site-packages\dash\_validate.py", line 432, in _validate_id
+    raise exceptions.DuplicateIdError(
+dash.exceptions.DuplicateIdError: Duplicate component id found in the initial layout: `sidebar-virtual-balance`
+2025-07-07 22:35:59,917 - werkzeug - INFO - 127.0.0.1 - - [07/Jul/2025 22:35:59] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-07-07 22:36:33,973 - dash.dash - INFO - Dash is running on http://localhost:8050/
+
+2025-07-07 22:36:34,068 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://localhost:8050
+2025-07-07 22:36:34,069 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-07-07 22:37:40,037 - dash.dash - INFO - Dash is running on http://localhost:8050/
+
+2025-07-07 22:37:40,051 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://localhost:8050
+2025-07-07 22:37:40,051 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-07-07 22:37:54,268 - dash_app - ERROR - Exception on /assets/auto-trading-dropdown.css [GET]
+Traceback (most recent call last):
+  File "C:\Users\Hari\AppData\Roaming\Python\Python312\site-packages\flask\app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Hari\AppData\Roaming\Python\Python312\site-packages\flask\app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Hari\AppData\Roaming\Python\Python312\site-packages\flask\app.py", line 1482, in full_dispatch_request
+    rv = self.preprocess_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Hari\AppData\Roaming\Python\Python312\site-packages\flask\app.py", line 1974, in preprocess_request
+    rv = self.ensure_sync(before_func)()
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Hari\AppData\Roaming\Python\Python312\site-packages\dash\dash.py", line 1449, in _setup_server
+    _validate.validate_layout(self.layout, self._layout_value())
+  File "C:\Users\Hari\AppData\Roaming\Python\Python312\site-packages\dash\_validate.py", line 455, in validate_layout
+    _validate(layout_value)
+  File "C:\Users\Hari\AppData\Roaming\Python\Python312\site-packages\dash\_validate.py", line 442, in _validate
+    _validate_id(component)
+  File "C:\Users\Hari\AppData\Roaming\Python\Python312\site-packages\dash\_validate.py", line 432, in _validate_id
+    raise exceptions.DuplicateIdError(
+dash.exceptions.DuplicateIdError: Duplicate component id found in the initial layout: `sidebar-virtual-balance`
+2025-07-07 22:37:54,276 - werkzeug - INFO - 127.0.0.1 - - [07/Jul/2025 22:37:54] "GET /assets/component_fixes.css?m=1750767239.3765993 HTTP/1.1" 200 -
+2025-07-07 22:37:54,279 - werkzeug - INFO - 127.0.0.1 - - [07/Jul/2025 22:37:54] "GET /assets/custom.css?m=1750885747.3144565 HTTP/1.1" 200 -
+2025-07-07 22:37:54,279 - werkzeug - INFO - 127.0.0.1 - - [07/Jul/2025 22:37:54] "GET /assets/dark-theme.css?m=1750642613.26002 HTTP/1.1" 200 -
+2025-07-07 22:37:54,290 - werkzeug - INFO - 127.0.0.1 - - [07/Jul/2025 22:37:54] "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 200 -
+2025-07-07 22:37:54,478 - werkzeug - INFO - 127.0.0.1 - - [07/Jul/2025 22:37:54] "[35m[1mGET /assets/auto-trading-dropdown.css?m=1750645223.1268418 HTTP/1.1[0m" 500 -
+2025-07-07 22:38:49,085 - werkzeug - INFO - 127.0.0.1 - - [07/Jul/2025 22:38:49] "GET / HTTP/1.1" 200 -
+2025-07-07 22:38:49,234 - werkzeug - INFO - 127.0.0.1 - - [07/Jul/2025 22:38:49] "[36mGET /assets/component_fixes.css?m=1750767239.3765993 HTTP/1.1[0m" 304 -
+2025-07-07 22:38:49,235 - werkzeug - INFO - 127.0.0.1 - - [07/Jul/2025 22:38:49] "GET /assets/auto-trading-dropdown.css?m=1750645223.1268418 HTTP/1.1" 200 -
+2025-07-07 22:38:49,544 - werkzeug - INFO - 127.0.0.1 - - [07/Jul/2025 22:38:49] "[36mGET /assets/custom.css?m=1750885747.3144565 HTTP/1.1[0m" 304 -
+2025-07-07 22:38:49,587 - werkzeug - INFO - 127.0.0.1 - - [07/Jul/2025 22:38:49] "[36mGET /assets/dark-theme.css?m=1750642613.26002 HTTP/1.1[0m" 304 -
+2025-07-07 22:38:49,605 - werkzeug - INFO - 127.0.0.1 - - [07/Jul/2025 22:38:49] "GET /assets/force-dark-theme.js?m=1750642613.26002 HTTP/1.1" 200 -
+2025-07-07 22:38:49,607 - werkzeug - INFO - 127.0.0.1 - - [07/Jul/2025 22:38:49] "GET /assets/component_fixes.js?m=1750767239.3765993 HTTP/1.1" 200 -
+2025-07-07 22:38:49,607 - werkzeug - INFO - 127.0.0.1 - - [07/Jul/2025 22:38:49] "GET /assets/plotly-fix.js?m=1750735897.818488 HTTP/1.1" 200 -
+2025-07-07 22:38:49,650 - werkzeug - INFO - 127.0.0.1 - - [07/Jul/2025 22:38:49] "GET /assets/realtime_client.js?m=1751846774.8275898 HTTP/1.1" 200 -
+2025-07-07 22:38:49,874 - werkzeug - INFO - 127.0.0.1 - - [07/Jul/2025 22:38:49] "GET /assets/ws_price.js?m=1750553753.6087377 HTTP/1.1" 200 -
+2025-07-07 22:38:49,912 - werkzeug - INFO - 127.0.0.1 - - [07/Jul/2025 22:38:49] "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 200 -
+2025-07-07 22:38:50,548 - werkzeug - INFO - 127.0.0.1 - - [07/Jul/2025 22:38:50] "GET /_dash-layout HTTP/1.1" 200 -
+2025-07-07 22:38:50,551 - werkzeug - INFO - 127.0.0.1 - - [07/Jul/2025 22:38:50] "GET /_dash-dependencies HTTP/1.1" 200 -
+2025-07-07 22:38:50,577 - werkzeug - INFO - 127.0.0.1 - - [07/Jul/2025 22:38:50] "GET /_favicon.ico?v=3.0.4 HTTP/1.1" 200 -
+2025-07-07 22:39:44,976 - werkzeug - INFO - 127.0.0.1 - - [07/Jul/2025 22:39:44] "[36mGET /assets/auto-trading-dropdown.css?m=1750645223.1268418 HTTP/1.1[0m" 304 -
+2025-07-07 22:39:45,298 - werkzeug - INFO - 127.0.0.1 - - [07/Jul/2025 22:39:45] "[36mGET /assets/component_fixes.css?m=1750767239.3765993 HTTP/1.1[0m" 304 -
+2025-07-07 22:39:45,340 - werkzeug - INFO - 127.0.0.1 - - [07/Jul/2025 22:39:45] "[36mGET /assets/custom.css?m=1750885747.3144565 HTTP/1.1[0m" 304 -
+2025-07-07 22:39:45,356 - werkzeug - INFO - 127.0.0.1 - - [07/Jul/2025 22:39:45] "[36mGET /assets/dark-theme.css?m=1750642613.26002 HTTP/1.1[0m" 304 -
+2025-07-07 22:39:45,358 - werkzeug - INFO - 127.0.0.1 - - [07/Jul/2025 22:39:45] "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 200 -
+2025-07-07 22:47:53,895 - dash.dash - INFO - Dash is running on http://localhost:8051/
+
+2025-07-07 23:13:36,623 - dash.dash - INFO - Dash is running on http://localhost:8050/
+
+2025-07-07 23:13:36,963 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://localhost:8050
+2025-07-07 23:13:36,999 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-07-07 23:14:07,044 - dash_app - ERROR - Exception on / [GET]
+Traceback (most recent call last):
+  File "c:\Users\Hari\Desktop\Testin dub\.venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Hari\Desktop\Testin dub\.venv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Hari\Desktop\Testin dub\.venv\Lib\site-packages\flask\app.py", line 915, in full_dispatch_request
+    rv = self.preprocess_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Hari\Desktop\Testin dub\.venv\Lib\site-packages\flask\app.py", line 1291, in preprocess_request
+    rv = self.ensure_sync(before_func)()
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Hari\Desktop\Testin dub\.venv\Lib\site-packages\dash\dash.py", line 1517, in _setup_server
+    _validate.validate_layout(self.layout, self._layout_value())
+  File "c:\Users\Hari\Desktop\Testin dub\.venv\Lib\site-packages\dash\_validate.py", line 455, in validate_layout
+    _validate(layout_value)
+  File "c:\Users\Hari\Desktop\Testin dub\.venv\Lib\site-packages\dash\_validate.py", line 442, in _validate
+    _validate_id(component)
+  File "c:\Users\Hari\Desktop\Testin dub\.venv\Lib\site-packages\dash\_validate.py", line 432, in _validate_id
+    raise exceptions.DuplicateIdError(
+dash.exceptions.DuplicateIdError: Duplicate component id found in the initial layout: `sidebar-virtual-balance`
+2025-07-07 23:14:07,100 - werkzeug - INFO - 127.0.0.1 - - [07/Jul/2025 23:14:07] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-07-07 23:22:05,644 - dash.dash - INFO - Dash is running on http://localhost:8050/
+
+2025-07-07 23:22:05,669 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://localhost:8050
+2025-07-07 23:22:05,669 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-07-07 23:23:44,475 - dash_app - ERROR - Exception on / [GET]
+Traceback (most recent call last):
+  File "c:\Users\Hari\Desktop\Testin dub\.venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Hari\Desktop\Testin dub\.venv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Hari\Desktop\Testin dub\.venv\Lib\site-packages\flask\app.py", line 915, in full_dispatch_request
+    rv = self.preprocess_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Hari\Desktop\Testin dub\.venv\Lib\site-packages\flask\app.py", line 1291, in preprocess_request
+    rv = self.ensure_sync(before_func)()
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Hari\Desktop\Testin dub\.venv\Lib\site-packages\dash\dash.py", line 1517, in _setup_server
+    _validate.validate_layout(self.layout, self._layout_value())
+  File "c:\Users\Hari\Desktop\Testin dub\.venv\Lib\site-packages\dash\_validate.py", line 455, in validate_layout
+    _validate(layout_value)
+  File "c:\Users\Hari\Desktop\Testin dub\.venv\Lib\site-packages\dash\_validate.py", line 442, in _validate
+    _validate_id(component)
+  File "c:\Users\Hari\Desktop\Testin dub\.venv\Lib\site-packages\dash\_validate.py", line 432, in _validate_id
+    raise exceptions.DuplicateIdError(
+dash.exceptions.DuplicateIdError: Duplicate component id found in the initial layout: `auto-rollback-status`
+2025-07-07 23:23:44,482 - werkzeug - INFO - 127.0.0.1 - - [07/Jul/2025 23:23:44] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-07-07 23:24:02,214 - werkzeug - INFO - 127.0.0.1 - - [07/Jul/2025 23:24:02] "GET / HTTP/1.1" 200 -
+2025-07-07 23:24:13,394 - werkzeug - INFO - 127.0.0.1 - - [07/Jul/2025 23:24:13] "GET / HTTP/1.1" 200 -
+2025-07-07 23:24:14,283 - werkzeug - INFO - 127.0.0.1 - - [07/Jul/2025 23:24:14] "[36mGET /assets/force-dark-theme.js?m=1750642613.26002 HTTP/1.1[0m" 304 -
+2025-07-07 23:24:14,284 - werkzeug - INFO - 127.0.0.1 - - [07/Jul/2025 23:24:14] "[36mGET /assets/component_fixes.js?m=1750767239.3765993 HTTP/1.1[0m" 304 -
+2025-07-07 23:24:14,299 - werkzeug - INFO - 127.0.0.1 - - [07/Jul/2025 23:24:14] "[36mGET /assets/auto-trading-dropdown.css?m=1750645223.1268418 HTTP/1.1[0m" 304 -
+2025-07-07 23:24:14,299 - werkzeug - INFO - 127.0.0.1 - - [07/Jul/2025 23:24:14] "[36mGET /assets/dark-theme.css?m=1750642613.26002 HTTP/1.1[0m" 304 -
+2025-07-07 23:24:14,300 - werkzeug - INFO - 127.0.0.1 - - [07/Jul/2025 23:24:14] "[36mGET /assets/custom.css?m=1750885747.3144565 HTTP/1.1[0m" 304 -
+2025-07-07 23:24:14,306 - werkzeug - INFO - 127.0.0.1 - - [07/Jul/2025 23:24:14] "[36mGET /assets/component_fixes.css?m=1750767239.3765993 HTTP/1.1[0m" 304 -
+2025-07-07 23:24:14,610 - werkzeug - INFO - 127.0.0.1 - - [07/Jul/2025 23:24:14] "[36mGET /assets/realtime_client.js?m=1751846774.8275898 HTTP/1.1[0m" 304 -
+2025-07-07 23:24:14,611 - werkzeug - INFO - 127.0.0.1 - - [07/Jul/2025 23:24:14] "[36mGET /assets/plotly-fix.js?m=1750735897.818488 HTTP/1.1[0m" 304 -
+2025-07-07 23:24:14,618 - werkzeug - INFO - 127.0.0.1 - - [07/Jul/2025 23:24:14] "[36mGET /assets/ws_price.js?m=1750553753.6087377 HTTP/1.1[0m" 304 -
+2025-07-07 23:24:15,056 - werkzeug - INFO - 127.0.0.1 - - [07/Jul/2025 23:24:15] "GET /_dash-layout HTTP/1.1" 200 -
+2025-07-07 23:24:15,101 - werkzeug - INFO - 127.0.0.1 - - [07/Jul/2025 23:24:15] "GET /_dash-dependencies HTTP/1.1" 200 -
+2025-07-07 23:24:15,215 - werkzeug - INFO - 127.0.0.1 - - [07/Jul/2025 23:24:15] "GET /_favicon.ico?v=3.1.1 HTTP/1.1" 200 -
+2025-07-07 23:24:24,824 - werkzeug - INFO - 127.0.0.1 - - [07/Jul/2025 23:24:24] "GET / HTTP/1.1" 200 -
+2025-07-07 23:24:24,884 - werkzeug - INFO - 127.0.0.1 - - [07/Jul/2025 23:24:24] "[36mGET /assets/auto-trading-dropdown.css?m=1750645223.1268418 HTTP/1.1[0m" 304 -
+2025-07-07 23:24:25,043 - werkzeug - INFO - 127.0.0.1 - - [07/Jul/2025 23:24:25] "[36mGET /assets/component_fixes.css?m=1750767239.3765993 HTTP/1.1[0m" 304 -
+2025-07-07 23:24:25,199 - werkzeug - INFO - 127.0.0.1 - - [07/Jul/2025 23:24:25] "[36mGET /assets/custom.css?m=1750885747.3144565 HTTP/1.1[0m" 304 -
+2025-07-07 23:24:25,207 - werkzeug - INFO - 127.0.0.1 - - [07/Jul/2025 23:24:25] "[36mGET /assets/dark-theme.css?m=1750642613.26002 HTTP/1.1[0m" 304 -
+2025-07-07 23:24:25,249 - werkzeug - INFO - 127.0.0.1 - - [07/Jul/2025 23:24:25] "[36mGET /assets/force-dark-theme.js?m=1750642613.26002 HTTP/1.1[0m" 304 -
+2025-07-07 23:24:25,272 - werkzeug - INFO - 127.0.0.1 - - [07/Jul/2025 23:24:25] "[36mGET /assets/plotly-fix.js?m=1750735897.818488 HTTP/1.1[0m" 304 -
+2025-07-07 23:24:25,273 - werkzeug - INFO - 127.0.0.1 - - [07/Jul/2025 23:24:25] "[36mGET /assets/component_fixes.js?m=1750767239.3765993 HTTP/1.1[0m" 304 -
+2025-07-07 23:24:25,380 - werkzeug - INFO - 127.0.0.1 - - [07/Jul/2025 23:24:25] "[36mGET /assets/realtime_client.js?m=1751846774.8275898 HTTP/1.1[0m" 304 -
+2025-07-07 23:24:25,564 - werkzeug - INFO - 127.0.0.1 - - [07/Jul/2025 23:24:25] "[36mGET /assets/ws_price.js?m=1750553753.6087377 HTTP/1.1[0m" 304 -
+2025-07-07 23:24:25,975 - werkzeug - INFO - 127.0.0.1 - - [07/Jul/2025 23:24:25] "GET /_dash-layout HTTP/1.1" 200 -
+2025-07-07 23:24:25,985 - werkzeug - INFO - 127.0.0.1 - - [07/Jul/2025 23:24:25] "GET /_dash-dependencies HTTP/1.1" 200 -
+2025-07-07 23:24:25,990 - werkzeug - INFO - 127.0.0.1 - - [07/Jul/2025 23:24:25] "GET /_favicon.ico?v=3.1.1 HTTP/1.1" 200 -
+2025-07-07 23:24:33,021 - werkzeug - INFO - 127.0.0.1 - - [07/Jul/2025 23:24:33] "[36mGET /assets/auto-trading-dropdown.css?m=1750645223.1268418 HTTP/1.1[0m" 304 -
+2025-07-07 23:24:33,406 - werkzeug - INFO - 127.0.0.1 - - [07/Jul/2025 23:24:33] "[36mGET /assets/component_fixes.css?m=1750767239.3765993 HTTP/1.1[0m" 304 -
+2025-07-07 23:24:33,412 - werkzeug - INFO - 127.0.0.1 - - [07/Jul/2025 23:24:33] "[36mGET /assets/custom.css?m=1750885747.3144565 HTTP/1.1[0m" 304 -
+2025-07-07 23:24:33,459 - werkzeug - INFO - 127.0.0.1 - - [07/Jul/2025 23:24:33] "[36mGET /assets/dark-theme.css?m=1750642613.26002 HTTP/1.1[0m" 304 -
+2025-07-07 23:24:33,487 - werkzeug - INFO - 127.0.0.1 - - [07/Jul/2025 23:24:33] "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 200 -
+2025-07-07 23:26:02,850 - werkzeug - INFO - 127.0.0.1 - - [07/Jul/2025 23:26:02] "GET /?id=8e4c0435-6675-4a7a-beed-9caead5214ca&vscodeBrowserReqId=1751910962469 HTTP/1.1" 200 -
+2025-07-07 23:26:03,059 - werkzeug - INFO - 127.0.0.1 - - [07/Jul/2025 23:26:03] "GET /assets/auto-trading-dropdown.css?m=1750645223.1268418 HTTP/1.1" 200 -
+2025-07-07 23:26:03,246 - werkzeug - INFO - 127.0.0.1 - - [07/Jul/2025 23:26:03] "GET /assets/component_fixes.css?m=1750767239.3765993 HTTP/1.1" 200 -
+2025-07-07 23:26:03,289 - werkzeug - INFO - 127.0.0.1 - - [07/Jul/2025 23:26:03] "GET /assets/custom.css?m=1750885747.3144565 HTTP/1.1" 200 -
+2025-07-07 23:26:03,315 - werkzeug - INFO - 127.0.0.1 - - [07/Jul/2025 23:26:03] "GET /assets/component_fixes.js?m=1750767239.3765993 HTTP/1.1" 200 -
+2025-07-07 23:26:03,317 - werkzeug - INFO - 127.0.0.1 - - [07/Jul/2025 23:26:03] "GET /assets/force-dark-theme.js?m=1750642613.26002 HTTP/1.1" 200 -
+2025-07-07 23:26:03,331 - werkzeug - INFO - 127.0.0.1 - - [07/Jul/2025 23:26:03] "GET /assets/dark-theme.css?m=1750642613.26002 HTTP/1.1" 200 -
+2025-07-07 23:26:03,408 - werkzeug - INFO - 127.0.0.1 - - [07/Jul/2025 23:26:03] "GET /assets/plotly-fix.js?m=1750735897.818488 HTTP/1.1" 200 -
+2025-07-07 23:26:03,580 - werkzeug - INFO - 127.0.0.1 - - [07/Jul/2025 23:26:03] "GET /assets/realtime_client.js?m=1751846774.8275898 HTTP/1.1" 200 -
+2025-07-07 23:26:03,629 - werkzeug - INFO - 127.0.0.1 - - [07/Jul/2025 23:26:03] "GET /assets/ws_price.js?m=1750553753.6087377 HTTP/1.1" 200 -
+2025-07-07 23:26:05,981 - werkzeug - INFO - 127.0.0.1 - - [07/Jul/2025 23:26:05] "GET /_dash-layout HTTP/1.1" 200 -
+2025-07-07 23:26:05,983 - werkzeug - INFO - 127.0.0.1 - - [07/Jul/2025 23:26:05] "GET /_dash-dependencies HTTP/1.1" 200 -
+2025-07-07 23:27:23,498 - werkzeug - INFO - 127.0.0.1 - - [07/Jul/2025 23:27:23] "GET / HTTP/1.1" 200 -
+2025-07-07 23:27:43,453 - werkzeug - INFO - 127.0.0.1 - - [07/Jul/2025 23:27:43] "GET / HTTP/1.1" 200 -
+2025-07-07 23:40:04,949 - werkzeug - INFO - 127.0.0.1 - - [07/Jul/2025 23:40:04] "GET / HTTP/1.1" 200 -
+2025-07-07 23:40:05,172 - werkzeug - INFO - 127.0.0.1 - - [07/Jul/2025 23:40:05] "GET /assets/auto-trading-dropdown.css?m=1750645223.1268418 HTTP/1.1" 200 -
+2025-07-07 23:40:05,342 - werkzeug - INFO - 127.0.0.1 - - [07/Jul/2025 23:40:05] "GET /assets/component_fixes.css?m=1750767239.3765993 HTTP/1.1" 200 -
+2025-07-07 23:40:05,354 - werkzeug - INFO - 127.0.0.1 - - [07/Jul/2025 23:40:05] "GET /assets/custom.css?m=1750885747.3144565 HTTP/1.1" 200 -
+2025-07-07 23:40:05,387 - werkzeug - INFO - 127.0.0.1 - - [07/Jul/2025 23:40:05] "GET /assets/dark-theme.css?m=1750642613.26002 HTTP/1.1" 200 -
+2025-07-07 23:40:05,436 - werkzeug - INFO - 127.0.0.1 - - [07/Jul/2025 23:40:05] "GET /assets/component_fixes.js?m=1750767239.3765993 HTTP/1.1" 200 -
+2025-07-07 23:40:05,447 - werkzeug - INFO - 127.0.0.1 - - [07/Jul/2025 23:40:05] "GET /assets/force-dark-theme.js?m=1750642613.26002 HTTP/1.1" 200 -
+2025-07-07 23:40:05,530 - werkzeug - INFO - 127.0.0.1 - - [07/Jul/2025 23:40:05] "GET /assets/plotly-fix.js?m=1750735897.818488 HTTP/1.1" 200 -
+2025-07-07 23:40:05,736 - werkzeug - INFO - 127.0.0.1 - - [07/Jul/2025 23:40:05] "GET /assets/realtime_client.js?m=1751846774.8275898 HTTP/1.1" 200 -
+2025-07-07 23:40:05,794 - werkzeug - INFO - 127.0.0.1 - - [07/Jul/2025 23:40:05] "GET /assets/ws_price.js?m=1750553753.6087377 HTTP/1.1" 200 -
+2025-07-07 23:40:07,743 - werkzeug - INFO - 127.0.0.1 - - [07/Jul/2025 23:40:07] "GET /_dash-layout HTTP/1.1" 200 -
+2025-07-07 23:40:07,769 - werkzeug - INFO - 127.0.0.1 - - [07/Jul/2025 23:40:07] "GET /_dash-dependencies HTTP/1.1" 200 -
+2025-07-07 23:40:07,846 - werkzeug - INFO - 127.0.0.1 - - [07/Jul/2025 23:40:07] "GET /_favicon.ico?v=3.1.1 HTTP/1.1" 200 -
+2025-07-07 23:40:26,084 - werkzeug - INFO - 127.0.0.1 - - [07/Jul/2025 23:40:26] "[36mGET /assets/auto-trading-dropdown.css?m=1750645223.1268418 HTTP/1.1[0m" 304 -
+2025-07-07 23:40:26,422 - werkzeug - INFO - 127.0.0.1 - - [07/Jul/2025 23:40:26] "[36mGET /assets/component_fixes.css?m=1750767239.3765993 HTTP/1.1[0m" 304 -
+2025-07-07 23:40:26,437 - werkzeug - INFO - 127.0.0.1 - - [07/Jul/2025 23:40:26] "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 200 -
+2025-07-07 23:40:26,479 - werkzeug - INFO - 127.0.0.1 - - [07/Jul/2025 23:40:26] "[36mGET /assets/dark-theme.css?m=1750642613.26002 HTTP/1.1[0m" 304 -
+2025-07-07 23:40:26,512 - werkzeug - INFO - 127.0.0.1 - - [07/Jul/2025 23:40:26] "[36mGET /assets/custom.css?m=1750885747.3144565 HTTP/1.1[0m" 304 -
+2025-07-07 23:41:45,173 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-07-07 23:41:47,413 - urllib3.connectionpool - DEBUG - http://localhost:8000 "GET /health HTTP/1.1" 200 4341
+2025-07-07 23:41:47,451 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-07-07 23:41:49,492 - urllib3.connectionpool - DEBUG - http://localhost:8000 "GET /health HTTP/1.1" 200 4341
+2025-07-07 23:48:14,813 - werkzeug - INFO - 127.0.0.1 - - [07/Jul/2025 23:48:14] "GET /?id=8e4c0435-6675-4a7a-beed-9caead5214ca&vscodeBrowserReqId=1751912294483 HTTP/1.1" 200 -
+2025-07-07 23:48:15,050 - werkzeug - INFO - 127.0.0.1 - - [07/Jul/2025 23:48:15] "[36mGET /assets/auto-trading-dropdown.css?m=1750645223.1268418 HTTP/1.1[0m" 304 -
+2025-07-07 23:48:15,140 - werkzeug - INFO - 127.0.0.1 - - [07/Jul/2025 23:48:15] "[36mGET /assets/dark-theme.css?m=1750642613.26002 HTTP/1.1[0m" 304 -
+2025-07-07 23:48:15,146 - werkzeug - INFO - 127.0.0.1 - - [07/Jul/2025 23:48:15] "[36mGET /assets/custom.css?m=1750885747.3144565 HTTP/1.1[0m" 304 -
+2025-07-07 23:48:15,147 - werkzeug - INFO - 127.0.0.1 - - [07/Jul/2025 23:48:15] "[36mGET /assets/component_fixes.css?m=1750767239.3765993 HTTP/1.1[0m" 304 -
+2025-07-07 23:48:15,147 - werkzeug - INFO - 127.0.0.1 - - [07/Jul/2025 23:48:15] "[36mGET /assets/component_fixes.js?m=1750767239.3765993 HTTP/1.1[0m" 304 -
+2025-07-07 23:48:15,147 - werkzeug - INFO - 127.0.0.1 - - [07/Jul/2025 23:48:15] "[36mGET /assets/force-dark-theme.js?m=1750642613.26002 HTTP/1.1[0m" 304 -
+2025-07-07 23:48:15,374 - werkzeug - INFO - 127.0.0.1 - - [07/Jul/2025 23:48:15] "[36mGET /assets/plotly-fix.js?m=1750735897.818488 HTTP/1.1[0m" 304 -
+2025-07-07 23:48:15,459 - werkzeug - INFO - 127.0.0.1 - - [07/Jul/2025 23:48:15] "[36mGET /assets/ws_price.js?m=1750553753.6087377 HTTP/1.1[0m" 304 -
+2025-07-07 23:48:15,466 - werkzeug - INFO - 127.0.0.1 - - [07/Jul/2025 23:48:15] "[36mGET /assets/realtime_client.js?m=1751846774.8275898 HTTP/1.1[0m" 304 -
+2025-07-07 23:48:16,207 - werkzeug - INFO - 127.0.0.1 - - [07/Jul/2025 23:48:16] "GET /_dash-dependencies HTTP/1.1" 200 -
+2025-07-07 23:48:16,229 - werkzeug - INFO - 127.0.0.1 - - [07/Jul/2025 23:48:16] "GET /_dash-layout HTTP/1.1" 200 -
+2025-07-07 23:49:12,132 - werkzeug - INFO - 127.0.0.1 - - [07/Jul/2025 23:49:12] "GET / HTTP/1.1" 200 -
+2025-07-07 23:49:12,316 - werkzeug - INFO - 127.0.0.1 - - [07/Jul/2025 23:49:12] "[36mGET /assets/auto-trading-dropdown.css?m=1750645223.1268418 HTTP/1.1[0m" 304 -
+2025-07-07 23:49:12,498 - werkzeug - INFO - 127.0.0.1 - - [07/Jul/2025 23:49:12] "[36mGET /assets/custom.css?m=1750885747.3144565 HTTP/1.1[0m" 304 -
+2025-07-07 23:49:12,506 - werkzeug - INFO - 127.0.0.1 - - [07/Jul/2025 23:49:12] "[36mGET /assets/component_fixes.css?m=1750767239.3765993 HTTP/1.1[0m" 304 -
+2025-07-07 23:49:12,513 - werkzeug - INFO - 127.0.0.1 - - [07/Jul/2025 23:49:12] "[36mGET /assets/dark-theme.css?m=1750642613.26002 HTTP/1.1[0m" 304 -
+2025-07-07 23:49:12,536 - werkzeug - INFO - 127.0.0.1 - - [07/Jul/2025 23:49:12] "[36mGET /assets/component_fixes.js?m=1750767239.3765993 HTTP/1.1[0m" 304 -
+2025-07-07 23:49:12,553 - werkzeug - INFO - 127.0.0.1 - - [07/Jul/2025 23:49:12] "[36mGET /assets/force-dark-theme.js?m=1750642613.26002 HTTP/1.1[0m" 304 -
+2025-07-07 23:49:12,673 - werkzeug - INFO - 127.0.0.1 - - [07/Jul/2025 23:49:12] "[36mGET /assets/plotly-fix.js?m=1750735897.818488 HTTP/1.1[0m" 304 -
+2025-07-07 23:49:12,819 - werkzeug - INFO - 127.0.0.1 - - [07/Jul/2025 23:49:12] "[36mGET /assets/realtime_client.js?m=1751846774.8275898 HTTP/1.1[0m" 304 -
+2025-07-07 23:49:12,825 - werkzeug - INFO - 127.0.0.1 - - [07/Jul/2025 23:49:12] "[36mGET /assets/ws_price.js?m=1750553753.6087377 HTTP/1.1[0m" 304 -
+2025-07-07 23:49:12,869 - werkzeug - INFO - 127.0.0.1 - - [07/Jul/2025 23:49:12] "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 200 -
+2025-07-07 23:49:13,948 - werkzeug - INFO - 127.0.0.1 - - [07/Jul/2025 23:49:13] "GET /_dash-layout HTTP/1.1" 200 -
+2025-07-07 23:49:13,951 - werkzeug - INFO - 127.0.0.1 - - [07/Jul/2025 23:49:13] "GET /_dash-dependencies HTTP/1.1" 200 -
+2025-07-07 23:49:14,159 - werkzeug - INFO - 127.0.0.1 - - [07/Jul/2025 23:49:14] "GET /_favicon.ico?v=3.1.1 HTTP/1.1" 200 -
+2025-07-07 23:49:25,820 - werkzeug - INFO - 127.0.0.1 - - [07/Jul/2025 23:49:25] "[36mGET /assets/auto-trading-dropdown.css?m=1750645223.1268418 HTTP/1.1[0m" 304 -
+2025-07-07 23:49:26,206 - werkzeug - INFO - 127.0.0.1 - - [07/Jul/2025 23:49:26] "[36mGET /assets/custom.css?m=1750885747.3144565 HTTP/1.1[0m" 304 -
+2025-07-07 23:49:26,240 - werkzeug - INFO - 127.0.0.1 - - [07/Jul/2025 23:49:26] "[36mGET /assets/component_fixes.css?m=1750767239.3765993 HTTP/1.1[0m" 304 -
+2025-07-07 23:49:26,307 - werkzeug - INFO - 127.0.0.1 - - [07/Jul/2025 23:49:26] "[36mGET /assets/dark-theme.css?m=1750642613.26002 HTTP/1.1[0m" 304 -
+2025-07-07 23:49:26,384 - werkzeug - INFO - 127.0.0.1 - - [07/Jul/2025 23:49:26] "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 200 -
+2025-07-07 23:55:36,393 - werkzeug - INFO - 127.0.0.1 - - [07/Jul/2025 23:55:36] "GET /?id=8e4c0435-6675-4a7a-beed-9caead5214ca&vscodeBrowserReqId=1751912736037 HTTP/1.1" 200 -
+2025-07-07 23:55:36,621 - werkzeug - INFO - 127.0.0.1 - - [07/Jul/2025 23:55:36] "[36mGET /assets/auto-trading-dropdown.css?m=1750645223.1268418 HTTP/1.1[0m" 304 -
+2025-07-07 23:55:36,853 - werkzeug - INFO - 127.0.0.1 - - [07/Jul/2025 23:55:36] "[36mGET /assets/custom.css?m=1750885747.3144565 HTTP/1.1[0m" 304 -
+2025-07-07 23:55:36,962 - werkzeug - INFO - 127.0.0.1 - - [07/Jul/2025 23:55:36] "[36mGET /assets/component_fixes.css?m=1750767239.3765993 HTTP/1.1[0m" 304 -
+2025-07-07 23:55:36,965 - werkzeug - INFO - 127.0.0.1 - - [07/Jul/2025 23:55:36] "[36mGET /assets/dark-theme.css?m=1750642613.26002 HTTP/1.1[0m" 304 -
+2025-07-07 23:55:36,991 - werkzeug - INFO - 127.0.0.1 - - [07/Jul/2025 23:55:36] "[36mGET /assets/component_fixes.js?m=1750767239.3765993 HTTP/1.1[0m" 304 -
+2025-07-07 23:55:37,025 - werkzeug - INFO - 127.0.0.1 - - [07/Jul/2025 23:55:37] "[36mGET /assets/force-dark-theme.js?m=1750642613.26002 HTTP/1.1[0m" 304 -
+2025-07-07 23:55:37,063 - werkzeug - INFO - 127.0.0.1 - - [07/Jul/2025 23:55:37] "[36mGET /assets/plotly-fix.js?m=1750735897.818488 HTTP/1.1[0m" 304 -
+2025-07-07 23:55:37,292 - werkzeug - INFO - 127.0.0.1 - - [07/Jul/2025 23:55:37] "[36mGET /assets/realtime_client.js?m=1751846774.8275898 HTTP/1.1[0m" 304 -
+2025-07-07 23:55:37,310 - werkzeug - INFO - 127.0.0.1 - - [07/Jul/2025 23:55:37] "[36mGET /assets/ws_price.js?m=1750553753.6087377 HTTP/1.1[0m" 304 -
+2025-07-07 23:55:37,759 - werkzeug - INFO - 127.0.0.1 - - [07/Jul/2025 23:55:37] "GET /_dash-dependencies HTTP/1.1" 200 -
+2025-07-07 23:55:37,885 - werkzeug - INFO - 127.0.0.1 - - [07/Jul/2025 23:55:37] "GET /_dash-layout HTTP/1.1" 200 -
+2025-07-08 00:04:15,970 - werkzeug - INFO - 127.0.0.1 - - [08/Jul/2025 00:04:15] "GET /?id=8e4c0435-6675-4a7a-beed-9caead5214ca&vscodeBrowserReqId=1751913255635 HTTP/1.1" 200 -
+2025-07-08 00:04:16,264 - werkzeug - INFO - 127.0.0.1 - - [08/Jul/2025 00:04:16] "[36mGET /assets/auto-trading-dropdown.css?m=1750645223.1268418 HTTP/1.1[0m" 304 -
+2025-07-08 00:04:16,466 - werkzeug - INFO - 127.0.0.1 - - [08/Jul/2025 00:04:16] "[36mGET /assets/component_fixes.css?m=1750767239.3765993 HTTP/1.1[0m" 304 -
+2025-07-08 00:04:16,477 - werkzeug - INFO - 127.0.0.1 - - [08/Jul/2025 00:04:16] "[36mGET /assets/custom.css?m=1750885747.3144565 HTTP/1.1[0m" 304 -
+2025-07-08 00:04:16,522 - werkzeug - INFO - 127.0.0.1 - - [08/Jul/2025 00:04:16] "[36mGET /assets/dark-theme.css?m=1750642613.26002 HTTP/1.1[0m" 304 -
+2025-07-08 00:04:16,567 - werkzeug - INFO - 127.0.0.1 - - [08/Jul/2025 00:04:16] "[36mGET /assets/component_fixes.js?m=1750767239.3765993 HTTP/1.1[0m" 304 -
+2025-07-08 00:04:16,653 - werkzeug - INFO - 127.0.0.1 - - [08/Jul/2025 00:04:16] "[36mGET /assets/force-dark-theme.js?m=1750642613.26002 HTTP/1.1[0m" 304 -
+2025-07-08 00:04:16,669 - werkzeug - INFO - 127.0.0.1 - - [08/Jul/2025 00:04:16] "[36mGET /assets/plotly-fix.js?m=1750735897.818488 HTTP/1.1[0m" 304 -
+2025-07-08 00:04:16,836 - werkzeug - INFO - 127.0.0.1 - - [08/Jul/2025 00:04:16] "[36mGET /assets/ws_price.js?m=1750553753.6087377 HTTP/1.1[0m" 304 -
+2025-07-08 00:04:16,871 - werkzeug - INFO - 127.0.0.1 - - [08/Jul/2025 00:04:16] "[36mGET /assets/realtime_client.js?m=1751846774.8275898 HTTP/1.1[0m" 304 -
+2025-07-08 00:04:17,377 - werkzeug - INFO - 127.0.0.1 - - [08/Jul/2025 00:04:17] "GET /_dash-layout HTTP/1.1" 200 -
+2025-07-08 00:04:17,380 - werkzeug - INFO - 127.0.0.1 - - [08/Jul/2025 00:04:17] "GET /_dash-dependencies HTTP/1.1" 200 -
+2025-07-08 00:04:52,959 - werkzeug - INFO - 127.0.0.1 - - [08/Jul/2025 00:04:52] "GET /?id=5bb86d37-826e-4e80-9881-6e087957ae21&vscodeBrowserReqId=1751913292644 HTTP/1.1" 200 -
+2025-07-08 00:04:53,218 - werkzeug - INFO - 127.0.0.1 - - [08/Jul/2025 00:04:53] "[36mGET /assets/auto-trading-dropdown.css?m=1750645223.1268418 HTTP/1.1[0m" 304 -
+2025-07-08 00:04:53,448 - werkzeug - INFO - 127.0.0.1 - - [08/Jul/2025 00:04:53] "[36mGET /assets/component_fixes.css?m=1750767239.3765993 HTTP/1.1[0m" 304 -
+2025-07-08 00:04:53,459 - werkzeug - INFO - 127.0.0.1 - - [08/Jul/2025 00:04:53] "[36mGET /assets/custom.css?m=1750885747.3144565 HTTP/1.1[0m" 304 -
+2025-07-08 00:04:53,462 - werkzeug - INFO - 127.0.0.1 - - [08/Jul/2025 00:04:53] "[36mGET /assets/component_fixes.js?m=1750767239.3765993 HTTP/1.1[0m" 304 -
+2025-07-08 00:04:53,463 - werkzeug - INFO - 127.0.0.1 - - [08/Jul/2025 00:04:53] "[36mGET /assets/dark-theme.css?m=1750642613.26002 HTTP/1.1[0m" 304 -
+2025-07-08 00:04:53,465 - werkzeug - INFO - 127.0.0.1 - - [08/Jul/2025 00:04:53] "[36mGET /assets/force-dark-theme.js?m=1750642613.26002 HTTP/1.1[0m" 304 -
+2025-07-08 00:04:53,535 - werkzeug - INFO - 127.0.0.1 - - [08/Jul/2025 00:04:53] "[36mGET /assets/plotly-fix.js?m=1750735897.818488 HTTP/1.1[0m" 304 -
+2025-07-08 00:04:53,755 - werkzeug - INFO - 127.0.0.1 - - [08/Jul/2025 00:04:53] "[36mGET /assets/realtime_client.js?m=1751846774.8275898 HTTP/1.1[0m" 304 -
+2025-07-08 00:04:53,771 - werkzeug - INFO - 127.0.0.1 - - [08/Jul/2025 00:04:53] "[36mGET /assets/ws_price.js?m=1750553753.6087377 HTTP/1.1[0m" 304 -
+2025-07-08 00:04:54,143 - werkzeug - INFO - 127.0.0.1 - - [08/Jul/2025 00:04:54] "GET /_dash-dependencies HTTP/1.1" 200 -
+2025-07-08 00:04:54,146 - werkzeug - INFO - 127.0.0.1 - - [08/Jul/2025 00:04:54] "GET /_dash-layout HTTP/1.1" 200 -
+2025-07-08 00:05:24,792 - werkzeug - INFO - 127.0.0.1 - - [08/Jul/2025 00:05:24] "GET /?id=5bb86d37-826e-4e80-9881-6e087957ae21&vscodeBrowserReqId=1751913324780 HTTP/1.1" 200 -
+2025-07-08 00:05:25,397 - werkzeug - INFO - 127.0.0.1 - - [08/Jul/2025 00:05:25] "[36mGET /assets/component_fixes.css?m=1750767239.3765993 HTTP/1.1[0m" 304 -
+2025-07-08 00:05:25,397 - werkzeug - INFO - 127.0.0.1 - - [08/Jul/2025 00:05:25] "[36mGET /assets/auto-trading-dropdown.css?m=1750645223.1268418 HTTP/1.1[0m" 304 -
+2025-07-08 00:05:25,527 - werkzeug - INFO - 127.0.0.1 - - [08/Jul/2025 00:05:25] "[36mGET /assets/custom.css?m=1750885747.3144565 HTTP/1.1[0m" 304 -
+2025-07-08 00:05:25,632 - werkzeug - INFO - 127.0.0.1 - - [08/Jul/2025 00:05:25] "[36mGET /assets/dark-theme.css?m=1750642613.26002 HTTP/1.1[0m" 304 -
+2025-07-08 00:05:25,814 - werkzeug - INFO - 127.0.0.1 - - [08/Jul/2025 00:05:25] "[36mGET /assets/component_fixes.js?m=1750767239.3765993 HTTP/1.1[0m" 304 -
+2025-07-08 00:05:25,863 - werkzeug - INFO - 127.0.0.1 - - [08/Jul/2025 00:05:25] "[36mGET /assets/force-dark-theme.js?m=1750642613.26002 HTTP/1.1[0m" 304 -
+2025-07-08 00:05:25,870 - werkzeug - INFO - 127.0.0.1 - - [08/Jul/2025 00:05:25] "[36mGET /assets/plotly-fix.js?m=1750735897.818488 HTTP/1.1[0m" 304 -
+2025-07-08 00:05:26,030 - werkzeug - INFO - 127.0.0.1 - - [08/Jul/2025 00:05:26] "[36mGET /assets/realtime_client.js?m=1751846774.8275898 HTTP/1.1[0m" 304 -
+2025-07-08 00:05:26,226 - werkzeug - INFO - 127.0.0.1 - - [08/Jul/2025 00:05:26] "[36mGET /assets/ws_price.js?m=1750553753.6087377 HTTP/1.1[0m" 304 -
+2025-07-08 00:05:26,716 - werkzeug - INFO - 127.0.0.1 - - [08/Jul/2025 00:05:26] "GET /_dash-layout HTTP/1.1" 200 -
+2025-07-08 00:05:26,771 - werkzeug - INFO - 127.0.0.1 - - [08/Jul/2025 00:05:26] "GET /_dash-dependencies HTTP/1.1" 200 -
+2025-07-08 00:23:29,676 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8000
+2025-07-08 01:34:38,076 - werkzeug - INFO - 127.0.0.1 - - [08/Jul/2025 01:34:38] "GET / HTTP/1.1" 200 -
+2025-07-08 01:34:38,097 - werkzeug - INFO - 127.0.0.1 - - [08/Jul/2025 01:34:38] "[36mGET /assets/auto-trading-dropdown.css?m=1750645223.1268418 HTTP/1.1[0m" 304 -
+2025-07-08 01:34:38,331 - werkzeug - INFO - 127.0.0.1 - - [08/Jul/2025 01:34:38] "[36mGET /assets/component_fixes.css?m=1750767239.3765993 HTTP/1.1[0m" 304 -
+2025-07-08 01:34:38,485 - werkzeug - INFO - 127.0.0.1 - - [08/Jul/2025 01:34:38] "[36mGET /assets/component_fixes.js?m=1750767239.3765993 HTTP/1.1[0m" 304 -
+2025-07-08 01:34:38,485 - werkzeug - INFO - 127.0.0.1 - - [08/Jul/2025 01:34:38] "[36mGET /assets/custom.css?m=1750885747.3144565 HTTP/1.1[0m" 304 -
+2025-07-08 01:34:38,485 - werkzeug - INFO - 127.0.0.1 - - [08/Jul/2025 01:34:38] "[36mGET /assets/dark-theme.css?m=1750642613.26002 HTTP/1.1[0m" 304 -
+2025-07-08 01:34:38,485 - werkzeug - INFO - 127.0.0.1 - - [08/Jul/2025 01:34:38] "[36mGET /assets/force-dark-theme.js?m=1750642613.26002 HTTP/1.1[0m" 304 -
+2025-07-08 01:34:38,485 - werkzeug - INFO - 127.0.0.1 - - [08/Jul/2025 01:34:38] "[36mGET /assets/plotly-fix.js?m=1750735897.818488 HTTP/1.1[0m" 304 -
+2025-07-08 01:34:38,640 - werkzeug - INFO - 127.0.0.1 - - [08/Jul/2025 01:34:38] "[36mGET /assets/realtime_client.js?m=1751846774.8275898 HTTP/1.1[0m" 304 -
+2025-07-08 01:34:38,798 - werkzeug - INFO - 127.0.0.1 - - [08/Jul/2025 01:34:38] "[36mGET /assets/ws_price.js?m=1750553753.6087377 HTTP/1.1[0m" 304 -
+2025-07-08 01:34:39,169 - werkzeug - INFO - 127.0.0.1 - - [08/Jul/2025 01:34:39] "GET /_dash-dependencies HTTP/1.1" 200 -
+2025-07-08 01:34:39,169 - werkzeug - INFO - 127.0.0.1 - - [08/Jul/2025 01:34:39] "GET /_dash-layout HTTP/1.1" 200 -
+2025-07-08 01:34:39,169 - werkzeug - INFO - 127.0.0.1 - - [08/Jul/2025 01:34:39] "GET /_favicon.ico?v=3.1.1 HTTP/1.1" 200 -
+2025-07-08 04:05:31,077 - dash.dash - INFO - Dash is running on http://localhost:8050/
+
+2025-07-08 04:05:31,235 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://localhost:8050
+2025-07-08 04:05:31,243 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-07-08 04:06:41,150 - dash_app - ERROR - Exception on / [GET]
+Traceback (most recent call last):
+  File "c:\Users\Hari\Desktop\Testin dub\.venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Hari\Desktop\Testin dub\.venv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Hari\Desktop\Testin dub\.venv\Lib\site-packages\flask\app.py", line 915, in full_dispatch_request
+    rv = self.preprocess_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Hari\Desktop\Testin dub\.venv\Lib\site-packages\flask\app.py", line 1291, in preprocess_request
+    rv = self.ensure_sync(before_func)()
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Hari\Desktop\Testin dub\.venv\Lib\site-packages\dash\dash.py", line 1517, in _setup_server
+    _validate.validate_layout(self.layout, self._layout_value())
+  File "c:\Users\Hari\Desktop\Testin dub\.venv\Lib\site-packages\dash\_validate.py", line 455, in validate_layout
+    _validate(layout_value)
+  File "c:\Users\Hari\Desktop\Testin dub\.venv\Lib\site-packages\dash\_validate.py", line 442, in _validate
+    _validate_id(component)
+  File "c:\Users\Hari\Desktop\Testin dub\.venv\Lib\site-packages\dash\_validate.py", line 432, in _validate_id
+    raise exceptions.DuplicateIdError(
+dash.exceptions.DuplicateIdError: Duplicate component id found in the initial layout: `auto-rollback-status`
+2025-07-08 04:06:41,195 - werkzeug - INFO - 127.0.0.1 - - [08/Jul/2025 04:06:41] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-07-08 04:06:41,356 - werkzeug - INFO - 127.0.0.1 - - [08/Jul/2025 04:06:41] "GET /favicon.ico HTTP/1.1" 200 -
+2025-07-08 04:06:49,353 - werkzeug - INFO - 127.0.0.1 - - [08/Jul/2025 04:06:49] "GET / HTTP/1.1" 200 -
+2025-07-08 04:06:49,696 - werkzeug - INFO - 127.0.0.1 - - [08/Jul/2025 04:06:49] "[36mGET /assets/auto-trading-dropdown.css?m=1750645223.1268418 HTTP/1.1[0m" 304 -
+2025-07-08 04:06:49,749 - werkzeug - INFO - 127.0.0.1 - - [08/Jul/2025 04:06:49] "[36mGET /assets/component_fixes.css?m=1750767239.3765993 HTTP/1.1[0m" 304 -
+2025-07-08 04:06:49,759 - werkzeug - INFO - 127.0.0.1 - - [08/Jul/2025 04:06:49] "[36mGET /assets/custom.css?m=1750885747.3144565 HTTP/1.1[0m" 304 -
+2025-07-08 04:06:49,789 - werkzeug - INFO - 127.0.0.1 - - [08/Jul/2025 04:06:49] "[36mGET /assets/dark-theme.css?m=1750642613.26002 HTTP/1.1[0m" 304 -
+2025-07-08 04:06:49,812 - werkzeug - INFO - 127.0.0.1 - - [08/Jul/2025 04:06:49] "GET /assets/realtime_client.js?m=1751846774.8275898 HTTP/1.1" 200 -
+2025-07-08 04:06:49,816 - werkzeug - INFO - 127.0.0.1 - - [08/Jul/2025 04:06:49] "[36mGET /assets/component_fixes.js?m=1750767239.3765993 HTTP/1.1[0m" 304 -
+2025-07-08 04:06:50,046 - werkzeug - INFO - 127.0.0.1 - - [08/Jul/2025 04:06:50] "[36mGET /assets/force-dark-theme.js?m=1750642613.26002 HTTP/1.1[0m" 304 -
+2025-07-08 04:06:50,095 - werkzeug - INFO - 127.0.0.1 - - [08/Jul/2025 04:06:50] "[36mGET /assets/plotly-fix.js?m=1750735897.818488 HTTP/1.1[0m" 304 -
+2025-07-08 04:06:50,166 - werkzeug - INFO - 127.0.0.1 - - [08/Jul/2025 04:06:50] "[36mGET /assets/ws_price.js?m=1750553753.6087377 HTTP/1.1[0m" 304 -
+2025-07-08 04:06:50,605 - werkzeug - INFO - 127.0.0.1 - - [08/Jul/2025 04:06:50] "GET /_favicon.ico?v=3.1.1 HTTP/1.1" 200 -
+2025-07-08 04:06:50,625 - werkzeug - INFO - 127.0.0.1 - - [08/Jul/2025 04:06:50] "GET /_dash-dependencies HTTP/1.1" 200 -
+2025-07-08 04:06:50,700 - werkzeug - INFO - 127.0.0.1 - - [08/Jul/2025 04:06:50] "GET /_dash-layout HTTP/1.1" 200 -
+2025-07-08 04:08:51,928 - werkzeug - INFO - 127.0.0.1 - - [08/Jul/2025 04:08:51] "[36mGET /assets/auto-trading-dropdown.css?m=1750645223.1268418 HTTP/1.1[0m" 304 -
+2025-07-08 04:08:51,960 - werkzeug - INFO - 127.0.0.1 - - [08/Jul/2025 04:08:51] "[36mGET /assets/component_fixes.css?m=1750767239.3765993 HTTP/1.1[0m" 304 -
+2025-07-08 04:08:51,994 - werkzeug - INFO - 127.0.0.1 - - [08/Jul/2025 04:08:51] "[36mGET /assets/custom.css?m=1750885747.3144565 HTTP/1.1[0m" 304 -
+2025-07-08 04:08:52,045 - werkzeug - INFO - 127.0.0.1 - - [08/Jul/2025 04:08:52] "[36mGET /assets/dark-theme.css?m=1750642613.26002 HTTP/1.1[0m" 304 -
+2025-07-08 04:08:52,045 - werkzeug - INFO - 127.0.0.1 - - [08/Jul/2025 04:08:52] "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 200 -
+2025-07-08 04:14:53,349 - werkzeug - INFO - 127.0.0.1 - - [08/Jul/2025 04:14:53] "GET / HTTP/1.1" 200 -
+2025-07-08 04:14:53,575 - werkzeug - INFO - 127.0.0.1 - - [08/Jul/2025 04:14:53] "GET /assets/auto-trading-dropdown.css?m=1750645223.1268418 HTTP/1.1" 200 -
+2025-07-08 04:14:53,692 - werkzeug - INFO - 127.0.0.1 - - [08/Jul/2025 04:14:53] "GET /assets/component_fixes.css?m=1750767239.3765993 HTTP/1.1" 200 -
+2025-07-08 04:14:53,698 - werkzeug - INFO - 127.0.0.1 - - [08/Jul/2025 04:14:53] "GET /assets/custom.css?m=1750885747.3144565 HTTP/1.1" 200 -
+2025-07-08 04:14:53,698 - werkzeug - INFO - 127.0.0.1 - - [08/Jul/2025 04:14:53] "GET /assets/dark-theme.css?m=1750642613.26002 HTTP/1.1" 200 -
+2025-07-08 04:14:53,699 - werkzeug - INFO - 127.0.0.1 - - [08/Jul/2025 04:14:53] "GET /assets/component_fixes.js?m=1750767239.3765993 HTTP/1.1" 200 -
+2025-07-08 04:14:53,705 - werkzeug - INFO - 127.0.0.1 - - [08/Jul/2025 04:14:53] "GET /assets/force-dark-theme.js?m=1750642613.26002 HTTP/1.1" 200 -
+2025-07-08 04:14:53,881 - werkzeug - INFO - 127.0.0.1 - - [08/Jul/2025 04:14:53] "GET /assets/plotly-fix.js?m=1750735897.818488 HTTP/1.1" 200 -
+2025-07-08 04:14:54,013 - werkzeug - INFO - 127.0.0.1 - - [08/Jul/2025 04:14:54] "GET /assets/realtime_client.js?m=1751846774.8275898 HTTP/1.1" 200 -
+2025-07-08 04:14:54,015 - werkzeug - INFO - 127.0.0.1 - - [08/Jul/2025 04:14:54] "GET /assets/ws_price.js?m=1750553753.6087377 HTTP/1.1" 200 -
+2025-07-08 04:14:58,022 - werkzeug - INFO - 127.0.0.1 - - [08/Jul/2025 04:14:58] "GET /_dash-dependencies HTTP/1.1" 200 -
+2025-07-08 04:14:58,024 - werkzeug - INFO - 127.0.0.1 - - [08/Jul/2025 04:14:58] "GET /_dash-layout HTTP/1.1" 200 -
+2025-07-08 04:14:58,026 - werkzeug - INFO - 127.0.0.1 - - [08/Jul/2025 04:14:58] "GET /_favicon.ico?v=3.1.1 HTTP/1.1" 200 -
+2025-07-08 04:17:47,340 - werkzeug - INFO - 127.0.0.1 - - [08/Jul/2025 04:17:47] "GET / HTTP/1.1" 200 -
+2025-07-08 04:17:47,563 - werkzeug - INFO - 127.0.0.1 - - [08/Jul/2025 04:17:47] "[36mGET /assets/auto-trading-dropdown.css?m=1750645223.1268418 HTTP/1.1[0m" 304 -
+2025-07-08 04:17:47,727 - werkzeug - INFO - 127.0.0.1 - - [08/Jul/2025 04:17:47] "[36mGET /assets/component_fixes.css?m=1750767239.3765993 HTTP/1.1[0m" 304 -
+2025-07-08 04:17:47,728 - werkzeug - INFO - 127.0.0.1 - - [08/Jul/2025 04:17:47] "[36mGET /assets/dark-theme.css?m=1750642613.26002 HTTP/1.1[0m" 304 -
+2025-07-08 04:17:47,729 - werkzeug - INFO - 127.0.0.1 - - [08/Jul/2025 04:17:47] "[36mGET /assets/custom.css?m=1750885747.3144565 HTTP/1.1[0m" 304 -
+2025-07-08 04:17:47,730 - werkzeug - INFO - 127.0.0.1 - - [08/Jul/2025 04:17:47] "[36mGET /assets/component_fixes.js?m=1750767239.3765993 HTTP/1.1[0m" 304 -
+2025-07-08 04:17:47,735 - werkzeug - INFO - 127.0.0.1 - - [08/Jul/2025 04:17:47] "[36mGET /assets/force-dark-theme.js?m=1750642613.26002 HTTP/1.1[0m" 304 -
+2025-07-08 04:17:47,877 - werkzeug - INFO - 127.0.0.1 - - [08/Jul/2025 04:17:47] "[36mGET /assets/plotly-fix.js?m=1750735897.818488 HTTP/1.1[0m" 304 -
+2025-07-08 04:17:48,052 - werkzeug - INFO - 127.0.0.1 - - [08/Jul/2025 04:17:48] "[36mGET /assets/realtime_client.js?m=1751846774.8275898 HTTP/1.1[0m" 304 -
+2025-07-08 04:17:48,055 - werkzeug - INFO - 127.0.0.1 - - [08/Jul/2025 04:17:48] "[36mGET /assets/ws_price.js?m=1750553753.6087377 HTTP/1.1[0m" 304 -
+2025-07-08 04:17:48,698 - werkzeug - INFO - 127.0.0.1 - - [08/Jul/2025 04:17:48] "GET /_dash-layout HTTP/1.1" 200 -
+2025-07-08 04:17:48,757 - werkzeug - INFO - 127.0.0.1 - - [08/Jul/2025 04:17:48] "GET /_dash-dependencies HTTP/1.1" 200 -
+2025-07-08 04:17:48,785 - werkzeug - INFO - 127.0.0.1 - - [08/Jul/2025 04:17:48] "GET /_favicon.ico?v=3.1.1 HTTP/1.1" 200 -
+2025-07-08 04:17:51,045 - werkzeug - INFO - 127.0.0.1 - - [08/Jul/2025 04:17:51] "GET / HTTP/1.1" 200 -
+2025-07-08 04:17:51,449 - werkzeug - INFO - 127.0.0.1 - - [08/Jul/2025 04:17:51] "[36mGET /assets/auto-trading-dropdown.css?m=1750645223.1268418 HTTP/1.1[0m" 304 -
+2025-07-08 04:17:51,469 - werkzeug - INFO - 127.0.0.1 - - [08/Jul/2025 04:17:51] "[36mGET /assets/component_fixes.css?m=1750767239.3765993 HTTP/1.1[0m" 304 -
+2025-07-08 04:17:51,473 - werkzeug - INFO - 127.0.0.1 - - [08/Jul/2025 04:17:51] "[36mGET /assets/custom.css?m=1750885747.3144565 HTTP/1.1[0m" 304 -
+2025-07-08 04:17:51,481 - werkzeug - INFO - 127.0.0.1 - - [08/Jul/2025 04:17:51] "[36mGET /assets/dark-theme.css?m=1750642613.26002 HTTP/1.1[0m" 304 -
+2025-07-08 04:17:51,511 - werkzeug - INFO - 127.0.0.1 - - [08/Jul/2025 04:17:51] "[36mGET /assets/component_fixes.js?m=1750767239.3765993 HTTP/1.1[0m" 304 -
+2025-07-08 04:17:51,520 - werkzeug - INFO - 127.0.0.1 - - [08/Jul/2025 04:17:51] "[36mGET /assets/force-dark-theme.js?m=1750642613.26002 HTTP/1.1[0m" 304 -
+2025-07-08 04:17:51,768 - werkzeug - INFO - 127.0.0.1 - - [08/Jul/2025 04:17:51] "[36mGET /assets/plotly-fix.js?m=1750735897.818488 HTTP/1.1[0m" 304 -
+2025-07-08 04:17:51,806 - werkzeug - INFO - 127.0.0.1 - - [08/Jul/2025 04:17:51] "[36mGET /assets/realtime_client.js?m=1751846774.8275898 HTTP/1.1[0m" 304 -
+2025-07-08 04:17:51,845 - werkzeug - INFO - 127.0.0.1 - - [08/Jul/2025 04:17:51] "[36mGET /assets/ws_price.js?m=1750553753.6087377 HTTP/1.1[0m" 304 -
+2025-07-08 04:17:52,406 - werkzeug - INFO - 127.0.0.1 - - [08/Jul/2025 04:17:52] "GET /_dash-dependencies HTTP/1.1" 200 -
+2025-07-08 04:17:52,447 - werkzeug - INFO - 127.0.0.1 - - [08/Jul/2025 04:17:52] "GET /_dash-layout HTTP/1.1" 200 -
+2025-07-08 04:17:52,449 - werkzeug - INFO - 127.0.0.1 - - [08/Jul/2025 04:17:52] "GET /_favicon.ico?v=3.1.1 HTTP/1.1" 200 -
+2025-07-09 00:16:15,179 - dash.dash - INFO - Dash is running on http://localhost:8050/
+
+2025-07-09 00:16:15,211 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://localhost:8050
+2025-07-09 00:16:15,211 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-07-09 00:16:39,306 - dash_app - ERROR - Exception on / [GET]
+Traceback (most recent call last):
+  File "C:\Users\Hari\AppData\Roaming\Python\Python312\site-packages\flask\app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Hari\AppData\Roaming\Python\Python312\site-packages\flask\app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Hari\AppData\Roaming\Python\Python312\site-packages\flask\app.py", line 1482, in full_dispatch_request
+    rv = self.preprocess_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Hari\AppData\Roaming\Python\Python312\site-packages\flask\app.py", line 1974, in preprocess_request
+    rv = self.ensure_sync(before_func)()
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Hari\AppData\Roaming\Python\Python312\site-packages\dash\dash.py", line 1449, in _setup_server
+    _validate.validate_layout(self.layout, self._layout_value())
+  File "C:\Users\Hari\AppData\Roaming\Python\Python312\site-packages\dash\_validate.py", line 455, in validate_layout
+    _validate(layout_value)
+  File "C:\Users\Hari\AppData\Roaming\Python\Python312\site-packages\dash\_validate.py", line 442, in _validate
+    _validate_id(component)
+  File "C:\Users\Hari\AppData\Roaming\Python\Python312\site-packages\dash\_validate.py", line 432, in _validate_id
+    raise exceptions.DuplicateIdError(
+dash.exceptions.DuplicateIdError: Duplicate component id found in the initial layout: `auto-rollback-status`
+2025-07-09 00:16:39,333 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 00:16:39] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-07-09 00:16:39,690 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 00:16:39] "GET /favicon.ico HTTP/1.1" 200 -
+2025-07-09 00:16:47,539 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 00:16:47] "GET / HTTP/1.1" 200 -
+2025-07-09 00:16:47,586 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 00:16:47] "GET /assets/auto-trading-dropdown.css?m=1750645223.1268418 HTTP/1.1" 200 -
+2025-07-09 00:16:47,757 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 00:16:47] "GET /assets/chart-constraints.css?m=1751929919.4424853 HTTP/1.1" 200 -
+2025-07-09 00:16:47,888 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 00:16:47] "GET /assets/dark-theme.css?m=1750642613.26002 HTTP/1.1" 200 -
+2025-07-09 00:16:47,889 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 00:16:47] "GET /assets/component_fixes.js?m=1750767239.3765993 HTTP/1.1" 200 -
+2025-07-09 00:16:47,889 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 00:16:47] "GET /assets/component_fixes.css?m=1750767239.3765993 HTTP/1.1" 200 -
+2025-07-09 00:16:47,889 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 00:16:47] "GET /assets/custom.css?m=1750885747.3144565 HTTP/1.1" 200 -
+2025-07-09 00:16:47,927 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 00:16:47] "GET /assets/force-dark-theme.js?m=1750642613.26002 HTTP/1.1" 200 -
+2025-07-09 00:16:48,065 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 00:16:48] "GET /assets/realtime_client.js?m=1751846774.8275898 HTTP/1.1" 200 -
+2025-07-09 00:16:48,213 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 00:16:48] "GET /assets/plotly-fix.js?m=1750735897.818488 HTTP/1.1" 200 -
+2025-07-09 00:16:48,213 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 00:16:48] "GET /assets/ws_price.js?m=1750553753.6087377 HTTP/1.1" 200 -
+2025-07-09 00:16:48,668 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 00:16:48] "GET /_dash-dependencies HTTP/1.1" 200 -
+2025-07-09 00:16:48,736 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 00:16:48] "GET /_dash-layout HTTP/1.1" 200 -
+2025-07-09 00:16:48,736 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 00:16:48] "GET /_favicon.ico?v=3.0.4 HTTP/1.1" 200 -
+2025-07-09 00:17:16,334 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 00:17:16] "[36mGET /assets/auto-trading-dropdown.css?m=1750645223.1268418 HTTP/1.1[0m" 304 -
+2025-07-09 00:17:16,632 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 00:17:16] "[36mGET /assets/custom.css?m=1750885747.3144565 HTTP/1.1[0m" 304 -
+2025-07-09 00:17:16,637 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 00:17:16] "[36mGET /assets/component_fixes.css?m=1750767239.3765993 HTTP/1.1[0m" 304 -
+2025-07-09 00:17:16,638 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 00:17:16] "[36mGET /assets/chart-constraints.css?m=1751929919.4424853 HTTP/1.1[0m" 304 -
+2025-07-09 00:17:16,638 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 00:17:16] "[36mGET /assets/dark-theme.css?m=1750642613.26002 HTTP/1.1[0m" 304 -
+2025-07-09 00:17:16,647 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 00:17:16] "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 200 -
+2025-07-09 00:22:03,994 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 00:22:03] "GET / HTTP/1.1" 200 -
+2025-07-09 00:22:04,302 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 00:22:04] "[36mGET /assets/auto-trading-dropdown.css?m=1750645223.1268418 HTTP/1.1[0m" 304 -
+2025-07-09 00:22:04,336 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 00:22:04] "[36mGET /assets/chart-constraints.css?m=1751929919.4424853 HTTP/1.1[0m" 304 -
+2025-07-09 00:22:04,336 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 00:22:04] "[36mGET /assets/dark-theme.css?m=1750642613.26002 HTTP/1.1[0m" 304 -
+2025-07-09 00:22:04,338 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 00:22:04] "[36mGET /assets/component_fixes.css?m=1750767239.3765993 HTTP/1.1[0m" 304 -
+2025-07-09 00:22:04,338 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 00:22:04] "[36mGET /assets/custom.css?m=1750885747.3144565 HTTP/1.1[0m" 304 -
+2025-07-09 00:22:04,339 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 00:22:04] "[36mGET /assets/component_fixes.js?m=1750767239.3765993 HTTP/1.1[0m" 304 -
+2025-07-09 00:22:04,609 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 00:22:04] "[36mGET /assets/force-dark-theme.js?m=1750642613.26002 HTTP/1.1[0m" 304 -
+2025-07-09 00:22:04,656 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 00:22:04] "[36mGET /assets/realtime_client.js?m=1751846774.8275898 HTTP/1.1[0m" 304 -
+2025-07-09 00:22:04,657 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 00:22:04] "[36mGET /assets/plotly-fix.js?m=1750735897.818488 HTTP/1.1[0m" 304 -
+2025-07-09 00:22:04,659 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 00:22:04] "[36mGET /assets/ws_price.js?m=1750553753.6087377 HTTP/1.1[0m" 304 -
+2025-07-09 00:22:05,028 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 00:22:05] "GET /_dash-dependencies HTTP/1.1" 200 -
+2025-07-09 00:22:05,055 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 00:22:05] "GET /_dash-layout HTTP/1.1" 200 -
+2025-07-09 01:21:36,295 - dash.dash - INFO - Dash is running on http://localhost:8050/
+
+2025-07-09 01:21:36,379 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://localhost:8050
+2025-07-09 01:21:36,379 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-07-09 01:21:54,862 - dash_app - ERROR - Exception on / [GET]
+Traceback (most recent call last):
+  File "C:\Users\Hari\AppData\Roaming\Python\Python312\site-packages\flask\app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Hari\AppData\Roaming\Python\Python312\site-packages\flask\app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Hari\AppData\Roaming\Python\Python312\site-packages\flask\app.py", line 1482, in full_dispatch_request
+    rv = self.preprocess_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Hari\AppData\Roaming\Python\Python312\site-packages\flask\app.py", line 1974, in preprocess_request
+    rv = self.ensure_sync(before_func)()
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Hari\AppData\Roaming\Python\Python312\site-packages\dash\dash.py", line 1449, in _setup_server
+    _validate.validate_layout(self.layout, self._layout_value())
+  File "C:\Users\Hari\AppData\Roaming\Python\Python312\site-packages\dash\_validate.py", line 455, in validate_layout
+    _validate(layout_value)
+  File "C:\Users\Hari\AppData\Roaming\Python\Python312\site-packages\dash\_validate.py", line 442, in _validate
+    _validate_id(component)
+  File "C:\Users\Hari\AppData\Roaming\Python\Python312\site-packages\dash\_validate.py", line 432, in _validate_id
+    raise exceptions.DuplicateIdError(
+dash.exceptions.DuplicateIdError: Duplicate component id found in the initial layout: `auto-rollback-status`
+2025-07-09 01:21:54,895 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 01:21:54] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-07-09 01:21:55,284 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 01:21:55] "GET /favicon.ico HTTP/1.1" 200 -
+2025-07-09 01:21:58,244 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 01:21:58] "GET / HTTP/1.1" 200 -
+2025-07-09 01:21:58,616 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 01:21:58] "[36mGET /assets/auto-trading-dropdown.css?m=1750645223.1268418 HTTP/1.1[0m" 304 -
+2025-07-09 01:21:58,633 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 01:21:58] "[36mGET /assets/chart-constraints.css?m=1751929919.4424853 HTTP/1.1[0m" 304 -
+2025-07-09 01:21:58,653 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 01:21:58] "[36mGET /assets/component_fixes.css?m=1750767239.3765993 HTTP/1.1[0m" 304 -
+2025-07-09 01:21:58,691 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 01:21:58] "[36mGET /assets/custom.css?m=1750885747.3144565 HTTP/1.1[0m" 304 -
+2025-07-09 01:21:58,781 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 01:21:58] "[36mGET /assets/dark-theme.css?m=1750642613.26002 HTTP/1.1[0m" 304 -
+2025-07-09 01:21:58,785 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 01:21:58] "[36mGET /assets/component_fixes.js?m=1750767239.3765993 HTTP/1.1[0m" 304 -
+2025-07-09 01:21:58,952 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 01:21:58] "[36mGET /assets/force-dark-theme.js?m=1750642613.26002 HTTP/1.1[0m" 304 -
+2025-07-09 01:21:59,022 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 01:21:59] "[36mGET /assets/plotly-fix.js?m=1750735897.818488 HTTP/1.1[0m" 304 -
+2025-07-09 01:21:59,063 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 01:21:59] "[36mGET /assets/ws_price.js?m=1750553753.6087377 HTTP/1.1[0m" 304 -
+2025-07-09 01:21:59,064 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 01:21:59] "[36mGET /assets/realtime_client.js?m=1751846774.8275898 HTTP/1.1[0m" 304 -
+2025-07-09 01:21:59,487 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 01:21:59] "GET /_dash-layout HTTP/1.1" 200 -
+2025-07-09 01:21:59,525 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 01:21:59] "GET /_dash-dependencies HTTP/1.1" 200 -
+2025-07-09 01:21:59,572 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 01:21:59] "GET /_favicon.ico?v=3.0.4 HTTP/1.1" 200 -
+2025-07-09 01:24:40,731 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 01:24:40] "GET / HTTP/1.1" 200 -
+2025-07-09 01:24:40,797 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 01:24:40] "[36mGET /assets/auto-trading-dropdown.css?m=1750645223.1268418 HTTP/1.1[0m" 304 -
+2025-07-09 01:24:40,970 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 01:24:40] "[36mGET /assets/chart-constraints.css?m=1751929919.4424853 HTTP/1.1[0m" 304 -
+2025-07-09 01:24:41,125 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 01:24:41] "[36mGET /assets/component_fixes.css?m=1750767239.3765993 HTTP/1.1[0m" 304 -
+2025-07-09 01:24:41,129 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 01:24:41] "[36mGET /assets/custom.css?m=1750885747.3144565 HTTP/1.1[0m" 304 -
+2025-07-09 01:24:41,145 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 01:24:41] "[36mGET /assets/dark-theme.css?m=1750642613.26002 HTTP/1.1[0m" 304 -
+2025-07-09 01:24:41,151 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 01:24:41] "[36mGET /assets/component_fixes.js?m=1750767239.3765993 HTTP/1.1[0m" 304 -
+2025-07-09 01:24:41,176 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 01:24:41] "[36mGET /assets/force-dark-theme.js?m=1750642613.26002 HTTP/1.1[0m" 304 -
+2025-07-09 01:24:41,320 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 01:24:41] "[36mGET /assets/plotly-fix.js?m=1750735897.818488 HTTP/1.1[0m" 304 -
+2025-07-09 01:24:41,731 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 01:24:41] "[36mGET /assets/realtime_client.js?m=1751846774.8275898 HTTP/1.1[0m" 304 -
+2025-07-09 01:24:41,775 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 01:24:41] "[36mGET /assets/ws_price.js?m=1750553753.6087377 HTTP/1.1[0m" 304 -
+2025-07-09 01:24:42,280 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 01:24:42] "GET /_dash-layout HTTP/1.1" 200 -
+2025-07-09 01:24:42,419 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 01:24:42] "GET /_dash-dependencies HTTP/1.1" 200 -
+2025-07-09 01:45:02,185 - dash.dash - INFO - Dash is running on http://localhost:8050/
+
+2025-07-09 01:45:02,214 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://localhost:8050
+2025-07-09 01:45:02,214 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-07-09 01:45:08,474 - dash_app - ERROR - Exception on / [GET]
+Traceback (most recent call last):
+  File "C:\Users\Hari\AppData\Roaming\Python\Python312\site-packages\flask\app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Hari\AppData\Roaming\Python\Python312\site-packages\flask\app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Hari\AppData\Roaming\Python\Python312\site-packages\flask\app.py", line 1482, in full_dispatch_request
+    rv = self.preprocess_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Hari\AppData\Roaming\Python\Python312\site-packages\flask\app.py", line 1974, in preprocess_request
+    rv = self.ensure_sync(before_func)()
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Hari\AppData\Roaming\Python\Python312\site-packages\dash\dash.py", line 1449, in _setup_server
+    _validate.validate_layout(self.layout, self._layout_value())
+  File "C:\Users\Hari\AppData\Roaming\Python\Python312\site-packages\dash\_validate.py", line 455, in validate_layout
+    _validate(layout_value)
+  File "C:\Users\Hari\AppData\Roaming\Python\Python312\site-packages\dash\_validate.py", line 442, in _validate
+    _validate_id(component)
+  File "C:\Users\Hari\AppData\Roaming\Python\Python312\site-packages\dash\_validate.py", line 432, in _validate_id
+    raise exceptions.DuplicateIdError(
+dash.exceptions.DuplicateIdError: Duplicate component id found in the initial layout: `check-auto-alerts-result`
+2025-07-09 01:45:08,547 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 01:45:08] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-07-09 01:45:08,650 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 01:45:08] "GET /favicon.ico HTTP/1.1" 200 -
+2025-07-09 01:45:35,429 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 01:45:35] "GET / HTTP/1.1" 200 -
+2025-07-09 01:45:35,789 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 01:45:35] "[36mGET /assets/auto-trading-dropdown.css?m=1750645223.1268418 HTTP/1.1[0m" 304 -
+2025-07-09 01:45:35,806 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 01:45:35] "[36mGET /assets/chart-constraints.css?m=1751929919.4424853 HTTP/1.1[0m" 304 -
+2025-07-09 01:45:35,824 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 01:45:35] "[36mGET /assets/component_fixes.css?m=1750767239.3765993 HTTP/1.1[0m" 304 -
+2025-07-09 01:45:35,870 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 01:45:35] "[36mGET /assets/custom.css?m=1750885747.3144565 HTTP/1.1[0m" 304 -
+2025-07-09 01:45:35,922 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 01:45:35] "[36mGET /assets/dark-theme.css?m=1750642613.26002 HTTP/1.1[0m" 304 -
+2025-07-09 01:45:35,928 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 01:45:35] "[36mGET /assets/component_fixes.js?m=1750767239.3765993 HTTP/1.1[0m" 304 -
+2025-07-09 01:45:36,147 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 01:45:36] "[36mGET /assets/force-dark-theme.js?m=1750642613.26002 HTTP/1.1[0m" 304 -
+2025-07-09 01:45:36,186 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 01:45:36] "[36mGET /assets/plotly-fix.js?m=1750735897.818488 HTTP/1.1[0m" 304 -
+2025-07-09 01:45:36,238 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 01:45:36] "[36mGET /assets/realtime_client.js?m=1751846774.8275898 HTTP/1.1[0m" 304 -
+2025-07-09 01:45:36,242 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 01:45:36] "[36mGET /assets/ws_price.js?m=1750553753.6087377 HTTP/1.1[0m" 304 -
+2025-07-09 01:45:36,838 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 01:45:36] "GET /_dash-layout HTTP/1.1" 200 -
+2025-07-09 01:45:36,867 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 01:45:36] "GET /_dash-dependencies HTTP/1.1" 200 -
+2025-07-09 01:45:36,914 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 01:45:36] "GET /_favicon.ico?v=3.0.4 HTTP/1.1" 200 -
+2025-07-09 01:50:24,827 - dash.dash - INFO - Dash is running on http://localhost:8050/
+
+2025-07-09 01:50:24,864 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://localhost:8050
+2025-07-09 01:50:24,864 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-07-09 01:50:49,127 - dash_app - ERROR - Exception on / [GET]
+Traceback (most recent call last):
+  File "C:\Users\Hari\AppData\Roaming\Python\Python312\site-packages\flask\app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Hari\AppData\Roaming\Python\Python312\site-packages\flask\app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Hari\AppData\Roaming\Python\Python312\site-packages\flask\app.py", line 1482, in full_dispatch_request
+    rv = self.preprocess_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Hari\AppData\Roaming\Python\Python312\site-packages\flask\app.py", line 1974, in preprocess_request
+    rv = self.ensure_sync(before_func)()
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Hari\AppData\Roaming\Python\Python312\site-packages\dash\dash.py", line 1449, in _setup_server
+    _validate.validate_layout(self.layout, self._layout_value())
+  File "C:\Users\Hari\AppData\Roaming\Python\Python312\site-packages\dash\_validate.py", line 455, in validate_layout
+    _validate(layout_value)
+  File "C:\Users\Hari\AppData\Roaming\Python\Python312\site-packages\dash\_validate.py", line 442, in _validate
+    _validate_id(component)
+  File "C:\Users\Hari\AppData\Roaming\Python\Python312\site-packages\dash\_validate.py", line 432, in _validate_id
+    raise exceptions.DuplicateIdError(
+dash.exceptions.DuplicateIdError: Duplicate component id found in the initial layout: `futures-available-balance`
+2025-07-09 01:50:49,191 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 01:50:49] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-07-09 01:50:49,261 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 01:50:49] "GET /favicon.ico HTTP/1.1" 200 -
+2025-07-09 01:51:11,392 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 01:51:11] "GET / HTTP/1.1" 200 -
+2025-07-09 01:51:11,793 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 01:51:11] "[36mGET /assets/auto-trading-dropdown.css?m=1750645223.1268418 HTTP/1.1[0m" 304 -
+2025-07-09 01:51:11,795 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 01:51:11] "[36mGET /assets/chart-constraints.css?m=1751929919.4424853 HTTP/1.1[0m" 304 -
+2025-07-09 01:51:11,814 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 01:51:11] "[36mGET /assets/component_fixes.css?m=1750767239.3765993 HTTP/1.1[0m" 304 -
+2025-07-09 01:51:11,873 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 01:51:11] "[36mGET /assets/custom.css?m=1750885747.3144565 HTTP/1.1[0m" 304 -
+2025-07-09 01:51:11,940 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 01:51:11] "[36mGET /assets/dark-theme.css?m=1750642613.26002 HTTP/1.1[0m" 304 -
+2025-07-09 01:51:11,944 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 01:51:11] "[36mGET /assets/component_fixes.js?m=1750767239.3765993 HTTP/1.1[0m" 304 -
+2025-07-09 01:51:12,179 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 01:51:12] "[36mGET /assets/force-dark-theme.js?m=1750642613.26002 HTTP/1.1[0m" 304 -
+2025-07-09 01:51:12,266 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 01:51:12] "[36mGET /assets/plotly-fix.js?m=1750735897.818488 HTTP/1.1[0m" 304 -
+2025-07-09 01:51:12,327 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 01:51:12] "[36mGET /assets/realtime_client.js?m=1751846774.8275898 HTTP/1.1[0m" 304 -
+2025-07-09 01:51:12,334 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 01:51:12] "[36mGET /assets/ws_price.js?m=1750553753.6087377 HTTP/1.1[0m" 304 -
+2025-07-09 01:51:12,872 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 01:51:12] "GET /_dash-layout HTTP/1.1" 200 -
+2025-07-09 01:51:12,911 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 01:51:12] "GET /_dash-dependencies HTTP/1.1" 200 -
+2025-07-09 01:51:12,988 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 01:51:12] "GET /_favicon.ico?v=3.0.4 HTTP/1.1" 200 -
+2025-07-09 02:02:25,958 - dash.dash - INFO - Dash is running on http://localhost:8050/
+
+2025-07-09 02:02:26,160 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://localhost:8050
+2025-07-09 02:02:26,168 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-07-09 02:02:37,003 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 02:02:37] "GET / HTTP/1.1" 200 -
+2025-07-09 02:02:37,049 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 02:02:37] "[36mGET /assets/auto-trading-dropdown.css?m=1750645223.1268418 HTTP/1.1[0m" 304 -
+2025-07-09 02:02:37,293 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 02:02:37] "[36mGET /assets/chart-constraints.css?m=1751929919.4424853 HTTP/1.1[0m" 304 -
+2025-07-09 02:02:37,379 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 02:02:37] "[36mGET /assets/component_fixes.css?m=1750767239.3765993 HTTP/1.1[0m" 304 -
+2025-07-09 02:02:37,405 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 02:02:37] "[36mGET /assets/custom.css?m=1750885747.3144565 HTTP/1.1[0m" 304 -
+2025-07-09 02:02:37,469 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 02:02:37] "[36mGET /assets/dark-theme.css?m=1750642613.26002 HTTP/1.1[0m" 304 -
+2025-07-09 02:02:37,564 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 02:02:37] "[36mGET /assets/component_fixes.js?m=1750767239.3765993 HTTP/1.1[0m" 304 -
+2025-07-09 02:02:37,583 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 02:02:37] "[36mGET /assets/force-dark-theme.js?m=1750642613.26002 HTTP/1.1[0m" 304 -
+2025-07-09 02:02:37,660 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 02:02:37] "[36mGET /assets/plotly-fix.js?m=1750735897.818488 HTTP/1.1[0m" 304 -
+2025-07-09 02:02:37,754 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 02:02:37] "[36mGET /assets/realtime_client.js?m=1751846774.8275898 HTTP/1.1[0m" 304 -
+2025-07-09 02:02:37,812 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 02:02:37] "[36mGET /assets/ws_price.js?m=1750553753.6087377 HTTP/1.1[0m" 304 -
+2025-07-09 02:02:38,376 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 02:02:38] "GET /_dash-layout HTTP/1.1" 200 -
+2025-07-09 02:02:38,387 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 02:02:38] "GET /_favicon.ico?v=3.0.4 HTTP/1.1" 200 -
+2025-07-09 02:02:38,460 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 02:02:38] "GET /_dash-dependencies HTTP/1.1" 200 -
+2025-07-09 02:02:55,669 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 02:02:55] "GET / HTTP/1.1" 200 -
+2025-07-09 02:02:56,117 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 02:02:56] "[36mGET /assets/auto-trading-dropdown.css?m=1750645223.1268418 HTTP/1.1[0m" 304 -
+2025-07-09 02:02:56,480 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 02:02:56] "[36mGET /assets/component_fixes.js?m=1750767239.3765993 HTTP/1.1[0m" 304 -
+2025-07-09 02:02:56,545 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 02:02:56] "[36mGET /assets/dark-theme.css?m=1750642613.26002 HTTP/1.1[0m" 304 -
+2025-07-09 02:02:56,564 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 02:02:56] "[36mGET /assets/custom.css?m=1750885747.3144565 HTTP/1.1[0m" 304 -
+2025-07-09 02:02:56,599 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 02:02:56] "[36mGET /assets/component_fixes.css?m=1750767239.3765993 HTTP/1.1[0m" 304 -
+2025-07-09 02:02:56,638 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 02:02:56] "[36mGET /assets/chart-constraints.css?m=1751929919.4424853 HTTP/1.1[0m" 304 -
+2025-07-09 02:02:56,677 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 02:02:56] "[36mGET /assets/force-dark-theme.js?m=1750642613.26002 HTTP/1.1[0m" 304 -
+2025-07-09 02:02:56,821 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 02:02:56] "[36mGET /assets/plotly-fix.js?m=1750735897.818488 HTTP/1.1[0m" 304 -
+2025-07-09 02:02:56,898 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 02:02:56] "[36mGET /assets/realtime_client.js?m=1751846774.8275898 HTTP/1.1[0m" 304 -
+2025-07-09 02:02:56,977 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 02:02:56] "[36mGET /assets/ws_price.js?m=1750553753.6087377 HTTP/1.1[0m" 304 -
+2025-07-09 02:02:57,466 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 02:02:57] "GET /_dash-layout HTTP/1.1" 200 -
+2025-07-09 02:02:57,474 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 02:02:57] "GET /_dash-dependencies HTTP/1.1" 200 -
+2025-07-09 02:04:17,602 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 02:04:17] "GET / HTTP/1.1" 200 -
+2025-07-09 02:04:17,664 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 02:04:17] "[36mGET /assets/auto-trading-dropdown.css?m=1750645223.1268418 HTTP/1.1[0m" 304 -
+2025-07-09 02:04:17,833 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 02:04:17] "[36mGET /assets/chart-constraints.css?m=1751929919.4424853 HTTP/1.1[0m" 304 -
+2025-07-09 02:04:17,980 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 02:04:17] "[36mGET /assets/component_fixes.css?m=1750767239.3765993 HTTP/1.1[0m" 304 -
+2025-07-09 02:04:18,018 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 02:04:18] "[36mGET /assets/custom.css?m=1750885747.3144565 HTTP/1.1[0m" 304 -
+2025-07-09 02:04:18,040 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 02:04:18] "[36mGET /assets/dark-theme.css?m=1750642613.26002 HTTP/1.1[0m" 304 -
+2025-07-09 02:04:18,047 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 02:04:18] "[36mGET /assets/component_fixes.js?m=1750767239.3765993 HTTP/1.1[0m" 304 -
+2025-07-09 02:04:18,052 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 02:04:18] "[36mGET /assets/force-dark-theme.js?m=1750642613.26002 HTTP/1.1[0m" 304 -
+2025-07-09 02:04:18,262 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 02:04:18] "[36mGET /assets/plotly-fix.js?m=1750735897.818488 HTTP/1.1[0m" 304 -
+2025-07-09 02:04:18,368 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 02:04:18] "[36mGET /assets/realtime_client.js?m=1751846774.8275898 HTTP/1.1[0m" 304 -
+2025-07-09 02:04:18,392 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 02:04:18] "[36mGET /assets/ws_price.js?m=1750553753.6087377 HTTP/1.1[0m" 304 -
+2025-07-09 02:04:18,782 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 02:04:18] "GET /_favicon.ico?v=3.0.4 HTTP/1.1" 200 -
+2025-07-09 02:04:18,832 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 02:04:18] "GET /_dash-dependencies HTTP/1.1" 200 -
+2025-07-09 02:04:18,954 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 02:04:18] "GET /_dash-layout HTTP/1.1" 200 -
+2025-07-09 02:05:46,366 - dash.dash - INFO - Dash is running on http://localhost:8050/
+
+2025-07-09 02:05:46,530 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://localhost:8050
+2025-07-09 02:05:46,537 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-07-09 02:07:12,617 - dash.dash - INFO - Dash is running on http://localhost:8050/
+
+2025-07-09 02:07:13,163 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://localhost:8050
+2025-07-09 02:07:13,167 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-07-09 02:08:49,723 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 02:08:49] "GET / HTTP/1.1" 200 -
+2025-07-09 02:08:49,762 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 02:08:49] "[36mGET /assets/auto-trading-dropdown.css?m=1750645223.1268418 HTTP/1.1[0m" 304 -
+2025-07-09 02:08:49,925 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 02:08:49] "[36mGET /assets/chart-constraints.css?m=1751929919.4424853 HTTP/1.1[0m" 304 -
+2025-07-09 02:08:50,083 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 02:08:50] "[36mGET /assets/dark-theme.css?m=1750642613.26002 HTTP/1.1[0m" 304 -
+2025-07-09 02:08:50,093 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 02:08:50] "[36mGET /assets/custom.css?m=1750885747.3144565 HTTP/1.1[0m" 304 -
+2025-07-09 02:08:50,106 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 02:08:50] "[36mGET /assets/component_fixes.css?m=1750767239.3765993 HTTP/1.1[0m" 304 -
+2025-07-09 02:08:50,132 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 02:08:50] "[36mGET /assets/component_fixes.js?m=1750767239.3765993 HTTP/1.1[0m" 304 -
+2025-07-09 02:08:50,173 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 02:08:50] "[36mGET /assets/force-dark-theme.js?m=1750642613.26002 HTTP/1.1[0m" 304 -
+2025-07-09 02:08:50,252 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 02:08:50] "[36mGET /assets/plotly-fix.js?m=1750735897.818488 HTTP/1.1[0m" 304 -
+2025-07-09 02:08:50,416 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 02:08:50] "[36mGET /assets/realtime_client.js?m=1751846774.8275898 HTTP/1.1[0m" 304 -
+2025-07-09 02:08:50,431 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 02:08:50] "[36mGET /assets/ws_price.js?m=1750553753.6087377 HTTP/1.1[0m" 304 -
+2025-07-09 02:08:50,771 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 02:08:50] "GET /_dash-layout HTTP/1.1" 200 -
+2025-07-09 02:08:50,771 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 02:08:50] "GET /_dash-dependencies HTTP/1.1" 200 -
+2025-07-09 02:08:50,771 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 02:08:50] "GET /_favicon.ico?v=3.0.4 HTTP/1.1" 200 -
+2025-07-09 02:08:56,617 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 02:08:56] "[36mGET /assets/auto-trading-dropdown.css?m=1750645223.1268418 HTTP/1.1[0m" 304 -
+2025-07-09 02:08:56,970 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 02:08:56] "[36mGET /assets/chart-constraints.css?m=1751929919.4424853 HTTP/1.1[0m" 304 -
+2025-07-09 02:08:56,988 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 02:08:56] "[36mGET /assets/component_fixes.css?m=1750767239.3765993 HTTP/1.1[0m" 304 -
+2025-07-09 02:08:57,005 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 02:08:57] "[36mGET /assets/dark-theme.css?m=1750642613.26002 HTTP/1.1[0m" 304 -
+2025-07-09 02:08:57,150 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 02:08:57] "[36mGET /assets/custom.css?m=1750885747.3144565 HTTP/1.1[0m" 304 -
+2025-07-09 02:08:57,198 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 02:08:57] "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 200 -
+2025-07-09 02:15:56,704 - __main__ - INFO - Loading Dash app configuration...
+2025-07-09 02:16:02,504 - __main__ - ERROR - Unexpected error during import: 'dict' object has no attribute 'clientside_callback_manager'
+2025-07-09 02:17:48,777 - dash.dash - INFO - Dash is running on http://localhost:8050/
+
+2025-07-09 02:17:49,038 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://localhost:8050
+2025-07-09 02:17:49,046 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-07-09 02:18:07,330 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 02:18:07] "GET / HTTP/1.1" 200 -
+2025-07-09 02:18:09,491 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 02:18:09] "GET /_dash-component-suites/ HTTP/1.1" 200 -
+2025-07-09 02:18:11,593 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 02:18:11] "GET /_dash-layout HTTP/1.1" 200 -
+2025-07-09 02:18:13,653 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 02:18:13] "GET /_dash-dependencies HTTP/1.1" 200 -
+2025-07-09 02:18:15,795 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 02:18:15] "GET /_dash-layout HTTP/1.1" 200 -
+2025-07-09 02:18:17,871 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 02:18:17] "GET /_dash-dependencies HTTP/1.1" 200 -
+2025-07-09 02:18:20,000 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 02:18:20] "GET / HTTP/1.1" 200 -
+2025-07-09 02:20:49,307 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 02:20:49] "GET / HTTP/1.1" 200 -
+2025-07-09 02:20:49,322 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 02:20:49] "[36mGET /assets/auto-trading-dropdown.css?m=1750645223.1268418 HTTP/1.1[0m" 304 -
+2025-07-09 02:20:49,564 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 02:20:49] "[36mGET /assets/chart-constraints.css?m=1751929919.4424853 HTTP/1.1[0m" 304 -
+2025-07-09 02:20:49,645 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 02:20:49] "[36mGET /assets/component_fixes.css?m=1750767239.3765993 HTTP/1.1[0m" 304 -
+2025-07-09 02:20:49,645 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 02:20:49] "[36mGET /assets/custom.css?m=1750885747.3144565 HTTP/1.1[0m" 304 -
+2025-07-09 02:20:49,646 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 02:20:49] "[36mGET /assets/dark-theme.css?m=1750642613.26002 HTTP/1.1[0m" 304 -
+2025-07-09 02:20:49,646 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 02:20:49] "[36mGET /assets/component_fixes.js?m=1750767239.3765993 HTTP/1.1[0m" 304 -
+2025-07-09 02:20:49,647 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 02:20:49] "[36mGET /assets/force-dark-theme.js?m=1750642613.26002 HTTP/1.1[0m" 304 -
+2025-07-09 02:20:49,873 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 02:20:49] "[36mGET /assets/plotly-fix.js?m=1750735897.818488 HTTP/1.1[0m" 304 -
+2025-07-09 02:20:49,960 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 02:20:49] "[36mGET /assets/realtime_client.js?m=1751846774.8275898 HTTP/1.1[0m" 304 -
+2025-07-09 02:20:49,961 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 02:20:49] "[36mGET /assets/ws_price.js?m=1750553753.6087377 HTTP/1.1[0m" 304 -
+2025-07-09 02:20:50,402 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 02:20:50] "GET /_dash-layout HTTP/1.1" 200 -
+2025-07-09 02:20:50,407 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 02:20:50] "GET /_dash-dependencies HTTP/1.1" 200 -
+2025-07-09 02:20:50,422 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 02:20:50] "GET /_favicon.ico?v=3.0.4 HTTP/1.1" 200 -
+2025-07-09 02:23:26,545 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8050
+2025-07-09 02:23:28,631 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 02:23:28] "GET / HTTP/1.1" 200 -
+2025-07-09 02:23:28,639 - urllib3.connectionpool - DEBUG - http://localhost:8050 "GET / HTTP/1.1" 200 6386
+2025-07-09 02:23:28,703 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8050
+2025-07-09 02:23:30,786 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 02:23:30] "GET /_dash-layout HTTP/1.1" 200 -
+2025-07-09 02:23:30,798 - urllib3.connectionpool - DEBUG - http://localhost:8050 "GET /_dash-layout HTTP/1.1" 200 187394
+2025-07-09 02:23:30,838 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8050
+2025-07-09 02:23:32,909 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 02:23:32] "GET /_dash-dependencies HTTP/1.1" 200 -
+2025-07-09 02:23:32,930 - urllib3.connectionpool - DEBUG - http://localhost:8050 "GET /_dash-dependencies HTTP/1.1" 200 63953
+2025-07-09 02:25:25,752 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 02:25:25] "GET /_dash-dependencies HTTP/1.1" 200 -
+2025-07-09 02:25:27,875 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 02:25:27] "GET / HTTP/1.1" 200 -
+2025-07-09 02:25:29,980 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 02:25:29] "GET / HTTP/1.1" 200 -
+2025-07-09 02:25:32,095 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 02:25:32] "GET / HTTP/1.1" 200 -
+2025-07-09 02:26:19,135 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 02:26:19] "GET / HTTP/1.1" 200 -
+2025-07-09 02:26:19,195 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 02:26:19] "[36mGET /assets/auto-trading-dropdown.css?m=1750645223.1268418 HTTP/1.1[0m" 304 -
+2025-07-09 02:26:19,353 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 02:26:19] "[36mGET /assets/chart-constraints.css?m=1751929919.4424853 HTTP/1.1[0m" 304 -
+2025-07-09 02:26:19,541 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 02:26:19] "[36mGET /assets/dark-theme.css?m=1750642613.26002 HTTP/1.1[0m" 304 -
+2025-07-09 02:26:19,584 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 02:26:19] "[36mGET /assets/custom.css?m=1750885747.3144565 HTTP/1.1[0m" 304 -
+2025-07-09 02:26:19,588 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 02:26:19] "[36mGET /assets/component_fixes.css?m=1750767239.3765993 HTTP/1.1[0m" 304 -
+2025-07-09 02:26:19,618 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 02:26:19] "[36mGET /assets/component_fixes.js?m=1750767239.3765993 HTTP/1.1[0m" 304 -
+2025-07-09 02:26:19,634 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 02:26:19] "[36mGET /assets/force-dark-theme.js?m=1750642613.26002 HTTP/1.1[0m" 304 -
+2025-07-09 02:26:19,714 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 02:26:19] "[36mGET /assets/plotly-fix.js?m=1750735897.818488 HTTP/1.1[0m" 304 -
+2025-07-09 02:26:19,899 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 02:26:19] "[36mGET /assets/realtime_client.js?m=1751846774.8275898 HTTP/1.1[0m" 304 -
+2025-07-09 02:26:19,920 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 02:26:19] "[36mGET /assets/ws_price.js?m=1750553753.6087377 HTTP/1.1[0m" 304 -
+2025-07-09 02:26:20,550 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 02:26:20] "GET /_dash-dependencies HTTP/1.1" 200 -
+2025-07-09 02:26:20,671 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 02:26:20] "GET /_dash-layout HTTP/1.1" 200 -
+2025-07-09 02:26:20,671 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 02:26:20] "GET /_favicon.ico?v=3.0.4 HTTP/1.1" 200 -
+2025-07-09 02:26:29,760 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 02:26:29] "[36mGET /assets/auto-trading-dropdown.css?m=1750645223.1268418 HTTP/1.1[0m" 304 -
+2025-07-09 02:26:30,090 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 02:26:30] "[36mGET /assets/chart-constraints.css?m=1751929919.4424853 HTTP/1.1[0m" 304 -
+2025-07-09 02:26:30,131 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 02:26:30] "[36mGET /assets/dark-theme.css?m=1750642613.26002 HTTP/1.1[0m" 304 -
+2025-07-09 02:26:30,146 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 02:26:30] "[36mGET /assets/custom.css?m=1750885747.3144565 HTTP/1.1[0m" 304 -
+2025-07-09 02:26:30,167 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 02:26:30] "[36mGET /assets/component_fixes.css?m=1750767239.3765993 HTTP/1.1[0m" 304 -
+2025-07-09 02:26:30,209 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 02:26:30] "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 200 -
+2025-07-09 02:27:03,727 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 02:27:03] "GET /_dash-dependencies HTTP/1.1" 200 -
+2025-07-09 02:27:05,806 - dash_app - ERROR - Exception on /_dash-update-component [POST]
+Traceback (most recent call last):
+  File "C:\Users\Hari\AppData\Roaming\Python\Python312\site-packages\dash\dash.py", line 1335, in dispatch
+    cb = self.callback_map[output]
+         ~~~~~~~~~~~~~~~~~^^^^^^^^
+KeyError: 'account-info.children'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Hari\AppData\Roaming\Python\Python312\site-packages\flask\app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Hari\AppData\Roaming\Python\Python312\site-packages\flask\app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Hari\AppData\Roaming\Python\Python312\site-packages\flask\app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Hari\AppData\Roaming\Python\Python312\site-packages\flask\app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Hari\AppData\Roaming\Python\Python312\site-packages\dash\dash.py", line 1409, in dispatch
+    raise KeyError(msg) from missing_callback_function
+KeyError: "Callback function not found for output 'account-info.children', perhaps you forgot to prepend the '@'?"
+2025-07-09 02:27:05,846 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 02:27:05] "[35m[1mPOST /_dash-update-component HTTP/1.1[0m" 500 -
+2025-07-09 02:27:08,031 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 02:27:08] "GET / HTTP/1.1" 200 -
+2025-07-09 02:28:45,520 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8050
+2025-07-09 02:28:47,570 - dash_app - ERROR - Exception on /_dash-update-component [POST]
+Traceback (most recent call last):
+  File "C:\Users\Hari\AppData\Roaming\Python\Python312\site-packages\dash\dash.py", line 1335, in dispatch
+    cb = self.callback_map[output]
+         ~~~~~~~~~~~~~~~~~^^^^^^^^
+KeyError: 'account-balance.children'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Hari\AppData\Roaming\Python\Python312\site-packages\flask\app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Hari\AppData\Roaming\Python\Python312\site-packages\flask\app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Hari\AppData\Roaming\Python\Python312\site-packages\flask\app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Hari\AppData\Roaming\Python\Python312\site-packages\flask\app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Hari\AppData\Roaming\Python\Python312\site-packages\dash\dash.py", line 1409, in dispatch
+    raise KeyError(msg) from missing_callback_function
+KeyError: "Callback function not found for output 'account-balance.children', perhaps you forgot to prepend the '@'?"
+2025-07-09 02:28:47,604 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 02:28:47] "[35m[1mPOST /_dash-update-component HTTP/1.1[0m" 500 -
+2025-07-09 02:28:47,638 - urllib3.connectionpool - DEBUG - http://localhost:8050 "POST /_dash-update-component HTTP/1.1" 500 265
+2025-07-09 02:28:47,864 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:5000
+2025-07-09 02:28:49,958 - urllib3.connectionpool - DEBUG - http://localhost:5000 "GET /health HTTP/1.1" 200 477
+2025-07-09 02:28:50,005 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:5000
+2025-07-09 02:28:52,148 - urllib3.connectionpool - DEBUG - http://localhost:5000 "GET /account HTTP/1.1" 404 22
+2025-07-09 02:28:52,200 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:5000
+2025-07-09 02:28:54,264 - urllib3.connectionpool - DEBUG - http://localhost:5000 "GET /positions HTTP/1.1" 404 22
+2025-07-09 02:28:54,293 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:5000
+2025-07-09 02:28:56,349 - urllib3.connectionpool - DEBUG - http://localhost:5000 "GET /balance HTTP/1.1" 200 156
+2025-07-09 02:41:03,991 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 02:41:03] "GET / HTTP/1.1" 200 -
+2025-07-09 02:41:04,005 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 02:41:04] "[36mGET /assets/auto-trading-dropdown.css?m=1750645223.1268418 HTTP/1.1[0m" 304 -
+2025-07-09 02:41:04,256 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 02:41:04] "[36mGET /assets/chart-constraints.css?m=1751929919.4424853 HTTP/1.1[0m" 304 -
+2025-07-09 02:41:04,326 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 02:41:04] "[36mGET /assets/custom.css?m=1750885747.3144565 HTTP/1.1[0m" 304 -
+2025-07-09 02:41:04,327 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 02:41:04] "[36mGET /assets/component_fixes.css?m=1750767239.3765993 HTTP/1.1[0m" 304 -
+2025-07-09 02:41:04,328 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 02:41:04] "[36mGET /assets/dark-theme.css?m=1750642613.26002 HTTP/1.1[0m" 304 -
+2025-07-09 02:41:04,329 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 02:41:04] "[36mGET /assets/component_fixes.js?m=1750767239.3765993 HTTP/1.1[0m" 304 -
+2025-07-09 02:41:04,332 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 02:41:04] "[36mGET /assets/force-dark-theme.js?m=1750642613.26002 HTTP/1.1[0m" 304 -
+2025-07-09 02:41:04,571 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 02:41:04] "[36mGET /assets/plotly-fix.js?m=1750735897.818488 HTTP/1.1[0m" 304 -
+2025-07-09 02:41:04,638 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 02:41:04] "[36mGET /assets/realtime_client.js?m=1751846774.8275898 HTTP/1.1[0m" 304 -
+2025-07-09 02:41:04,639 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 02:41:04] "[36mGET /assets/ws_price.js?m=1750553753.6087377 HTTP/1.1[0m" 304 -
+2025-07-09 02:41:05,023 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 02:41:05] "GET /_dash-dependencies HTTP/1.1" 200 -
+2025-07-09 02:41:05,028 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 02:41:05] "GET /_dash-layout HTTP/1.1" 200 -
+2025-07-09 02:41:05,030 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 02:41:05] "GET /_favicon.ico?v=3.0.4 HTTP/1.1" 200 -
+2025-07-09 03:00:27,101 - dash.dash - INFO - Dash is running on http://localhost:8050/
+
+2025-07-09 03:00:27,136 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://localhost:8050
+2025-07-09 03:00:27,136 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-07-09 03:15:23,842 - dash.dash - INFO - Dash is running on http://localhost:8050/
+
+2025-07-09 03:15:23,868 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://localhost:8050
+2025-07-09 03:15:23,870 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-07-09 03:33:09,608 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 03:33:09] "GET / HTTP/1.1" 200 -
+2025-07-09 03:33:09,654 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 03:33:09] "[36mGET /assets/auto-trading-dropdown.css?m=1750645223.1268418 HTTP/1.1[0m" 304 -
+2025-07-09 03:33:09,830 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 03:33:09] "[36mGET /assets/chart-constraints.css?m=1751929919.4424853 HTTP/1.1[0m" 304 -
+2025-07-09 03:33:10,015 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 03:33:10] "[36mGET /assets/dark-theme.css?m=1750642613.26002 HTTP/1.1[0m" 304 -
+2025-07-09 03:33:10,025 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 03:33:10] "[36mGET /assets/custom.css?m=1750885747.3144565 HTTP/1.1[0m" 304 -
+2025-07-09 03:33:10,039 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 03:33:10] "[36mGET /assets/component_fixes.css?m=1750767239.3765993 HTTP/1.1[0m" 304 -
+2025-07-09 03:33:10,121 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 03:33:10] "[36mGET /assets/component_fixes.js?m=1750767239.3765993 HTTP/1.1[0m" 304 -
+2025-07-09 03:33:10,184 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 03:33:10] "[36mGET /assets/force-dark-theme.js?m=1750642613.26002 HTTP/1.1[0m" 304 -
+2025-07-09 03:33:10,207 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 03:33:10] "[36mGET /assets/plotly-fix.js?m=1750735897.818488 HTTP/1.1[0m" 304 -
+2025-07-09 03:33:10,399 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 03:33:10] "[36mGET /assets/realtime_client.js?m=1751846774.8275898 HTTP/1.1[0m" 304 -
+2025-07-09 03:33:10,476 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 03:33:10] "[36mGET /assets/ws_price.js?m=1750553753.6087377 HTTP/1.1[0m" 304 -
+2025-07-09 03:33:11,050 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 03:33:11] "GET /_dash-layout HTTP/1.1" 200 -
+2025-07-09 03:33:11,069 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 03:33:11] "GET /_dash-dependencies HTTP/1.1" 200 -
+2025-07-09 03:33:11,071 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 03:33:11] "GET /_favicon.ico?v=3.0.4 HTTP/1.1" 200 -
+2025-07-09 03:33:13,423 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 03:33:13] "GET / HTTP/1.1" 200 -
+2025-07-09 03:33:13,784 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 03:33:13] "[36mGET /assets/auto-trading-dropdown.css?m=1750645223.1268418 HTTP/1.1[0m" 304 -
+2025-07-09 03:33:13,787 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 03:33:13] "[36mGET /assets/chart-constraints.css?m=1751929919.4424853 HTTP/1.1[0m" 304 -
+2025-07-09 03:33:13,798 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 03:33:13] "[36mGET /assets/component_fixes.css?m=1750767239.3765993 HTTP/1.1[0m" 304 -
+2025-07-09 03:33:13,821 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 03:33:13] "[36mGET /assets/component_fixes.js?m=1750767239.3765993 HTTP/1.1[0m" 304 -
+2025-07-09 03:33:13,834 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 03:33:13] "[36mGET /assets/dark-theme.css?m=1750642613.26002 HTTP/1.1[0m" 304 -
+2025-07-09 03:33:13,844 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 03:33:13] "[36mGET /assets/custom.css?m=1750885747.3144565 HTTP/1.1[0m" 304 -
+2025-07-09 03:33:14,106 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 03:33:14] "[36mGET /assets/force-dark-theme.js?m=1750642613.26002 HTTP/1.1[0m" 304 -
+2025-07-09 03:33:14,130 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 03:33:14] "[36mGET /assets/plotly-fix.js?m=1750735897.818488 HTTP/1.1[0m" 304 -
+2025-07-09 03:33:14,156 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 03:33:14] "[36mGET /assets/realtime_client.js?m=1751846774.8275898 HTTP/1.1[0m" 304 -
+2025-07-09 03:33:14,157 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 03:33:14] "[36mGET /assets/ws_price.js?m=1750553753.6087377 HTTP/1.1[0m" 304 -
+2025-07-09 03:33:14,561 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 03:33:14] "GET /_dash-layout HTTP/1.1" 200 -
+2025-07-09 03:33:14,569 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 03:33:14] "GET /_dash-dependencies HTTP/1.1" 200 -
+2025-07-09 03:33:14,589 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 03:33:14] "GET /_favicon.ico?v=3.0.4 HTTP/1.1" 200 -
+2025-07-09 03:33:47,362 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 03:33:47] "GET / HTTP/1.1" 200 -
+2025-07-09 03:33:47,876 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 03:33:47] "GET /assets/chart-constraints.css?m=1751929919.4424853 HTTP/1.1" 200 -
+2025-07-09 03:33:47,894 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 03:33:47] "GET /assets/auto-trading-dropdown.css?m=1750645223.1268418 HTTP/1.1" 200 -
+2025-07-09 03:33:47,904 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 03:33:47] "GET /assets/component_fixes.css?m=1750767239.3765993 HTTP/1.1" 200 -
+2025-07-09 03:33:47,961 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 03:33:47] "GET /assets/custom.css?m=1750885747.3144565 HTTP/1.1" 200 -
+2025-07-09 03:33:48,009 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 03:33:48] "GET /assets/dark-theme.css?m=1750642613.26002 HTTP/1.1" 200 -
+2025-07-09 03:33:48,025 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 03:33:48] "GET /assets/component_fixes.js?m=1750767239.3765993 HTTP/1.1" 200 -
+2025-07-09 03:33:48,260 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 03:33:48] "GET /assets/force-dark-theme.js?m=1750642613.26002 HTTP/1.1" 200 -
+2025-07-09 03:33:48,284 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 03:33:48] "GET /assets/plotly-fix.js?m=1750735897.818488 HTTP/1.1" 200 -
+2025-07-09 03:33:48,344 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 03:33:48] "GET /assets/realtime_client.js?m=1751846774.8275898 HTTP/1.1" 200 -
+2025-07-09 03:33:48,425 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 03:33:48] "GET /assets/ws_price.js?m=1750553753.6087377 HTTP/1.1" 200 -
+2025-07-09 03:33:50,515 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 03:33:50] "GET /_dash-layout HTTP/1.1" 200 -
+2025-07-09 03:33:50,553 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 03:33:50] "GET /_dash-dependencies HTTP/1.1" 200 -
+2025-07-09 03:33:50,582 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 03:33:50] "GET /_favicon.ico?v=3.0.4 HTTP/1.1" 200 -
+2025-07-09 03:34:22,110 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 03:34:22] "GET / HTTP/1.1" 200 -
+2025-07-09 03:34:22,263 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 03:34:22] "[36mGET /assets/auto-trading-dropdown.css?m=1750645223.1268418 HTTP/1.1[0m" 304 -
+2025-07-09 03:34:22,411 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 03:34:22] "[36mGET /assets/chart-constraints.css?m=1751929919.4424853 HTTP/1.1[0m" 304 -
+2025-07-09 03:34:22,596 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 03:34:22] "[36mGET /assets/custom.css?m=1750885747.3144565 HTTP/1.1[0m" 304 -
+2025-07-09 03:34:22,634 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 03:34:22] "[36mGET /assets/component_fixes.css?m=1750767239.3765993 HTTP/1.1[0m" 304 -
+2025-07-09 03:34:22,719 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 03:34:22] "[36mGET /assets/dark-theme.css?m=1750642613.26002 HTTP/1.1[0m" 304 -
+2025-07-09 03:34:22,751 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 03:34:22] "[36mGET /assets/component_fixes.js?m=1750767239.3765993 HTTP/1.1[0m" 304 -
+2025-07-09 03:34:22,767 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 03:34:22] "[36mGET /assets/force-dark-theme.js?m=1750642613.26002 HTTP/1.1[0m" 304 -
+2025-07-09 03:34:22,832 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 03:34:22] "[36mGET /assets/plotly-fix.js?m=1750735897.818488 HTTP/1.1[0m" 304 -
+2025-07-09 03:34:23,017 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 03:34:23] "[36mGET /assets/realtime_client.js?m=1751846774.8275898 HTTP/1.1[0m" 304 -
+2025-07-09 03:34:23,069 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 03:34:23] "[36mGET /assets/ws_price.js?m=1750553753.6087377 HTTP/1.1[0m" 304 -
+2025-07-09 03:34:23,509 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 03:34:23] "GET /_favicon.ico?v=3.0.4 HTTP/1.1" 200 -
+2025-07-09 03:34:23,525 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 03:34:23] "GET /_dash-dependencies HTTP/1.1" 200 -
+2025-07-09 03:34:23,592 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 03:34:23] "GET /_dash-layout HTTP/1.1" 200 -
+2025-07-09 03:34:28,680 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 03:34:28] "GET / HTTP/1.1" 200 -
+2025-07-09 03:34:28,980 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 03:34:28] "[36mGET /assets/auto-trading-dropdown.css?m=1750645223.1268418 HTTP/1.1[0m" 304 -
+2025-07-09 03:34:29,029 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 03:34:29] "[36mGET /assets/chart-constraints.css?m=1751929919.4424853 HTTP/1.1[0m" 304 -
+2025-07-09 03:34:29,031 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 03:34:29] "[36mGET /assets/component_fixes.css?m=1750767239.3765993 HTTP/1.1[0m" 304 -
+2025-07-09 03:34:29,033 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 03:34:29] "[36mGET /assets/custom.css?m=1750885747.3144565 HTTP/1.1[0m" 304 -
+2025-07-09 03:34:29,044 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 03:34:29] "[36mGET /assets/dark-theme.css?m=1750642613.26002 HTTP/1.1[0m" 304 -
+2025-07-09 03:34:29,045 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 03:34:29] "[36mGET /assets/component_fixes.js?m=1750767239.3765993 HTTP/1.1[0m" 304 -
+2025-07-09 03:34:29,290 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 03:34:29] "[36mGET /assets/force-dark-theme.js?m=1750642613.26002 HTTP/1.1[0m" 304 -
+2025-07-09 03:34:29,346 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 03:34:29] "[36mGET /assets/plotly-fix.js?m=1750735897.818488 HTTP/1.1[0m" 304 -
+2025-07-09 03:34:29,352 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 03:34:29] "[36mGET /assets/realtime_client.js?m=1751846774.8275898 HTTP/1.1[0m" 304 -
+2025-07-09 03:34:29,352 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 03:34:29] "[36mGET /assets/ws_price.js?m=1750553753.6087377 HTTP/1.1[0m" 304 -
+2025-07-09 03:34:29,698 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 03:34:29] "GET /_dash-dependencies HTTP/1.1" 200 -
+2025-07-09 03:34:29,706 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 03:34:29] "GET /_dash-layout HTTP/1.1" 200 -
+2025-07-09 03:34:29,708 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 03:34:29] "GET /_favicon.ico?v=3.0.4 HTTP/1.1" 200 -
+2025-07-09 03:38:20,048 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 03:38:20] "GET / HTTP/1.1" 200 -
+2025-07-09 03:38:20,196 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 03:38:20] "[36mGET /assets/auto-trading-dropdown.css?m=1750645223.1268418 HTTP/1.1[0m" 304 -
+2025-07-09 03:38:20,200 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 03:38:20] "[36mGET /assets/chart-constraints.css?m=1751929919.4424853 HTTP/1.1[0m" 304 -
+2025-07-09 03:38:20,531 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 03:38:20] "[36mGET /assets/component_fixes.css?m=1750767239.3765993 HTTP/1.1[0m" 304 -
+2025-07-09 03:38:20,580 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 03:38:20] "[36mGET /assets/custom.css?m=1750885747.3144565 HTTP/1.1[0m" 304 -
+2025-07-09 03:38:20,658 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 03:38:20] "[36mGET /assets/dark-theme.css?m=1750642613.26002 HTTP/1.1[0m" 304 -
+2025-07-09 03:38:20,660 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 03:38:20] "[36mGET /assets/component_fixes.js?m=1750767239.3765993 HTTP/1.1[0m" 304 -
+2025-07-09 03:38:20,680 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 03:38:20] "[36mGET /assets/force-dark-theme.js?m=1750642613.26002 HTTP/1.1[0m" 304 -
+2025-07-09 03:38:20,754 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 03:38:20] "[36mGET /assets/plotly-fix.js?m=1750735897.818488 HTTP/1.1[0m" 304 -
+2025-07-09 03:38:20,925 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 03:38:20] "[36mGET /assets/realtime_client.js?m=1751846774.8275898 HTTP/1.1[0m" 304 -
+2025-07-09 03:38:20,984 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 03:38:20] "[36mGET /assets/ws_price.js?m=1750553753.6087377 HTTP/1.1[0m" 304 -
+2025-07-09 03:38:21,345 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 03:38:21] "GET /_dash-layout HTTP/1.1" 200 -
+2025-07-09 03:38:21,350 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 03:38:21] "GET /_dash-dependencies HTTP/1.1" 200 -
+2025-07-09 03:38:21,350 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 03:38:21] "GET /_favicon.ico?v=3.0.4 HTTP/1.1" 200 -
+2025-07-09 03:38:24,507 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 03:38:24] "GET / HTTP/1.1" 200 -
+2025-07-09 03:38:24,807 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 03:38:24] "[36mGET /assets/auto-trading-dropdown.css?m=1750645223.1268418 HTTP/1.1[0m" 304 -
+2025-07-09 03:38:24,828 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 03:38:24] "[36mGET /assets/component_fixes.css?m=1750767239.3765993 HTTP/1.1[0m" 304 -
+2025-07-09 03:38:24,833 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 03:38:24] "[36mGET /assets/chart-constraints.css?m=1751929919.4424853 HTTP/1.1[0m" 304 -
+2025-07-09 03:38:24,835 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 03:38:24] "[36mGET /assets/custom.css?m=1750885747.3144565 HTTP/1.1[0m" 304 -
+2025-07-09 03:38:24,837 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 03:38:24] "[36mGET /assets/dark-theme.css?m=1750642613.26002 HTTP/1.1[0m" 304 -
+2025-07-09 03:38:24,837 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 03:38:24] "[36mGET /assets/component_fixes.js?m=1750767239.3765993 HTTP/1.1[0m" 304 -
+2025-07-09 03:38:25,120 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 03:38:25] "[36mGET /assets/force-dark-theme.js?m=1750642613.26002 HTTP/1.1[0m" 304 -
+2025-07-09 03:38:25,138 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 03:38:25] "[36mGET /assets/plotly-fix.js?m=1750735897.818488 HTTP/1.1[0m" 304 -
+2025-07-09 03:38:25,138 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 03:38:25] "[36mGET /assets/realtime_client.js?m=1751846774.8275898 HTTP/1.1[0m" 304 -
+2025-07-09 03:38:25,138 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 03:38:25] "[36mGET /assets/ws_price.js?m=1750553753.6087377 HTTP/1.1[0m" 304 -
+2025-07-09 03:38:25,493 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 03:38:25] "GET /_dash-layout HTTP/1.1" 200 -
+2025-07-09 03:38:25,495 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 03:38:25] "GET /_dash-dependencies HTTP/1.1" 200 -
+2025-07-09 03:38:25,497 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 03:38:25] "GET /_favicon.ico?v=3.0.4 HTTP/1.1" 200 -
+2025-07-09 03:38:58,918 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 03:38:58] "GET / HTTP/1.1" 200 -
+2025-07-09 03:39:01,056 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 03:39:01] "GET /_dash-layout HTTP/1.1" 200 -
+2025-07-09 03:39:03,124 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 03:39:03] "GET /_dash-dependencies HTTP/1.1" 200 -
+2025-07-09 03:39:05,218 - dash_app - ERROR - Exception on /_dash-update-component [POST]
+Traceback (most recent call last):
+  File "C:\Users\Hari\AppData\Roaming\Python\Python312\site-packages\flask\app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Hari\AppData\Roaming\Python\Python312\site-packages\flask\app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Hari\AppData\Roaming\Python\Python312\site-packages\flask\app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Hari\AppData\Roaming\Python\Python312\site-packages\flask\app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Hari\AppData\Roaming\Python\Python312\site-packages\dash\dash.py", line 1315, in dispatch
+    output = body["output"]
+             ~~~~^^^^^^^^^^
+KeyError: 'output'
+2025-07-09 03:39:05,246 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 03:39:05] "[35m[1mPOST /_dash-update-component HTTP/1.1[0m" 500 -
+2025-07-09 03:39:07,341 - dash_app - ERROR - Exception on /_dash-component-suites/dash/deps/polyfill@7.12.1.min.js [GET]
+Traceback (most recent call last):
+  File "C:\Users\Hari\AppData\Roaming\Python\Python312\site-packages\flask\app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Hari\AppData\Roaming\Python\Python312\site-packages\flask\app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Hari\AppData\Roaming\Python\Python312\site-packages\flask\app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Hari\AppData\Roaming\Python\Python312\site-packages\flask\app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Hari\AppData\Roaming\Python\Python312\site-packages\dash\dash.py", line 1052, in serve_component_suites
+    _validate.validate_js_path(self.registered_paths, package_name, path_in_pkg)
+  File "C:\Users\Hari\AppData\Roaming\Python\Python312\site-packages\dash\_validate.py", line 386, in validate_js_path
+    raise exceptions.DependencyException(
+dash.exceptions.DependencyException: "dash" is registered but the path requested is not valid.
+The path requested: "deps/polyfill@7.12.1.min.js"
+List of registered paths: defaultdict(<class 'set'>, {'dash': {'dash-renderer/build/dash_renderer.min.js.map'}})
+2025-07-09 03:39:07,379 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 03:39:07] "[35m[1mGET /_dash-component-suites/dash/deps/polyfill@7.12.1.min.js HTTP/1.1[0m" 500 -
+2025-07-09 03:39:09,456 - dash_app - ERROR - Exception on /_dash-component-suites/dash/deps/react@16.14.0.min.js [GET]
+Traceback (most recent call last):
+  File "C:\Users\Hari\AppData\Roaming\Python\Python312\site-packages\flask\app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Hari\AppData\Roaming\Python\Python312\site-packages\flask\app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Hari\AppData\Roaming\Python\Python312\site-packages\flask\app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Hari\AppData\Roaming\Python\Python312\site-packages\flask\app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Hari\AppData\Roaming\Python\Python312\site-packages\dash\dash.py", line 1052, in serve_component_suites
+    _validate.validate_js_path(self.registered_paths, package_name, path_in_pkg)
+  File "C:\Users\Hari\AppData\Roaming\Python\Python312\site-packages\dash\_validate.py", line 386, in validate_js_path
+    raise exceptions.DependencyException(
+dash.exceptions.DependencyException: "dash" is registered but the path requested is not valid.
+The path requested: "deps/react@16.14.0.min.js"
+List of registered paths: defaultdict(<class 'set'>, {'dash': {'dash-renderer/build/dash_renderer.min.js.map'}})
+2025-07-09 03:39:09,471 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 03:39:09] "[35m[1mGET /_dash-component-suites/dash/deps/react@16.14.0.min.js HTTP/1.1[0m" 500 -
+2025-07-09 03:39:11,555 - dash_app - ERROR - Exception on /_dash-component-suites/dash/deps/react-dom@16.14.0.min.js [GET]
+Traceback (most recent call last):
+  File "C:\Users\Hari\AppData\Roaming\Python\Python312\site-packages\flask\app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Hari\AppData\Roaming\Python\Python312\site-packages\flask\app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Hari\AppData\Roaming\Python\Python312\site-packages\flask\app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Hari\AppData\Roaming\Python\Python312\site-packages\flask\app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Hari\AppData\Roaming\Python\Python312\site-packages\dash\dash.py", line 1052, in serve_component_suites
+    _validate.validate_js_path(self.registered_paths, package_name, path_in_pkg)
+  File "C:\Users\Hari\AppData\Roaming\Python\Python312\site-packages\dash\_validate.py", line 386, in validate_js_path
+    raise exceptions.DependencyException(
+dash.exceptions.DependencyException: "dash" is registered but the path requested is not valid.
+The path requested: "deps/react-dom@16.14.0.min.js"
+List of registered paths: defaultdict(<class 'set'>, {'dash': {'dash-renderer/build/dash_renderer.min.js.map'}})
+2025-07-09 03:39:11,555 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 03:39:11] "[35m[1mGET /_dash-component-suites/dash/deps/react-dom@16.14.0.min.js HTTP/1.1[0m" 500 -
+2025-07-09 03:39:13,651 - dash_app - ERROR - Exception on /_dash-component-suites/dash/deps/prop-types@15.7.2.min.js [GET]
+Traceback (most recent call last):
+  File "C:\Users\Hari\AppData\Roaming\Python\Python312\site-packages\flask\app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Hari\AppData\Roaming\Python\Python312\site-packages\flask\app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Hari\AppData\Roaming\Python\Python312\site-packages\flask\app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Hari\AppData\Roaming\Python\Python312\site-packages\flask\app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Hari\AppData\Roaming\Python\Python312\site-packages\dash\dash.py", line 1052, in serve_component_suites
+    _validate.validate_js_path(self.registered_paths, package_name, path_in_pkg)
+  File "C:\Users\Hari\AppData\Roaming\Python\Python312\site-packages\dash\_validate.py", line 386, in validate_js_path
+    raise exceptions.DependencyException(
+dash.exceptions.DependencyException: "dash" is registered but the path requested is not valid.
+The path requested: "deps/prop-types@15.7.2.min.js"
+List of registered paths: defaultdict(<class 'set'>, {'dash': {'dash-renderer/build/dash_renderer.min.js.map'}})
+2025-07-09 03:39:13,698 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 03:39:13] "[35m[1mGET /_dash-component-suites/dash/deps/prop-types@15.7.2.min.js HTTP/1.1[0m" 500 -
+2025-07-09 03:39:15,949 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 03:39:15] "GET / HTTP/1.1" 200 -
+2025-07-09 03:39:18,103 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 03:39:18] "GET /_dash-dependencies HTTP/1.1" 200 -
+2025-07-09 03:39:20,264 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 03:39:20] "GET / HTTP/1.1" 200 -
+2025-07-09 03:39:22,390 - dash_app - ERROR - Exception on /_dash-update-component [POST]
+Traceback (most recent call last):
+  File "C:\Users\Hari\AppData\Roaming\Python\Python312\site-packages\dash\dash.py", line 1335, in dispatch
+    cb = self.callback_map[output]
+         ~~~~~~~~~~~~~~~~~^^^^^^^^
+KeyError: 'page-content.children'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Hari\AppData\Roaming\Python\Python312\site-packages\flask\app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Hari\AppData\Roaming\Python\Python312\site-packages\flask\app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Hari\AppData\Roaming\Python\Python312\site-packages\flask\app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Hari\AppData\Roaming\Python\Python312\site-packages\flask\app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Hari\AppData\Roaming\Python\Python312\site-packages\dash\dash.py", line 1409, in dispatch
+    raise KeyError(msg) from missing_callback_function
+KeyError: "Callback function not found for output 'page-content.children', perhaps you forgot to prepend the '@'?"
+2025-07-09 03:39:22,438 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 03:39:22] "[35m[1mPOST /_dash-update-component HTTP/1.1[0m" 500 -
+2025-07-09 03:43:50,455 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 03:43:50] "GET / HTTP/1.1" 200 -
+2025-07-09 03:43:52,501 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 03:43:52] "GET /_dash-update-component HTTP/1.1" 200 -
+2025-07-09 03:43:54,583 - dash_app - ERROR - Exception on /_dash-component-suites/dash/deps/polyfill@7.12.1.min.js [GET]
+Traceback (most recent call last):
+  File "C:\Users\Hari\AppData\Roaming\Python\Python312\site-packages\flask\app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Hari\AppData\Roaming\Python\Python312\site-packages\flask\app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Hari\AppData\Roaming\Python\Python312\site-packages\flask\app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Hari\AppData\Roaming\Python\Python312\site-packages\flask\app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Hari\AppData\Roaming\Python\Python312\site-packages\dash\dash.py", line 1052, in serve_component_suites
+    _validate.validate_js_path(self.registered_paths, package_name, path_in_pkg)
+  File "C:\Users\Hari\AppData\Roaming\Python\Python312\site-packages\dash\_validate.py", line 386, in validate_js_path
+    raise exceptions.DependencyException(
+dash.exceptions.DependencyException: "dash" is registered but the path requested is not valid.
+The path requested: "deps/polyfill@7.12.1.min.js"
+List of registered paths: defaultdict(<class 'set'>, {'dash': {'dash-renderer/build/dash_renderer.min.js.map'}})
+2025-07-09 03:43:54,629 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 03:43:54] "[35m[1mGET /_dash-component-suites/dash/deps/polyfill@7.12.1.min.js HTTP/1.1[0m" 500 -
+2025-07-09 03:43:56,953 - dash_app - ERROR - Exception on /_dash-component-suites/dash/deps/react@16.14.0.min.js [GET]
+Traceback (most recent call last):
+  File "C:\Users\Hari\AppData\Roaming\Python\Python312\site-packages\flask\app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Hari\AppData\Roaming\Python\Python312\site-packages\flask\app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Hari\AppData\Roaming\Python\Python312\site-packages\flask\app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Hari\AppData\Roaming\Python\Python312\site-packages\flask\app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Hari\AppData\Roaming\Python\Python312\site-packages\dash\dash.py", line 1052, in serve_component_suites
+    _validate.validate_js_path(self.registered_paths, package_name, path_in_pkg)
+  File "C:\Users\Hari\AppData\Roaming\Python\Python312\site-packages\dash\_validate.py", line 386, in validate_js_path
+    raise exceptions.DependencyException(
+dash.exceptions.DependencyException: "dash" is registered but the path requested is not valid.
+The path requested: "deps/react@16.14.0.min.js"
+List of registered paths: defaultdict(<class 'set'>, {'dash': {'dash-renderer/build/dash_renderer.min.js.map'}})
+2025-07-09 03:43:57,000 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 03:43:56] "[35m[1mGET /_dash-component-suites/dash/deps/react@16.14.0.min.js HTTP/1.1[0m" 500 -
+2025-07-09 03:46:39,671 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 03:46:39] "GET / HTTP/1.1" 200 -
+2025-07-09 03:46:39,708 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 03:46:39] "[36mGET /assets/auto-trading-dropdown.css?m=1750645223.1268418 HTTP/1.1[0m" 304 -
+2025-07-09 03:46:39,912 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 03:46:39] "[36mGET /assets/chart-constraints.css?m=1751929919.4424853 HTTP/1.1[0m" 304 -
+2025-07-09 03:46:40,022 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 03:46:40] "[36mGET /assets/component_fixes.css?m=1750767239.3765993 HTTP/1.1[0m" 304 -
+2025-07-09 03:46:40,022 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 03:46:40] "[36mGET /assets/custom.css?m=1750885747.3144565 HTTP/1.1[0m" 304 -
+2025-07-09 03:46:40,022 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 03:46:40] "[36mGET /assets/dark-theme.css?m=1750642613.26002 HTTP/1.1[0m" 304 -
+2025-07-09 03:46:40,022 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 03:46:40] "[36mGET /assets/component_fixes.js?m=1750767239.3765993 HTTP/1.1[0m" 304 -
+2025-07-09 03:46:40,048 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 03:46:40] "[36mGET /assets/force-dark-theme.js?m=1750642613.26002 HTTP/1.1[0m" 304 -
+2025-07-09 03:46:40,219 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 03:46:40] "[36mGET /assets/plotly-fix.js?m=1750735897.818488 HTTP/1.1[0m" 304 -
+2025-07-09 03:46:40,336 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 03:46:40] "[36mGET /assets/realtime_client.js?m=1751846774.8275898 HTTP/1.1[0m" 304 -
+2025-07-09 03:46:40,336 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 03:46:40] "[36mGET /assets/ws_price.js?m=1750553753.6087377 HTTP/1.1[0m" 304 -
+2025-07-09 03:46:40,769 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 03:46:40] "GET /_dash-layout HTTP/1.1" 200 -
+2025-07-09 03:46:40,816 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 03:46:40] "GET /_dash-dependencies HTTP/1.1" 200 -
+2025-07-09 03:47:41,868 - werkzeug - INFO - 127.0.0.1 - - [09/Jul/2025 03:47:41] "GET / HTTP/1.1" 200 -
+2025-07-09 04:01:01,921 - dash.dash - INFO - Dash is running on http://localhost:8050/
+

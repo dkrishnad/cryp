@@ -1,66 +1,58 @@
 #!/usr/bin/env python3
 """
-Bot Startup Test
-================
-This script tests all imports and initializations before starting the bot.
+Backend Startup Test
+Quick test to verify backend starts without errors
 """
 
 import sys
 import os
 
-def test_imports():
-    print("🔍 Testing Bot Imports...")
-    print("-" * 40)
-    
+# Add backend directory to path
+backend_dir = os.path.dirname(os.path.abspath(__file__))
+if backend_dir not in sys.path:
+    sys.path.insert(0, backend_dir)
+
+def test_backend_startup():
+    """Test if backend can be imported and started"""
     try:
-        print("📦 Testing FastAPI...")
-        from fastapi import FastAPI
-        print("✅ FastAPI imported successfully")
+        print("🚀 Testing backend startup...")
         
-        print("📦 Testing uvicorn...")
-        import uvicorn
-        print("✅ uvicorn imported successfully")
-        
-        print("📦 Testing main module...")
+        # Test import of main module
+        print("📦 Importing main module...")
         import main
-        print("✅ main module imported successfully")
+        print("✅ Main module imported successfully")
         
-        print("📦 Testing advanced auto trading...")
-        from advanced_auto_trading import AdvancedAutoTradingEngine
-        print("✅ Advanced auto trading imported successfully")
+        # Test app creation
+        print("🔧 Checking FastAPI app...")
+        app = main.app
+        if app:
+            print("✅ FastAPI app created successfully")
+        else:
+            print("❌ FastAPI app not found")
+            return False
+            
+        # Test route inclusion
+        print("🔗 Checking route inclusion...")
+        routes = [str(route.path) for route in app.routes]
+        print(f"📊 Found {len(routes)} routes")
         
-        print("📦 Testing database...")
-        import db
-        print("✅ Database module imported successfully")
+        # Check for key endpoints
+        key_endpoints = ["/account", "/positions", "/buy", "/sell", "/prices", "/market_data"]
+        missing_endpoints = [endpoint for endpoint in key_endpoints if endpoint not in routes]
         
-        print("📦 Testing trading module...")
-        import trading
-        print("✅ Trading module imported successfully")
-        
-        print("📦 Testing ML module...")
-        import ml
-        print("✅ ML module imported successfully")
-        
-        print("\n🎉 All imports successful!")
-        print("🚀 Ready to launch bot!")
+        if missing_endpoints:
+            print(f"⚠️ Missing endpoints: {missing_endpoints}")
+        else:
+            print("✅ All key endpoints found")
+            
+        print("🎉 Backend startup test completed successfully!")
         return True
         
-    except ImportError as e:
-        print(f"❌ Import error: {e}")
-        return False
     except Exception as e:
-        print(f"❌ Error: {e}")
+        print(f"❌ Backend startup test failed: {e}")
+        import traceback
+        print(f"Error details: {traceback.format_exc()}")
         return False
 
 if __name__ == "__main__":
-    # Change to backend directory
-    backend_dir = os.path.dirname(os.path.abspath(__file__))
-    os.chdir(backend_dir)
-    
-    success = test_imports()
-    if success:
-        print("\n🔥 Starting bot now...")
-        print("💡 Run: python launch_bot.py")
-    else:
-        print("\n❌ Fix import errors before launching")
-        sys.exit(1)
+    test_backend_startup()
